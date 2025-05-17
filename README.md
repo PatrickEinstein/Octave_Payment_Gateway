@@ -1,4 +1,4 @@
-# Payment Gateway - Robust Payment Processing System
+# Octave Payment Gateway - Robust Payment Processing System
 
 ## Overview
 
