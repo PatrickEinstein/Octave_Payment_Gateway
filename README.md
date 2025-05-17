@@ -36,20 +36,15 @@ The gateway is robust, scalable, and optimized for secure financial transactions
    git clone https://github.com/PatrickEinstein/Octave_Payment_Gateway.git
    ```
 
-2. Navigate to the project directory:
+
+
+2. Start Project:
 
    ```bash
-   cd OCPG
+   dotnet run
    ```
 
-3. Install dependencies:
-
-   ```bash
-   dotnet restore
-   npm install
-   ```
-
-4. Set up the database:
+3. Set up the database:
 
    * Update the database connection string in the `appsettings.json` file.
    * Apply database migrations:
@@ -58,11 +53,7 @@ The gateway is robust, scalable, and optimized for secure financial transactions
    dotnet ef database update
    ```
 
-5. Start the server:
 
-   ```bash
-   dotnet run
-   ```
 
 ## Configuration
 
