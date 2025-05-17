@@ -3243,3 +3243,1273 @@ UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
 WHERE "Id" = @p2;
 2025-05-17 18:01:04.262 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDEyNjQsImV4cCI6MTc0NzUwNDg2NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJCNzg4RERDRkIxQTJDMzAzRTVGQTk1QTQ2NUFEMzRERiIsImlhdCI6MTc0NzUwMTI2NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.VvAx5A70SFNVXoMrQ_8lfGzOYOUNvi_mN7_JAU1PDjxY--3eziIpIzJK-etBIINvFoJc__pWiEa_wbvoGqALTv9Vj9BPGlKEmpwl-j-JmDwiS-1x1FhPJRsJWycqC9SWEGWDSsN1xJhSaYNLdUaGVHXS0-kOxo85486QAMNPzivhNPytvxpJiYEAw1pfsbAJk8xd5D6NhsqqKOhwHVAB781_cpGkyenO_RUl32teqUbRItFofmiOFerRBDYCf3oLS4G9--0xsdqfjYvrbQk5zoo9z5px7MmBEU0NSM82QiF2T-irXbhzBawl_-jOd6Ginbh5kbF5zR0qHHPBSba0fw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T18:01:03.8345765Z","status":false},"Message":null,"code":null}
 2025-05-17 18:01:04.262 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDEyNjQsImV4cCI6MTc0NzUwNDg2NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJCNzg4RERDRkIxQTJDMzAzRTVGQTk1QTQ2NUFEMzRERiIsImlhdCI6MTc0NzUwMTI2NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.VvAx5A70SFNVXoMrQ_8lfGzOYOUNvi_mN7_JAU1PDjxY--3eziIpIzJK-etBIINvFoJc__pWiEa_wbvoGqALTv9Vj9BPGlKEmpwl-j-JmDwiS-1x1FhPJRsJWycqC9SWEGWDSsN1xJhSaYNLdUaGVHXS0-kOxo85486QAMNPzivhNPytvxpJiYEAw1pfsbAJk8xd5D6NhsqqKOhwHVAB781_cpGkyenO_RUl32teqUbRItFofmiOFerRBDYCf3oLS4G9--0xsdqfjYvrbQk5zoo9z5px7MmBEU0NSM82QiF2T-irXbhzBawl_-jOd6Ginbh5kbF5zR0qHHPBSba0fw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T18:01:03.8345765Z","status":false},"Message":null,"code":null}
+2025-05-17 19:05:40.809 +01:00 [INF] Starting up the application
+2025-05-17 19:05:43.680 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:05:43.690 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:05:43.694 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:05:43.695 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:05:44.127 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:05:44.208 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:05:44.326 +01:00 [INF] HTTP GET / responded 404 in 113.6704 ms
+2025-05-17 19:05:44.346 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 225.9798ms
+2025-05-17 19:05:44.364 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:06:20.278 +01:00 [INF] Starting up the application
+2025-05-17 19:06:21.910 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:06:21.974 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:06:21.976 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:06:21.977 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:06:22.549 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:06:22.601 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:06:22.684 +01:00 [INF] HTTP GET / responded 404 in 77.7265 ms
+2025-05-17 19:06:22.703 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 157.4145ms
+2025-05-17 19:06:22.712 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:06:28.133 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 529
+2025-05-17 19:06:28.156 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:06:28.160 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:06:28.215 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:06:30.407 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-17 19:06:32.341 +01:00 [INF] Executed DbCommand (267ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:06:33.780 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 19:06:33.822 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 5598.5003ms
+2025-05-17 19:06:33.827 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:06:33.829 +01:00 [INF] HTTP POST /Payment/1/advice responded 200 in 5694.8138 ms
+2025-05-17 19:06:33.854 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/1/advice - 200 null application/json; charset=utf-8 5721.4748ms
+2025-05-17 19:06:48.187 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:06:48.196 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:06:48.196 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:06:48.198 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:06:48.493 +01:00 [INF] Executed DbCommand (251ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:06:49.547 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1348.3991ms
+2025-05-17 19:06:49.548 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:06:49.550 +01:00 [ERR] HTTP POST /Payment/1/advice responded 500 in 1360.6021 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-17 19:06:49.586 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-17 19:06:49.608 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/1/advice - 500 null text/plain; charset=utf-8 1421.7182ms
+2025-05-17 19:07:09.829 +01:00 [INF] Starting up the application
+2025-05-17 19:07:10.882 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:07:10.888 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:07:10.889 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:07:10.889 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:07:11.339 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:07:11.408 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:07:11.484 +01:00 [INF] HTTP GET / responded 404 in 70.5570 ms
+2025-05-17 19:07:11.503 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 166.33ms
+2025-05-17 19:07:11.518 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:07:16.130 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:07:16.142 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:07:16.146 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:07:16.204 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:07:17.666 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-17 19:07:19.845 +01:00 [INF] Executed DbCommand (275ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:07:21.312 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 5103.573ms
+2025-05-17 19:07:21.314 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:07:21.317 +01:00 [ERR] HTTP POST /Payment/1/advice responded 500 in 5185.1958 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-17 19:07:21.346 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-17 19:07:21.373 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/1/advice - 500 null text/plain; charset=utf-8 5243.5268ms
+2025-05-17 19:07:51.943 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:07:51.983 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:07:51.984 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:07:51.984 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:08:35.220 +01:00 [INF] Starting up the application
+2025-05-17 19:08:38.769 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:08:38.783 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:08:38.784 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:08:38.784 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:08:39.233 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:08:39.318 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:08:39.527 +01:00 [INF] HTTP GET / responded 404 in 189.3462 ms
+2025-05-17 19:08:39.631 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 402.0368ms
+2025-05-17 19:08:39.644 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:09:11.309 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:09:11.346 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:09:11.351 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:09:11.407 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:10:22.215 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 70804.391ms
+2025-05-17 19:10:22.216 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:10:22.218 +01:00 [ERR] HTTP POST /Payment/1/advice responded 500 in 70904.2204 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-17 19:10:22.226 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-17 19:10:22.240 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/1/advice - 500 null text/plain; charset=utf-8 70931.055ms
+2025-05-17 19:11:21.878 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:11:21.890 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:11:21.890 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:11:21.891 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:11:39.318 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 17425.8657ms
+2025-05-17 19:11:39.319 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:11:39.320 +01:00 [ERR] HTTP POST /Payment/1/advice responded 500 in 17434.5197 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-17 19:11:39.324 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at OCPG.Infrastructure.Service.Managers.PaymentManager.InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Managers\PaymentManager.cs:line 70
+   at OCPG.Controllers.InitializeTransactions.InitiateTransaction(AdviceModelReq request, ChannelCode channel) in D:\ACTIVE\Octave\OCPG\Controllers\InitializeTransactionsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-17 19:11:39.330 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/1/advice - 500 null text/plain; charset=utf-8 17454.6061ms
+2025-05-17 19:12:08.748 +01:00 [INF] Starting up the application
+2025-05-17 19:12:10.529 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:12:10.544 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:12:10.545 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:12:10.545 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:12:11.487 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:12:11.558 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:12:11.654 +01:00 [INF] HTTP GET / responded 404 in 90.1095 ms
+2025-05-17 19:12:11.736 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 247.3151ms
+2025-05-17 19:12:11.748 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:12:17.508 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:12:17.530 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:12:17.535 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:12:17.586 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:13:53.863 +01:00 [INF] Starting up the application
+2025-05-17 19:13:55.123 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:13:55.131 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:13:55.133 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:13:55.133 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:13:55.430 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:13:55.484 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:13:55.542 +01:00 [INF] HTTP GET / responded 404 in 53.0501 ms
+2025-05-17 19:13:55.557 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 134.5091ms
+2025-05-17 19:13:55.574 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:13:59.276 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/1/advice - application/json 526
+2025-05-17 19:13:59.296 +01:00 [INF] CORS policy execution successful.
+2025-05-17 19:13:59.298 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:13:59.330 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:14:05.426 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 19:14:05.458 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 6125.1758ms
+2025-05-17 19:14:05.459 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 19:14:05.461 +01:00 [INF] HTTP POST /Payment/1/advice responded 200 in 6183.0509 ms
+2025-05-17 19:14:05.467 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/1/advice - 200 null application/json; charset=utf-8 6191.1563ms
+2025-05-17 19:15:38.064 +01:00 [INF] Starting up the application
+2025-05-17 19:15:39.218 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:15:39.226 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:15:39.228 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:15:39.228 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:15:39.696 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:15:39.748 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:15:39.825 +01:00 [INF] HTTP GET / responded 404 in 69.7227 ms
+2025-05-17 19:15:39.846 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 152.4545ms
+2025-05-17 19:15:39.858 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:15:47.524 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:15:47.767 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 243.3249ms
+2025-05-17 19:15:47.813 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:15:47.815 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 2.2024ms
+2025-05-17 19:15:48.103 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:15:48.399 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.8965ms
+2025-05-17 19:23:44.967 +01:00 [INF] Starting up the application
+2025-05-17 19:23:47.596 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:23:47.606 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:23:47.608 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:23:47.608 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:23:48.564 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:23:48.670 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:23:48.784 +01:00 [INF] HTTP GET / responded 404 in 103.0405 ms
+2025-05-17 19:23:48.812 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 254.468ms
+2025-05-17 19:23:48.977 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:24:15.429 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:24:15.681 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 251.7899ms
+2025-05-17 19:24:15.719 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:24:15.724 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 4.9808ms
+2025-05-17 19:24:15.815 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:24:16.158 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 342.4794ms
+2025-05-17 19:24:46.119 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/0/3457 - null null
+2025-05-17 19:24:46.147 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-17 19:24:46.223 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:24:50.696 +01:00 [INF] Executed DbCommand (449ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0 OR p."adviceReference" = @__parameter_0
+LIMIT 1
+2025-05-17 19:24:50.778 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 19:24:50.859 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 4627.9616ms
+2025-05-17 19:24:50.861 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-17 19:24:50.866 +01:00 [INF] HTTP GET /Payment/advice/0/3457 responded 200 in 4744.3741 ms
+2025-05-17 19:24:50.888 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/0/3457 - 200 null application/json; charset=utf-8 4768.3941ms
+2025-05-17 19:28:02.853 +01:00 [INF] Starting up the application
+2025-05-17 19:28:04.291 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:28:04.299 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:28:04.301 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:28:04.301 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:28:04.707 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:28:04.966 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:28:05.136 +01:00 [INF] HTTP GET / responded 404 in 165.8354 ms
+2025-05-17 19:28:05.273 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 575.0839ms
+2025-05-17 19:28:05.285 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:29:35.329 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/0/dc8063c591dc48f4952456c6664ca510 - null null
+2025-05-17 19:29:35.346 +01:00 [INF] HTTP GET /Payment/advice/0/dc8063c591dc48f4952456c6664ca510 responded 404 in 7.7231 ms
+2025-05-17 19:29:35.349 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/0/dc8063c591dc48f4952456c6664ca510 - 404 0 null 19.6523ms
+2025-05-17 19:29:35.349 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/Payment/advice/0/dc8063c591dc48f4952456c6664ca510, Response status code: 404
+2025-05-17 19:30:12.426 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/0/dc8063c591dc48f4952456c6664ca510 - null null
+2025-05-17 19:30:12.438 +01:00 [INF] HTTP GET /Payment/advice/0/dc8063c591dc48f4952456c6664ca510 responded 404 in 9.9896 ms
+2025-05-17 19:30:12.438 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/0/dc8063c591dc48f4952456c6664ca510 - 404 0 null 12.5102ms
+2025-05-17 19:30:12.439 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/Payment/advice/0/dc8063c591dc48f4952456c6664ca510, Response status code: 404
+2025-05-17 19:30:20.937 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:30:21.152 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 214.8011ms
+2025-05-17 19:30:21.196 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:30:21.198 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 1.4217ms
+2025-05-17 19:30:21.493 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:30:21.789 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.9614ms
+2025-05-17 19:30:33.206 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/dc8063c591dc48f4952456c6664ca510 - null null
+2025-05-17 19:30:33.212 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-17 19:30:33.284 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:30:50.737 +01:00 [INF] Executed DbCommand (489ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0
+LIMIT 1
+2025-05-17 19:31:03.694 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 19:31:03.807 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 30514.2241ms
+2025-05-17 19:31:03.808 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-17 19:31:03.809 +01:00 [INF] HTTP GET /Payment/advice/dc8063c591dc48f4952456c6664ca510 responded 200 in 30602.5592 ms
+2025-05-17 19:31:03.826 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/dc8063c591dc48f4952456c6664ca510 - 200 null application/json; charset=utf-8 30619.6834ms
+2025-05-17 19:32:27.961 +01:00 [INF] Starting up the application
+2025-05-17 19:32:29.207 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:32:29.213 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:32:29.215 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:32:29.215 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:32:29.724 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:32:29.792 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:32:29.851 +01:00 [INF] HTTP GET / responded 404 in 52.0185 ms
+2025-05-17 19:32:29.866 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 146.4342ms
+2025-05-17 19:32:29.883 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:32:55.039 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:32:55.257 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 218.0252ms
+2025-05-17 19:32:55.291 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:32:55.297 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 5.686ms
+2025-05-17 19:32:55.582 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:32:55.908 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 326.4687ms
+2025-05-17 19:34:37.934 +01:00 [INF] Starting up the application
+2025-05-17 19:34:38.998 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:34:39.007 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:34:39.008 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:34:39.008 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:34:39.304 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:34:39.368 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:34:39.423 +01:00 [INF] HTTP GET / responded 404 in 51.3912 ms
+2025-05-17 19:34:39.437 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 142.1044ms
+2025-05-17 19:34:39.454 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:34:44.548 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:34:44.759 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 211.2101ms
+2025-05-17 19:34:44.784 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:34:44.800 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 15.5393ms
+2025-05-17 19:34:44.908 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:34:45.185 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 277.2336ms
+2025-05-17 19:35:00.152 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:35:00.155 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 2.7703ms
+2025-05-17 19:35:00.202 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:35:00.203 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 0.7677ms
+2025-05-17 19:35:00.310 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:35:00.336 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.5856ms
+2025-05-17 19:36:10.167 +01:00 [INF] Starting up the application
+2025-05-17 19:36:11.422 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:36:11.431 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:36:11.432 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:36:11.432 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:36:11.749 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:36:11.861 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:36:11.972 +01:00 [INF] HTTP GET / responded 404 in 107.2502 ms
+2025-05-17 19:36:11.986 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 239.4572ms
+2025-05-17 19:36:12.004 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:36:14.944 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:36:15.064 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 120.2992ms
+2025-05-17 19:36:15.085 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:36:15.089 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 3.8615ms
+2025-05-17 19:36:15.189 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:36:15.466 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 276.6787ms
+2025-05-17 19:36:22.517 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/dc8063c591dc48f4952456c6664ca510 - null null
+2025-05-17 19:36:22.536 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-17 19:36:22.595 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 19:36:34.498 +01:00 [INF] Executed DbCommand (349ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0
+LIMIT 1
+2025-05-17 19:36:34.728 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 19:36:34.796 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 12195.8232ms
+2025-05-17 19:36:34.797 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-17 19:36:34.799 +01:00 [INF] HTTP GET /Payment/advice/dc8063c591dc48f4952456c6664ca510 responded 200 in 12281.4353 ms
+2025-05-17 19:36:34.824 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/dc8063c591dc48f4952456c6664ca510 - 200 null application/json; charset=utf-8 12306.7439ms
+2025-05-17 19:50:06.960 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-17 19:50:10.490 +01:00 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:11.052 +01:00 [INF] Executed DbCommand (373ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:11.084 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MDcsImV4cCI6MTc0NzUxMTQwNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGMzk1QjlCODg0MkIwOTk2Q0IyNUZEOTQ5N0QzN0Y1NiIsImlhdCI6MTc0NzUwNzgwNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.LwAZCnTnxxWHKA8IuHJhD4ecNNMeZUlBFfTZBrOcYJXLYCauguxJSvztHTgcIWccc-euB50alB06YWMmHdnPrQaD0zRsWMll7HBOT9yfYh1qrQ3Dzkv4BZCQP3i0MV69fQJ8DgbQAPXtNlmNBPQ3CUDoCxgXPQ46fsj-mThr344YpNPIbzH39Si6ZC4A8rW6D8rY4SNhLyDa6dnfA3W-oxZvmcbu4inCd-5P3Rn0TOvU2CK5pWu4BtSrbKlMtUEPDPfyrOBD-ypQE1zKZn7ZD2GdU05EGIWu5qvA5XPstcKo4pwqRMOJraTwWzudYv5TeTYVPDh82QQ3eDfYVpIugg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:06.9050909Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:11.084 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MDcsImV4cCI6MTc0NzUxMTQwNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGMzk1QjlCODg0MkIwOTk2Q0IyNUZEOTQ5N0QzN0Y1NiIsImlhdCI6MTc0NzUwNzgwNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.LwAZCnTnxxWHKA8IuHJhD4ecNNMeZUlBFfTZBrOcYJXLYCauguxJSvztHTgcIWccc-euB50alB06YWMmHdnPrQaD0zRsWMll7HBOT9yfYh1qrQ3Dzkv4BZCQP3i0MV69fQJ8DgbQAPXtNlmNBPQ3CUDoCxgXPQ46fsj-mThr344YpNPIbzH39Si6ZC4A8rW6D8rY4SNhLyDa6dnfA3W-oxZvmcbu4inCd-5P3Rn0TOvU2CK5pWu4BtSrbKlMtUEPDPfyrOBD-ypQE1zKZn7ZD2GdU05EGIWu5qvA5XPstcKo4pwqRMOJraTwWzudYv5TeTYVPDh82QQ3eDfYVpIugg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:06.9050909Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:18.540 +01:00 [INF] Executed DbCommand (188ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:18.849 +01:00 [INF] Executed DbCommand (305ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:18.850 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MTgsImV4cCI6MTc0NzUxMTQxOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzNjZGMkVGOUJENDE4NTg2MzA1NUJEODM4RkMzQTdEMCIsImlhdCI6MTc0NzUwNzgxOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.pBU6V70CM2Hko7jDqp4Fc2btzeXbZiH3YrRvtkLQ2g6_W2tQrc9L-Gj-VEzo5zEAzHPyy3AuOAMrffvupvxAUzuO5A2BR7IbQqxZfJdtfsjaCxOr_TCiryhzdnZqZbzUdug3C2zOywjopnEQGP-Te5vHSGLZyoeOKh8mc17jIrG2Qx2ib1W8SAdQt64M1e5YpCDvpLOdL1vfbF94M9cxUTtnqFVGjE6RYYKHvCA_wvZTL8JxGnKFfVqvh-fR1ALdWO9gv1VwDseUhrU9c7HypK9XIWEPKd0NZN7vjlybfn_Q5Inf33CyPyQcMDNrUkl_KCJqt6LvBVdZU6dV9VTOUw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:18.2661246Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:18.850 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MTgsImV4cCI6MTc0NzUxMTQxOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzNjZGMkVGOUJENDE4NTg2MzA1NUJEODM4RkMzQTdEMCIsImlhdCI6MTc0NzUwNzgxOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.pBU6V70CM2Hko7jDqp4Fc2btzeXbZiH3YrRvtkLQ2g6_W2tQrc9L-Gj-VEzo5zEAzHPyy3AuOAMrffvupvxAUzuO5A2BR7IbQqxZfJdtfsjaCxOr_TCiryhzdnZqZbzUdug3C2zOywjopnEQGP-Te5vHSGLZyoeOKh8mc17jIrG2Qx2ib1W8SAdQt64M1e5YpCDvpLOdL1vfbF94M9cxUTtnqFVGjE6RYYKHvCA_wvZTL8JxGnKFfVqvh-fR1ALdWO9gv1VwDseUhrU9c7HypK9XIWEPKd0NZN7vjlybfn_Q5Inf33CyPyQcMDNrUkl_KCJqt6LvBVdZU6dV9VTOUw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:18.2661246Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:25.739 +01:00 [INF] Executed DbCommand (587ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:26.202 +01:00 [INF] Executed DbCommand (459ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:26.204 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MjUsImV4cCI6MTc0NzUxMTQyNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBOUM3NzdCMzgxQThCOUM0RjZBOUJDREFGMUVBNkY2QyIsImlhdCI6MTc0NzUwNzgyNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.XFGPvlRd1lh3gQi0owNHwNb9PRhA75MCDca6SEdZ5jgKFCSibVXi2VWz7jg6_p_X1MZ8olan2lxXkSpv4mIWRs3096pBzulvovGkUyLFZbVq8x78-E4x0929rCHxTMDVSnEP0WtQ9L18-YQC6YVCTArJezq7Fht2WesFeHfQcjm2P4_NPkoegzFQXLi9MfHATPYKoVOaIqbb-6zikxfA_zCLVU5Qu_SwH9D3O4E-wZVYjuES4BszXWkWZ3KmlDeDxzxO6QpsKkZZcSt-4aVBYmKNqxlaFdM4EfXn6SVARrUv_186wZ7X_hA4p9vAQFXyiTyxvWTgEX0me73ycMOLMw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:25.1513858Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:26.221 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MjUsImV4cCI6MTc0NzUxMTQyNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBOUM3NzdCMzgxQThCOUM0RjZBOUJDREFGMUVBNkY2QyIsImlhdCI6MTc0NzUwNzgyNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.XFGPvlRd1lh3gQi0owNHwNb9PRhA75MCDca6SEdZ5jgKFCSibVXi2VWz7jg6_p_X1MZ8olan2lxXkSpv4mIWRs3096pBzulvovGkUyLFZbVq8x78-E4x0929rCHxTMDVSnEP0WtQ9L18-YQC6YVCTArJezq7Fht2WesFeHfQcjm2P4_NPkoegzFQXLi9MfHATPYKoVOaIqbb-6zikxfA_zCLVU5Qu_SwH9D3O4E-wZVYjuES4BszXWkWZ3KmlDeDxzxO6QpsKkZZcSt-4aVBYmKNqxlaFdM4EfXn6SVARrUv_186wZ7X_hA4p9vAQFXyiTyxvWTgEX0me73ycMOLMw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:25.1513858Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:33.217 +01:00 [INF] Executed DbCommand (348ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:33.457 +01:00 [INF] Executed DbCommand (237ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:33.458 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MzMsImV4cCI6MTc0NzUxMTQzMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyMUZGNTY4NzM3RTRCRkY4OEU3RDczMDdDNjExNTQ2QSIsImlhdCI6MTc0NzUwNzgzMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.SWERW99azucaIkxURaATyQ0FTAFwjDkUXruSnk0YELHH0Dm4kKmnfF1y7Ja9MFafH5uBJNsJuldhJlo6tPTYPLEsVp44LRspnoe-00R3v184dWWsRO6Yp3KRuAZMT-qVk5JsL1P5_D5Oa1Jo84LkpPcoNt7elEqzaoyXTpMdSkS_wOktkxPJ3a78bz0a9EzziYuzQscEDT7IQsHtR8Uvs2CBGpTZnK_hkQmAJT6UH19L17lvB_MjL8iVnj5sJvY3Keas-yqUd2PCDhydT1MD6udKUMxm0PkcYNG3ZKOFXEpUE8ZZlM6BSYfPvbrDooROs9GCXHbCn80a7pxiqh519A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:32.8683681Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:33.458 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4MzMsImV4cCI6MTc0NzUxMTQzMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyMUZGNTY4NzM3RTRCRkY4OEU3RDczMDdDNjExNTQ2QSIsImlhdCI6MTc0NzUwNzgzMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.SWERW99azucaIkxURaATyQ0FTAFwjDkUXruSnk0YELHH0Dm4kKmnfF1y7Ja9MFafH5uBJNsJuldhJlo6tPTYPLEsVp44LRspnoe-00R3v184dWWsRO6Yp3KRuAZMT-qVk5JsL1P5_D5Oa1Jo84LkpPcoNt7elEqzaoyXTpMdSkS_wOktkxPJ3a78bz0a9EzziYuzQscEDT7IQsHtR8Uvs2CBGpTZnK_hkQmAJT6UH19L17lvB_MjL8iVnj5sJvY3Keas-yqUd2PCDhydT1MD6udKUMxm0PkcYNG3ZKOFXEpUE8ZZlM6BSYfPvbrDooROs9GCXHbCn80a7pxiqh519A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:32.8683681Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:39.992 +01:00 [INF] Executed DbCommand (445ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:40.833 +01:00 [INF] Executed DbCommand (839ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:40.834 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NDAsImV4cCI6MTc0NzUxMTQ0MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMzA5MTlBMEI0NjIzMEY5RTVDQTIyQTFCRjBDRjVEQyIsImlhdCI6MTc0NzUwNzg0MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.OCoJ0nSKf7i7t3DfdlqvP0lCTq8KryyvTLaC1qLLNaisNHIeO_N7nAObj0pj7qqlqO8mHkJL6YtrWl9pUtB8ACKQ97vQwuKSiKOei12Tyrm4Ep1HTAUgL609LItK-8Nf8v6S1rNrTcW-vzHgDLhsI_te-dN1G-Htr1gAAzH2wNDz1_yt4CQPwoMdN8mMnd3jgmaDhfhErHWZJkvLKNE8DVdqPQyxsaFeLEttToihm7-yiGdtGLqjNwhstd5-oGnWgKMWfGB9MHKaTUEGTCTddOO7K6QAOdFdx9OkFSLhWxMkwDps_bhIAbAbe2IYM7TEiLIuq0Tyt2b-b4XxoNdB8Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:39.5466203Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:40.834 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NDAsImV4cCI6MTc0NzUxMTQ0MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMzA5MTlBMEI0NjIzMEY5RTVDQTIyQTFCRjBDRjVEQyIsImlhdCI6MTc0NzUwNzg0MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.OCoJ0nSKf7i7t3DfdlqvP0lCTq8KryyvTLaC1qLLNaisNHIeO_N7nAObj0pj7qqlqO8mHkJL6YtrWl9pUtB8ACKQ97vQwuKSiKOei12Tyrm4Ep1HTAUgL609LItK-8Nf8v6S1rNrTcW-vzHgDLhsI_te-dN1G-Htr1gAAzH2wNDz1_yt4CQPwoMdN8mMnd3jgmaDhfhErHWZJkvLKNE8DVdqPQyxsaFeLEttToihm7-yiGdtGLqjNwhstd5-oGnWgKMWfGB9MHKaTUEGTCTddOO7K6QAOdFdx9OkFSLhWxMkwDps_bhIAbAbe2IYM7TEiLIuq0Tyt2b-b4XxoNdB8Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:39.5466203Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:46.507 +01:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:46.660 +01:00 [INF] Executed DbCommand (152ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:46.660 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NDcsImV4cCI6MTc0NzUxMTQ0NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRTNBQjBBRUVFQ0JDRjVGRDc2NkE2MEQ0MDVCQTVDQyIsImlhdCI6MTc0NzUwNzg0Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.eziXGMQT17COIZxLbWSMTtAUX0-it4ptl7IYqYYvJbkQRwiAX5XbvdKRe57lA0CSKWUAU23xcJe3Nx2NuKXYAlAXmQPtfdsMmXuulMNHZNpWgr4AOAQFrKwxYWDazNPAHwM5-G2EBxjbj9n-ZpG4XdPG67CNwa7PurLRHFpMerNp3Pv_dFmdYWnNN6vxvLrwCfqN7C8GFY3Wrsbb1zyqwSWxy3RIZlcDf19insNCadT1tEE5PV1wlaTctgwJ1x1Q-MQ44vdLm62PYg5XHA9KguipV2ni-F0rNZaVQ1KLgnhxcd0dFtueXgi0a5o0NkY1rl6wMRJ-LgcX0c6YlD3OoA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:46.3429532Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:46.661 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NDcsImV4cCI6MTc0NzUxMTQ0NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRTNBQjBBRUVFQ0JDRjVGRDc2NkE2MEQ0MDVCQTVDQyIsImlhdCI6MTc0NzUwNzg0Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.eziXGMQT17COIZxLbWSMTtAUX0-it4ptl7IYqYYvJbkQRwiAX5XbvdKRe57lA0CSKWUAU23xcJe3Nx2NuKXYAlAXmQPtfdsMmXuulMNHZNpWgr4AOAQFrKwxYWDazNPAHwM5-G2EBxjbj9n-ZpG4XdPG67CNwa7PurLRHFpMerNp3Pv_dFmdYWnNN6vxvLrwCfqN7C8GFY3Wrsbb1zyqwSWxy3RIZlcDf19insNCadT1tEE5PV1wlaTctgwJ1x1Q-MQ44vdLm62PYg5XHA9KguipV2ni-F0rNZaVQ1KLgnhxcd0dFtueXgi0a5o0NkY1rl6wMRJ-LgcX0c6YlD3OoA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:46.3429532Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:52.980 +01:00 [INF] Executed DbCommand (424ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:53.553 +01:00 [INF] Executed DbCommand (571ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:53.553 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NTMsImV4cCI6MTc0NzUxMTQ1MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1QTFGQzhFNUJGMTgwRDU4M0UzRTRDMzY4QTZENDMwQSIsImlhdCI6MTc0NzUwNzg1Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.k5rq4_6GcJvo3Wz1yYeo0SqFa0nqMlXLPcjRjOr9kQLPfaiT28AaEfj3bahqLq_U51f_blflJ3yaE0MahbOJejuCxXnLfkwqYlVjJGjmPM9LcZ74PNpFil2sqF2eWEVLFYA96lZZ9pp_XrIcKay6U9l16rofRNPBpOngbrFAoK64ssV36GGnngbcplSNICAdykzK656o24Rq2jgkYMYpRCJA3beTZD9CvZyeYersfuHEWDJBECAVZZeQYVXGDDp8ZrYpqneGUAs5VoLPKcEwo_r5u2i8uLZJKJixeFIj9GWh1hKZWCh6xCZATWme8Gi91TBEcqm7Qjfc22QnycaKJA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:52.555304Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:53.554 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NTMsImV4cCI6MTc0NzUxMTQ1MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1QTFGQzhFNUJGMTgwRDU4M0UzRTRDMzY4QTZENDMwQSIsImlhdCI6MTc0NzUwNzg1Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.k5rq4_6GcJvo3Wz1yYeo0SqFa0nqMlXLPcjRjOr9kQLPfaiT28AaEfj3bahqLq_U51f_blflJ3yaE0MahbOJejuCxXnLfkwqYlVjJGjmPM9LcZ74PNpFil2sqF2eWEVLFYA96lZZ9pp_XrIcKay6U9l16rofRNPBpOngbrFAoK64ssV36GGnngbcplSNICAdykzK656o24Rq2jgkYMYpRCJA3beTZD9CvZyeYersfuHEWDJBECAVZZeQYVXGDDp8ZrYpqneGUAs5VoLPKcEwo_r5u2i8uLZJKJixeFIj9GWh1hKZWCh6xCZATWme8Gi91TBEcqm7Qjfc22QnycaKJA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:52.555304Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:59.499 +01:00 [INF] Executed DbCommand (235ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 19:50:59.985 +01:00 [INF] Executed DbCommand (485ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 19:50:59.985 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NjAsImV4cCI6MTc0NzUxMTQ2MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwN0EyMzg4NUY1QzRGMEIyNDY5OEJDQjgzRTJCRjBGMSIsImlhdCI6MTc0NzUwNzg2MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.gplaG-FazciAXezio_TDYQ02Nxf4z_LENUeLypJPYXV6m8Ue9DmiVjZACFKVNOX_lkm6q3KCxXgsPOFMc48kLEpKP9gZk40X0wWW2vdTpGz_UoKZ9LaB0PcBU8IBQt5vagMbrHGn-aN5aktten7FA6Q4OY2kP9IabYfw6B2hpl3DinO-zihFP743S632SL-13Gs1gqBlFJmbEUoqWH5UqypVYab_9UpY9gyXBkI7k3GK6MoDVDc7y5n0k21I01RcaooobEj_8aLn-buPceXL5Kq87yFEXy_vyzyS64HYARAtXrdJXG179emj7165ghNPna_KCgyqAMMnN4YhFk_DOw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:59.2636186Z","status":false},"Message":null,"code":null}
+2025-05-17 19:50:59.985 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDc4NjAsImV4cCI6MTc0NzUxMTQ2MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwN0EyMzg4NUY1QzRGMEIyNDY5OEJDQjgzRTJCRjBGMSIsImlhdCI6MTc0NzUwNzg2MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.gplaG-FazciAXezio_TDYQ02Nxf4z_LENUeLypJPYXV6m8Ue9DmiVjZACFKVNOX_lkm6q3KCxXgsPOFMc48kLEpKP9gZk40X0wWW2vdTpGz_UoKZ9LaB0PcBU8IBQt5vagMbrHGn-aN5aktten7FA6Q4OY2kP9IabYfw6B2hpl3DinO-zihFP743S632SL-13Gs1gqBlFJmbEUoqWH5UqypVYab_9UpY9gyXBkI7k3GK6MoDVDc7y5n0k21I01RcaooobEj_8aLn-buPceXL5Kq87yFEXy_vyzyS64HYARAtXrdJXG179emj7165ghNPna_KCgyqAMMnN4YhFk_DOw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T19:50:59.2636186Z","status":false},"Message":null,"code":null}
+2025-05-17 19:55:24.700 +01:00 [INF] Starting up the application
+2025-05-17 19:55:26.796 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:55:26.806 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:55:26.807 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:55:26.808 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:55:27.144 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:55:27.184 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:55:27.230 +01:00 [INF] HTTP GET / responded 404 in 40.8908 ms
+2025-05-17 19:55:27.246 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 104.6895ms
+2025-05-17 19:55:27.266 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:56:15.128 +01:00 [INF] Starting up the application
+2025-05-17 19:56:16.748 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:56:16.759 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:56:16.760 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:56:16.760 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:56:17.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:56:17.216 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:56:17.293 +01:00 [INF] HTTP GET / responded 404 in 71.3925 ms
+2025-05-17 19:56:17.314 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 163.7978ms
+2025-05-17 19:56:17.334 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:56:24.683 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:56:24.869 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 185.9385ms
+2025-05-17 19:56:24.908 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:56:24.914 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 6.0203ms
+2025-05-17 19:56:25.235 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:56:25.458 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 225.6919ms
+2025-05-17 19:59:38.723 +01:00 [INF] Starting up the application
+2025-05-17 19:59:40.206 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 19:59:40.215 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 19:59:40.216 +01:00 [INF] Hosting environment: Development
+2025-05-17 19:59:40.217 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 19:59:40.570 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 19:59:40.628 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 19:59:40.701 +01:00 [INF] HTTP GET / responded 404 in 68.3301 ms
+2025-05-17 19:59:40.725 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 157.955ms
+2025-05-17 19:59:40.740 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 19:59:43.228 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 19:59:43.430 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 201.9181ms
+2025-05-17 19:59:43.463 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 19:59:43.474 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 10.7633ms
+2025-05-17 19:59:43.575 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 19:59:43.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 354.9714ms
+2025-05-17 20:00:04.841 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:04.841 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:06.668 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-17 20:00:08.256 +01:00 [INF] Executed DbCommand (191ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:08.702 +01:00 [INF] Executed DbCommand (200ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:08.723 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MDYsImV4cCI6MTc0NzUxMjAwNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3MUZFMkMzQjEyQUQzOUY5OUEwRjcyNjI1QzFCNDE5OCIsImlhdCI6MTc0NzUwODQwNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ECOcz603vK5oG4IDXITC9nKUT_WKzF0n8jtGxNDKp2_QQx0dGjGX7_59AJVQKZnsa-X3RO1vda0IJmt4x3KPQXIZXkK_Dr0aLrLlrgNavykp-4T5IKZqijvpE-cVmCRnLbqrXqtWRKl3GkI62x6XZ3oArZzLultHovDMW_nZObDjRkrDMXWM-uOlz2mdLhkRa1eSNgQ0LEYMwrELLpeEXlyCJQ_LIJevHH6qn29EYjH8YwFVJ1v7y41wMq-XvsQ7Xj9u-8qFPUb__tdE9IZjVgf2mstT3lKNv0orRrOMAFr-oK7iC8GMVCFKJebZYemB0-pJrL-dptjOi8kMlIYDhw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:05.758609Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:08.724 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MDYsImV4cCI6MTc0NzUxMjAwNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3MUZFMkMzQjEyQUQzOUY5OUEwRjcyNjI1QzFCNDE5OCIsImlhdCI6MTc0NzUwODQwNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ECOcz603vK5oG4IDXITC9nKUT_WKzF0n8jtGxNDKp2_QQx0dGjGX7_59AJVQKZnsa-X3RO1vda0IJmt4x3KPQXIZXkK_Dr0aLrLlrgNavykp-4T5IKZqijvpE-cVmCRnLbqrXqtWRKl3GkI62x6XZ3oArZzLultHovDMW_nZObDjRkrDMXWM-uOlz2mdLhkRa1eSNgQ0LEYMwrELLpeEXlyCJQ_LIJevHH6qn29EYjH8YwFVJ1v7y41wMq-XvsQ7Xj9u-8qFPUb__tdE9IZjVgf2mstT3lKNv0orRrOMAFr-oK7iC8GMVCFKJebZYemB0-pJrL-dptjOi8kMlIYDhw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:05.758609Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:09.859 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:09.859 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:14.462 +01:00 [INF] Executed DbCommand (198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:14.646 +01:00 [INF] Executed DbCommand (180ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:14.648 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MTUsImV4cCI6MTc0NzUxMjAxNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3NUI3QUJCNzk4MDk1ODJFMUFDMDFBOEQ0MDg2MkYxOCIsImlhdCI6MTc0NzUwODQxNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.eI8WlxwWpFLUs783Yvw_GgnVpnttoeXh59i7qIuPK-5LXF_udrJBSx2j_ao7SKjhCWbsKjoVpbKSxzZC7HvbUnF8VXPd6y3v5xHb4j6pqmB4TdaLH_PtqOUqWOQc385R7pS7k1Vds_IM4rH_Ii3n4TWE7rhtQt9owtv_h8VniOqAy0yrPCkIIIv4Fdrp15Hfd5qrjbgbQBNvOM7hAELGmF_LYzkTmq3s4ZUrNZppSsTWqBW17guOCgLE1J9aaT017yqEhWPxfNaUCYxrrVJ4A42ly3D6ZhtUvS-kR17mt62JQTyb4CohKSEH-e66TKMRpQW6YzlbZbUUixgoU2VEdA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:14.2490502Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:14.649 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MTUsImV4cCI6MTc0NzUxMjAxNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3NUI3QUJCNzk4MDk1ODJFMUFDMDFBOEQ0MDg2MkYxOCIsImlhdCI6MTc0NzUwODQxNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.eI8WlxwWpFLUs783Yvw_GgnVpnttoeXh59i7qIuPK-5LXF_udrJBSx2j_ao7SKjhCWbsKjoVpbKSxzZC7HvbUnF8VXPd6y3v5xHb4j6pqmB4TdaLH_PtqOUqWOQc385R7pS7k1Vds_IM4rH_Ii3n4TWE7rhtQt9owtv_h8VniOqAy0yrPCkIIIv4Fdrp15Hfd5qrjbgbQBNvOM7hAELGmF_LYzkTmq3s4ZUrNZppSsTWqBW17guOCgLE1J9aaT017yqEhWPxfNaUCYxrrVJ4A42ly3D6ZhtUvS-kR17mt62JQTyb4CohKSEH-e66TKMRpQW6YzlbZbUUixgoU2VEdA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:14.2490502Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:14.863 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:14.864 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:19.873 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:19.873 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:20.433 +01:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:20.681 +01:00 [INF] Executed DbCommand (242ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:20.682 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MjEsImV4cCI6MTc0NzUxMjAyMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI2N0QzN0ZDNTVBNkVBRDFFOEE0N0JEODIwMzZGOEQ0NyIsImlhdCI6MTc0NzUwODQyMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.TcdAUkOZp2X8KwTzMFGASoeApF_lNf4BQuC3sORkHXRrDpY_rz9ChtTVwSxN1sKU_qI81dKFbaC7xDnEUGkRkHwzwteVl9aMqkyNaJczgfPAgJ-lKBmUVLxsFev0idIm64OOvHYmCQpopEru27B-vGr__5sEwmZaPAfKllJppOY8JrOifptzGE5tl_68poyWml0YgbAe-jdghY_V4Wlj1PNB6xk88uA4LdC6_w6Xc4HDNbSPKXZY-PajW2l5B2BxTGE1BhLqijk-RjujY_mtqvuawy1vSBDon_f89FPvpCAgQ1p82tpKRHRPCf4sf0B-7_AC8JapcCyxG62OdDNt-w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:20.1604243Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:20.682 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MjEsImV4cCI6MTc0NzUxMjAyMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI2N0QzN0ZDNTVBNkVBRDFFOEE0N0JEODIwMzZGOEQ0NyIsImlhdCI6MTc0NzUwODQyMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.TcdAUkOZp2X8KwTzMFGASoeApF_lNf4BQuC3sORkHXRrDpY_rz9ChtTVwSxN1sKU_qI81dKFbaC7xDnEUGkRkHwzwteVl9aMqkyNaJczgfPAgJ-lKBmUVLxsFev0idIm64OOvHYmCQpopEru27B-vGr__5sEwmZaPAfKllJppOY8JrOifptzGE5tl_68poyWml0YgbAe-jdghY_V4Wlj1PNB6xk88uA4LdC6_w6Xc4HDNbSPKXZY-PajW2l5B2BxTGE1BhLqijk-RjujY_mtqvuawy1vSBDon_f89FPvpCAgQ1p82tpKRHRPCf4sf0B-7_AC8JapcCyxG62OdDNt-w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:20.1604243Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:24.891 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:24.891 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:26.414 +01:00 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:26.588 +01:00 [INF] Executed DbCommand (173ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:26.589 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MjcsImV4cCI6MTc0NzUxMjAyNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMDkxQTk3MTI0NEJEMzI4RTlCRDQ1RDFBNDNGRjYzNyIsImlhdCI6MTc0NzUwODQyNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.CyBHO7TaWKw8cX_rCwDitQ9kpBYiWsIZrD2qbhhOqPFaEo9y4NDz2QoubVJ5ZyYgHumbnMWERogHOfITuC5uPiaXRBRoKgn0RSEY4rABjEBbd2tMUn3HZ02K0FtlsLjiO7p5Ivvfp06w7tNSWHtNRBM2WiijnVPTk2nlmUHvF2ztoNeThMfLMzWhnL1DMXqEeI8iSihcp7zOk7ZaY0x9S8pi78YSu9rHVm4fGmzgbhwEGfh39TFKjHzUqavK7fsE8-nMyjCjYRJCZ2978c5REmmCdXCNSZ6hREmK1cCgMgCNrpDKY98vYf4ZVAMfa6RFXxrN95Ok1AtwP84Mau51vg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:26.241999Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:26.590 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MjcsImV4cCI6MTc0NzUxMjAyNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMDkxQTk3MTI0NEJEMzI4RTlCRDQ1RDFBNDNGRjYzNyIsImlhdCI6MTc0NzUwODQyNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.CyBHO7TaWKw8cX_rCwDitQ9kpBYiWsIZrD2qbhhOqPFaEo9y4NDz2QoubVJ5ZyYgHumbnMWERogHOfITuC5uPiaXRBRoKgn0RSEY4rABjEBbd2tMUn3HZ02K0FtlsLjiO7p5Ivvfp06w7tNSWHtNRBM2WiijnVPTk2nlmUHvF2ztoNeThMfLMzWhnL1DMXqEeI8iSihcp7zOk7ZaY0x9S8pi78YSu9rHVm4fGmzgbhwEGfh39TFKjHzUqavK7fsE8-nMyjCjYRJCZ2978c5REmmCdXCNSZ6hREmK1cCgMgCNrpDKY98vYf4ZVAMfa6RFXxrN95Ok1AtwP84Mau51vg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:26.241999Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:29.899 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:29.899 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:32.389 +01:00 [INF] Executed DbCommand (195ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:32.652 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:32.652 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MzMsImV4cCI6MTc0NzUxMjAzMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMzQxNjE2OTUwRTI3MTY0MjY3NDhENzFEQzZCNDUwQiIsImlhdCI6MTc0NzUwODQzMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.jdCRXMmyfRezjuIVvBGnoxYdSveXIoDXiR2w47DdP7jInDjEhUX7QxlkRMMejmzIO94lhQO-GgZaqpw0FBfRM1Gf07Jwww2FWqjDFVjscNctmgjQcoiMOUVJ-hezLdzBzGRlCLiK0dROA3BH1q_hPtG5m02yWwizoLfKx75MZO9LcmsbQVDCVP8pYbyG3g0mYMtSAvQutJHJ1qWaN1am1WftXqzBxgXR-npAc4lc7WZNWQertIlDv_x2WwvCOm2OlhC1mZ13kNqMuWRJur1tzxJnOtTxKm3UgkgDa2umC30ShmI_Je5A7z2f5MgRw9aJ-FFYuNSbOWEqo_cH4ndGZQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:32.1943674Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:32.653 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MzMsImV4cCI6MTc0NzUxMjAzMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMzQxNjE2OTUwRTI3MTY0MjY3NDhENzFEQzZCNDUwQiIsImlhdCI6MTc0NzUwODQzMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.jdCRXMmyfRezjuIVvBGnoxYdSveXIoDXiR2w47DdP7jInDjEhUX7QxlkRMMejmzIO94lhQO-GgZaqpw0FBfRM1Gf07Jwww2FWqjDFVjscNctmgjQcoiMOUVJ-hezLdzBzGRlCLiK0dROA3BH1q_hPtG5m02yWwizoLfKx75MZO9LcmsbQVDCVP8pYbyG3g0mYMtSAvQutJHJ1qWaN1am1WftXqzBxgXR-npAc4lc7WZNWQertIlDv_x2WwvCOm2OlhC1mZ13kNqMuWRJur1tzxJnOtTxKm3UgkgDa2umC30ShmI_Je5A7z2f5MgRw9aJ-FFYuNSbOWEqo_cH4ndGZQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:32.1943674Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:34.914 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:34.915 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:38.495 +01:00 [INF] Executed DbCommand (234ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:38.699 +01:00 [INF] Executed DbCommand (200ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:38.699 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MzksImV4cCI6MTc0NzUxMjAzOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3QzVDM0VEMkExREZFQjU1QTk1Qjc4QTM5RUJBM0VBNiIsImlhdCI6MTc0NzUwODQzOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.jK0hgHMN5EcnMer3ASsVchBYc1fLA9YAx0u0F5vW0c6bXD4PMQfgeDD0hMjyEA4hE4_n76PCkJNkCDLmxZ4RY8T5iV6Pr3rvXdhZvO-dAskHJWSfGvm4T4dcezTB_VpKgs0S7jhGKrXuLWS-fhRgwR4K4nCoemVUcR8SOyOXEmpXsLXrWoaKbyjnLmPLbugNVw_YCFSjdOvRZ2FpyFWl29V6o5x1dSkNYleM-60f6kyTMC_v0kdJDm8k-kU9KHtzm3i_lsaeslqbHcI8PAGMy2y1ZEzX8U_ciMp3RhIfLPhBw1o6-lNiXVlcbM_d-dz_iNS5n28cbumyF5AtfMHeuA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:38.260337Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:38.699 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0MzksImV4cCI6MTc0NzUxMjAzOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3QzVDM0VEMkExREZFQjU1QTk1Qjc4QTM5RUJBM0VBNiIsImlhdCI6MTc0NzUwODQzOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.jK0hgHMN5EcnMer3ASsVchBYc1fLA9YAx0u0F5vW0c6bXD4PMQfgeDD0hMjyEA4hE4_n76PCkJNkCDLmxZ4RY8T5iV6Pr3rvXdhZvO-dAskHJWSfGvm4T4dcezTB_VpKgs0S7jhGKrXuLWS-fhRgwR4K4nCoemVUcR8SOyOXEmpXsLXrWoaKbyjnLmPLbugNVw_YCFSjdOvRZ2FpyFWl29V6o5x1dSkNYleM-60f6kyTMC_v0kdJDm8k-kU9KHtzm3i_lsaeslqbHcI8PAGMy2y1ZEzX8U_ciMp3RhIfLPhBw1o6-lNiXVlcbM_d-dz_iNS5n28cbumyF5AtfMHeuA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:38.260337Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:39.919 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:39.919 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:44.374 +01:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:44.549 +01:00 [INF] Executed DbCommand (173ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:44.550 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NDUsImV4cCI6MTc0NzUxMjA0NSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDNzUwNjE4MDFFRkE1RDU2NDNCQkY2NjExNUI3QzM1RCIsImlhdCI6MTc0NzUwODQ0NSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.M_4B5OEN3KsLYD_EDJRVVe70Ttj12PuDv03F6uhmiLA2qeJJO4uVFO7zM5kz-TCBiRe3TspKobHF_DMXv-7BfBWinxIM3UPfJ-9QPnau95lm3H-M9QccHIg1kEFiVluSUgXWKjJ7xvsphmuDZoMP5uTwrpgHMJvU0Ww6juhSrZfEbb_cwh_7or0Jk9iJyr7VRWYpuzdrRsDFN7s_y1bTa0aF4hH5pr1usxnBzf54-1UG7ptsF-eN50bfCSgwSmjArPc_x8MvwHsNk94P42lDa41VhHX55xRdoUL4HyxnzdgE03SOgNPPsWV6ddVJw1x6LQO0QJNu9tvjGv24ZTyhYQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:44.1904387Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:44.551 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NDUsImV4cCI6MTc0NzUxMjA0NSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDNzUwNjE4MDFFRkE1RDU2NDNCQkY2NjExNUI3QzM1RCIsImlhdCI6MTc0NzUwODQ0NSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.M_4B5OEN3KsLYD_EDJRVVe70Ttj12PuDv03F6uhmiLA2qeJJO4uVFO7zM5kz-TCBiRe3TspKobHF_DMXv-7BfBWinxIM3UPfJ-9QPnau95lm3H-M9QccHIg1kEFiVluSUgXWKjJ7xvsphmuDZoMP5uTwrpgHMJvU0Ww6juhSrZfEbb_cwh_7or0Jk9iJyr7VRWYpuzdrRsDFN7s_y1bTa0aF4hH5pr1usxnBzf54-1UG7ptsF-eN50bfCSgwSmjArPc_x8MvwHsNk94P42lDa41VhHX55xRdoUL4HyxnzdgE03SOgNPPsWV6ddVJw1x6LQO0QJNu9tvjGv24ZTyhYQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:44.1904387Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:44.921 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:44.924 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:49.938 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:49.938 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:50.308 +01:00 [INF] Executed DbCommand (185ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:50.481 +01:00 [INF] Executed DbCommand (171ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:50.481 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NTEsImV4cCI6MTc0NzUxMjA1MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFNDhBNzIwM0YyMTAxQzQ1Mjc2N0UyQTRFNTA4OTgxMSIsImlhdCI6MTc0NzUwODQ1MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.SQ05_gSME8tllyeTvtJHNV4L1Lsn0FCjrklG0ICBs27coCJP8IBburjYK8JdpL6yxAJSfqex2X7YxdkqWa8rmps8O7RJV48610Bp6grugWtq9_kOch-YHMxttpAFSoy2SHDDalsBlBD8nXQJNjmO8l9MFLOgTcOWiR1Q3XM9_KtjJnJggmXjE5Yqwl3MJFodfKWspWH28Xku2FMrB6ir38npNiHTieWL3EtMYobxxE27FpOddYtFruNM5JIJ4giyKQar058RtWH2cLvC8j7F2M3PBXY_2w9goQasEurmYWaYR2Ud1iq9X2M8-kB1kc2zsVkEFCBYMtV81P1nwAfO0A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:50.1232835Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:50.483 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NTEsImV4cCI6MTc0NzUxMjA1MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFNDhBNzIwM0YyMTAxQzQ1Mjc2N0UyQTRFNTA4OTgxMSIsImlhdCI6MTc0NzUwODQ1MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.SQ05_gSME8tllyeTvtJHNV4L1Lsn0FCjrklG0ICBs27coCJP8IBburjYK8JdpL6yxAJSfqex2X7YxdkqWa8rmps8O7RJV48610Bp6grugWtq9_kOch-YHMxttpAFSoy2SHDDalsBlBD8nXQJNjmO8l9MFLOgTcOWiR1Q3XM9_KtjJnJggmXjE5Yqwl3MJFodfKWspWH28Xku2FMrB6ir38npNiHTieWL3EtMYobxxE27FpOddYtFruNM5JIJ4giyKQar058RtWH2cLvC8j7F2M3PBXY_2w9goQasEurmYWaYR2Ud1iq9X2M8-kB1kc2zsVkEFCBYMtV81P1nwAfO0A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:50.1232835Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:54.941 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:54.942 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:56.127 +01:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:00:56.415 +01:00 [INF] Executed DbCommand (282ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:00:56.416 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NTYsImV4cCI6MTc0NzUxMjA1NiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI4MTdFQTE4QkYyQzEwQTM5NDdCNDVFRTFDRUQyNzQzNCIsImlhdCI6MTc0NzUwODQ1Niwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.YcbxVgWR3z_gPcpTaBCDQJH85JlhiUjsAsFcLyIk9DKpBPR0awd0C-IJDxLyH0cuKFPbV_q8PLCnMeOEknW2lnew4YGFaJ0-9UYBYp_FX_QX3IPLLtdVWmfF-KmsWBeqEyM6z7mJTO554jxRlr8Vy1K9KJ9eUiP2lbG4USV1jYRBaGA4_tuSFTTBIvKyL918C-l42nUvLzWTTfS0CrHb9rcG3ze_0MruRL8USxkrVTAA_tgWVL8bjrdwKBhiVf-u-4v9sKJkhCixU-AFRuk2hTZIwv6Tr8POyur_GImf3YjDOjSpN6B7I0eovaIGXigSrezeV75g2SW1Ks0WzWI24w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:55.9573037Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:56.416 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NTYsImV4cCI6MTc0NzUxMjA1NiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI4MTdFQTE4QkYyQzEwQTM5NDdCNDVFRTFDRUQyNzQzNCIsImlhdCI6MTc0NzUwODQ1Niwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.YcbxVgWR3z_gPcpTaBCDQJH85JlhiUjsAsFcLyIk9DKpBPR0awd0C-IJDxLyH0cuKFPbV_q8PLCnMeOEknW2lnew4YGFaJ0-9UYBYp_FX_QX3IPLLtdVWmfF-KmsWBeqEyM6z7mJTO554jxRlr8Vy1K9KJ9eUiP2lbG4USV1jYRBaGA4_tuSFTTBIvKyL918C-l42nUvLzWTTfS0CrHb9rcG3ze_0MruRL8USxkrVTAA_tgWVL8bjrdwKBhiVf-u-4v9sKJkhCixU-AFRuk2hTZIwv6Tr8POyur_GImf3YjDOjSpN6B7I0eovaIGXigSrezeV75g2SW1Ks0WzWI24w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:00:55.9573037Z","status":false},"Message":null,"code":null}
+2025-05-17 20:00:59.952 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:00:59.952 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:02.145 +01:00 [INF] Executed DbCommand (205ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:01:02.310 +01:00 [INF] Executed DbCommand (164ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-17 20:01:02.310 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NjIsImV4cCI6MTc0NzUxMjA2MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5MDdDM0FFMjI4NDI1NzY5NDNBMzU2NkUxMTM3QzZGRiIsImlhdCI6MTc0NzUwODQ2Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rKxCc8ef0t9kCF6ybw5YH3JtzD5kIBCuuyPj5TKRA_We0pwAJ3bwrj0qeAwkRw_6y9izvlyqusGYc3RwsybCQTp89upN6O4QzvZSrURh9BsxLP3R4-cOOByt_2k3P5XyKRn_tOubS5mDYDIoY_F7dk1gOZc0PYZJlFPSWzHgQkdXgN45oDHuP8Zi_tEVwNlevQZsrttULnTo--g1DA3CtR7vYriOvFIcvSvOCuHnZviAsg9eJL7v4JPft6Z_x4O9HllW25po7jjjR4J0fNqBg1om5j8HEri67_ZABfVZ_WfryjLVPRAkbuMQWHaXiK3ElucMrqyH7KDemTr0Dl-_BA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:01:01.9396627Z","status":false},"Message":null,"code":null}
+2025-05-17 20:01:02.310 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc1MDg0NjIsImV4cCI6MTc0NzUxMjA2MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5MDdDM0FFMjI4NDI1NzY5NDNBMzU2NkUxMTM3QzZGRiIsImlhdCI6MTc0NzUwODQ2Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rKxCc8ef0t9kCF6ybw5YH3JtzD5kIBCuuyPj5TKRA_We0pwAJ3bwrj0qeAwkRw_6y9izvlyqusGYc3RwsybCQTp89upN6O4QzvZSrURh9BsxLP3R4-cOOByt_2k3P5XyKRn_tOubS5mDYDIoY_F7dk1gOZc0PYZJlFPSWzHgQkdXgN45oDHuP8Zi_tEVwNlevQZsrttULnTo--g1DA3CtR7vYriOvFIcvSvOCuHnZviAsg9eJL7v4JPft6Z_x4O9HllW25po7jjjR4J0fNqBg1om5j8HEri67_ZABfVZ_WfryjLVPRAkbuMQWHaXiK3ElucMrqyH7KDemTr0Dl-_BA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-17T20:01:01.9396627Z","status":false},"Message":null,"code":null}
+2025-05-17 20:01:04.966 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:04.966 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:09.971 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:09.971 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:14.983 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:14.984 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:19.989 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:19.989 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:24.999 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:25.000 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:30.012 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:30.012 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:35.024 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:35.025 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:40.039 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:40.039 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:45.051 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:45.051 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:50.065 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:50.065 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:55.928 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:01:55.928 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:00.940 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:00.940 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:05.968 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:05.968 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:10.972 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:10.972 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:15.985 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:15.986 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:20.994 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:20.994 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:25.998 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:25.998 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:31.010 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:31.010 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:36.018 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:36.018 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:41.032 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:41.033 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:46.045 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:46.045 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:51.060 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:51.060 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:56.062 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:02:56.062 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:01.078 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:01.078 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:06.096 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:06.096 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:11.103 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:11.103 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:16.107 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:16.108 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:30.197 +01:00 [INF] Starting up the application
+2025-05-17 20:03:31.503 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:03:31.511 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:03:31.511 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:03:31.512 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:03:31.795 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:03:31.877 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:03:31.961 +01:00 [INF] HTTP GET / responded 404 in 79.6412 ms
+2025-05-17 20:03:31.979 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 190.1902ms
+2025-05-17 20:03:31.992 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:03:36.185 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:36.186 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:37.822 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 20:03:37.960 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 139.3055ms
+2025-05-17 20:03:38.011 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 20:03:38.036 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 25.4072ms
+2025-05-17 20:03:38.320 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 20:03:38.666 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 345.3205ms
+2025-05-17 20:03:41.189 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:41.189 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:46.200 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:46.201 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:51.209 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:51.209 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:56.225 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:03:56.229 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:09.915 +01:00 [INF] Starting up the application
+2025-05-17 20:04:11.002 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:04:11.009 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:04:11.010 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:04:11.010 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:04:11.298 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:04:11.369 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:04:11.437 +01:00 [INF] HTTP GET / responded 404 in 64.0456 ms
+2025-05-17 20:04:11.451 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 154.9139ms
+2025-05-17 20:04:11.463 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:04:14.300 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 20:04:14.408 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 107.4874ms
+2025-05-17 20:04:14.442 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 20:04:14.445 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 3.1604ms
+2025-05-17 20:04:14.521 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-17 20:04:14.553 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 404 0 null 32.4853ms
+2025-05-17 20:04:15.732 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:15.733 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:20.747 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:20.747 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:25.764 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:25.764 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:30.778 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:30.779 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:47.753 +01:00 [INF] Starting up the application
+2025-05-17 20:04:49.641 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:04:49.648 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:04:49.649 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:04:49.649 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:04:49.973 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:04:50.043 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:04:50.097 +01:00 [INF] HTTP GET / responded 404 in 49.8678 ms
+2025-05-17 20:04:50.111 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 144.4933ms
+2025-05-17 20:04:50.131 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:04:54.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:04:54.034 +01:00 [INF] HTTP GET / responded 404 in 0.5499 ms
+2025-05-17 20:04:54.035 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 8.0669ms
+2025-05-17 20:04:54.035 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:04:54.304 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:54.304 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:54.953 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:04:54.955 +01:00 [INF] HTTP GET / responded 404 in 0.4776 ms
+2025-05-17 20:04:54.956 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 2.9938ms
+2025-05-17 20:04:54.958 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:04:57.244 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 20:04:57.377 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 132.892ms
+2025-05-17 20:04:57.403 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 20:04:57.404 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 0.8616ms
+2025-05-17 20:04:57.580 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v3/swagger.json - null null
+2025-05-17 20:04:57.890 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v3/swagger.json - 200 null application/json;charset=utf-8 309.9933ms
+2025-05-17 20:04:59.320 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:04:59.321 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:04.326 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:04.326 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:09.329 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:09.329 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:14.341 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:14.341 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:19.349 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:19.349 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:24.361 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:24.361 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:29.370 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:29.370 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:40.452 +01:00 [INF] Starting up the application
+2025-05-17 20:05:41.717 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:05:41.724 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:05:41.725 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:05:41.726 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:05:42.019 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:05:42.096 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:05:42.194 +01:00 [INF] HTTP GET / responded 404 in 91.3331 ms
+2025-05-17 20:05:42.210 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 195.492ms
+2025-05-17 20:05:42.228 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:05:46.422 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:46.422 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:47.100 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 20:05:47.206 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 106.7569ms
+2025-05-17 20:05:47.243 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 20:05:47.249 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 5.2037ms
+2025-05-17 20:05:47.345 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v2/swagger.json - null null
+2025-05-17 20:05:47.963 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v2/swagger.json - 200 null application/json;charset=utf-8 618.3278ms
+2025-05-17 20:05:51.433 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:51.434 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:56.444 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:05:56.445 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:01.446 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:01.446 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:06.455 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:06.455 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:11.464 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:11.464 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:16.479 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:16.479 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:21.489 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:21.489 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:26.510 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:26.511 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:31.523 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:31.523 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:36.583 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:36.583 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:41.599 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:41.600 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:46.633 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:46.660 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:51.672 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:51.673 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:56.682 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:06:56.683 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:01.697 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:01.698 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:06.706 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:06.706 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:11.734 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:11.734 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:16.751 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:16.751 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:21.766 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:21.769 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:33.668 +01:00 [INF] Starting up the application
+2025-05-17 20:07:35.147 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:07:35.154 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:07:35.155 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:07:35.156 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:07:35.637 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:07:35.689 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:07:35.783 +01:00 [INF] HTTP GET / responded 404 in 85.0438 ms
+2025-05-17 20:07:35.803 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 169.0701ms
+2025-05-17 20:07:35.822 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:07:38.650 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 20:07:38.788 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 138.1418ms
+2025-05-17 20:07:38.812 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 20:07:38.814 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 2.2754ms
+2025-05-17 20:07:38.933 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v2/swagger.json - null null
+2025-05-17 20:07:39.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v2/swagger.json - 200 null application/json;charset=utf-8 252.8999ms
+2025-05-17 20:07:39.841 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:39.842 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:44.846 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:44.847 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:49.856 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:49.856 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:54.870 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:54.871 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:59.880 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:07:59.881 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:04.895 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:04.895 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:09.908 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:09.909 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:11.158 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/1 - application/json 662
+2025-05-17 20:08:11.183 +01:00 [INF] CORS policy execution successful.
+2025-05-17 20:08:11.187 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 20:08:11.216 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 20:08:12.327 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 20:08:12.356 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1136.3458ms
+2025-05-17 20:08:12.357 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 20:08:12.359 +01:00 [INF] HTTP POST /Payment/advice/1 responded 200 in 1199.1482 ms
+2025-05-17 20:08:12.363 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/1 - 200 null application/json; charset=utf-8 1204.9332ms
+2025-05-17 20:08:14.919 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:14.919 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:19.920 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:19.921 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:20.835 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 662
+2025-05-17 20:08:20.841 +01:00 [INF] CORS policy execution successful.
+2025-05-17 20:08:20.841 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 20:08:20.844 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-17 20:08:21.870 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-17 20:08:23.349 +01:00 [INF] Executed DbCommand (204ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:08:24.612 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-17 20:08:24.617 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 3772.1411ms
+2025-05-17 20:08:24.617 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-17 20:08:24.621 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 3786.2795 ms
+2025-05-17 20:08:24.640 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 3805.4029ms
+2025-05-17 20:08:24.932 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:24.932 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:29.938 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:29.938 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:34.951 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:34.952 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:39.955 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:39.955 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:44.964 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:44.964 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:49.978 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:49.978 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:54.985 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:54.985 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:59.999 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:08:59.999 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:05.007 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:05.007 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:10.013 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:10.013 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:15.021 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:15.021 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:20.025 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:20.025 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:25.035 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:25.035 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:30.043 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:30.043 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:35.049 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:35.049 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:36.814 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/get-all-banks/0 - null null
+2025-05-17 20:09:36.815 +01:00 [INF] Executing endpoint 'OCPG.Controllers.WalletController.GetAllBanks (OCPG)'
+2025-05-17 20:09:36.832 +01:00 [INF] Route matched with {action = "GetAllBanks", controller = "Wallet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBanks(OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.WalletController (OCPG).
+2025-05-17 20:09:37.089 +01:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-17 20:09:37.562 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.WemaWalletBankListRresponse'.
+2025-05-17 20:09:37.564 +01:00 [INF] Executed action OCPG.Controllers.WalletController.GetAllBanks (OCPG) in 732.0893ms
+2025-05-17 20:09:37.564 +01:00 [INF] Executed endpoint 'OCPG.Controllers.WalletController.GetAllBanks (OCPG)'
+2025-05-17 20:09:37.564 +01:00 [INF] HTTP GET /get-all-banks/0 responded 200 in 750.0244 ms
+2025-05-17 20:09:37.565 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/get-all-banks/0 - 200 null application/json; charset=utf-8 750.8173ms
+2025-05-17 20:09:40.055 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:40.055 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:45.069 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:45.069 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:46.751 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/get-all-banks/1 - null null
+2025-05-17 20:09:46.751 +01:00 [INF] Executing endpoint 'OCPG.Controllers.WalletController.GetAllBanks (OCPG)'
+2025-05-17 20:09:46.751 +01:00 [INF] Route matched with {action = "GetAllBanks", controller = "Wallet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBanks(OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.WalletController (OCPG).
+2025-05-17 20:09:47.430 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.WemaWalletBankListRresponse'.
+2025-05-17 20:09:47.432 +01:00 [INF] Executed action OCPG.Controllers.WalletController.GetAllBanks (OCPG) in 680.4264ms
+2025-05-17 20:09:47.434 +01:00 [INF] Executed endpoint 'OCPG.Controllers.WalletController.GetAllBanks (OCPG)'
+2025-05-17 20:09:47.434 +01:00 [INF] HTTP GET /get-all-banks/1 responded 200 in 682.9725 ms
+2025-05-17 20:09:47.435 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/get-all-banks/1 - 200 null application/json; charset=utf-8 684.9253ms
+2025-05-17 20:09:50.077 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:50.077 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:55.081 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:09:55.082 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:00.090 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:00.090 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:05.116 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:05.116 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:10.121 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:10.121 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:15.133 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:15.134 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:20.143 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:20.143 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:25.152 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:25.152 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:30.152 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:30.152 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:35.159 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:35.159 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:40.159 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:40.159 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:45.214 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:45.214 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:50.220 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:50.222 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:55.231 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:10:55.231 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:00.233 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:00.233 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:05.246 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:05.247 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:10.258 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:10.259 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:15.273 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:15.273 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:20.282 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:20.282 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:25.293 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:25.293 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:30.295 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:30.295 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:35.311 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:35.311 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:40.315 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:40.315 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:41.951 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/register - application/json 164
+2025-05-17 20:11:41.951 +01:00 [INF] CORS policy execution successful.
+2025-05-17 20:11:41.951 +01:00 [INF] Executing endpoint 'OCPG.Controllers.AuthController.Login (OCPG)'
+2025-05-17 20:11:41.969 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CentralPG.Core.Dtos.CreateCustomerRequestModel) on controller OCPG.Controllers.AuthController (OCPG).
+2025-05-17 20:11:42.311 +01:00 [ERR] Failed executing DbCommand (193ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS c
+    WHERE c."Email" = @__email_0)
+2025-05-17 20:11:42.339 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CentralPG.Data.DataBaseContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+2025-05-17 20:11:42.489 +01:00 [INF] Executed action OCPG.Controllers.AuthController.Login (OCPG) in 519.4267ms
+2025-05-17 20:11:42.490 +01:00 [INF] Executed endpoint 'OCPG.Controllers.AuthController.Login (OCPG)'
+2025-05-17 20:11:42.491 +01:00 [ERR] HTTP POST /register responded 500 in 539.8450 ms
+Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method67(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at CentralPG.Infrastructure.Services.Repositories.CustomerRepository.Exists(String email) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Repositories\CustomerRepository.cs:line 51
+   at CentralPG.Infrastructure.Sevices.Mains.CustomerService.Register(CreateCustomerRequestModel model) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Mains\CustomerService.cs:line 46
+   at OCPG.Controllers.AuthController.Login(CreateCustomerRequestModel model) in D:\ACTIVE\Octave\OCPG\Controllers\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+2025-05-17 20:11:42.504 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 41
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method67(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at CentralPG.Infrastructure.Services.Repositories.CustomerRepository.Exists(String email) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Repositories\CustomerRepository.cs:line 51
+   at CentralPG.Infrastructure.Sevices.Mains.CustomerService.Register(CreateCustomerRequestModel model) in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Mains\CustomerService.cs:line 46
+   at OCPG.Controllers.AuthController.Login(CreateCustomerRequestModel model) in D:\ACTIVE\Octave\OCPG\Controllers\AuthController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 41
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+2025-05-17 20:11:42.527 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/register - 500 null text/plain; charset=utf-8 576.3967ms
+2025-05-17 20:11:45.325 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:45.325 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:50.333 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:50.333 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:55.340 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:11:55.340 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:00.343 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:00.343 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:05.344 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:05.344 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:10.348 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:10.348 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:15.354 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:15.354 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:20.362 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:20.362 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:25.374 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:25.374 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:30.388 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:30.389 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:35.398 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:35.399 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:40.410 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:40.411 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:45.423 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:45.423 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:50.439 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:12:50.440 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:19:57.802 +01:00 [INF] Starting up the application
+2025-05-17 20:19:59.949 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:19:59.956 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:19:59.957 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:19:59.957 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:20:00.276 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:20:00.350 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:20:00.466 +01:00 [INF] HTTP GET / responded 404 in 110.9004 ms
+2025-05-17 20:20:00.484 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 211.9332ms
+2025-05-17 20:20:00.497 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:20:04.489 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:04.489 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:09.499 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:09.500 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:09.862 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/register - application/json 164
+2025-05-17 20:20:09.871 +01:00 [INF] CORS policy execution successful.
+2025-05-17 20:20:09.874 +01:00 [INF] Executing endpoint 'OCPG.Controllers.AuthController.Login (OCPG)'
+2025-05-17 20:20:09.914 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CentralPG.Core.Dtos.CreateCustomerRequestModel) on controller OCPG.Controllers.AuthController (OCPG).
+2025-05-17 20:20:14.506 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:14.506 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:15.915 +01:00 [INF] Executed DbCommand (601ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS c
+    WHERE c."Email" = @__email_0)
+2025-05-17 20:20:16.372 +01:00 [INF] Executed DbCommand (173ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Address", "Email", "FirstName", "LastName", "Password", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-05-17 20:20:16.412 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Core.Dtos.CustomerDto'.
+2025-05-17 20:20:16.433 +01:00 [INF] Executed action OCPG.Controllers.AuthController.Login (OCPG) in 6514.0083ms
+2025-05-17 20:20:16.433 +01:00 [INF] Executed endpoint 'OCPG.Controllers.AuthController.Login (OCPG)'
+2025-05-17 20:20:16.434 +01:00 [INF] HTTP POST /register responded 200 in 6569.4785 ms
+2025-05-17 20:20:16.457 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/register - 200 null application/json; charset=utf-8 6594.8869ms
+2025-05-17 20:20:19.516 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:19.516 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:24.526 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:24.526 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:29.531 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:29.531 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:34.535 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:34.535 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:39.544 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:39.544 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:44.553 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:44.553 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:49.563 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:49.564 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:54.573 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:54.574 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:59.576 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:20:59.576 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:04.589 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:04.589 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:09.597 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:09.597 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:14.608 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:14.609 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:19.614 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:19.614 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:24.622 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:24.622 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:29.623 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:29.623 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:34.639 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:34.640 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:39.646 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:39.647 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:44.701 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:44.701 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:49.709 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:49.710 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:54.714 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:54.715 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:59.726 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:21:59.726 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:04.731 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:04.731 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:09.742 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:09.742 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}

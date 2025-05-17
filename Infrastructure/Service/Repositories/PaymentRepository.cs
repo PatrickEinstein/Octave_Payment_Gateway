@@ -33,9 +33,15 @@ namespace OCPG.Infrastructure.Service.Repositories
         }
 
 
-        public async Task<PaymentTransactions> GetPayment(string parameter)
+        public async Task<PaymentTransactions> GetPaymentByPaymentReference(string parameter)
         {
-            var gottenPayment = await dataBaseContext.payment.FirstOrDefaultAsync(c => c.paymentReference == parameter || c.adviceReference == parameter);
+            var gottenPayment = await dataBaseContext.payment.FirstOrDefaultAsync(c => c.paymentReference == parameter);
+            return gottenPayment;
+        }
+
+        public async Task<PaymentTransactions> GetPaymentByAdviceReference(string parameter)
+        {
+            var gottenPayment = await dataBaseContext.payment.FirstOrDefaultAsync(c => c.paymentReference == parameter);
             return gottenPayment;
         }
 

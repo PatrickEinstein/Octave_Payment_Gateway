@@ -153,7 +153,7 @@ public class ChamsSwitch : IPaymentProcessor
             var accessToken = token.access_token;
             var res = await ApiCaller.POST(Load, apiUrl, accessToken, headers);
             resApi = JsonSerializer.Deserialize<ProcessCardResponseModel>(res);
-            var domain = await paymentRepository.GetPayment(adviceReference);
+            var domain = await paymentRepository.GetPaymentByAdviceReference(adviceReference);
             resApi.responseData.paymentLink = $"{domain.callbackUrl.Replace("status/", "")}" + "forms/" +
                                                 $"?creq={resApi?.responseData?.formData?.formData?.JWT}" +
                                                 $"&acsUrl={resApi?.responseData?.formData.url}" ?? "";
@@ -182,7 +182,7 @@ public class ChamsSwitch : IPaymentProcessor
             var accessToken = token.access_token;
             var res = await ApiCaller.POST(Load, apiUrl, accessToken, headers);
             var resApi = JsonSerializer.Deserialize<CompletePaymentResponseModel>(res);
-            var domain = await paymentRepository.GetPayment(resApi.responseData.paymentReference);
+            var domain = await paymentRepository.GetPaymentByPaymentReference(resApi.responseData.paymentReference);
             resApi.responseData.paymentLink = $"{domain.callbackUrl.Replace("status/", "")}" + "forms/" +
                                    $"?creq={resApi?.responseData?.formData?.formData?.JWT}" +
                                    $"&acsUrl={resApi?.responseData?.formData?.url}" +

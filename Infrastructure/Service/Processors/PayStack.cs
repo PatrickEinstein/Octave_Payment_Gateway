@@ -88,7 +88,7 @@ namespace OCPG.Infrastructure.Service.Processors
             serviceResponse<AdviceResponseModel> serviceResponse = new serviceResponse<AdviceResponseModel>();
             try
             {
-                headers.Add("Authorization", $"Bearer {authConfig.clientSecret}");
+               
                 string apiUrl = $"{appUrl.BaseUrl}/transaction/transaction/initialize";
                 var payload = new StringContent(JsonSerializer.Serialize(new
                 {
@@ -96,7 +96,7 @@ namespace OCPG.Infrastructure.Service.Processors
                     amount = advice.amount,
 
                 }), System.Text.Encoding.UTF8, "application/json");
-                var res = await ApiCaller.POST(payload, apiUrl, null, headers);
+                var res = await ApiCaller.POST(payload, apiUrl, authConfig.clientSecret, headers);
                 var resApi = JsonSerializer.Deserialize<PaystackBaseModel<initializePaymentData>>(res);
 
 

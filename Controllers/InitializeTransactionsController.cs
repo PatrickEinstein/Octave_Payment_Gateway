@@ -19,12 +19,20 @@ namespace OCPG.Controllers
         {
             this.paymentManager = paymentManager;
         }
-        [HttpGet("/Payment/advice/{channel}/{adviceReference}")]
-        public async Task<IActionResult> GetAdvice(string adviceReference, ChannelCode channel)
+
+        /// <summary>
+        /// use the default value dc8063c591dc48f4952456c6664ca510
+        /// </summary>
+        /// <param name="adviceReference"></param>
+        /// <returns></returns>
+        [HttpGet("/Payment/advice/{adviceReference}")]
+        public async Task<IActionResult> GetAdvice(string adviceReference = "dc8063c591dc48f4952456c6664ca510")
         {
-            return Ok(await paymentManager.GetTransactionStatus(adviceReference, channel));
+            return Ok(await paymentManager.GetTransactionStatus(adviceReference, ChannelCode.ChamsSwitch));
         }
-        [HttpPost("/Payment/{channel}/advice")]
+
+      
+        [HttpPost("/Payment/advice/{channel}")]
         public async Task<IActionResult> InitiateTransaction(AdviceModelReq request, ChannelCode channel)
         {
             return Ok(await paymentManager.InitiateTransaction(request, channel));

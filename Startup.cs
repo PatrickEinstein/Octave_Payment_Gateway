@@ -58,8 +58,10 @@ namespace CentralPG
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Octave PaymentGateway", Version = "v1" });
+                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Octave PaymentGateway", Version = "v2" });
+              
             });
+          
             services.AddCors(Options =>
             Options.AddPolicy("CorsPolicy",
                 builder =>
@@ -110,12 +112,11 @@ namespace CentralPG
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            // if (env.IsDevelopment())
-            // {
+          
             app.UseDeveloperExceptionPage();
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Octave PaymentGateway v1"));
-            // }
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v2/swagger.json", "Octave PaymentGateway v2"));
+
 
             app.UseHttpsRedirection();
             app.UseSerilogRequestLogging();

@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace OCPG.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20240921152824_auths")]
-    partial class auths
+    [Migration("20250517191742_mig1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace OCPG.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CentralPG.Models.Entities.AuthTokens", b =>
+            modelBuilder.Entity("CentralPG.Core.Models.Entities.AuthTokens", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +53,7 @@ namespace OCPG.Migrations
                     b.ToTable("Auths");
                 });
 
-            modelBuilder.Entity("CentralPG.Models.Entities.Customer", b =>
+            modelBuilder.Entity("CentralPG.Core.Models.Entities.Customer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -94,29 +94,71 @@ namespace OCPG.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("OCPG.Models.Entities.PaymentTransactions", b =>
+            modelBuilder.Entity("CentralPG.Core.Models.Entities.PaymentTransactions", b =>
                 {
-                    b.Property<double>("Amount")
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<string>("accountNumberMasked")
+                        .HasColumnType("text");
+
+                    b.Property<string>("adviceReference")
+                        .HasColumnType("text");
+
+                    b.Property<double>("amount")
                         .HasColumnType("double precision");
 
-                    b.Property<string>("AdviceReference")
+                    b.Property<double>("amountCollected")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("callbackUrl")
                         .HasColumnType("text");
 
-                    b.Property<string>("Channel")
+                    b.Property<string>("channel")
                         .HasColumnType("text");
 
-                    b.Property<string>("MerchantCode")
+                    b.Property<string>("currencyCode")
                         .HasColumnType("text");
 
-                    b.Property<string>("MerchantName")
+                    b.Property<string>("customerName")
                         .HasColumnType("text");
 
-                    b.Property<string>("PaymentReference")
+                    b.Property<bool>("isNotified")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("merchantCode")
                         .HasColumnType("text");
 
-                    b.HasKey("Amount");
+                    b.Property<string>("merchantReference")
+                        .HasColumnType("text");
 
-                    b.ToTable("paymentTransactions");
+                    b.Property<string>("narration")
+                        .HasColumnType("text");
+
+                    b.Property<string>("notificationUrl")
+                        .HasColumnType("text");
+
+                    b.Property<string>("paymentDate")
+                        .HasColumnType("text");
+
+                    b.Property<string>("paymentReference")
+                        .HasColumnType("text");
+
+                    b.Property<string>("requestPayload")
+                        .HasColumnType("text");
+
+                    b.Property<string>("responsePayload")
+                        .HasColumnType("text");
+
+                    b.Property<string>("transactionStatus")
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("payment");
                 });
 #pragma warning restore 612, 618
         }

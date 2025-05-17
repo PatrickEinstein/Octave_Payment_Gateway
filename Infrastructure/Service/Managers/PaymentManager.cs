@@ -34,16 +34,14 @@ namespace OCPG.Infrastructure.Service.Managers
             this.paymentRepository = paymentRepository;
         }
 
-        public async Task<serviceResponse<GetAdviceModel>> GetTransactionStatus(string adviceReference, ChannelCode channel)
+        public async Task<serviceResponse<PaymentTransactions>> GetTransactionStatus(string adviceReference, ChannelCode channel)
         {
-            serviceResponse<GetAdviceModel> res = new serviceResponse<GetAdviceModel>();
-            var processor = cardSwitcher.SwitchCardProcessor(channel);
-            if (processor == null)
-            {
-                res.Message = "There is no such operation for the selected channel";
-                return res;
-            }
-            return await processor.GetAdvice(adviceReference);
+            serviceResponse<PaymentTransactions> res = new serviceResponse<PaymentTransactions>();
+
+            var payres = await paymentRepository.GetPaymentByAdviceReference(adviceReference);
+            res.Data = payres;
+
+            return res;
         }
 
         public async Task<serviceResponse<AdviceResponseModel>> InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode)
@@ -60,14 +58,14 @@ namespace OCPG.Infrastructure.Service.Managers
                 channel = advice.channel,
                 callBackUrl = advice.callBackUrlDomain + "status/",
             };
-            var processor = cardSwitcher.SwitchCardProcessor(advice.channel);
+            var processor = cardSwitcher.SwitchCardProcessor(channelCode);
             if (processor == null)
             {
                 res.Message = "There is no such operation for the selected channel";
                 return res;
             }
             var resp = await processor.GenerateAdvice(load);
-            if (resp.Data.requestSuccessful == true)
+            if (resp.Data != null && resp.Data.requestSuccessful == true)
             {
                 try
                 {
@@ -134,7 +132,7 @@ namespace OCPG.Infrastructure.Service.Managers
             return resp;
         }
 
-        public async Task<CompletePaymentResponseModel> CompleteCardPayment(CompleteCardPayment cardDeetails,  ChannelCode channelCode)
+        public async Task<CompletePaymentResponseModel> CompleteCardPayment(CompleteCardPayment cardDeetails, ChannelCode channelCode)
         {
             CompletePaymentResponseModel res = new CompletePaymentResponseModel();
 
@@ -186,7 +184,7 @@ namespace OCPG.Infrastructure.Service.Managers
         }
 
 
-        public async Task<ProcessBankPaymentResponseModel> ProcessBankPayment(BankPayment cardDetails, string adviceReference,  ChannelCode channelCode)
+        public async Task<ProcessBankPaymentResponseModel> ProcessBankPayment(BankPayment cardDetails, string adviceReference, ChannelCode channelCode)
         {
             ProcessBankPaymentResponseModel res = new ProcessBankPaymentResponseModel();
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
@@ -198,7 +196,7 @@ namespace OCPG.Infrastructure.Service.Managers
             var resp = await processor.ProcessBankPayment(cardDetails, adviceReference);
             return resp;
         }
-        public async Task<BankTransferResponseModel> GenerateBankAccount(GenerateBankAccount model,  ChannelCode channelCode)
+        public async Task<BankTransferResponseModel> GenerateBankAccount(GenerateBankAccount model, ChannelCode channelCode)
         {
             BankTransferResponseModel _ = new BankTransferResponseModel();
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
@@ -227,7 +225,7 @@ namespace OCPG.Infrastructure.Service.Managers
 
         //////////// QUERY MODULE //////////////////
 
-        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber,  ChannelCode channelCode)
+        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber, ChannelCode channelCode)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
             if (processor == null)
@@ -238,7 +236,7 @@ namespace OCPG.Infrastructure.Service.Managers
             return updatedTransaction;
         }
 
-        public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference,  ChannelCode channelCode)
+        public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference, ChannelCode channelCode)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
             if (processor == null)
@@ -258,7 +256,7 @@ namespace OCPG.Infrastructure.Service.Managers
             var updatedTransaction = await processor.GetAccountDetails(accountNumber);
             return updatedTransaction;
         }
-        public async Task<string> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model,  ChannelCode channelCode)
+        public async Task<string> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
             if (processor == null)
@@ -309,7 +307,7 @@ namespace OCPG.Infrastructure.Service.Managers
             var updatedTransaction = await processor.GetNipCharges();
             return updatedTransaction;
         }
-        public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model,  ChannelCode channelCode)
+        public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
             if (processor == null)

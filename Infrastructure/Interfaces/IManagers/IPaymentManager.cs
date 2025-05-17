@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CentralPG.Core.Models.Entities;
 using CentralPG.Models;
 using OCPG.Core.Enums;
 using OCPG.Models;
@@ -10,7 +11,7 @@ namespace OCPG.Infrastructure.Interfaces.IManagers
 {
     public interface IPaymentManager
     {
-        Task<serviceResponse<GetAdviceModel>> GetTransactionStatus(string adviceReference, ChannelCode channel);
+        Task<serviceResponse<PaymentTransactions>> GetTransactionStatus(string adviceReference, ChannelCode channel);
         Task<serviceResponse<AdviceResponseModel>> InitiateTransaction(AdviceModelReq advice, ChannelCode channel);
         Task<ProcessCardResponseModel> ProcessCardPayment(CardPayment cardDeetails, string adviceReference,ChannelCode channel);
         Task<CompletePaymentResponseModel> CompleteCardPayment(CompleteCardPayment cardDeetails, ChannelCode channelCode);
