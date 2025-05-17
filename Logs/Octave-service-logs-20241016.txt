@@ -1,0 +1,1201 @@
+2024-10-16 19:52:18.376 +01:00 [INF] Starting up the application
+2024-10-16 19:52:33.061 +01:00 [INF] Now listening on: http://localhost:5331
+2024-10-16 19:52:33.078 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 19:52:33.079 +01:00 [INF] Hosting environment: Development
+2024-10-16 19:52:33.080 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-10-16 19:52:35.094 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-10-16 19:52:35.303 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-10-16 19:52:35.501 +01:00 [INF] HTTP GET / responded 404 in 186.7997 ms
+2024-10-16 19:52:35.622 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 537.567ms
+2024-10-16 19:52:35.641 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-10-16 19:52:54.672 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-10-16 19:52:55.572 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 900.8681ms
+2024-10-16 19:52:55.736 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - null null
+2024-10-16 19:52:55.899 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - null null
+2024-10-16 19:52:55.916 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-10-16 19:52:55.919 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - null null
+2024-10-16 19:52:55.919 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.css - null null
+2024-10-16 19:52:55.933 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 16.7263ms
+2024-10-16 19:52:56.055 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-10-16 19:52:56.056 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.css - 200 202 text/css 136.7866ms
+2024-10-16 19:52:56.156 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-10-16 19:52:56.167 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - 200 152034 text/css 430.4426ms
+2024-10-16 19:52:56.274 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-10-16 19:52:56.326 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 426.9304ms
+2024-10-16 19:52:57.314 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-10-16 19:52:57.315 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 1396.5935ms
+2024-10-16 19:53:03.756 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-10-16 19:53:05.331 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1574.6089ms
+2024-10-16 19:53:21.840 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 537
+2024-10-16 19:53:21.865 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:53:22.008 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-10-16 19:53:30.435 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-10-16 19:53:37.970 +01:00 [INF] Executed DbCommand (447ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:53:39.675 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-16 19:53:39.707 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 17690.9713ms
+2024-10-16 19:53:39.709 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:53:39.714 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 17873.3553 ms
+2024-10-16 19:53:39.744 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 17903.6396ms
+2024-10-16 19:53:48.411 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 537
+2024-10-16 19:53:48.418 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:53:48.419 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-10-16 19:53:49.015 +01:00 [INF] Executed DbCommand (468ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:53:49.647 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-16 19:53:49.649 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1229.3716ms
+2024-10-16 19:53:49.649 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:53:49.649 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 1238.0682 ms
+2024-10-16 19:53:49.651 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 1240.2087ms
+2024-10-16 19:54:14.217 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 537
+2024-10-16 19:54:14.217 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:54:14.217 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-10-16 19:54:15.149 +01:00 [INF] Executed DbCommand (687ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:55:03.653 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-16 19:55:03.654 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 49436.2493ms
+2024-10-16 19:55:03.654 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:55:03.654 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 49437.2917 ms
+2024-10-16 19:55:03.655 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 49438.1236ms
+2024-10-16 19:56:08.572 +01:00 [INF] Starting up the application
+2024-10-16 19:56:10.778 +01:00 [INF] Now listening on: http://localhost:5331
+2024-10-16 19:56:10.787 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 19:56:10.788 +01:00 [INF] Hosting environment: Development
+2024-10-16 19:56:10.788 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-10-16 19:56:11.816 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-10-16 19:56:11.902 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-10-16 19:56:11.980 +01:00 [INF] HTTP GET / responded 404 in 69.5658 ms
+2024-10-16 19:56:12.006 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 201.0175ms
+2024-10-16 19:56:12.022 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-10-16 19:56:24.765 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-10-16 19:56:27.841 +01:00 [INF] Executed DbCommand (315ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:56:29.130 +01:00 [INF] Executed DbCommand (362ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 19:56:29.168 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDQ5ODIsImV4cCI6MTcyOTEwODU4MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwM0E1NUExNENDOEM2QzQwNURGM0Q2NkZDQTUzRTFFNSIsImlhdCI6MTcyOTEwNDk4Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ecAX6HH0r7fO1uC7_yvEfE-9KGndHeFGCGamh8_PCVKdeMevcW6lJhNVxt46dmJypY8E9OF5GfUo6q1yAOXBYHxj-eJOpUXA0SQEfYuAaMPkLWNZ-93YiMCg8fyVubmA_NrpX8p0WUe4qcKYlgbGZ1-Nq0yx2genvd-vs-amUICs26YXz3-N5QM8H667KGyH5u9w_9fOiHNmFvgP6axCZ407jNnZV8LmR3hhl129CxM4V5txMk98ZU73bYGTbOOexC8aXnpLge35_l9x3rE4hd4PVJsh9rtsiUTSX_vHcpPovxMuiLtiLw78j0FHaLwurQKzFBvpghgjaRLX_ixd0g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T19:56:22.1742916Z","status":false},"Message":null,"code":null}
+2024-10-16 19:56:29.168 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDQ5ODIsImV4cCI6MTcyOTEwODU4MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwM0E1NUExNENDOEM2QzQwNURGM0Q2NkZDQTUzRTFFNSIsImlhdCI6MTcyOTEwNDk4Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ecAX6HH0r7fO1uC7_yvEfE-9KGndHeFGCGamh8_PCVKdeMevcW6lJhNVxt46dmJypY8E9OF5GfUo6q1yAOXBYHxj-eJOpUXA0SQEfYuAaMPkLWNZ-93YiMCg8fyVubmA_NrpX8p0WUe4qcKYlgbGZ1-Nq0yx2genvd-vs-amUICs26YXz3-N5QM8H667KGyH5u9w_9fOiHNmFvgP6axCZ407jNnZV8LmR3hhl129CxM4V5txMk98ZU73bYGTbOOexC8aXnpLge35_l9x3rE4hd4PVJsh9rtsiUTSX_vHcpPovxMuiLtiLw78j0FHaLwurQKzFBvpghgjaRLX_ixd0g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T19:56:22.1742916Z","status":false},"Message":null,"code":null}
+2024-10-16 19:56:35.237 +01:00 [INF] Executed DbCommand (330ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:56:35.544 +01:00 [INF] Executed DbCommand (302ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 19:56:35.545 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDQ5OTQsImV4cCI6MTcyOTEwODU5NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDRDg3RDhCNjAwMDg2MkIyMDZCQkJGNkJCMzZGMzE1NyIsImlhdCI6MTcyOTEwNDk5NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fDUdDBeAfBOW-T20zz7YHhiTqnXEqP5oe8EpDuKJuZmszWh-v0polybPHN87lsl6x_RDA8Vkheju2OTGOSDuR_OygXGU3NbxUTpx_L1ZpG2ooSAspoXFu-yehBNCF7zxbyRotw_IsDHi9n01bxMDoO0f_aWsvqOERJuYKdMYgY5YC-bpmdAp_7oDEwXo3vNJO_uzUaVn99A031OhN9K6q1puuWgj0hqZBhTX-EhKz58wyoVar89qySmZETlLltjnGu-V2X7E4rrKxn-GRNHPoYsRHl_D_6HaypCxJDNEsUK4GK9XLihL9kx-N63mPCd500MJ8HTmrbQ_ILWtbeSMDw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T19:56:34.8455799Z","status":false},"Message":null,"code":null}
+2024-10-16 19:56:35.546 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDQ5OTQsImV4cCI6MTcyOTEwODU5NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDRDg3RDhCNjAwMDg2MkIyMDZCQkJGNkJCMzZGMzE1NyIsImlhdCI6MTcyOTEwNDk5NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fDUdDBeAfBOW-T20zz7YHhiTqnXEqP5oe8EpDuKJuZmszWh-v0polybPHN87lsl6x_RDA8Vkheju2OTGOSDuR_OygXGU3NbxUTpx_L1ZpG2ooSAspoXFu-yehBNCF7zxbyRotw_IsDHi9n01bxMDoO0f_aWsvqOERJuYKdMYgY5YC-bpmdAp_7oDEwXo3vNJO_uzUaVn99A031OhN9K6q1puuWgj0hqZBhTX-EhKz58wyoVar89qySmZETlLltjnGu-V2X7E4rrKxn-GRNHPoYsRHl_D_6HaypCxJDNEsUK4GK9XLihL9kx-N63mPCd500MJ8HTmrbQ_ILWtbeSMDw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T19:56:34.8455799Z","status":false},"Message":null,"code":null}
+2024-10-16 19:57:00.519 +01:00 [INF] Starting up the application
+2024-10-16 19:57:02.506 +01:00 [INF] Now listening on: http://localhost:5331
+2024-10-16 19:57:02.520 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 19:57:02.522 +01:00 [INF] Hosting environment: Development
+2024-10-16 19:57:02.522 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-10-16 19:57:03.188 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-10-16 19:57:03.265 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-10-16 19:57:03.325 +01:00 [INF] HTTP GET / responded 404 in 51.9631 ms
+2024-10-16 19:57:03.349 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 165.9908ms
+2024-10-16 19:57:03.372 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-10-16 19:57:07.248 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 537
+2024-10-16 19:57:07.282 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:57:07.371 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-10-16 19:57:11.760 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-10-16 19:57:15.440 +01:00 [INF] Executed DbCommand (316ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:57:26.760 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-16 19:57:26.818 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 19420.5377ms
+2024-10-16 19:57:26.820 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:57:26.822 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 19569.9719 ms
+2024-10-16 19:57:26.858 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 19610.4813ms
+2024-10-16 19:57:40.467 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 532
+2024-10-16 19:57:40.475 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:57:40.475 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-10-16 19:57:40.808 +01:00 [INF] Executed DbCommand (275ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:57:41.722 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-16 19:57:41.821 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1344.5349ms
+2024-10-16 19:57:41.822 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2024-10-16 19:57:41.823 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 1353.4336 ms
+2024-10-16 19:57:41.835 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 1367.8101ms
+2024-10-16 19:58:13.157 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/8cbea0aa-101f-4659-92e0-d4062dfad607?channel=0 - null null
+2024-10-16 19:58:13.199 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-10-16 19:58:13.219 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-10-16 19:58:13.848 +01:00 [INF] Executed DbCommand (317ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:58:14.456 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[OCPG.Models.GetAdviceModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-16 19:58:14.478 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 1259.0933ms
+2024-10-16 19:58:14.479 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-10-16 19:58:14.479 +01:00 [INF] HTTP GET /Payment/advice/8cbea0aa-101f-4659-92e0-d4062dfad607 responded 200 in 1280.5639 ms
+2024-10-16 19:58:14.479 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/8cbea0aa-101f-4659-92e0-d4062dfad607?channel=0 - 200 null application/json; charset=utf-8 1322.7337ms
+2024-10-16 19:59:01.196 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - application/json 169
+2024-10-16 19:59:01.198 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 19:59:01.210 +01:00 [INF] Route matched with {action = "ProcessPaymentCard", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentCard(CentralPG.Models.CardPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-10-16 19:59:01.491 +01:00 [INF] Executed DbCommand (257ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 19:59:02.943 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.ProcessCardResponseModel'.
+2024-10-16 19:59:02.972 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG) in 1761.2959ms
+2024-10-16 19:59:02.972 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 19:59:02.973 +01:00 [INF] HTTP POST /Payment/processpayment/card responded 200 in 1774.8548 ms
+2024-10-16 19:59:02.973 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - 200 null application/json; charset=utf-8 1776.955ms
+2024-10-16 20:00:00.656 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:00.657 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:01.259 +01:00 [INF] Executed DbCommand (277ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:01.865 +01:00 [INF] Executed DbCommand (330ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:01.927 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMDEsImV4cCI6MTcyOTEwODgwMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzMDU2NTE1RkJDRTk0OUEzOTI2RDZERjA4ODE3ODUzRiIsImlhdCI6MTcyOTEwNTIwMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.g32ffmo2BMIH0iYUzyx3jp6Or0qa2T0do8KWP7w8ZIdEKhNT4NbiquNKbnSU_MLYqi6wma-7eXegNGjK5iQNHp5R7nDbu3QU5HVLqMLhVHanNHeRMmmMmqxIw-hx79uvcENoPf_m6Y3A140JmhOlh_noLdKTCtRxKZdGrqwyjJYPAdNVhr-H2fmUuvbKXgOxAL_5WpQWr487usRbsJ-kvyyzOuP_15t_qIMQesw57-myMnWNxYGHfzPc9UQA4k47PuMiMa00wrSIoOouGkq5K6fopZWWqItn3oSXuHYHfh17FSFQ2OYNVdeuZCjnAPoMlw3tWsN6tGyqyNj3Zip4IA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:00.9763577Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:01.928 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMDEsImV4cCI6MTcyOTEwODgwMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzMDU2NTE1RkJDRTk0OUEzOTI2RDZERjA4ODE3ODUzRiIsImlhdCI6MTcyOTEwNTIwMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.g32ffmo2BMIH0iYUzyx3jp6Or0qa2T0do8KWP7w8ZIdEKhNT4NbiquNKbnSU_MLYqi6wma-7eXegNGjK5iQNHp5R7nDbu3QU5HVLqMLhVHanNHeRMmmMmqxIw-hx79uvcENoPf_m6Y3A140JmhOlh_noLdKTCtRxKZdGrqwyjJYPAdNVhr-H2fmUuvbKXgOxAL_5WpQWr487usRbsJ-kvyyzOuP_15t_qIMQesw57-myMnWNxYGHfzPc9UQA4k47PuMiMa00wrSIoOouGkq5K6fopZWWqItn3oSXuHYHfh17FSFQ2OYNVdeuZCjnAPoMlw3tWsN6tGyqyNj3Zip4IA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:00.9763577Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:05.668 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:05.668 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:07.854 +01:00 [INF] Executed DbCommand (266ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:08.232 +01:00 [INF] Executed DbCommand (373ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:08.233 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMDcsImV4cCI6MTcyOTEwODgwNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRkRDMkNGQUEwMDc2OTRBQkFBQkY1NDM1QjY1NENCOCIsImlhdCI6MTcyOTEwNTIwNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.n2zdJ4a0mL5wDcGFjDbvUjiTMdTUbYjNanNFcqG9Du1QI9m7Qoe1q9oSIsdD1u0RKycx1rIz53bNvplLn6nWaRbTm8g0sgqPuXHficuAfSbtKnrhAXQUKIFInpviWOww_ruTfaWM52_oMbF6lTygl09jVJm2ziVl2chwtyXh6B5Zp9eCyq5lHUAml-hmSwq7AHscOCBZJB0WzTG7BGDszui2Ezkms0zo8RA7qkXKM5jJxFSJ7v8robDSuAJZWKJXkSIXpZw3vYtl3svymMnWVZC67kiCXd-XW19xITUJYcGsXjrOW2EMQhbKdNJEq2a9gVJVOAIZkvh4N3Msc_quBA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:07.588089Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:08.234 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMDcsImV4cCI6MTcyOTEwODgwNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRkRDMkNGQUEwMDc2OTRBQkFBQkY1NDM1QjY1NENCOCIsImlhdCI6MTcyOTEwNTIwNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.n2zdJ4a0mL5wDcGFjDbvUjiTMdTUbYjNanNFcqG9Du1QI9m7Qoe1q9oSIsdD1u0RKycx1rIz53bNvplLn6nWaRbTm8g0sgqPuXHficuAfSbtKnrhAXQUKIFInpviWOww_ruTfaWM52_oMbF6lTygl09jVJm2ziVl2chwtyXh6B5Zp9eCyq5lHUAml-hmSwq7AHscOCBZJB0WzTG7BGDszui2Ezkms0zo8RA7qkXKM5jJxFSJ7v8robDSuAJZWKJXkSIXpZw3vYtl3svymMnWVZC67kiCXd-XW19xITUJYcGsXjrOW2EMQhbKdNJEq2a9gVJVOAIZkvh4N3Msc_quBA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:07.588089Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:10.676 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:10.677 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:14.124 +01:00 [INF] Executed DbCommand (258ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:14.398 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:14.400 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMTMsImV4cCI6MTcyOTEwODgxMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMzlBOEM1MkUwQkZFNUNBNjYxRjU2MkQzQjkxMzkyNCIsImlhdCI6MTcyOTEwNTIxMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.cX_-dRy5FD_-cUu_Fo978mQ_Aam-OYpSEHmHs2PMZhz-AeChT9MkknXZZrQYE8QsxBeClS498uPf0fCTlBi9tpp-KvE3AM4zt6hU10MDQKMaf_sc2Tp2TDdewv6ugRwdLC9hIXvfKB6DoJXYs_fDHoOZn3lV0TuLf3oUuNuD1W1cR4ZpXXA_66IfkSwCTujJ0LHCKQ9FTXhjyhpf0yzW68hIprn4Mk5ilVy92pvCAC-Xtw4JVueMZNzCwPBHmuc9xueDBHtABYuTYr52Putk6mFxWHGzlubdTEQEOKFFxgNN0IxTHsXr9TG7eUArAONWpOnnasOyfHph2IQhks_1ug","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:13.8648168Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:14.401 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMTMsImV4cCI6MTcyOTEwODgxMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMzlBOEM1MkUwQkZFNUNBNjYxRjU2MkQzQjkxMzkyNCIsImlhdCI6MTcyOTEwNTIxMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.cX_-dRy5FD_-cUu_Fo978mQ_Aam-OYpSEHmHs2PMZhz-AeChT9MkknXZZrQYE8QsxBeClS498uPf0fCTlBi9tpp-KvE3AM4zt6hU10MDQKMaf_sc2Tp2TDdewv6ugRwdLC9hIXvfKB6DoJXYs_fDHoOZn3lV0TuLf3oUuNuD1W1cR4ZpXXA_66IfkSwCTujJ0LHCKQ9FTXhjyhpf0yzW68hIprn4Mk5ilVy92pvCAC-Xtw4JVueMZNzCwPBHmuc9xueDBHtABYuTYr52Putk6mFxWHGzlubdTEQEOKFFxgNN0IxTHsXr9TG7eUArAONWpOnnasOyfHph2IQhks_1ug","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:13.8648168Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:15.691 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:15.691 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:20.280 +01:00 [INF] Executed DbCommand (270ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:20.586 +01:00 [INF] Executed DbCommand (304ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:20.587 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMjAsImV4cCI6MTcyOTEwODgyMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBRjFCNzFGOEM0OTNDQTdCNzIyODc5MDU2MUJDQ0M1QyIsImlhdCI6MTcyOTEwNTIyMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.o0_DW22rb2723_WPEYlZ5hSakffVMUCgYi8WyjUQLbZzOKen-ThwKgoswx0X4bv_Cif7HERevLuH8IVi0WTcMKkKYFvQxf1mRzE92XzHWPftxdJVn5ACoZIKHny-_mOCwuxBwbyQ1xm3F1KE8TAr8V3r96vQezO_gtyUIEBPcsuWjfasewN8E14kC7epOQrGnSNdmm_g4Da6Pursz_tmrgLktywYJy4f4ZQlVo7K9vgJIi5aykN1yxi8uFqfYYXo-bU1kVLaYbZ4MWWCgVxwY8aqMzWOwgaoaU9H9las5mMqYs02Z54SoJiYZX-dM9dU93gID9nakHR3Urx0O270SA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:20.0094532Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:20.588 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMjAsImV4cCI6MTcyOTEwODgyMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBRjFCNzFGOEM0OTNDQTdCNzIyODc5MDU2MUJDQ0M1QyIsImlhdCI6MTcyOTEwNTIyMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.o0_DW22rb2723_WPEYlZ5hSakffVMUCgYi8WyjUQLbZzOKen-ThwKgoswx0X4bv_Cif7HERevLuH8IVi0WTcMKkKYFvQxf1mRzE92XzHWPftxdJVn5ACoZIKHny-_mOCwuxBwbyQ1xm3F1KE8TAr8V3r96vQezO_gtyUIEBPcsuWjfasewN8E14kC7epOQrGnSNdmm_g4Da6Pursz_tmrgLktywYJy4f4ZQlVo7K9vgJIi5aykN1yxi8uFqfYYXo-bU1kVLaYbZ4MWWCgVxwY8aqMzWOwgaoaU9H9las5mMqYs02Z54SoJiYZX-dM9dU93gID9nakHR3Urx0O270SA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:20.0094532Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:20.694 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:20.695 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:25.703 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:25.703 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:26.425 +01:00 [INF] Executed DbCommand (270ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:26.765 +01:00 [INF] Executed DbCommand (336ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:26.766 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMjYsImV4cCI6MTcyOTEwODgyNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxMDM4NTJFQzAzMTEyMENFRTUwQTM5MDk0QkVBMUY4MyIsImlhdCI6MTcyOTEwNTIyNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.EI34JNCpf2a-505sSzmQdKg3fnlRdJTLrTHwewTSLTnB9yoP8-MVmD5XhkI-btDhkeeCIkuzLLtSa1oGj6bi1TIO-nG84AQCc0ciE0JQvJEBCA-6gzDWizj5DQP-XuAEyQPFDF9XW4xB9WT6JjQQyeUsFkR_4dYuLQzkhDSwBZD5Kq9_IYGowq1Psdn7kj4cAv8BHJFigHc1yJAW3cm6iG89H75blR0du6tSyNb_79C1X_gyGAL--BdkuRUSSJ0t1mCsvXXikx7DPMceuQxjB6bSHD-DTnUZN2P78SpXZklFbB806ZVL3J47BQXTpFMguRr6aQTsDFN4r1WtCRNQrg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:26.1534381Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:26.766 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMjYsImV4cCI6MTcyOTEwODgyNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxMDM4NTJFQzAzMTEyMENFRTUwQTM5MDk0QkVBMUY4MyIsImlhdCI6MTcyOTEwNTIyNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.EI34JNCpf2a-505sSzmQdKg3fnlRdJTLrTHwewTSLTnB9yoP8-MVmD5XhkI-btDhkeeCIkuzLLtSa1oGj6bi1TIO-nG84AQCc0ciE0JQvJEBCA-6gzDWizj5DQP-XuAEyQPFDF9XW4xB9WT6JjQQyeUsFkR_4dYuLQzkhDSwBZD5Kq9_IYGowq1Psdn7kj4cAv8BHJFigHc1yJAW3cm6iG89H75blR0du6tSyNb_79C1X_gyGAL--BdkuRUSSJ0t1mCsvXXikx7DPMceuQxjB6bSHD-DTnUZN2P78SpXZklFbB806ZVL3J47BQXTpFMguRr6aQTsDFN4r1WtCRNQrg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:26.1534381Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:30.712 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:30.712 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:32.523 +01:00 [INF] Executed DbCommand (267ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:32.805 +01:00 [INF] Executed DbCommand (281ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:32.806 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMzIsImV4cCI6MTcyOTEwODgzMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxMTg2Q0VGREY5RTE2RTg2MkJDOUI5NTZDOTEwNDQ1QSIsImlhdCI6MTcyOTEwNTIzMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ViqBlT-OWIf7DT8gGZ3LpFoZWMXbGueUJJSJtbItj2eddYtQoAyZ2yqBom2yhQwpjywtog7fE6b6Ve0Lp91esS_DejAMfN_W_-LFFnLDGj3Z7DZ4cGR9cqUDWjsLneztrb-M5R5uWSe9fPq7cHvjgV_Pa6Pmpoiv0aGn6OwPV7jo_vZBtkHQ0HBJE0RMJXm8amQtpKCoPx4uu0SLoJK247Uk4_0lXdkTQ0zREkMdhBHJS2HagIL_t3EEi4usNPpLT_IcKLvatxrG79OYv2ejB6w5m1-OueZ_H4vxjyLDiOK20u_nk-eIlultHF6fWrgbEHY45I0YdCYUFpApFWhK4Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:32.2536713Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:32.806 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMzIsImV4cCI6MTcyOTEwODgzMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxMTg2Q0VGREY5RTE2RTg2MkJDOUI5NTZDOTEwNDQ1QSIsImlhdCI6MTcyOTEwNTIzMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ViqBlT-OWIf7DT8gGZ3LpFoZWMXbGueUJJSJtbItj2eddYtQoAyZ2yqBom2yhQwpjywtog7fE6b6Ve0Lp91esS_DejAMfN_W_-LFFnLDGj3Z7DZ4cGR9cqUDWjsLneztrb-M5R5uWSe9fPq7cHvjgV_Pa6Pmpoiv0aGn6OwPV7jo_vZBtkHQ0HBJE0RMJXm8amQtpKCoPx4uu0SLoJK247Uk4_0lXdkTQ0zREkMdhBHJS2HagIL_t3EEi4usNPpLT_IcKLvatxrG79OYv2ejB6w5m1-OueZ_H4vxjyLDiOK20u_nk-eIlultHF6fWrgbEHY45I0YdCYUFpApFWhK4Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:32.2536713Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:35.720 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:35.720 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:38.726 +01:00 [INF] Executed DbCommand (275ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:39.053 +01:00 [INF] Executed DbCommand (325ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:39.068 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMzgsImV4cCI6MTcyOTEwODgzOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwQkJDNjA3NUE4OUJCMkE1Qzg1OUM5RjMzRTREQzQwQyIsImlhdCI6MTcyOTEwNTIzOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.bj07bGXcTx2krSGojuhk_pZR19xMMFAHziayOu5Ejm6GkOmgdcXmZ7h1DEGVcqEaQfpWa_YfvJ_ds4H0BW3tQ8NGjfwPgyrCdqECP6bLosSMq-3fCd67uKw09yXM_Jhg4EOvx4_WbYMwSksWsOtKvhPt-zt-8QieLj7N3wgJPqkGa2d2_tgEaoJxGuj41huii0v7wpF1J90Wl2Yio6bkS5QR_d2ALtEaf5sud8ft7201Wq4-Fo0y0PK8wBi2W66FJXianI6nJmOeOtHNT2gx2-tgncoOq2h64XDiz_7xHU9x42QAcnEY4Jb5td9lGC-iRixEycBafzhwn0WIs-ZmxQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:38.4401833Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:39.068 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyMzgsImV4cCI6MTcyOTEwODgzOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwQkJDNjA3NUE4OUJCMkE1Qzg1OUM5RjMzRTREQzQwQyIsImlhdCI6MTcyOTEwNTIzOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.bj07bGXcTx2krSGojuhk_pZR19xMMFAHziayOu5Ejm6GkOmgdcXmZ7h1DEGVcqEaQfpWa_YfvJ_ds4H0BW3tQ8NGjfwPgyrCdqECP6bLosSMq-3fCd67uKw09yXM_Jhg4EOvx4_WbYMwSksWsOtKvhPt-zt-8QieLj7N3wgJPqkGa2d2_tgEaoJxGuj41huii0v7wpF1J90Wl2Yio6bkS5QR_d2ALtEaf5sud8ft7201Wq4-Fo0y0PK8wBi2W66FJXianI6nJmOeOtHNT2gx2-tgncoOq2h64XDiz_7xHU9x42QAcnEY4Jb5td9lGC-iRixEycBafzhwn0WIs-ZmxQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:38.4401833Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:40.721 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:40.722 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:44.868 +01:00 [INF] Executed DbCommand (273ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:45.195 +01:00 [INF] Executed DbCommand (325ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:45.196 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNDQsImV4cCI6MTcyOTEwODg0NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxQzhDRTRFQTM5RjYzRTJBOTgyMjRBNTBFRjlEOTEyRiIsImlhdCI6MTcyOTEwNTI0NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.VC6bKUUX8JJJvRPbbSaBJb7AumhZbWxMCg7e5ay9mJepKrdgbumDMenPaYX-FEICudlksf_8RinoPG5WvCsYMBQurV7OBp6MLFmyYvQ4gh06oJgLyx62Hnr-qk2Rw-gA2dw7QQJO0wHpPzGcVpON8okI0TUtJhtyEFnxJW-peY5sh8jBp5OYp2wiRbju_h9TYWy8omqde90CCCa3oD2OgbIbJvgP9k5XWnxGJESIyao7K1n6e3mHrZUYgkGqqTjGAu2qnjGLptkhWi5yuDLe700hOKod0gwTvpsSYeQ1b8V-veMmTfkdAErIsrIm0f8ZznzgDYwBI5o1KRE1pGrdeg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:44.5896142Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:45.196 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNDQsImV4cCI6MTcyOTEwODg0NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxQzhDRTRFQTM5RjYzRTJBOTgyMjRBNTBFRjlEOTEyRiIsImlhdCI6MTcyOTEwNTI0NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.VC6bKUUX8JJJvRPbbSaBJb7AumhZbWxMCg7e5ay9mJepKrdgbumDMenPaYX-FEICudlksf_8RinoPG5WvCsYMBQurV7OBp6MLFmyYvQ4gh06oJgLyx62Hnr-qk2Rw-gA2dw7QQJO0wHpPzGcVpON8okI0TUtJhtyEFnxJW-peY5sh8jBp5OYp2wiRbju_h9TYWy8omqde90CCCa3oD2OgbIbJvgP9k5XWnxGJESIyao7K1n6e3mHrZUYgkGqqTjGAu2qnjGLptkhWi5yuDLe700hOKod0gwTvpsSYeQ1b8V-veMmTfkdAErIsrIm0f8ZznzgDYwBI5o1KRE1pGrdeg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:44.5896142Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:45.732 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:45.732 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:50.742 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:50.742 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:51.109 +01:00 [INF] Executed DbCommand (279ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:51.383 +01:00 [INF] Executed DbCommand (273ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:51.384 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNTAsImV4cCI6MTcyOTEwODg1MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBOTc0RTgzOUJEQkUxQkUzRTk3MjlGNjhFQzRCQUJCMyIsImlhdCI6MTcyOTEwNTI1MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.AuM5jMOMClHuKhRmWNtqnOWn3-fr1PGvoAvs5_n8xnCCSUju6TvXT-wIovbjrqPqozoTgGYyoc59ELrm9ZV38j2lMUVP7U63di8IQN0FFuhoAmFs401r3o7B9n0eJzvVxP8lwR0niw6qXy4p9cmQgZZ98uWThq4dkxMYqAJErAz63VS9US1lpNLz1PHH1HXH2tUIMt1d5-XQTc0O0xkS4SXM_89IxMrL9QEZ_bD6ODCWHD0VTdu1FcODRJogH_oU0EG0pNl8Io0rJZlKl7jUial6GOlCdMbWbTRzi2T1mZNxE0bBqoL_dbwmuH5XWfd8qBHhYuER2CNEgeC0Vetztw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:50.829741Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:51.384 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNTAsImV4cCI6MTcyOTEwODg1MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBOTc0RTgzOUJEQkUxQkUzRTk3MjlGNjhFQzRCQUJCMyIsImlhdCI6MTcyOTEwNTI1MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.AuM5jMOMClHuKhRmWNtqnOWn3-fr1PGvoAvs5_n8xnCCSUju6TvXT-wIovbjrqPqozoTgGYyoc59ELrm9ZV38j2lMUVP7U63di8IQN0FFuhoAmFs401r3o7B9n0eJzvVxP8lwR0niw6qXy4p9cmQgZZ98uWThq4dkxMYqAJErAz63VS9US1lpNLz1PHH1HXH2tUIMt1d5-XQTc0O0xkS4SXM_89IxMrL9QEZ_bD6ODCWHD0VTdu1FcODRJogH_oU0EG0pNl8Io0rJZlKl7jUial6GOlCdMbWbTRzi2T1mZNxE0bBqoL_dbwmuH5XWfd8qBHhYuER2CNEgeC0Vetztw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:50.829741Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:55.748 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:55.748 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:00:57.354 +01:00 [INF] Executed DbCommand (275ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:00:57.663 +01:00 [INF] Executed DbCommand (306ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:00:57.663 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNTcsImV4cCI6MTcyOTEwODg1NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5NEZFRDlGRUU1NzU4RkRBQUYwNTY2RkJFQUM0NzlCMiIsImlhdCI6MTcyOTEwNTI1Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fsTKoQKt4USJckpU-yBySo7y-IUugLLuBoi047H_wpGH2uBEw6uwJfHniCzzi3w3I0UXSZaypBJAYSDikXLmCi1LK0fNvgwsEF-X-rkuNv4seaRtdbHIGeqCqZQckKkGKQRdvFyD-4NsTJvECvra_yjxo0G8nCouwjUZSs99s5CgoYmyCW_5h0Sdgb4MbWYI52clKpjlIIZNyMJVyZmQSLSJebmi9JEfDdghnqVvK0VLEkpGBl46hYIJp4wIbqZfqDuVIyD18AxyVSMqx_rc4vfNERr1o4pLsFjjA5SpVoMjIKzYdhtZV-H1VMyR5dMOSrx_HYgMwLfmgMziJ9olGw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:57.0786209Z","status":false},"Message":null,"code":null}
+2024-10-16 20:00:57.664 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNTcsImV4cCI6MTcyOTEwODg1NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5NEZFRDlGRUU1NzU4RkRBQUYwNTY2RkJFQUM0NzlCMiIsImlhdCI6MTcyOTEwNTI1Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fsTKoQKt4USJckpU-yBySo7y-IUugLLuBoi047H_wpGH2uBEw6uwJfHniCzzi3w3I0UXSZaypBJAYSDikXLmCi1LK0fNvgwsEF-X-rkuNv4seaRtdbHIGeqCqZQckKkGKQRdvFyD-4NsTJvECvra_yjxo0G8nCouwjUZSs99s5CgoYmyCW_5h0Sdgb4MbWYI52clKpjlIIZNyMJVyZmQSLSJebmi9JEfDdghnqVvK0VLEkpGBl46hYIJp4wIbqZfqDuVIyD18AxyVSMqx_rc4vfNERr1o4pLsFjjA5SpVoMjIKzYdhtZV-H1VMyR5dMOSrx_HYgMwLfmgMziJ9olGw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:00:57.0786209Z","status":false},"Message":null,"code":null}
+2024-10-16 20:01:00.751 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:00.751 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:03.593 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:01:03.938 +01:00 [INF] Executed DbCommand (342ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 20:01:03.939 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNjMsImV4cCI6MTcyOTEwODg2MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1QzVBQzI0QzQ2N0YzOTQ1MzcxODExQUY3OThBQTU2QSIsImlhdCI6MTcyOTEwNTI2Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ZXVHBa8Tr5Z-OWmzcBKva-7bswQDVYHH6A1Gug6Tlh-5vA2U9vkj1-44fH8P3v_A9USjmcSB1_PfXYThqj0b6OnuOVs_k9kb6TYr3pp5GCnZXq1vx8KSezQEgUJeLOxBSABWDGun9KTtQ1cNJLKctvQ7SMq3zQPmrf54ssybTikNjJ3nDIB8CX3QzTcPLk4ydsRaTakhoeMZbiJdb53RtmRSpKq6sO6wHemfnm9AOsU3QPtaqjdABE0z5CZLn3gNZZ9Co6-N6zQya0_xXWNQqcDoZH1SCtqlrZ9aLXqJISk-P2Tna7wBFPljoDja2boGezwjl-Yz1fAQzOoxprg7Zw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:01:03.3219868Z","status":false},"Message":null,"code":null}
+2024-10-16 20:01:03.939 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMDUyNjMsImV4cCI6MTcyOTEwODg2MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1QzVBQzI0QzQ2N0YzOTQ1MzcxODExQUY3OThBQTU2QSIsImlhdCI6MTcyOTEwNTI2Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ZXVHBa8Tr5Z-OWmzcBKva-7bswQDVYHH6A1Gug6Tlh-5vA2U9vkj1-44fH8P3v_A9USjmcSB1_PfXYThqj0b6OnuOVs_k9kb6TYr3pp5GCnZXq1vx8KSezQEgUJeLOxBSABWDGun9KTtQ1cNJLKctvQ7SMq3zQPmrf54ssybTikNjJ3nDIB8CX3QzTcPLk4ydsRaTakhoeMZbiJdb53RtmRSpKq6sO6wHemfnm9AOsU3QPtaqjdABE0z5CZLn3gNZZ9Co6-N6zQya0_xXWNQqcDoZH1SCtqlrZ9aLXqJISk-P2Tna7wBFPljoDja2boGezwjl-Yz1fAQzOoxprg7Zw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T20:01:03.3219868Z","status":false},"Message":null,"code":null}
+2024-10-16 20:01:05.789 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:05.789 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:10.808 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:10.809 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:15.825 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:15.826 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:20.832 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:20.833 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:25.840 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:25.841 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:30.856 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:30.856 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:35.866 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:35.866 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:40.878 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:40.879 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:45.891 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:45.891 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:50.900 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:50.900 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:55.916 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:01:55.917 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:00.929 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:00.931 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:05.946 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:05.946 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:10.960 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:10.960 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:15.965 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:15.965 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:21.028 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:21.029 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:26.038 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:26.038 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:31.059 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:31.059 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:36.066 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:36.066 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:41.081 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:41.081 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:46.084 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:46.084 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:51.095 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:51.096 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:56.099 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:02:56.099 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:01.101 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:01.101 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:06.105 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:06.105 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:11.113 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:11.114 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:16.126 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:16.127 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:21.139 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:21.139 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:26.140 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:26.140 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:31.145 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:31.146 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:36.160 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:36.161 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:41.224 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:41.224 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:46.228 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:46.228 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:51.232 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:51.232 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:56.248 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:03:56.249 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:01.264 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:01.265 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:06.267 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:06.268 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:11.280 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:11.280 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:16.295 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:16.296 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:21.298 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:21.298 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:26.303 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:26.303 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:31.307 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:31.307 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:35.052 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - application/json 169
+2024-10-16 20:04:35.059 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 20:04:35.064 +01:00 [INF] Route matched with {action = "ProcessPaymentCard", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentCard(CentralPG.Models.CardPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-10-16 20:04:36.322 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:36.322 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:38.567 +01:00 [INF] Executed DbCommand (818ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:04:39.694 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.ProcessCardResponseModel'.
+2024-10-16 20:04:39.694 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG) in 4630.4084ms
+2024-10-16 20:04:39.695 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 20:04:39.695 +01:00 [INF] HTTP POST /Payment/processpayment/card responded 200 in 4642.7365 ms
+2024-10-16 20:04:39.695 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - 200 null application/json; charset=utf-8 4643.422ms
+2024-10-16 20:04:41.335 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:41.335 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:46.348 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:46.348 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:51.353 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:51.353 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:56.362 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:04:56.362 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:01.383 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:01.383 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:06.393 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:06.393 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:11.407 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:11.407 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:16.414 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:16.414 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:21.428 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:21.429 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:26.444 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:26.444 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:31.450 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:31.451 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:36.461 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:36.462 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:41.467 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:41.468 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:46.474 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:46.474 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:51.492 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:51.492 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:56.493 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:05:56.494 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:01.494 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:01.494 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:06.506 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:06.506 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:11.509 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:11.509 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:16.518 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:16.518 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:21.533 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:21.534 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:26.552 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:26.553 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:31.560 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:31.560 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:36.572 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:36.572 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:41.587 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:41.587 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:46.601 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:46.601 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:51.604 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:51.604 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:56.606 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:06:56.607 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:01.617 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:01.617 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:06.628 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:06.628 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:11.631 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:11.631 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:15.888 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - application/json 169
+2024-10-16 20:07:15.891 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 20:07:15.891 +01:00 [INF] Route matched with {action = "ProcessPaymentCard", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentCard(CentralPG.Models.CardPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-10-16 20:07:16.178 +01:00 [INF] Executed DbCommand (279ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:07:16.657 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:16.657 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:17.357 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.ProcessCardResponseModel'.
+2024-10-16 20:07:17.358 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG) in 1461.8488ms
+2024-10-16 20:07:17.361 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 20:07:17.361 +01:00 [INF] HTTP POST /Payment/processpayment/card responded 200 in 1470.2938 ms
+2024-10-16 20:07:17.362 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - 200 null application/json; charset=utf-8 1473.5725ms
+2024-10-16 20:07:21.667 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:21.668 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:26.672 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:26.673 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:31.686 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:31.686 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:36.688 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:36.688 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:41.697 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:41.697 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:46.703 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:46.703 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:51.707 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:51.707 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:56.715 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:07:56.715 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:01.729 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:01.729 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:06.734 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:06.734 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:11.738 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:11.739 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:16.746 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:16.746 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:21.747 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:21.747 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:26.760 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:26.761 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:31.774 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:31.775 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:36.780 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:36.780 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:41.783 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:41.784 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:46.789 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:46.789 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:49.975 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - application/json 169
+2024-10-16 20:08:49.977 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 20:08:49.978 +01:00 [INF] Route matched with {action = "ProcessPaymentCard", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentCard(CentralPG.Models.CardPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-10-16 20:08:50.383 +01:00 [INF] Executed DbCommand (397ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 20:08:51.609 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.ProcessCardResponseModel'.
+2024-10-16 20:08:51.610 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG) in 1631.3081ms
+2024-10-16 20:08:51.610 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentCard (OCPG)'
+2024-10-16 20:08:51.610 +01:00 [INF] HTTP POST /Payment/processpayment/card responded 200 in 1634.9757 ms
+2024-10-16 20:08:51.611 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/card?adviceReference=8cbea0aa-101f-4659-92e0-d4062dfad607 - 200 null application/json; charset=utf-8 1636.0769ms
+2024-10-16 20:08:51.802 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:51.802 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:56.810 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:08:56.811 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:01.815 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:01.815 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:06.831 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:06.832 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:11.833 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:11.833 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:16.835 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:16.835 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:21.852 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:21.852 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:26.863 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:26.863 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:31.868 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:31.869 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:36.878 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:36.878 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:41.882 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:41.883 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:46.891 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:46.891 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:51.896 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:51.896 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:56.912 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:09:56.912 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:01.915 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:01.916 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:06.931 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:06.931 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:11.944 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:11.944 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:16.950 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:16.950 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:21.952 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:21.953 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:26.965 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:26.965 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:31.981 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:31.981 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:36.991 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:36.991 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:42.001 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:42.001 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:47.010 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:47.010 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:52.023 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:52.024 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:57.041 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:10:57.041 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:02.047 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:02.047 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:07.054 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:07.054 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:12.064 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:12.065 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:17.072 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:17.072 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:22.087 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:22.087 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:27.095 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:27.095 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:32.104 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:32.104 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:37.108 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:37.108 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:42.177 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:42.177 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:47.191 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:47.191 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:52.195 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:52.195 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:57.209 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:11:57.209 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:02.220 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:02.220 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:07.235 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:07.235 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:12.242 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:12.242 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:17.247 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:17.247 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:22.253 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:22.253 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:27.257 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:27.257 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:32.268 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:32.268 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:37.270 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:37.270 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:42.278 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:42.278 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:47.294 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:47.294 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:52.314 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:52.314 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:57.330 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:12:57.330 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:02.338 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:02.339 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:07.344 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:07.344 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:12.385 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:12.386 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:17.398 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:17.399 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:22.469 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:22.470 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:27.473 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:27.473 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:32.489 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:32.489 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:37.492 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:37.493 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:42.507 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:42.508 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:47.520 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:47.520 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:52.539 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:52.540 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:57.555 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:13:57.556 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:02.566 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:02.566 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:07.569 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:07.570 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:12.571 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:12.571 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:17.573 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:17.573 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:22.586 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:22.586 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:27.590 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:27.591 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:32.596 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:32.597 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:37.599 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:37.600 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:42.608 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:42.609 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:47.620 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:47.621 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:52.663 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:52.664 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:57.668 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:14:57.668 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:02.678 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:02.678 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:07.682 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:07.683 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:12.686 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:12.686 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:17.689 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:17.690 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:22.701 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:22.701 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:27.717 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:27.718 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:32.722 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:32.723 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:37.725 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:37.726 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:42.727 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:42.728 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:47.737 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:47.737 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:52.746 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:52.746 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:57.756 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:15:57.756 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:02.769 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:02.770 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:07.770 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:07.770 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:12.787 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:12.787 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:17.792 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:17.792 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:22.806 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:22.807 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:27.815 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:27.815 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:32.823 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:32.824 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:37.825 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:37.825 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:42.834 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:42.836 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:47.836 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:47.837 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:52.845 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:52.845 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:57.856 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:16:57.856 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:02.866 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:02.867 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:07.877 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:07.877 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:12.888 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:12.889 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:17.906 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:17.908 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:22.925 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:22.925 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:27.940 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:27.940 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:32.953 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:32.954 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:37.967 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:37.967 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:42.973 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:42.974 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:47.988 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:47.989 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:52.996 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:52.997 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:57.999 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:17:58.000 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:03.016 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:03.017 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:08.018 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:08.019 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:13.029 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:13.030 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:18.042 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:18.042 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:23.058 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:23.058 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:28.060 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:28.061 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:33.070 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:33.070 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:38.081 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:38.081 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:43.102 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:43.102 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:48.112 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:48.112 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:53.126 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:53.126 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:58.130 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:18:58.130 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:03.141 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:03.141 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:08.152 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:08.152 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:13.160 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:13.161 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:18.168 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:18.168 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:23.173 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:23.174 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:28.177 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:28.177 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:33.187 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:33.187 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:38.200 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:38.200 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:43.203 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:43.203 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:48.213 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:48.214 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:53.228 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:53.228 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:58.236 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:19:58.237 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:03.247 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:03.248 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:08.251 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:08.251 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:13.257 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:13.257 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:18.266 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:18.267 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:23.269 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:23.269 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:28.283 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:28.283 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:33.291 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:33.291 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:38.298 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:38.298 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:43.312 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:43.313 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:48.316 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:48.317 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:53.322 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:53.322 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:58.335 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:20:58.335 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:03.344 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:03.344 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:08.348 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:08.348 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:13.363 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:13.363 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:18.378 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:18.378 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:23.385 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:23.385 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:28.392 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:28.392 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:33.396 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:33.396 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:38.401 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:38.401 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:43.406 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:43.407 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:48.411 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:48.412 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:53.414 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:53.414 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:58.417 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:21:58.417 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:03.433 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:03.434 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:08.446 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:08.447 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:13.448 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:13.448 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:18.460 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:18.461 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:23.465 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:23.466 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:28.475 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:28.476 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:33.479 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:33.479 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:38.486 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:38.487 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:43.497 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:43.497 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:48.503 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:48.503 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:53.507 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:53.507 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:58.511 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:22:58.512 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:03.516 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:03.516 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:08.521 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:08.521 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:13.537 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:13.538 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:18.541 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:18.541 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:23.555 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:23.555 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:28.569 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:28.570 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:33.577 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:33.577 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:38.591 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:38.591 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:43.603 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:43.604 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:48.608 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:48.608 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:53.610 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:53.611 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:58.626 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:23:58.626 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:03.629 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:03.629 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:08.632 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:08.632 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:13.644 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:13.645 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:18.653 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:18.653 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:23.661 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:23.661 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:28.676 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:28.676 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:33.692 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:33.692 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:38.708 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:38.708 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:43.718 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:43.718 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:48.720 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:48.720 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:53.726 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:53.727 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:58.731 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:24:58.732 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:03.738 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:03.738 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:08.751 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:08.751 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:13.765 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:13.765 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:18.777 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:18.778 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:23.788 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:23.789 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:28.795 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:28.795 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:33.800 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:33.800 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:38.816 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:38.816 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:43.824 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:43.824 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:48.837 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:48.837 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:53.843 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:53.843 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:58.851 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:25:58.851 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:03.852 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:03.852 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:08.862 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:08.863 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:13.871 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:13.871 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:18.876 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:18.877 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:23.882 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:23.882 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:28.894 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:28.894 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:33.909 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:33.909 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:38.919 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:38.919 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:43.926 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:43.926 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:48.930 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:48.930 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:53.944 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:53.944 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:58.945 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:26:58.945 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:03.958 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:03.958 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:08.972 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:08.972 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:13.984 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:13.984 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:19.001 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:19.001 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:24.016 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:24.016 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:29.031 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:29.031 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:34.039 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:34.039 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:39.049 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:39.049 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:44.058 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:44.059 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:49.061 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:49.061 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:54.069 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:54.069 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:59.070 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:27:59.071 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:04.084 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:04.084 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:09.085 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:09.085 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:14.107 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:14.107 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:19.124 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:19.124 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:24.135 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:24.136 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:29.138 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:29.138 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:34.149 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:34.149 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:39.163 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:39.163 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:44.176 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:44.177 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:49.181 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:49.181 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:54.187 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:54.188 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:59.191 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:28:59.192 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:04.206 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:04.208 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:09.222 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:09.222 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:14.237 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:14.237 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:19.243 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:19.243 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:24.256 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:24.256 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:29.264 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:29.264 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:34.274 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:34.274 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:39.291 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:39.293 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:44.299 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:44.299 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:49.305 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:49.305 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:54.317 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:54.317 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:59.323 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:29:59.323 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:04.338 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:04.339 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:09.341 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:09.341 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:14.355 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:14.355 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:19.363 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:19.363 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:24.377 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:24.378 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:29.391 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:29.392 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:34.400 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:34.401 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:39.415 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:39.416 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:44.428 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:44.428 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:49.433 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 20:30:49.434 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 22:35:41.898 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 22:35:41.898 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-10-16 22:35:48.181 +01:00 [INF] Executed DbCommand (316ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:35:48.668 +01:00 [INF] Executed DbCommand (485ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:35:48.668 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTQ1NDQsImV4cCI6MTcyOTExODE0NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGN0U4QTg3MzNBMEFCQkJERDg2QUQ5RjBDMjE5MDdDRSIsImlhdCI6MTcyOTExNDU0NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.vyOnbhDFP1DJpQVqCxyEoPj_QXWHEi9BfD4yq46S4KuyQxxPWyHf8UulLclIjgOAb57LfofrqbAPrV7vfoT1fuG72YvNPvwq_0gF8a0EvTCsSGCU9oZh75eRu9KgCYK5dnUD38ufrMlO1Ar5UjeLKZ5rmjEKU3jbgRf9nJzDa9Fqzs1wt05xlXQ2_uMzhHaZNMc8PDK2Pyd9O9RmcH4MR7Wm5vXi_Ap-A1WvYZnmT09vQVCxTM5WYgs15CEBSH2eyWkMuVy6ZgPEiH0WaDEdZPHjCvrAcvc976tA6jfAY_9BkVo2XK_ol-alBM8XvRC5-OTUrW5ErRe1r8A-LdwOOQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:35:44.8814014Z","status":false},"Message":null,"code":null}
+2024-10-16 22:35:48.668 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTQ1NDQsImV4cCI6MTcyOTExODE0NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGN0U4QTg3MzNBMEFCQkJERDg2QUQ5RjBDMjE5MDdDRSIsImlhdCI6MTcyOTExNDU0NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.vyOnbhDFP1DJpQVqCxyEoPj_QXWHEi9BfD4yq46S4KuyQxxPWyHf8UulLclIjgOAb57LfofrqbAPrV7vfoT1fuG72YvNPvwq_0gF8a0EvTCsSGCU9oZh75eRu9KgCYK5dnUD38ufrMlO1Ar5UjeLKZ5rmjEKU3jbgRf9nJzDa9Fqzs1wt05xlXQ2_uMzhHaZNMc8PDK2Pyd9O9RmcH4MR7Wm5vXi_Ap-A1WvYZnmT09vQVCxTM5WYgs15CEBSH2eyWkMuVy6ZgPEiH0WaDEdZPHjCvrAcvc976tA6jfAY_9BkVo2XK_ol-alBM8XvRC5-OTUrW5ErRe1r8A-LdwOOQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:35:44.8814014Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:04.947 +01:00 [INF] Executed DbCommand (357ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:05.362 +01:00 [INF] Executed DbCommand (414ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:05.362 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MDEsImV4cCI6MTcyOTExOTAwMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5QzAzM0NBQTFEODZERTI0MTVCNzM3N0UyM0Q2NDk2NSIsImlhdCI6MTcyOTExNTQwMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.KkeQYyfQnS6MME2azGad_9Scg4bpk0XPX7_JK36zGiE29pug66pesuArqtUICfJga2Lp_J7QLviNVQKISVZahC5pNv1FRVC9u_4t3NVLeDuDUpyL4G7_tN0gkxSHdRXin7W8vZKGDkIe1BifyKR5oEpHWkra12UwRt3sNSIYijR_rHVwxnBE-dcwvZrMegXgANrLdaIfsynSyuw4yYvyEcI5GVrLvL1WjrC_BKbLw2CeiaD1F7f4X9UAJ0YvpV5UhPbpv9hgFohByhRxesu1zOG1H7LTXXF0cS7MwXXSmds-EUD9TBg6KmVvOqAfggJR3xuWyBxlvL5CxLxel6hrgw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:01.1619313Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:05.363 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MDEsImV4cCI6MTcyOTExOTAwMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5QzAzM0NBQTFEODZERTI0MTVCNzM3N0UyM0Q2NDk2NSIsImlhdCI6MTcyOTExNTQwMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.KkeQYyfQnS6MME2azGad_9Scg4bpk0XPX7_JK36zGiE29pug66pesuArqtUICfJga2Lp_J7QLviNVQKISVZahC5pNv1FRVC9u_4t3NVLeDuDUpyL4G7_tN0gkxSHdRXin7W8vZKGDkIe1BifyKR5oEpHWkra12UwRt3sNSIYijR_rHVwxnBE-dcwvZrMegXgANrLdaIfsynSyuw4yYvyEcI5GVrLvL1WjrC_BKbLw2CeiaD1F7f4X9UAJ0YvpV5UhPbpv9hgFohByhRxesu1zOG1H7LTXXF0cS7MwXXSmds-EUD9TBg6KmVvOqAfggJR3xuWyBxlvL5CxLxel6hrgw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:01.1619313Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:13.499 +01:00 [INF] Executed DbCommand (465ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:14.509 +01:00 [INF] Executed DbCommand (1,009ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:14.509 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MTIsImV4cCI6MTcyOTExOTAxMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwQ0Y5RTQ3NDZGQUUyNDhBRTQwOTQ0MkVEQzQ0RUFCNSIsImlhdCI6MTcyOTExNTQxMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fTCS-1usNhDBs2K0kSRi9kuL-RT9K3O6-3RU19S2HQ6dPcbZ4faN-jfUuHu9fCw-EMdFDOgZxS2C_5qGwChEr-QUGR9HNU33DsCWVZ9Sy12Hht-5yFAqCZljxI77dU26Rtn1gzZtNfLfVjCkY6bhcbby0IlDFWhqcDy1wjbud6XGAqgGhP3Mh-_oFwNlRA0K-br5Y8S0t8MmqgaxRG2BVdRRsh04SBIKyBr6fjpZ--9OR-VH-mWat0PYxD8aj-h75C6WQT-_wagVJcA0AHYVGx-uqCh3438qlfqe1bHK5DR7SIES7bBGdsQ21ZhO9co_azsHIFHorQRS0J9v_AXDdA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:13.0346535Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:14.509 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MTIsImV4cCI6MTcyOTExOTAxMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwQ0Y5RTQ3NDZGQUUyNDhBRTQwOTQ0MkVEQzQ0RUFCNSIsImlhdCI6MTcyOTExNTQxMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fTCS-1usNhDBs2K0kSRi9kuL-RT9K3O6-3RU19S2HQ6dPcbZ4faN-jfUuHu9fCw-EMdFDOgZxS2C_5qGwChEr-QUGR9HNU33DsCWVZ9Sy12Hht-5yFAqCZljxI77dU26Rtn1gzZtNfLfVjCkY6bhcbby0IlDFWhqcDy1wjbud6XGAqgGhP3Mh-_oFwNlRA0K-br5Y8S0t8MmqgaxRG2BVdRRsh04SBIKyBr6fjpZ--9OR-VH-mWat0PYxD8aj-h75C6WQT-_wagVJcA0AHYVGx-uqCh3438qlfqe1bHK5DR7SIES7bBGdsQ21ZhO9co_azsHIFHorQRS0J9v_AXDdA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:13.0346535Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:20.860 +01:00 [INF] Executed DbCommand (346ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:21.177 +01:00 [INF] Executed DbCommand (313ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:21.178 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MjAsImV4cCI6MTcyOTExOTAyMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRTcxMkJENTQxNUQ4QjQzMzA3NUVGQjlCNTg2RjIwRCIsImlhdCI6MTcyOTExNTQyMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.PP_RovvkNR3YV-iR2L_Z-Zp3G4wNwX3cnlWDi4ugucDGRq4OtZsuUsgTXyUyDY0RiSyYhki0eS2yICfxcphBV-KH6xL-KSMW1LSr7GUQ4TygSYG1Lj5vwZ0PV6C9YtWP0a37FAqRzEeMuFGhYB8FpxlWvUvCNPEwtm8HsBTfUqRrgllYmQXdCKa2x9-Ef4XbVijfVRVzIV0k1d6ojtMbJHEuKpBH0NagxXJwAhExxK9oawHyehmEXY_-hGRsB8bS6Ytb_MDeG3_7pSNv-jgaJwOZRnBIwJn07BebwR7kDAwqFfmRMnlcqSxEYoDZojLh3dCRCaE7Jn2jMIrVkE2How","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:20.5126625Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:21.178 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MjAsImV4cCI6MTcyOTExOTAyMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRTcxMkJENTQxNUQ4QjQzMzA3NUVGQjlCNTg2RjIwRCIsImlhdCI6MTcyOTExNTQyMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.PP_RovvkNR3YV-iR2L_Z-Zp3G4wNwX3cnlWDi4ugucDGRq4OtZsuUsgTXyUyDY0RiSyYhki0eS2yICfxcphBV-KH6xL-KSMW1LSr7GUQ4TygSYG1Lj5vwZ0PV6C9YtWP0a37FAqRzEeMuFGhYB8FpxlWvUvCNPEwtm8HsBTfUqRrgllYmQXdCKa2x9-Ef4XbVijfVRVzIV0k1d6ojtMbJHEuKpBH0NagxXJwAhExxK9oawHyehmEXY_-hGRsB8bS6Ytb_MDeG3_7pSNv-jgaJwOZRnBIwJn07BebwR7kDAwqFfmRMnlcqSxEYoDZojLh3dCRCaE7Jn2jMIrVkE2How","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:20.5126625Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:28.089 +01:00 [INF] Executed DbCommand (325ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:29.353 +01:00 [INF] Executed DbCommand (1,261ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:29.353 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MjcsImV4cCI6MTcyOTExOTAyNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwRTJEMThCQ0E5QTU3NEYzNUU2QkFEOEFGQzhBRTU1NyIsImlhdCI6MTcyOTExNTQyNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rQzU5F8_Uc6j8wbv6qN0OrnX5IFAYpRiwo3f1OWSTBcpk0rCtgLUf9kvD1ZP4AlygX5ck9CHaHPigt1gnrzWDU7r2uVEL_V0d3SquysK_ycbS-I89j7j9ISx_J35j86GNcXj0tM-s9ZpcVWTy_ZpiA85gZEv0t6Yw-8vOrAyyZgSArFYpmkDtXdPsdA3DKGG2dGOP_yD0aRBf1Hmghw0u7XV3WrahcDUTEGOEEYXht3gQEDJmhzOjjFIYeitjCnNR5_D1RlPEFkuv_3fVbwRnDtXLBVDFPXRO3foAifAipEj-1x2_05uCZU5XJQ4ggFp4txWhLf6vCpztY3pDHnuYw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:27.7633734Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:29.353 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MjcsImV4cCI6MTcyOTExOTAyNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwRTJEMThCQ0E5QTU3NEYzNUU2QkFEOEFGQzhBRTU1NyIsImlhdCI6MTcyOTExNTQyNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rQzU5F8_Uc6j8wbv6qN0OrnX5IFAYpRiwo3f1OWSTBcpk0rCtgLUf9kvD1ZP4AlygX5ck9CHaHPigt1gnrzWDU7r2uVEL_V0d3SquysK_ycbS-I89j7j9ISx_J35j86GNcXj0tM-s9ZpcVWTy_ZpiA85gZEv0t6Yw-8vOrAyyZgSArFYpmkDtXdPsdA3DKGG2dGOP_yD0aRBf1Hmghw0u7XV3WrahcDUTEGOEEYXht3gQEDJmhzOjjFIYeitjCnNR5_D1RlPEFkuv_3fVbwRnDtXLBVDFPXRO3foAifAipEj-1x2_05uCZU5XJQ4ggFp4txWhLf6vCpztY3pDHnuYw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:27.7633734Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:36.916 +01:00 [INF] Executed DbCommand (1,125ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:37.560 +01:00 [INF] Executed DbCommand (642ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:37.560 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MzUsImV4cCI6MTcyOTExOTAzNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDRjE1NkFEQUI4RkRGMjE0MUQyOERFNkRCREM3ODU3NCIsImlhdCI6MTcyOTExNTQzNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.c84LQnipjRrHb9p5BTGln0cCLM2A6ilPbGbXiMgLgRPhqfXo9S1slDmtRLeDhvAlfbLd5kMXJfkp5LYXdAw-6e5Cs-uD5JQHshJHx-DyBxSqIWALLSBEdPQGieudrWFWrT-pSls2tuOFHqc6r_6KOXqb-tcR-q0YigywZA_rpKyc2-JOf0Ks9hH5kr5LcyOhccu-aJHSNQ9U4SZ6WfRXl1E7LlFKyLVNQwR9LGi2Y4rq9nym04HtmzV6AwVmGPsQRcjOeRgar1zCi1WLtLhQ08N6lxJhptjkissIpHdIQAj81sqobI8G2alzl8qa_D6x9P4JYZTpS2FRAltYHOT63w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:35.7896634Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:37.560 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0MzUsImV4cCI6MTcyOTExOTAzNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDRjE1NkFEQUI4RkRGMjE0MUQyOERFNkRCREM3ODU3NCIsImlhdCI6MTcyOTExNTQzNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.c84LQnipjRrHb9p5BTGln0cCLM2A6ilPbGbXiMgLgRPhqfXo9S1slDmtRLeDhvAlfbLd5kMXJfkp5LYXdAw-6e5Cs-uD5JQHshJHx-DyBxSqIWALLSBEdPQGieudrWFWrT-pSls2tuOFHqc6r_6KOXqb-tcR-q0YigywZA_rpKyc2-JOf0Ks9hH5kr5LcyOhccu-aJHSNQ9U4SZ6WfRXl1E7LlFKyLVNQwR9LGi2Y4rq9nym04HtmzV6AwVmGPsQRcjOeRgar1zCi1WLtLhQ08N6lxJhptjkissIpHdIQAj81sqobI8G2alzl8qa_D6x9P4JYZTpS2FRAltYHOT63w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:35.7896634Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:44.866 +01:00 [INF] Executed DbCommand (659ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:46.172 +01:00 [INF] Executed DbCommand (1,305ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:46.173 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0NDMsImV4cCI6MTcyOTExOTA0MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwQ0U0OTI5NTY1MDE5NEM3QTQxQ0M4MzNEQjJDMEU3NCIsImlhdCI6MTcyOTExNTQ0Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.UCfXvyD-EMp39NAi2e_FQLiVYIrA8s54NU0E7ttmjMCdKPQmGKCZAvAxojBZAvJISfB17hWyYZDVZZCSbtNul6tTY8QBgduMrkgaD5MJ9qXW7lyTf8BLHzb1rQIG3XmfV6jYLNSYHUs7_UFSEaqsl5OruuLgO8WG5MYa6G3IgLA_mnK13czs1Z-hjTcpQog_glkgENC42zBWYMyZuqeCikgzNr9uNWAlsoo572b01M-H8tspeiVzvPUSwHumCfd56aYtGwPw3fKs6snjSCKyJaCwthFhheyVB66_-20Y44NQgnqUGvEPoxGrZRVx32IFrKrklXol5Fe2WXVc6DT4rw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:44.2073739Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:46.173 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0NDMsImV4cCI6MTcyOTExOTA0MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwQ0U0OTI5NTY1MDE5NEM3QTQxQ0M4MzNEQjJDMEU3NCIsImlhdCI6MTcyOTExNTQ0Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.UCfXvyD-EMp39NAi2e_FQLiVYIrA8s54NU0E7ttmjMCdKPQmGKCZAvAxojBZAvJISfB17hWyYZDVZZCSbtNul6tTY8QBgduMrkgaD5MJ9qXW7lyTf8BLHzb1rQIG3XmfV6jYLNSYHUs7_UFSEaqsl5OruuLgO8WG5MYa6G3IgLA_mnK13czs1Z-hjTcpQog_glkgENC42zBWYMyZuqeCikgzNr9uNWAlsoo572b01M-H8tspeiVzvPUSwHumCfd56aYtGwPw3fKs6snjSCKyJaCwthFhheyVB66_-20Y44NQgnqUGvEPoxGrZRVx32IFrKrklXol5Fe2WXVc6DT4rw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:44.2073739Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:53.026 +01:00 [INF] Executed DbCommand (388ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:50:53.622 +01:00 [INF] Executed DbCommand (595ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:50:53.622 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0NTIsImV4cCI6MTcyOTExOTA1MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1QzQwRkFGQTkwQTgzODE3QTUyQjQ5NDZBQTBBM0Q0RCIsImlhdCI6MTcyOTExNTQ1Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ZxklVLDlpmwBF5ZhUvMhSGY_YeZVrwJlqCK2V7nBki6e2MiRme96T8zoi5gPuZnRmuQzsDFHPxTvIVP9JwKXbcdkbGXmgP0jX8UtJR1u6BplASoXKVxg9vHOLbcSubpydMjkNuMyW_XUienWN4_c6jta4p5ma27ZNvk03zE7V0SYF5ytuUJ5Dl4H1PYU-juQN9HA4-kdFBqIgAakdgj7pehOhUxdlqHedqTNSWqQW8sKHA2DHflSSSm9MHLB255sfknBsIW0_77_LcN_GJiBGw7wvwcTVqoA2rJIGXXTT4Pme5jBrZtM9cBTACPktVyhdvWrKkH3NHnQi4xYM1fH9A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:52.6361173Z","status":false},"Message":null,"code":null}
+2024-10-16 22:50:53.622 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0NTIsImV4cCI6MTcyOTExOTA1MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1QzQwRkFGQTkwQTgzODE3QTUyQjQ5NDZBQTBBM0Q0RCIsImlhdCI6MTcyOTExNTQ1Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ZxklVLDlpmwBF5ZhUvMhSGY_YeZVrwJlqCK2V7nBki6e2MiRme96T8zoi5gPuZnRmuQzsDFHPxTvIVP9JwKXbcdkbGXmgP0jX8UtJR1u6BplASoXKVxg9vHOLbcSubpydMjkNuMyW_XUienWN4_c6jta4p5ma27ZNvk03zE7V0SYF5ytuUJ5Dl4H1PYU-juQN9HA4-kdFBqIgAakdgj7pehOhUxdlqHedqTNSWqQW8sKHA2DHflSSSm9MHLB255sfknBsIW0_77_LcN_GJiBGw7wvwcTVqoA2rJIGXXTT4Pme5jBrZtM9cBTACPktVyhdvWrKkH3NHnQi4xYM1fH9A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:50:52.6361173Z","status":false},"Message":null,"code":null}
+2024-10-16 22:51:00.985 +01:00 [INF] Executed DbCommand (501ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 22:51:01.663 +01:00 [INF] Executed DbCommand (677ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 22:51:01.664 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0NjAsImV4cCI6MTcyOTExOTA2MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMzI0QTJDMUVDMzg4Q0NCODU5OTM4OTA5NTYyODBFNCIsImlhdCI6MTcyOTExNTQ2MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.LngDk9DT607r99SRzFGltMNJvqtPMjcoRordcCS4_ICdsoD4IAzcxZPMfXJpCh7slDDVUOn-X5gxTf9_nSgRJLyw2T7ogQX8-OxcM5oRjzu3PMKvbyP_xwyVqees7eTJmITnThj2SwK6ykjEvoixUhOEsCKHmoPAgcgjTI1MAEcp-fTEUiXlD7cmNzjWpYl3q9aNWK3pjUPBfdLmlGH62cDcYDPlBP_J8XlX75o41ZtY7zeHv0x4mA5o_-VutATV0Ryer647S4KmMZHlVjjgroLNL-rZbU0cInkDr_HrG2dXqj2Y_ls26qAbf6DIcctz_okVbHNnkS8tFwLYOdKqOg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:51:00.4833703Z","status":false},"Message":null,"code":null}
+2024-10-16 22:51:01.664 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTU0NjAsImV4cCI6MTcyOTExOTA2MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMzI0QTJDMUVDMzg4Q0NCODU5OTM4OTA5NTYyODBFNCIsImlhdCI6MTcyOTExNTQ2MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.LngDk9DT607r99SRzFGltMNJvqtPMjcoRordcCS4_ICdsoD4IAzcxZPMfXJpCh7slDDVUOn-X5gxTf9_nSgRJLyw2T7ogQX8-OxcM5oRjzu3PMKvbyP_xwyVqees7eTJmITnThj2SwK6ykjEvoixUhOEsCKHmoPAgcgjTI1MAEcp-fTEUiXlD7cmNzjWpYl3q9aNWK3pjUPBfdLmlGH62cDcYDPlBP_J8XlX75o41ZtY7zeHv0x4mA5o_-VutATV0Ryer647S4KmMZHlVjjgroLNL-rZbU0cInkDr_HrG2dXqj2Y_ls26qAbf6DIcctz_okVbHNnkS8tFwLYOdKqOg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T22:51:00.4833703Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:05.818 +01:00 [INF] Executed DbCommand (323ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:06.154 +01:00 [INF] Executed DbCommand (335ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:06.155 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMDMsImV4cCI6MTcyOTExOTYwMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJEQ0MxRkU1NzI4QUEyMURDNzExREQ1NTE3ODM5Rjg2QyIsImlhdCI6MTcyOTExNjAwMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Iaispz3sBzBptD6ryJqv4wWmPifGaluuJDdDnZ_QUSf_0W1-a3jihCDHMi2-rfpOr2dfQ-gh2iPejl5bZ987dgBSEF7BBQ7BiJd0OwVCihBDuDGfF0AR2lF4WNhUJ7DxTI4kHyGnZtsk-QHqoQFNYDoXydERC0m1YwN21yXZ8WNYBnzw49OTeA5Cp8pNsTybzDKEJcY3-kxBR2tm1MwrAEnoQIXG_0oH4ZptcqestqaFy-e1fLZ8rzO11H_h3NVY_pkYC29P_8zHq3Bjkga2XRQ_aFHxytDTAEFj-6AcXZim6hYvaecr3wRinxHFtRKtLr72LPqs0tFtTZK-WUiS1w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:03.0519546Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:06.155 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMDMsImV4cCI6MTcyOTExOTYwMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJEQ0MxRkU1NzI4QUEyMURDNzExREQ1NTE3ODM5Rjg2QyIsImlhdCI6MTcyOTExNjAwMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Iaispz3sBzBptD6ryJqv4wWmPifGaluuJDdDnZ_QUSf_0W1-a3jihCDHMi2-rfpOr2dfQ-gh2iPejl5bZ987dgBSEF7BBQ7BiJd0OwVCihBDuDGfF0AR2lF4WNhUJ7DxTI4kHyGnZtsk-QHqoQFNYDoXydERC0m1YwN21yXZ8WNYBnzw49OTeA5Cp8pNsTybzDKEJcY3-kxBR2tm1MwrAEnoQIXG_0oH4ZptcqestqaFy-e1fLZ8rzO11H_h3NVY_pkYC29P_8zHq3Bjkga2XRQ_aFHxytDTAEFj-6AcXZim6hYvaecr3wRinxHFtRKtLr72LPqs0tFtTZK-WUiS1w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:03.0519546Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:11.944 +01:00 [INF] Executed DbCommand (300ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:12.642 +01:00 [INF] Executed DbCommand (697ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:12.642 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMTEsImV4cCI6MTcyOTExOTYxMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1NEQ3NDBDQ0E4MjU3MDE1MzhDMEQ4MzU5RDFFQzJCOSIsImlhdCI6MTcyOTExNjAxMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Snh7VX-eux530s4ichLPPDh7lcoBHHK7FonSVol6dbDl1ZGgodmtq5M09AqTvWB7FkxiiE6LUKJTiIjNAmu_hI1ZaWxZz8P2ObSysnBzA88IdgMBKJMCsKyqqDSx8uHgOXFj9DLn1VNP2ESMuTjmNEXmcjo_h4uuMVwh5COm32d5AUCBo04fVHBt2164dXK4c-o7F8eYrXJW9g76Qae_KHoH2UUFjbdElnm2dQq-XfH20xLzlaThtqe597aACZD-eUJFmquQLb366E8w_OHrl1WX9rR3r1dTRq4kFZWu_oxQGYwKj17id7Pwp1Kd5joucgZOEE4LpusC6FgziOFQSg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:11.6438071Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:12.642 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMTEsImV4cCI6MTcyOTExOTYxMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1NEQ3NDBDQ0E4MjU3MDE1MzhDMEQ4MzU5RDFFQzJCOSIsImlhdCI6MTcyOTExNjAxMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Snh7VX-eux530s4ichLPPDh7lcoBHHK7FonSVol6dbDl1ZGgodmtq5M09AqTvWB7FkxiiE6LUKJTiIjNAmu_hI1ZaWxZz8P2ObSysnBzA88IdgMBKJMCsKyqqDSx8uHgOXFj9DLn1VNP2ESMuTjmNEXmcjo_h4uuMVwh5COm32d5AUCBo04fVHBt2164dXK4c-o7F8eYrXJW9g76Qae_KHoH2UUFjbdElnm2dQq-XfH20xLzlaThtqe597aACZD-eUJFmquQLb366E8w_OHrl1WX9rR3r1dTRq4kFZWu_oxQGYwKj17id7Pwp1Kd5joucgZOEE4LpusC6FgziOFQSg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:11.6438071Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:18.549 +01:00 [INF] Executed DbCommand (359ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:18.842 +01:00 [INF] Executed DbCommand (292ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:18.843 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMTgsImV4cCI6MTcyOTExOTYxOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3N0I4RDI2NjBBQjFGQTEyQzI3MzRCMzM1MkIyNThDNSIsImlhdCI6MTcyOTExNjAxOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Jneh9MnsLPsp3ryH5VtwSh5mqdj1gycSUAuPd77SX_zyEIdp-c4IU-epqrIJhKC99OgyYhu8ROCZ73E04r4H7fyjegChBMEEcajpPQIdctLQBHyktCURjblbWWUf2isZM1CCTmabRXy53PpMVjK-IUwCve5j7hfzVaN59sC0NnlaQpf_9k2xU-4BbfSDq3Vg1_Y4t69yIfXHpvqx83JqDROmf3oj6BFRTlL3TCz5k6j1BaurLhzh9qIvaAohJzA37KtSRCKBXITmZBV6oqWtnuQipFFIu4voPfWbyIqtWYU3OfKVIfVhMrjhQ6vXMw3gkSZK25HTQcYjjQu9Oj00VA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:18.1898246Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:18.843 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMTgsImV4cCI6MTcyOTExOTYxOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3N0I4RDI2NjBBQjFGQTEyQzI3MzRCMzM1MkIyNThDNSIsImlhdCI6MTcyOTExNjAxOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Jneh9MnsLPsp3ryH5VtwSh5mqdj1gycSUAuPd77SX_zyEIdp-c4IU-epqrIJhKC99OgyYhu8ROCZ73E04r4H7fyjegChBMEEcajpPQIdctLQBHyktCURjblbWWUf2isZM1CCTmabRXy53PpMVjK-IUwCve5j7hfzVaN59sC0NnlaQpf_9k2xU-4BbfSDq3Vg1_Y4t69yIfXHpvqx83JqDROmf3oj6BFRTlL3TCz5k6j1BaurLhzh9qIvaAohJzA37KtSRCKBXITmZBV6oqWtnuQipFFIu4voPfWbyIqtWYU3OfKVIfVhMrjhQ6vXMw3gkSZK25HTQcYjjQu9Oj00VA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:18.1898246Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:24.673 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:25.132 +01:00 [INF] Executed DbCommand (458ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:25.132 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMjQsImV4cCI6MTcyOTExOTYyNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRThCMjZCOUVCMjQyMDNERDI2MDRERUZGN0UzRUM1QSIsImlhdCI6MTcyOTExNjAyNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.isnIPFnqTFxEwLRq63YV87chlFBTCOcsaCJ-Or9p7MoQLtkQlhTKeW0wdCiGJhz1pbXuzQprO36L3twWcY0q5w4JqxSYQavKqcyMoL3P93L6neOqbcXt834KIzo9lPtHkNKp3P9kyIksTFS5WuxzSoukQkUw5E_uDG49QSHOZSldZD_jLemzR_1WpIF0JbjrBUvqmgYXFGYtS9GgeEibrjkZZFKsWfUecGuS8ZBoGBHUX54q1nJS6erCX8vPZhPUhXR-C0DeSg_mrPun2xDNYOQNK9sfZK2ttoSELkh_WblC3KMGvoeEKd4q-FR9Hd2nXaFGZcNMW7L0Ayo3kcL0oQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:24.3835037Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:25.133 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMjQsImV4cCI6MTcyOTExOTYyNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxRThCMjZCOUVCMjQyMDNERDI2MDRERUZGN0UzRUM1QSIsImlhdCI6MTcyOTExNjAyNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.isnIPFnqTFxEwLRq63YV87chlFBTCOcsaCJ-Or9p7MoQLtkQlhTKeW0wdCiGJhz1pbXuzQprO36L3twWcY0q5w4JqxSYQavKqcyMoL3P93L6neOqbcXt834KIzo9lPtHkNKp3P9kyIksTFS5WuxzSoukQkUw5E_uDG49QSHOZSldZD_jLemzR_1WpIF0JbjrBUvqmgYXFGYtS9GgeEibrjkZZFKsWfUecGuS8ZBoGBHUX54q1nJS6erCX8vPZhPUhXR-C0DeSg_mrPun2xDNYOQNK9sfZK2ttoSELkh_WblC3KMGvoeEKd4q-FR9Hd2nXaFGZcNMW7L0Ayo3kcL0oQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:24.3835037Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:31.136 +01:00 [INF] Executed DbCommand (302ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:31.437 +01:00 [INF] Executed DbCommand (300ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:31.437 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMzAsImV4cCI6MTcyOTExOTYzMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDMjAxMjk4M0FDOUEyNDI2N0QyQkQyRTAwRDA5RTUxQyIsImlhdCI6MTcyOTExNjAzMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.tUAwcwYyhyal-6A1K_ByFMpUbjDDiWZc4n4e6cQjxJsZOW3_qjYDqob0CtNlZdWDjPYCMALXbshQAF_5OztEZCWO5tPcP1y4iaWS3Icsi0lQHB63v9orAbWM2P4-vIavwBftEznddntktlp4CZ1zx_lxKgTjldcVr6KNPDYSq0XMc3mKoiX_D2Emcg7sBVrCrcIn_F1C80tw5QyJbzXJ0nrS_j_i4VHiMwgNB12tjnX3Byl-pKleYVZqpsyUJT0WXROd2e7xLhhGfnKZYyQpDOD8RUUOKQnHYExJbYW4GY0SA51V5K8nAIMJykq9Otw4SD-armrarO7cvzJmec1DLA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:30.8336139Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:31.437 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMzAsImV4cCI6MTcyOTExOTYzMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDMjAxMjk4M0FDOUEyNDI2N0QyQkQyRTAwRDA5RTUxQyIsImlhdCI6MTcyOTExNjAzMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.tUAwcwYyhyal-6A1K_ByFMpUbjDDiWZc4n4e6cQjxJsZOW3_qjYDqob0CtNlZdWDjPYCMALXbshQAF_5OztEZCWO5tPcP1y4iaWS3Icsi0lQHB63v9orAbWM2P4-vIavwBftEznddntktlp4CZ1zx_lxKgTjldcVr6KNPDYSq0XMc3mKoiX_D2Emcg7sBVrCrcIn_F1C80tw5QyJbzXJ0nrS_j_i4VHiMwgNB12tjnX3Byl-pKleYVZqpsyUJT0WXROd2e7xLhhGfnKZYyQpDOD8RUUOKQnHYExJbYW4GY0SA51V5K8nAIMJykq9Otw4SD-armrarO7cvzJmec1DLA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:30.8336139Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:37.165 +01:00 [INF] Executed DbCommand (285ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:37.495 +01:00 [INF] Executed DbCommand (330ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:37.495 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMzYsImV4cCI6MTcyOTExOTYzNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJEMjBEMkIwOUUwREY4RUYyQzZFNDIyRjcxQzkwNDc5OCIsImlhdCI6MTcyOTExNjAzNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.UY_X8cDYA_etkOIBdpQdixYZdC-DYi2ha3YYUG8FJKE5V-nRokBBzgutmfES_EdVym_c-FG1J5P1hcxD0E-SrXY54dSiD_HXFqgEHw1TGTlx7rZ2k_NIi_nREmMEsw48cTjkCkrn7VifVCeNGvGzXWsXxzLBfGHZMW46YOmNAKIeaqR5VRzZ4OZbld4V6PZ2IOhZ_COPfMHGDMwrDcc12OCsS6p1vRSSPLA5Xk7-BVo3qcgVY4a1qSW6wnbx8NHE1ZNEYr-vgFGSnfjTFT57nJwgaPrzDfXG9UfAelPNv-ERobu3I-Cb_NLQ4c250N7IT4ibzS7hNcX7aFjYO0s20Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:36.8793304Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:37.496 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwMzYsImV4cCI6MTcyOTExOTYzNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJEMjBEMkIwOUUwREY4RUYyQzZFNDIyRjcxQzkwNDc5OCIsImlhdCI6MTcyOTExNjAzNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.UY_X8cDYA_etkOIBdpQdixYZdC-DYi2ha3YYUG8FJKE5V-nRokBBzgutmfES_EdVym_c-FG1J5P1hcxD0E-SrXY54dSiD_HXFqgEHw1TGTlx7rZ2k_NIi_nREmMEsw48cTjkCkrn7VifVCeNGvGzXWsXxzLBfGHZMW46YOmNAKIeaqR5VRzZ4OZbld4V6PZ2IOhZ_COPfMHGDMwrDcc12OCsS6p1vRSSPLA5Xk7-BVo3qcgVY4a1qSW6wnbx8NHE1ZNEYr-vgFGSnfjTFT57nJwgaPrzDfXG9UfAelPNv-ERobu3I-Cb_NLQ4c250N7IT4ibzS7hNcX7aFjYO0s20Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:36.8793304Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:43.380 +01:00 [INF] Executed DbCommand (402ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:43.680 +01:00 [INF] Executed DbCommand (300ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:43.680 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNDIsImV4cCI6MTcyOTExOTY0MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzNjlBRDQzRDA3OTBDOTE0REUzMkY4QUJGRDUyODgzQiIsImlhdCI6MTcyOTExNjA0Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ohear5_vBgvx-iKNsSUbu2dM1hJ3UM4qsc2Xz07euR8jYfpWUvbReBSP9Xcq0LS3XOi2LUSX6BYRf-Vc4F8erIZr5UAlWledkla98GU84e_hSdU3Wt527DM8xlveWSTd9bF1IUMcGQcqRN_jUzhAmPCYVXxVz-M9ZPLl5jJQEuAx9cKUAV83Gv_F6hA7UaoO_nUG7UlDVyhfDJUIDODjD4OPEvZkQLqKmroW4roYw6gTKhfy8Ti6_xLrqhdNCpIgK8QhAiEJsbJyOAgPuEB4QFgCoFKuwN4xVr_HzjEWNLgvlu66UO7xajn9AhPZ8rG-zpKTDF3zKwC9v3pzY7OPvQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:42.9780236Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:43.680 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNDIsImV4cCI6MTcyOTExOTY0MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzNjlBRDQzRDA3OTBDOTE0REUzMkY4QUJGRDUyODgzQiIsImlhdCI6MTcyOTExNjA0Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.ohear5_vBgvx-iKNsSUbu2dM1hJ3UM4qsc2Xz07euR8jYfpWUvbReBSP9Xcq0LS3XOi2LUSX6BYRf-Vc4F8erIZr5UAlWledkla98GU84e_hSdU3Wt527DM8xlveWSTd9bF1IUMcGQcqRN_jUzhAmPCYVXxVz-M9ZPLl5jJQEuAx9cKUAV83Gv_F6hA7UaoO_nUG7UlDVyhfDJUIDODjD4OPEvZkQLqKmroW4roYw6gTKhfy8Ti6_xLrqhdNCpIgK8QhAiEJsbJyOAgPuEB4QFgCoFKuwN4xVr_HzjEWNLgvlu66UO7xajn9AhPZ8rG-zpKTDF3zKwC9v3pzY7OPvQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:42.9780236Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:49.531 +01:00 [INF] Executed DbCommand (412ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:49.846 +01:00 [INF] Executed DbCommand (315ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:49.847 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNDksImV4cCI6MTcyOTExOTY0OSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxNEJBNkI4OEU4MzcxQUM1N0E2MDYyODY0NUVBNDg0RiIsImlhdCI6MTcyOTExNjA0OSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rAv-nML0m8lAZxQ-T9W9OLiojrmHmwH0N3dQ06Zf7WMik_hNdIyQ7D0DFAG-nG5sFJywOUj2_kO-Fl_s_6QPxGB7OYtcZ7FqObI1gV3Md-SAMDk7xUMT8xLiVpp-kaHQuYodTES-hQ9JPmuYMDmgHC_cP3g3ZtejvTQf7DsObEmRGbhM83gd6pEfTGN9QHy1F8K5sKEZ_-69vLJLx3IZedMdRvCr62sVhJmXd0Qp-Dqn8ZVG_2dEB0q8aNWloNp5hpPZ4ndDRvmG4qHBcALPFSPuym-UvA0L_HfS5LvknM6MIwfyUqWcqiSrnQEJnQu-N8hn8d9MDpVtr1FiVIEnug","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:49.1192247Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:49.847 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNDksImV4cCI6MTcyOTExOTY0OSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxNEJBNkI4OEU4MzcxQUM1N0E2MDYyODY0NUVBNDg0RiIsImlhdCI6MTcyOTExNjA0OSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rAv-nML0m8lAZxQ-T9W9OLiojrmHmwH0N3dQ06Zf7WMik_hNdIyQ7D0DFAG-nG5sFJywOUj2_kO-Fl_s_6QPxGB7OYtcZ7FqObI1gV3Md-SAMDk7xUMT8xLiVpp-kaHQuYodTES-hQ9JPmuYMDmgHC_cP3g3ZtejvTQf7DsObEmRGbhM83gd6pEfTGN9QHy1F8K5sKEZ_-69vLJLx3IZedMdRvCr62sVhJmXd0Qp-Dqn8ZVG_2dEB0q8aNWloNp5hpPZ4ndDRvmG4qHBcALPFSPuym-UvA0L_HfS5LvknM6MIwfyUqWcqiSrnQEJnQu-N8hn8d9MDpVtr1FiVIEnug","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:49.1192247Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:55.635 +01:00 [INF] Executed DbCommand (305ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:00:56.093 +01:00 [INF] Executed DbCommand (457ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:00:56.093 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNTUsImV4cCI6MTcyOTExOTY1NSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3NUJCMTA4OTNBNDU2MTBFOUYyRjdGNDg2QUNDOUQxMCIsImlhdCI6MTcyOTExNjA1NSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.P7MOM3qsToLHaQWj5xvU893dIcB9j4J2My-73lsaBjWPZi-3XFmQ2-B0KX-2lEySr4rcEanx0JIYz2Lf1EhCox3BS0PXhE1WEfe1zW7LPkfrLtxxvA5Ay2uEEE2MIYPgsF749uHv9ALOeDUAVOdBZNvjCqQ25XZtFf6LH9iVBDyHwXwAOCfU0BW6GvNePpGEJwJIGJLYjynlMZ1Km2HRlMC3Zs8-LhP1smw9fvsaq5qoaZaiWXA6IVOxNjlZidY5pBSVlJUiwAb7pJLC2znVP0sF31tyb4L-QEJaZqa1XTxCrEDGuI28QY0DHZOG8EqSvfUJQda2ZUt5sJWrbk3Wvw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:55.3298972Z","status":false},"Message":null,"code":null}
+2024-10-16 23:00:56.093 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNTUsImV4cCI6MTcyOTExOTY1NSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3NUJCMTA4OTNBNDU2MTBFOUYyRjdGNDg2QUNDOUQxMCIsImlhdCI6MTcyOTExNjA1NSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.P7MOM3qsToLHaQWj5xvU893dIcB9j4J2My-73lsaBjWPZi-3XFmQ2-B0KX-2lEySr4rcEanx0JIYz2Lf1EhCox3BS0PXhE1WEfe1zW7LPkfrLtxxvA5Ay2uEEE2MIYPgsF749uHv9ALOeDUAVOdBZNvjCqQ25XZtFf6LH9iVBDyHwXwAOCfU0BW6GvNePpGEJwJIGJLYjynlMZ1Km2HRlMC3Zs8-LhP1smw9fvsaq5qoaZaiWXA6IVOxNjlZidY5pBSVlJUiwAb7pJLC2znVP0sF31tyb4L-QEJaZqa1XTxCrEDGuI28QY0DHZOG8EqSvfUJQda2ZUt5sJWrbk3Wvw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:00:55.3298972Z","status":false},"Message":null,"code":null}
+2024-10-16 23:01:01.892 +01:00 [INF] Executed DbCommand (296ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-10-16 23:01:02.234 +01:00 [INF] Executed DbCommand (341ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-10-16 23:01:02.234 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNjEsImV4cCI6MTcyOTExOTY2MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0MzM2M0UyNUZFMzQ3OUVFNjM1NDA4Q0JCM0RFQjg5OCIsImlhdCI6MTcyOTExNjA2MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.IcNWoBBNWFj4xTI6Qw0JzrzhY5OGS5WXkOeuAFKSINtQ-Gf2c22WWuXgnJQSI5RPY3iNuEUBNgtdMGfRAK58eL6beglcK78OZdhDGxQJb40fn5Od0u4JptV-1NHWi-F5ZiTirSJZJeOxcDD_24-AKuRC-iLl0t8Fq-88dwgDiRT8IkBXgr1h9yW-mDnpI03dIJC6vo5rcVT0dcIQwTDmHVqjvvzVo3ZDwMQ6dfhos1F5t2m1eKi_Qh35wF74FRFhvG2bfe5YDmlIEM3JfgDNv0H33SKUTdrgG0Uv1neOh5Fdsaj8vz6jY230ZmhiHkd5z1h23kmMOglV9RYdIpGyfg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:01:01.5960643Z","status":false},"Message":null,"code":null}
+2024-10-16 23:01:02.234 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3MjkxMTYwNjEsImV4cCI6MTcyOTExOTY2MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0MzM2M0UyNUZFMzQ3OUVFNjM1NDA4Q0JCM0RFQjg5OCIsImlhdCI6MTcyOTExNjA2MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.IcNWoBBNWFj4xTI6Qw0JzrzhY5OGS5WXkOeuAFKSINtQ-Gf2c22WWuXgnJQSI5RPY3iNuEUBNgtdMGfRAK58eL6beglcK78OZdhDGxQJb40fn5Od0u4JptV-1NHWi-F5ZiTirSJZJeOxcDD_24-AKuRC-iLl0t8Fq-88dwgDiRT8IkBXgr1h9yW-mDnpI03dIJC6vo5rcVT0dcIQwTDmHVqjvvzVo3ZDwMQ6dfhos1F5t2m1eKi_Qh35wF74FRFhvG2bfe5YDmlIEM3JfgDNv0H33SKUTdrgG0Uv1neOh5Fdsaj8vz6jY230ZmhiHkd5z1h23kmMOglV9RYdIpGyfg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2024-10-16T23:01:01.5960643Z","status":false},"Message":null,"code":null}

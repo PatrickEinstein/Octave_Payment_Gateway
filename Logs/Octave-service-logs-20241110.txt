@@ -1,0 +1,10 @@
+2024-11-10 02:55:45.062 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-11-10 02:55:45.075 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-11-10 02:55:46.331 +01:00 [INF] Request error from https://api.pelpay.ng/api/Account/login: No such host is known. (api.pelpay.ng:443) <---->  No such host is known. 
+2024-11-10 02:55:46.768 +01:00 [INF] TOKEN ==> {"Data":null,"Message":"\u0027R\u0027 is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.","code":null}
+2024-11-10 02:55:46.768 +01:00 [INF] Login in==> {"Data":null,"Message":"\u0027R\u0027 is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.","code":null}
+2024-11-10 09:12:53.209 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-11-10 09:12:53.527 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-11-10 09:12:53.528 +01:00 [INF] Request error from https://api.pelpay.ng/api/Account/login: No such host is known. (api.pelpay.ng:443) <---->  No such host is known. 
+2024-11-10 09:12:54.272 +01:00 [INF] TOKEN ==> {"Data":null,"Message":"\u0027R\u0027 is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.","code":null}
+2024-11-10 09:12:54.272 +01:00 [INF] Login in==> {"Data":null,"Message":"\u0027R\u0027 is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.","code":null}

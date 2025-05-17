@@ -1,0 +1,28 @@
+2024-10-11 21:06:56.914 +01:00 [INF] Starting up the application
+2024-10-11 21:07:01.337 +01:00 [INF] Now listening on: http://localhost:5331
+2024-10-11 21:07:01.359 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-11 21:07:01.362 +01:00 [INF] Hosting environment: Development
+2024-10-11 21:07:01.362 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-10-11 21:07:02.187 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-10-11 21:07:02.297 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-10-11 21:07:02.375 +01:00 [INF] HTTP GET / responded 404 in 66.7613 ms
+2024-10-11 21:07:02.433 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 252.2556ms
+2024-10-11 21:07:02.450 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-10-11 21:07:07.661 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-10-11 21:07:07.975 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 314.8999ms
+2024-10-11 21:07:07.994 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.css - null null
+2024-10-11 21:07:07.995 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - null null
+2024-10-11 21:07:08.006 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - null null
+2024-10-11 21:07:08.047 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-10-11 21:07:08.047 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.css - 200 202 text/css 53.2733ms
+2024-10-11 21:07:08.069 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-10-11 21:07:08.076 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - 200 152034 text/css 81.255ms
+2024-10-11 21:07:08.095 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-10-11 21:07:08.096 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 89.4322ms
+2024-10-11 21:07:08.205 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - null null
+2024-10-11 21:07:08.211 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-10-11 21:07:08.212 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 6.9054ms
+2024-10-11 21:07:08.218 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-10-11 21:07:08.221 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 2.2869ms
+2024-10-11 21:07:11.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-10-11 21:07:11.496 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 388.6869ms

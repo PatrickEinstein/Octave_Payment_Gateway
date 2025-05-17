@@ -1,0 +1,69 @@
+{
+  "amount": 100.08,
+"callBackUrlDomain": "http://localhost:3000/",
+ "notificationUrl": "https://your_notification_url.com/",
+  "currency": "NGN",
+  "merchantRef": "23567890987654567mplpmmm898765678;",
+  "narration": "test",
+  "splitCode": "",
+  "shouldTokenizeCard": false,
+  "customer": {
+    "customerId": "csg",
+    "customerLastName": "Patrick",
+    "customerFirstName": "Octave",
+    "customerEmail": "pmohammed@chamsswitch.com",
+    "customerPhoneNumber": "",
+    "customerAddress": "",
+    "customerCity": "",
+    "customerStateCode": "",
+    "customerPostalCode": "",
+    "customerCountryCode": "NG"
+  },
+  "mcc": 0,
+  "merchantDescription": "string"
+}
+
+
+{
+  "customerAccountNumber": "0234590564",
+  "initialPaymentAmount": 10,
+  "repaymentAmount": 10,
+  "repaymentStartDate": "2024-09-09T10:22:00.758Z",
+  "repaymentFrequency": 2,
+  "repaymentDuration": 10,
+  "sendTransactionNotification": true
+}
+
+{
+  "bankCode": "035",
+  "accountNumber": "0234590564",
+  "nameOnAccount": "Patrick",
+  "channel": 0
+}
+
+{
+  "cardNumber": "5200000000001096",
+  "expiredMonth": "12",
+  "expiredYear": "2050",
+  "cvv": "311",
+  "cardPin": "1234",
+  "shouldSaveCard": true,
+  "channel": 0
+}
+
+
+
+// http://localhost:5331/webhook?channel=0
+{
+  "merchantCode": "Nai0000319",
+  "paymentReference": "",
+  "merchantReference": "",
+  "amountCollected": 100,
+  "amount": 100,
+  "transactionStatus": "Successful",
+  "currencyCode": "NGN",
+  "accountNumberMasked": "5200***1096",
+  "narration": "",
+  "customerName": "",
+  "paymentDate": "2024-10-30T18:15:51.294559+00:00"
+}

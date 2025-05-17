@@ -1,0 +1,102 @@
+
+// Validate Bills
+{
+    "channelId": "1015",
+    "identifier": "Account Id",
+    "packageId": "1009"
+}
+
+// Create Wallet
+{
+  "phoneNumber": "08138329684",
+  "email": "mohammed@gmail.com",
+  "nin": "6767688768",
+  "merchantCode": "Nai0000319"
+}
+
+// Buy bills
+{
+  "customerAccount": "Pat12--0",
+  "transactionReference": "Pat12--0",
+  "charge": 200,
+  "packageId": 36,
+  "customerIdentifier": "07051580294",
+  "customerEmail": "princeaya@gmail.com",
+  "customerPhoneNumber": "08022334455",
+  "customerName": "Prince Aya"
+}
+
+
+
+
+// PayBills
+{
+    "clientId": "{{x-api-key}}",
+    "customerAccount": "0243831506",
+    "amount": 1000.00,
+    "charge": 0.00,
+    "transactionReference": "{{payBillTransactionReference}}",
+    "packageId": 36,
+    "customerIdentifier": "07051580294",
+    "customerEmail": "princeaya@gmail.com",
+    "customerPhoneNumber": "08022334455",
+    "customerName": "Prince Aya",
+    "securityInfo": "{{an authorization key set by you to authorize transaction request from your end}}"
+}
+
+// Paybills
+
+{
+  "clientId": "C0F9F41B-185E-4A9D-969B-50329679B6F5",
+  "customerAccount": "0243831506",
+  "amount": 1000.00,
+  "charge": 0.00,
+  "transactionReference": "Pat12--0",
+  "packageId": 36,
+  "customerIdentifier": "07051580294",
+  "customerEmail": "princeaya@gmail.com",
+  "customerPhoneNumber": "08022334455",
+  "customerName": "Prince Aya",
+  "securityInfo": "4567890dfghjmhbgvfcvgbhn"
+}
+
+
+//fund wallet
+{
+  "securityInfo": "4567890dfghjmhbgvfcvgbhn",
+  "destinationAccountNumber": "0243831506",
+  "amount": 100,
+  "narration": "string",
+  "transactionReference": "8989999",
+  "useCustomNarration": true
+}
+
+//Transaction Callback
+{ 
+  "title": "string", 
+  "message": "string", 
+  "data": { 
+    "status": "string", 
+    "message": "string", 
+    "narration": "string",
+    "transactionReference": "string", 
+    "platformTransactionReference": "string",
+    "transactionStan": "string",
+    "orinalTxnTransactionDate": "0001-01-01T00:00:00"
+  }
+  "requestType": 3 
+}
+
+
+// Debit Wallet
+{
+  "destinationAccountNumber": "0243831506",
+  "amount": 100,
+  "narration": "string",
+  "transactionReference": "Pat12--0",
+  "useCustomNarration": true,
+  "destinationBankName": "WEMA",
+  "destinationAccountName": "AYA PRINCE",
+  "sourceAccountNumber": "0243831506",
+  "destinationBankCode": "035"
+}

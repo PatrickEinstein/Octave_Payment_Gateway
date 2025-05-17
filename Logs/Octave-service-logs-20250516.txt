@@ -1,0 +1,959 @@
+2025-05-16 17:45:51.159 +01:00 [INF] Starting up the application
+2025-05-16 17:46:03.700 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-16 17:46:03.724 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 17:46:03.732 +01:00 [INF] Hosting environment: Development
+2025-05-16 17:46:03.732 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-16 17:46:04.497 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-16 17:46:04.546 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-16 17:46:04.611 +01:00 [INF] HTTP GET / responded 404 in 59.8789 ms
+2025-05-16 17:46:04.648 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 155.1921ms
+2025-05-16 17:46:04.662 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-16 17:48:10.768 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-16 17:48:10.770 +01:00 [INF] HTTP GET / responded 404 in 0.6061 ms
+2025-05-16 17:48:10.771 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 3.4941ms
+2025-05-16 17:48:10.772 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-16 17:48:24.443 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-16 17:48:24.773 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 329.9865ms
+2025-05-16 17:48:24.926 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - null null
+2025-05-16 17:48:24.937 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.css - null null
+2025-05-16 17:48:24.937 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - null null
+2025-05-16 17:48:24.970 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-16 17:48:24.971 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 1.0259ms
+2025-05-16 17:48:24.987 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-05-16 17:48:24.987 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.css - 200 202 text/css 50.426ms
+2025-05-16 17:48:24.996 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-16 17:48:25.069 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-16 17:48:25.088 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - 200 152034 text/css 160.7836ms
+2025-05-16 17:48:25.096 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-16 17:48:25.096 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 158.7316ms
+2025-05-16 17:48:25.097 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-16 17:48:25.097 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 27.6665ms
+2025-05-16 17:48:25.493 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-16 17:48:25.529 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/favicon-32x32.png - null null
+2025-05-16 17:48:25.530 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-16 17:48:25.530 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/favicon-32x32.png - 200 628 image/png 1.1116ms
+2025-05-16 17:48:25.745 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 251.9163ms
+2025-05-16 17:48:53.270 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/get-all-banks - null null
+2025-05-16 17:48:53.282 +01:00 [INF] Executing endpoint 'OCPG.Controllers.WalletController.GetAllBanks (OCPG)'
+2025-05-16 17:48:53.349 +01:00 [INF] Route matched with {action = "GetAllBanks", controller = "Wallet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBanks() on controller OCPG.Controllers.WalletController (OCPG).
+2025-05-16 17:48:58.402 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-16 17:49:00.864 +01:00 [INF] Executed DbCommand (253ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:49:02.442 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.WemaWalletBankListRresponse'.
+2025-05-16 17:49:02.455 +01:00 [INF] Executed action OCPG.Controllers.WalletController.GetAllBanks (OCPG) in 9101.1324ms
+2025-05-16 17:49:02.456 +01:00 [INF] Executed endpoint 'OCPG.Controllers.WalletController.GetAllBanks (OCPG)'
+2025-05-16 17:49:02.458 +01:00 [INF] HTTP GET /get-all-banks responded 200 in 9187.9241 ms
+2025-05-16 17:49:02.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/get-all-banks - 200 null application/json; charset=utf-8 9196.8438ms
+2025-05-16 17:49:37.790 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/api/v1/Customer - null null
+2025-05-16 17:49:37.797 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.CustomerController.GetAll (OCPG)'
+2025-05-16 17:49:37.803 +01:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller CentralPG.Controllers.CustomerController (OCPG).
+2025-05-16 17:49:38.206 +01:00 [ERR] Failed executing DbCommand (264ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."FirstName", c."LastName", c."PhoneNumber", c."Address", c."Email"
+FROM "Customers" AS c
+2025-05-16 17:49:38.253 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CentralPG.Data.DataBaseContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 91
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 91
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 91
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 91
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+2025-05-16 17:49:38.546 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[CentralPG.Core.Dtos.CustomerDto, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-16 17:49:38.588 +01:00 [INF] Executed action CentralPG.Controllers.CustomerController.GetAll (OCPG) in 784.9234ms
+2025-05-16 17:49:38.589 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.CustomerController.GetAll (OCPG)'
+2025-05-16 17:49:38.595 +01:00 [ERR] HTTP GET /api/v1/Customer responded 500 in 804.9269 ms
+System.AggregateException: One or more errors occurred. (42P01: relation "Customers" does not exist
+
+POSITION: 91)
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 91
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CentralPG.Infrastructure.Services.Repositories.CustomerRepository.GetAll() in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Repositories\CustomerRepository.cs:line 61
+   at CentralPG.Infrastructure.Sevices.Mains.CustomerService.GetAll() in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Mains\CustomerService.cs:line 31
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 91
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at ResultGetter(Object)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-16 17:49:38.616 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (42P01: relation "Customers" does not exist
+
+POSITION: 91)
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "Customers" does not exist
+
+POSITION: 91
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CentralPG.Infrastructure.Services.Repositories.CustomerRepository.GetAll() in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Repositories\CustomerRepository.cs:line 61
+   at CentralPG.Infrastructure.Sevices.Mains.CustomerService.GetAll() in D:\ACTIVE\Octave\OCPG\Infrastructure\Service\Mains\CustomerService.cs:line 31
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Customers" does not exist
+    Position: 91
+    File: parse_relation.c
+    Line: 1384
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at ResultGetter(Object)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-16 17:49:38.637 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/api/v1/Customer - 500 null text/plain; charset=utf-8 847.7074ms
+2025-05-16 17:50:06.297 +01:00 [INF] Executed DbCommand (191ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:07.846 +01:00 [INF] Executed DbCommand (1,129ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:07.876 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMDcsImV4cCI6MTc0NzQxNzgwNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5ODFFREU1NEEyMEUzQkMwMDU5RDNEMzg2MDEzQkI1OCIsImlhdCI6MTc0NzQxNDIwNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.OK7DpKsPOIkJBesDVMgVrE4lqzZy6zxWvgsSx63dfYl581T7Y-PeOnldV5wo33hjafhF-JagEulM5u70zNKyON8647-lpnzo3JTIY35Rjv1cPHRwKT026V0NYvv1lDoJ-1LIsmgu3qNwKYNGJWaOYFpz9A9H6aBqCVy4MVUVVZfesFg7e2BB04QlUs_ZRuaddcODZ27TsAYmM5BNlnZeP4OtKr93SLxgsD2VR4tyYNKcBqZDsZUM6C_Rypwp8M1N34MgNZ-wjjG6cO037xrCG75cX1mpXXJF1LhR0lbmfFtu5b0XTcN6UMzttHMqTFWHcmVhKVIk65i7shwji4FCAg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:05.9437264Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:07.962 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMDcsImV4cCI6MTc0NzQxNzgwNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5ODFFREU1NEEyMEUzQkMwMDU5RDNEMzg2MDEzQkI1OCIsImlhdCI6MTc0NzQxNDIwNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.OK7DpKsPOIkJBesDVMgVrE4lqzZy6zxWvgsSx63dfYl581T7Y-PeOnldV5wo33hjafhF-JagEulM5u70zNKyON8647-lpnzo3JTIY35Rjv1cPHRwKT026V0NYvv1lDoJ-1LIsmgu3qNwKYNGJWaOYFpz9A9H6aBqCVy4MVUVVZfesFg7e2BB04QlUs_ZRuaddcODZ27TsAYmM5BNlnZeP4OtKr93SLxgsD2VR4tyYNKcBqZDsZUM6C_Rypwp8M1N34MgNZ-wjjG6cO037xrCG75cX1mpXXJF1LhR0lbmfFtu5b0XTcN6UMzttHMqTFWHcmVhKVIk65i7shwji4FCAg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:05.9437264Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:14.000 +01:00 [INF] Executed DbCommand (149ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:14.369 +01:00 [INF] Executed DbCommand (367ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:14.370 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMTUsImV4cCI6MTc0NzQxNzgxNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFN0NBMDJBQTZDMzgxOUZFMUJERDBFRjdDMTRFREM5MyIsImlhdCI6MTc0NzQxNDIxNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.R8mnRG5sq3GPC4qbBIdpunLUqpynwVfOadNKZVxHZ3VSdyFHM20ltIrmmHJWB-5CrJ5rb0-_1ZJ5BHd_rPvAaxxXs8aGMofqmF11vtZ9iM1wt33EpHfIovvqzQ2S7Em5JZcMlFyfbZi1uPtDER9w3KQjMZUGsy9rNFMrVkB8rIPF7h9BFDF1KexqKLw5F5izywAVqrdlYylgHQmiRPVd1i0c2uKzvW_EVsvoWIl2j0sMgIoVKTUQbcEoThBMFyzNZkoguUZ4lEvh_XVCTAlnvH_ZDYWZDs82vI8XMNFVo7xJAbA1AYLF8PNfdD3hCFx5eq6i2er17cXEiPBR8O7obQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:13.8497643Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:14.370 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMTUsImV4cCI6MTc0NzQxNzgxNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFN0NBMDJBQTZDMzgxOUZFMUJERDBFRjdDMTRFREM5MyIsImlhdCI6MTc0NzQxNDIxNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.R8mnRG5sq3GPC4qbBIdpunLUqpynwVfOadNKZVxHZ3VSdyFHM20ltIrmmHJWB-5CrJ5rb0-_1ZJ5BHd_rPvAaxxXs8aGMofqmF11vtZ9iM1wt33EpHfIovvqzQ2S7Em5JZcMlFyfbZi1uPtDER9w3KQjMZUGsy9rNFMrVkB8rIPF7h9BFDF1KexqKLw5F5izywAVqrdlYylgHQmiRPVd1i0c2uKzvW_EVsvoWIl2j0sMgIoVKTUQbcEoThBMFyzNZkoguUZ4lEvh_XVCTAlnvH_ZDYWZDs82vI8XMNFVo7xJAbA1AYLF8PNfdD3hCFx5eq6i2er17cXEiPBR8O7obQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:13.8497643Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:20.551 +01:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:20.759 +01:00 [INF] Executed DbCommand (207ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:20.760 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMjIsImV4cCI6MTc0NzQxNzgyMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxQzMzRjZCOTZFQkJFMUVCM0NFOUM4RjYwODM4NjA2OSIsImlhdCI6MTc0NzQxNDIyMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Tm4Nis74hoZccX6QiuJbDoOlk7uCMYezuOKDpt3zEeo9wx0KluLyfgixYnCvjjKect51QldOA2G2Pbk-22Sum0AfDwhIO4zClYnwRSpdsZUMq1UrhjR3AlR_Ye0fW7kpplR0ZGB802SqVNumTN98PlBOlRqiLWmdmvMXC4ux8dXUMZME84vG-S065L34drRzYSYO1m5bqLd0W1FsvvGLoGj3XYAPY6RFtRMbvzfjI4xsBAZCof49iee7GvSJFOEBzlY3Nnaook7pYbQneTaXKLee-hMGxDreTPJJlWPCXQrcdo_MBbfgQmfLJQbXfVcQgOfucIYuH6-u9Re3_ky9cQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:20.3847658Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:20.760 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMjIsImV4cCI6MTc0NzQxNzgyMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxQzMzRjZCOTZFQkJFMUVCM0NFOUM4RjYwODM4NjA2OSIsImlhdCI6MTc0NzQxNDIyMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Tm4Nis74hoZccX6QiuJbDoOlk7uCMYezuOKDpt3zEeo9wx0KluLyfgixYnCvjjKect51QldOA2G2Pbk-22Sum0AfDwhIO4zClYnwRSpdsZUMq1UrhjR3AlR_Ye0fW7kpplR0ZGB802SqVNumTN98PlBOlRqiLWmdmvMXC4ux8dXUMZME84vG-S065L34drRzYSYO1m5bqLd0W1FsvvGLoGj3XYAPY6RFtRMbvzfjI4xsBAZCof49iee7GvSJFOEBzlY3Nnaook7pYbQneTaXKLee-hMGxDreTPJJlWPCXQrcdo_MBbfgQmfLJQbXfVcQgOfucIYuH6-u9Re3_ky9cQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:20.3847658Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:26.475 +01:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:26.638 +01:00 [INF] Executed DbCommand (161ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:26.638 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMjgsImV4cCI6MTc0NzQxNzgyOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxOUQ3MjE4Nzg5Q0I3NEQ4NjQ5NEE1RjRDNzBCNUMyMyIsImlhdCI6MTc0NzQxNDIyOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.aRSXl4jpScGr4M1R8O3vX5gSiuTgc5N5Y9K-PzU8gIR6pT-QwmI9O-HIDpZtO_c6tcjq8mzHd91wbAWzk-VB3Q-ILnGmuIU3XRIM2C6stiA2N7_3jcPVz8tCtd5RqXu0cq1GEVPirakwQ_J2O974a3OE5yxM24SJX7-cb5NZZCc_ioU2sP6MoCr8vV9NTXMBKUugYEubQY5pYnYGyGZV68yoYSMBLbXckiHHu3wuK2R6I0DnzabGCGCMDaALtcgVM9Rh37q6cIOLy6icZou7XITX9mhVQtDyLHCjkmLtRFAzUUX4JV-kcTvayczgwvSfkCsgnbjmIciU3uXylRDTlg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:26.3121684Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:26.646 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMjgsImV4cCI6MTc0NzQxNzgyOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxOUQ3MjE4Nzg5Q0I3NEQ4NjQ5NEE1RjRDNzBCNUMyMyIsImlhdCI6MTc0NzQxNDIyOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.aRSXl4jpScGr4M1R8O3vX5gSiuTgc5N5Y9K-PzU8gIR6pT-QwmI9O-HIDpZtO_c6tcjq8mzHd91wbAWzk-VB3Q-ILnGmuIU3XRIM2C6stiA2N7_3jcPVz8tCtd5RqXu0cq1GEVPirakwQ_J2O974a3OE5yxM24SJX7-cb5NZZCc_ioU2sP6MoCr8vV9NTXMBKUugYEubQY5pYnYGyGZV68yoYSMBLbXckiHHu3wuK2R6I0DnzabGCGCMDaALtcgVM9Rh37q6cIOLy6icZou7XITX9mhVQtDyLHCjkmLtRFAzUUX4JV-kcTvayczgwvSfkCsgnbjmIciU3uXylRDTlg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:26.3121684Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:32.557 +01:00 [INF] Executed DbCommand (405ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:32.713 +01:00 [INF] Executed DbCommand (155ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:32.713 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMzMsImV4cCI6MTc0NzQxNzgzMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBQkI5QzhDQUVGNDg0MEEyQzQ1NzQ5QURBMUEyOENEMSIsImlhdCI6MTc0NzQxNDIzMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Ed-8MQd61VtHw0csXkTkiOpCNcUXKgHWZ5jeuEiXSmBidOhS0dTDYgEz_IgStU5ULvNFgxoE240HnvhIDj-9h71fjk-bHTUdxDet3oTIHl7d-wOuIYrRTFEdK9yWniOGO7g_V-E5GFsVwfZFtMvg1J4i3jNAuBlqygXpMlq4BqkBLgo35KpU6oHik8WyNK6nnStKVq626U0zXAhOneO19LlZmW5887jl5rVu8ihTpcvvI4jiG7-lRIp8pl2EQCmmKmuSvulcGfwCHP6hv9FLPtr4tsBnpRIkjPR3uR0vTMGRrC3i0Z5P9VrAXmRzFYl_RV24xdd_xlIRB0UDVdpTCg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:32.1521443Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:32.713 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMzMsImV4cCI6MTc0NzQxNzgzMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBQkI5QzhDQUVGNDg0MEEyQzQ1NzQ5QURBMUEyOENEMSIsImlhdCI6MTc0NzQxNDIzMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Ed-8MQd61VtHw0csXkTkiOpCNcUXKgHWZ5jeuEiXSmBidOhS0dTDYgEz_IgStU5ULvNFgxoE240HnvhIDj-9h71fjk-bHTUdxDet3oTIHl7d-wOuIYrRTFEdK9yWniOGO7g_V-E5GFsVwfZFtMvg1J4i3jNAuBlqygXpMlq4BqkBLgo35KpU6oHik8WyNK6nnStKVq626U0zXAhOneO19LlZmW5887jl5rVu8ihTpcvvI4jiG7-lRIp8pl2EQCmmKmuSvulcGfwCHP6hv9FLPtr4tsBnpRIkjPR3uR0vTMGRrC3i0Z5P9VrAXmRzFYl_RV24xdd_xlIRB0UDVdpTCg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:32.1521443Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:38.470 +01:00 [INF] Executed DbCommand (234ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:38.628 +01:00 [INF] Executed DbCommand (157ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:38.629 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMzksImV4cCI6MTc0NzQxNzgzOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI4QzhFNkZCREE4MTE5QkZDRjNDMzQ2RkMxNTAzQUM0MyIsImlhdCI6MTc0NzQxNDIzOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fP2-xbaWRTKbjLuwZmbzfT6IkkquJN2Kq8IbK_DH26m0Rxv-8k06cLWRSDGtA_GwcXXuzBRFWH9qtJh6Y1DNKwbp1xLGgOLXkbs3z1fnp7etQRgJ7fLgY4q9uUVMoCr4eXtUWepR9-s1FpYSXgN7zEfvRw-KBN4slNGjFg3ama2bRQq1ZmuXHeRSnd0kSi13S4ldMlo9cuMIv6ijfnXK-PM6negonCHaJ9CQaavpNwihrup5dXIMVxKMMPJkyBPm9Inq0Ex4MwvK1gC-g4DFKXdBQqI0miTchGO_-vKXToip8e2Y9aAqjesO7PiPzCGe_GZBX62Dpybi8flwvl6Xnw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:38.2356577Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:38.629 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyMzksImV4cCI6MTc0NzQxNzgzOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI4QzhFNkZCREE4MTE5QkZDRjNDMzQ2RkMxNTAzQUM0MyIsImlhdCI6MTc0NzQxNDIzOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.fP2-xbaWRTKbjLuwZmbzfT6IkkquJN2Kq8IbK_DH26m0Rxv-8k06cLWRSDGtA_GwcXXuzBRFWH9qtJh6Y1DNKwbp1xLGgOLXkbs3z1fnp7etQRgJ7fLgY4q9uUVMoCr4eXtUWepR9-s1FpYSXgN7zEfvRw-KBN4slNGjFg3ama2bRQq1ZmuXHeRSnd0kSi13S4ldMlo9cuMIv6ijfnXK-PM6negonCHaJ9CQaavpNwihrup5dXIMVxKMMPJkyBPm9Inq0Ex4MwvK1gC-g4DFKXdBQqI0miTchGO_-vKXToip8e2Y9aAqjesO7PiPzCGe_GZBX62Dpybi8flwvl6Xnw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:38.2356577Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:44.308 +01:00 [INF] Executed DbCommand (205ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:44.468 +01:00 [INF] Executed DbCommand (157ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:44.471 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNDUsImV4cCI6MTc0NzQxNzg0NSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0QkU3NjBFNDI4RjZFMDEyNURFMEE0RUFERThCRDI0NCIsImlhdCI6MTc0NzQxNDI0NSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.BHtjmrLug44N4joSikFm27hKfrnAA0fWOnVKMF5x3oLQqw-WBdakbKq9crqntYXXLHkuIzijGMt26w55QTOZh9oPioVCFo9W6_i0rUcrZm4O5L72eQpJlVlPAoO4hKGN8MnCAjyeJe8AenEbwtWLhvz-VTttM_WLH5w0IF346-ftQdlTRSZ2EEM2y8cPv_z73y1l9Fj4vO8C6_H-4lO4T2ttiwwzMiLTht_wyoNhnqfO9W5aZxWl23hQYuSUQfulrllqVM-Bys_U2TWiht41ykXwVFi4Q0GQ3dXAk-jjFgC0rr9qUgd1qOt0_sfO1dzgUsWK2Y7bbGXZ5kAWwzgtrw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:44.1023664Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:44.472 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNDUsImV4cCI6MTc0NzQxNzg0NSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0QkU3NjBFNDI4RjZFMDEyNURFMEE0RUFERThCRDI0NCIsImlhdCI6MTc0NzQxNDI0NSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.BHtjmrLug44N4joSikFm27hKfrnAA0fWOnVKMF5x3oLQqw-WBdakbKq9crqntYXXLHkuIzijGMt26w55QTOZh9oPioVCFo9W6_i0rUcrZm4O5L72eQpJlVlPAoO4hKGN8MnCAjyeJe8AenEbwtWLhvz-VTttM_WLH5w0IF346-ftQdlTRSZ2EEM2y8cPv_z73y1l9Fj4vO8C6_H-4lO4T2ttiwwzMiLTht_wyoNhnqfO9W5aZxWl23hQYuSUQfulrllqVM-Bys_U2TWiht41ykXwVFi4Q0GQ3dXAk-jjFgC0rr9qUgd1qOt0_sfO1dzgUsWK2Y7bbGXZ5kAWwzgtrw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:44.1023664Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:50.067 +01:00 [INF] Executed DbCommand (148ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:50.236 +01:00 [INF] Executed DbCommand (155ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:50.237 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNTEsImV4cCI6MTc0NzQxNzg1MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDQkMzM0Y5NEVDNTYyODY2RDM3NEY1MkU5MzcyRTMxRiIsImlhdCI6MTc0NzQxNDI1MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.FBrTnj8GBiHTSOuc2ZkfxZX95m7yk6WRMruMBtBtGfwtnye4UtHgZIgMj3sGU0TiHJEcfET_AD1FJ1zsTwMynuyjDKf1Tj7QJYSG6q9RQ43MrGCJfSWsRe3KU5bM9PD3TyD2mx_M2D6W-gii8lIAZO_3EzQgUCrM2891Sk7e1YV_uHr0_hsmdxnesjY5jcR2hX0FxaUQjwRUY69NwyjWS9ZAy-iEfQ_Gr6o8h_o5nzYP3F1LS_Kmjv4VSMQH5hlWhFDTG319vs3GPNnZRPyyl3Y6_acEozJFdlvj92Fnfss84SVF38i72xVurrU9pd9fRuSH8VqzUMM5NwcCkN9gQw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:49.9191977Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:50.239 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNTEsImV4cCI6MTc0NzQxNzg1MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDQkMzM0Y5NEVDNTYyODY2RDM3NEY1MkU5MzcyRTMxRiIsImlhdCI6MTc0NzQxNDI1MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.FBrTnj8GBiHTSOuc2ZkfxZX95m7yk6WRMruMBtBtGfwtnye4UtHgZIgMj3sGU0TiHJEcfET_AD1FJ1zsTwMynuyjDKf1Tj7QJYSG6q9RQ43MrGCJfSWsRe3KU5bM9PD3TyD2mx_M2D6W-gii8lIAZO_3EzQgUCrM2891Sk7e1YV_uHr0_hsmdxnesjY5jcR2hX0FxaUQjwRUY69NwyjWS9ZAy-iEfQ_Gr6o8h_o5nzYP3F1LS_Kmjv4VSMQH5hlWhFDTG319vs3GPNnZRPyyl3Y6_acEozJFdlvj92Fnfss84SVF38i72xVurrU9pd9fRuSH8VqzUMM5NwcCkN9gQw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:49.9191977Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:56.029 +01:00 [INF] Executed DbCommand (173ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:50:56.214 +01:00 [INF] Executed DbCommand (184ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:50:56.214 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNTcsImV4cCI6MTc0NzQxNzg1NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxMkEyRjE4RDZCMEMxODUwRjE0Mzg3MjMzMzcwQTA1RSIsImlhdCI6MTc0NzQxNDI1Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.N4MMQhzE1UhKnpJRV04q2ikx87LSX7Jhmo5aTgwT-A8UsleUw-pXxYt6ISPNAyy9F0OqP_Nxuhhf7seyE5-F7dGNGdwsssSGk-F-mmbuV9MmtZh2EuCDHGn1QGM1Poltl4g1w8KPeotcqnOLM-p5SZuoofQupKUw3AtkMmOIre0-ANI-uf4CeeOwRy_LY9QcMbcvLmHJlrZ7ynb-_T8iwQPOX0mzydRHGsSn-sEamI-tP_TQ9ltg77nsBSjJBmKnoHkwhtg3EUzEjbsV0flUSCuDx22Niqb9nsf9DbOmvOu7qUYxTqFMVEQBwXnugNyb1Nu0hXHAYrJEvZ3Ci7wUiw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:55.8553175Z","status":false},"Message":null,"code":null}
+2025-05-16 17:50:56.214 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNTcsImV4cCI6MTc0NzQxNzg1NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxMkEyRjE4RDZCMEMxODUwRjE0Mzg3MjMzMzcwQTA1RSIsImlhdCI6MTc0NzQxNDI1Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.N4MMQhzE1UhKnpJRV04q2ikx87LSX7Jhmo5aTgwT-A8UsleUw-pXxYt6ISPNAyy9F0OqP_Nxuhhf7seyE5-F7dGNGdwsssSGk-F-mmbuV9MmtZh2EuCDHGn1QGM1Poltl4g1w8KPeotcqnOLM-p5SZuoofQupKUw3AtkMmOIre0-ANI-uf4CeeOwRy_LY9QcMbcvLmHJlrZ7ynb-_T8iwQPOX0mzydRHGsSn-sEamI-tP_TQ9ltg77nsBSjJBmKnoHkwhtg3EUzEjbsV0flUSCuDx22Niqb9nsf9DbOmvOu7qUYxTqFMVEQBwXnugNyb1Nu0hXHAYrJEvZ3Ci7wUiw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:50:55.8553175Z","status":false},"Message":null,"code":null}
+2025-05-16 17:51:02.371 +01:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 17:51:02.588 +01:00 [INF] Executed DbCommand (215ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 17:51:02.588 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNjMsImV4cCI6MTc0NzQxNzg2MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1NzE5NUI0NzQ4OUI0NkQzMjU5QUNCRjI2QzI1NTAzMiIsImlhdCI6MTc0NzQxNDI2Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.R27FpnjP9tl6je7arQ1axY3MsUahicH2k4k4akYHx4UMcw5FK3Bz7PjCeVdWCZ0R-XtMhm7cCz6Ba176RUSQOHbgqYe0hV1B2Jp3dMADmoNFMZwB5m8-G1xw-rA6bHsuKTvkTA0OGm_cb0A7dW_rYOc6_jAJGBgIQiYHODVk4204rDpPfU80V_n_S2mOmuuADHtdjGPChwRv-5g9nZERpueNGD5ICuh1djEPEJ_TAFwkaxVnEfDF2fM2EzgZRf1c7POe3BCJyXZOzUzQW3ZgMo9QWBeNggzuznu5CfKZNZ_hK-0w_yhnoyfqIqsp2N0ZwN8vSBdMtnLzjavaEqHh6g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:51:02.2137012Z","status":false},"Message":null,"code":null}
+2025-05-16 17:51:02.590 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTQyNjMsImV4cCI6MTc0NzQxNzg2MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1NzE5NUI0NzQ4OUI0NkQzMjU5QUNCRjI2QzI1NTAzMiIsImlhdCI6MTc0NzQxNDI2Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.R27FpnjP9tl6je7arQ1axY3MsUahicH2k4k4akYHx4UMcw5FK3Bz7PjCeVdWCZ0R-XtMhm7cCz6Ba176RUSQOHbgqYe0hV1B2Jp3dMADmoNFMZwB5m8-G1xw-rA6bHsuKTvkTA0OGm_cb0A7dW_rYOc6_jAJGBgIQiYHODVk4204rDpPfU80V_n_S2mOmuuADHtdjGPChwRv-5g9nZERpueNGD5ICuh1djEPEJ_TAFwkaxVnEfDF2fM2EzgZRf1c7POe3BCJyXZOzUzQW3ZgMo9QWBeNggzuznu5CfKZNZ_hK-0w_yhnoyfqIqsp2N0ZwN8vSBdMtnLzjavaEqHh6g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T17:51:02.2137012Z","status":false},"Message":null,"code":null}
+2025-05-16 18:07:12.026 +01:00 [INF] Starting up the application
+2025-05-16 18:07:17.893 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-16 18:07:17.910 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 18:07:17.911 +01:00 [INF] Hosting environment: Development
+2025-05-16 18:07:17.911 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-16 18:07:18.247 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-16 18:07:18.305 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-16 18:07:18.381 +01:00 [INF] HTTP GET / responded 404 in 69.2510 ms
+2025-05-16 18:07:18.402 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 160.1028ms
+2025-05-16 18:07:18.418 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-16 18:07:22.801 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-16 18:07:22.984 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 182.8853ms
+2025-05-16 18:07:23.076 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-16 18:07:23.078 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 1.7633ms
+2025-05-16 18:07:23.407 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-16 18:07:23.758 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 348.1468ms
+2025-05-16 18:14:51.794 +01:00 [INF] Starting up the application
+2025-05-16 18:14:55.052 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-16 18:14:55.062 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 18:14:55.063 +01:00 [INF] Hosting environment: Development
+2025-05-16 18:14:55.064 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-16 18:14:55.383 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-16 18:14:55.447 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-16 18:14:55.519 +01:00 [INF] HTTP GET / responded 404 in 67.8857 ms
+2025-05-16 18:14:55.550 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 169.8586ms
+2025-05-16 18:14:55.562 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-16 18:14:59.246 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-16 18:14:59.376 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 130.7807ms
+2025-05-16 18:14:59.414 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-16 18:14:59.417 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 2.6089ms
+2025-05-16 18:14:59.522 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2025-05-16 18:14:59.766 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 243.6251ms
+2025-05-16 18:50:04.954 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-16 18:50:06.877 +01:00 [INF] Executed DbCommand (213ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:07.403 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:07.424 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MDUsImV4cCI6MTc0NzQyMTQwNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJCNjYzRjYwQTg5RTk5NTUzRTczMkI0MjY5RTYxNTBCQyIsImlhdCI6MTc0NzQxNzgwNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.QP5uUI-2xU0rn6Jy8vOMRRYktlbDGD869EJuTwN6k-xj1nr_zC-e7Ku8sriPsU6zUMy1t2sZ5yF5ia7rTu8tgmn4TjunUwHhLhLYzVgR8SGf5Pg7CkO5_hdj4AIRVcEi6qBDLyjaAu94XX5UM09yG54jDesX7UdGBw1tBVqwFUvNvIvhC6kBscyVeigqltx6LlfZZC6RHlSuRjRF0nUn9Vyg-RKxKvAnV-qp8KB6CuovLR0dRGwZ8g9wbJ9H2NkdcGngLRHdw2W1T-3sEiDnUmhGwJ3etFeT0VTmWN4EhS1XgRr-0-aTAzTVMuccwTWZxaAdnw6XU_R3hxHLpQ0w4Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:04.0837202Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:07.424 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MDUsImV4cCI6MTc0NzQyMTQwNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJCNjYzRjYwQTg5RTk5NTUzRTczMkI0MjY5RTYxNTBCQyIsImlhdCI6MTc0NzQxNzgwNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.QP5uUI-2xU0rn6Jy8vOMRRYktlbDGD869EJuTwN6k-xj1nr_zC-e7Ku8sriPsU6zUMy1t2sZ5yF5ia7rTu8tgmn4TjunUwHhLhLYzVgR8SGf5Pg7CkO5_hdj4AIRVcEi6qBDLyjaAu94XX5UM09yG54jDesX7UdGBw1tBVqwFUvNvIvhC6kBscyVeigqltx6LlfZZC6RHlSuRjRF0nUn9Vyg-RKxKvAnV-qp8KB6CuovLR0dRGwZ8g9wbJ9H2NkdcGngLRHdw2W1T-3sEiDnUmhGwJ3etFeT0VTmWN4EhS1XgRr-0-aTAzTVMuccwTWZxaAdnw6XU_R3hxHLpQ0w4Q","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:04.0837202Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:13.746 +01:00 [INF] Executed DbCommand (314ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:14.104 +01:00 [INF] Executed DbCommand (354ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:14.105 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MTQsImV4cCI6MTc0NzQyMTQxNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDOUVGNzc2RDI5RUQyNUMxMjNCNTdGRkYzNEQyRUExOCIsImlhdCI6MTc0NzQxNzgxNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.U6g9B0jnKPGkoIfvmIHsrKsurkH_ITrMmLf3XiuNOngThy38L71ijenZACch04yDvR4bcxLdRrywGePbxyaIxafGG1hDRPV0y9O91WYg74lNWMwtT3LsNQKhM7UL-RQ-9aOsrdq49eBNPcuOgAbDNGHBOP0gJ0JHYMqjGLNacXOBvz24rjgwn7UqAyxa_0vS6flLTGVkILyDDBa5I6Z3sjrlut6foT1UBTwT2NLJdlGjNbyzlPPaYJ4v526HHWDfMFz_PGz4DinUJZO6bYI_-N6bAdx852a0jrYYw1ToClFt3fk_Qx5jDIRd7fH47FH0IW5-uushUsR4S_F4e9KnOw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:13.4035088Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:14.105 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MTQsImV4cCI6MTc0NzQyMTQxNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDOUVGNzc2RDI5RUQyNUMxMjNCNTdGRkYzNEQyRUExOCIsImlhdCI6MTc0NzQxNzgxNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.U6g9B0jnKPGkoIfvmIHsrKsurkH_ITrMmLf3XiuNOngThy38L71ijenZACch04yDvR4bcxLdRrywGePbxyaIxafGG1hDRPV0y9O91WYg74lNWMwtT3LsNQKhM7UL-RQ-9aOsrdq49eBNPcuOgAbDNGHBOP0gJ0JHYMqjGLNacXOBvz24rjgwn7UqAyxa_0vS6flLTGVkILyDDBa5I6Z3sjrlut6foT1UBTwT2NLJdlGjNbyzlPPaYJ4v526HHWDfMFz_PGz4DinUJZO6bYI_-N6bAdx852a0jrYYw1ToClFt3fk_Qx5jDIRd7fH47FH0IW5-uushUsR4S_F4e9KnOw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:13.4035088Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:19.838 +01:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:20.097 +01:00 [INF] Executed DbCommand (257ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:20.098 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MjAsImV4cCI6MTc0NzQyMTQyMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMDBFM0Y4MEU4MENDRjNFRUU4OTcxQ0IyRjI2RDRDNCIsImlhdCI6MTc0NzQxNzgyMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.jAfwb_B4az8-zoh9Ku-jzsM4NHbrLF9Ajwbf_e8dukrGhBVGAXzTiIW_Vdlg0KDX4Zh_bvWSO5lA-odWhwjZcEJkg5zOCRJsd-a2NXKQHLbNBBmKKRDxRucd-kqbq3W9zxN1o6eA8RdLGP8-kTj_KVu_0rHVzKV_aWuXmmHpaCVTZe85o6pNIK0w7LBQz3uu45oGY23K6lrEGmbmDDo_l3kz5Kqz4bgXYfwgJsnaz0vhQB0kPQdtSWWAIpmH9gqbfJZVoIo_ERaRfRxchpwyKNimazyjL8mcikYGkSGVH3l-zdfr9l6-rMkjjvAsHn3993BNY0LEKheEYo9yQncgeA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:19.5978556Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:20.098 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MjAsImV4cCI6MTc0NzQyMTQyMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMDBFM0Y4MEU4MENDRjNFRUU4OTcxQ0IyRjI2RDRDNCIsImlhdCI6MTc0NzQxNzgyMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.jAfwb_B4az8-zoh9Ku-jzsM4NHbrLF9Ajwbf_e8dukrGhBVGAXzTiIW_Vdlg0KDX4Zh_bvWSO5lA-odWhwjZcEJkg5zOCRJsd-a2NXKQHLbNBBmKKRDxRucd-kqbq3W9zxN1o6eA8RdLGP8-kTj_KVu_0rHVzKV_aWuXmmHpaCVTZe85o6pNIK0w7LBQz3uu45oGY23K6lrEGmbmDDo_l3kz5Kqz4bgXYfwgJsnaz0vhQB0kPQdtSWWAIpmH9gqbfJZVoIo_ERaRfRxchpwyKNimazyjL8mcikYGkSGVH3l-zdfr9l6-rMkjjvAsHn3993BNY0LEKheEYo9yQncgeA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:19.5978556Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:25.757 +01:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:25.920 +01:00 [INF] Executed DbCommand (161ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:25.920 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MjYsImV4cCI6MTc0NzQyMTQyNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI2MDgzOTI2NkRFMEZFNUU1OTgxMUNGMjY2RDkyQjYyNyIsImlhdCI6MTc0NzQxNzgyNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.nhww5VSVW_irCme-JZ9AsY4krTdnaib36PR3LTNkgWkPYVGZpOOv6lceJmL-B4AqMQKZHHDjhgV-yMU08aVTH8Fb9Pcxj6L1t2g-yKl8rvop3eJr95p5SYjkjJF-6tp9tHDhHhEJcB5aznEn2N5Edi6x59n27LOZFzRzB6X0NP510tsJAR_X9hrPK7rbdqplroXfluoP5rUUfO4zFqU7hoSPqhsYtKmj4w_tKl4NZzliGfBqB4OJXqp2X1h_aWExYjYXhFZQb34JpkvjED328d38SfMVcJpqqnWuXximjaBMhGyKougd5dM8ZdjHAAyABFaJWmJUfNqnaITGyCvQEg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:25.6045571Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:25.921 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MjYsImV4cCI6MTc0NzQyMTQyNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI2MDgzOTI2NkRFMEZFNUU1OTgxMUNGMjY2RDkyQjYyNyIsImlhdCI6MTc0NzQxNzgyNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.nhww5VSVW_irCme-JZ9AsY4krTdnaib36PR3LTNkgWkPYVGZpOOv6lceJmL-B4AqMQKZHHDjhgV-yMU08aVTH8Fb9Pcxj6L1t2g-yKl8rvop3eJr95p5SYjkjJF-6tp9tHDhHhEJcB5aznEn2N5Edi6x59n27LOZFzRzB6X0NP510tsJAR_X9hrPK7rbdqplroXfluoP5rUUfO4zFqU7hoSPqhsYtKmj4w_tKl4NZzliGfBqB4OJXqp2X1h_aWExYjYXhFZQb34JpkvjED328d38SfMVcJpqqnWuXximjaBMhGyKougd5dM8ZdjHAAyABFaJWmJUfNqnaITGyCvQEg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:25.6045571Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:31.639 +01:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:31.847 +01:00 [INF] Executed DbCommand (207ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:31.847 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MzIsImV4cCI6MTc0NzQyMTQzMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0N0UxNTgyMTkyREY3RkU1MUM4NTFEODUxRTM1MzU4NyIsImlhdCI6MTc0NzQxNzgzMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.KNugTh03rdZA5OTK7-BYPf31XkM_MPQ75t-2EOlaD4kRezP_8W2VGtMI1BYBeNpZuduXZsNUZzBbSz5qOS6HhBzdDa4YjcbkgmRO7dvyergVJTnmrrJ6QMctCUTTMzbXwO_tGniUSFIlD8R8TPPZmBO-nxq133nbZLUttrKzzb3D5VgvsiLTkYFgdILoDwbyXAEC4SWzWINu1zfCxaMWRFOfUDDkBMS3lsGQmCOkn98yo3gjpYC-g6_EkLVAh4SRfABkZEkyOYHozINMhAu-n3Cs9lHy2mvHGTQsqvrG22SIV5hJTLSiNVoiXX7GvXtIxhni6474I4Bjvk1SeNWVmQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:31.4536245Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:31.848 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MzIsImV4cCI6MTc0NzQyMTQzMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0N0UxNTgyMTkyREY3RkU1MUM4NTFEODUxRTM1MzU4NyIsImlhdCI6MTc0NzQxNzgzMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.KNugTh03rdZA5OTK7-BYPf31XkM_MPQ75t-2EOlaD4kRezP_8W2VGtMI1BYBeNpZuduXZsNUZzBbSz5qOS6HhBzdDa4YjcbkgmRO7dvyergVJTnmrrJ6QMctCUTTMzbXwO_tGniUSFIlD8R8TPPZmBO-nxq133nbZLUttrKzzb3D5VgvsiLTkYFgdILoDwbyXAEC4SWzWINu1zfCxaMWRFOfUDDkBMS3lsGQmCOkn98yo3gjpYC-g6_EkLVAh4SRfABkZEkyOYHozINMhAu-n3Cs9lHy2mvHGTQsqvrG22SIV5hJTLSiNVoiXX7GvXtIxhni6474I4Bjvk1SeNWVmQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:31.4536245Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:37.469 +01:00 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:37.637 +01:00 [INF] Executed DbCommand (167ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:37.638 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MzgsImV4cCI6MTc0NzQyMTQzOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMkUxQjM5NUQzNUU5Qjg4OTExNDRDMEM5Mjc1RTMwNiIsImlhdCI6MTc0NzQxNzgzOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.FmrgnaU-r3D28W__flAAJTHoh5rJQKYrFUZKSZkkumrkeiyZnIobQrOnHIQXhU9x6ARHwT1SfGLstcXxTGFpLQXt2LygfYMJmgC-wrtwKj8NsslMbL-iYA3vKavHpieIeF4zP_YCuS7Ovgk06oayDWkip0qxX0R6OjP-2SrOiy7G2iUpujxlIkx_pRRxHyauEH0fmUtQxg7d7uPHz5F3vSULofMwCFOgFdS0Pw8s2f0wDyoHrBASGmWqa63KxiQ3QqyotiFYnyPOZSrarXVtQbrEbZGvZ9BqacAHLoyHE7oyZ6-4CFhhEvZzGcNEQ5i66SREq_QrR-bToAvAiosevg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:37.3086445Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:37.638 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4MzgsImV4cCI6MTc0NzQyMTQzOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBMkUxQjM5NUQzNUU5Qjg4OTExNDRDMEM5Mjc1RTMwNiIsImlhdCI6MTc0NzQxNzgzOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.FmrgnaU-r3D28W__flAAJTHoh5rJQKYrFUZKSZkkumrkeiyZnIobQrOnHIQXhU9x6ARHwT1SfGLstcXxTGFpLQXt2LygfYMJmgC-wrtwKj8NsslMbL-iYA3vKavHpieIeF4zP_YCuS7Ovgk06oayDWkip0qxX0R6OjP-2SrOiy7G2iUpujxlIkx_pRRxHyauEH0fmUtQxg7d7uPHz5F3vSULofMwCFOgFdS0Pw8s2f0wDyoHrBASGmWqa63KxiQ3QqyotiFYnyPOZSrarXVtQbrEbZGvZ9BqacAHLoyHE7oyZ6-4CFhhEvZzGcNEQ5i66SREq_QrR-bToAvAiosevg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:37.3086445Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:43.257 +01:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:43.417 +01:00 [INF] Executed DbCommand (159ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:43.417 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NDQsImV4cCI6MTc0NzQyMTQ0NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFQkEyRTI3Q0Y4NjI0Rjg1MDE2NTkwNzY0QkEzM0YwNyIsImlhdCI6MTc0NzQxNzg0NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.nF-c9L4j83jzGmMh7yVsLEISkQDAzfGcLNcS1OG9wwVrReRbTP98cLwhXFhKhtoFldG0hdjWGljTJvYK4RPiEyISA7HDWMNpzYlIW_iRIk-xYo4R2ANt0CLmbKwMnSMzLFGsA2dzSgqieoWKfgPhmq4Y8o54UeEo3I0Rd_VcNvP-2XY_jUXiVRPjIIDqpjHzx-DTt5r4bRA3hGK56eQLraTfWVITCtAO7rt8lcHqpUYg0bQ0-ZEzLPi5_x81eZwqpVn5wWsZgFTh6B62bugIte2o8lnAaQFNoEZYnitCRY0oXu1rqXcbt8d0Nxq04jaJovsBDs5ujR_F8uyaAPuSXw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:43.0963746Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:43.418 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NDQsImV4cCI6MTc0NzQyMTQ0NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFQkEyRTI3Q0Y4NjI0Rjg1MDE2NTkwNzY0QkEzM0YwNyIsImlhdCI6MTc0NzQxNzg0NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.nF-c9L4j83jzGmMh7yVsLEISkQDAzfGcLNcS1OG9wwVrReRbTP98cLwhXFhKhtoFldG0hdjWGljTJvYK4RPiEyISA7HDWMNpzYlIW_iRIk-xYo4R2ANt0CLmbKwMnSMzLFGsA2dzSgqieoWKfgPhmq4Y8o54UeEo3I0Rd_VcNvP-2XY_jUXiVRPjIIDqpjHzx-DTt5r4bRA3hGK56eQLraTfWVITCtAO7rt8lcHqpUYg0bQ0-ZEzLPi5_x81eZwqpVn5wWsZgFTh6B62bugIte2o8lnAaQFNoEZYnitCRY0oXu1rqXcbt8d0Nxq04jaJovsBDs5ujR_F8uyaAPuSXw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:43.0963746Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:49.080 +01:00 [INF] Executed DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:49.242 +01:00 [INF] Executed DbCommand (161ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:49.256 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NTAsImV4cCI6MTc0NzQyMTQ1MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5MjZEQTk1NTVDNTQzOENBMDEzOTA2M0QyMUZENkM0MCIsImlhdCI6MTc0NzQxNzg1MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.G6eaE2e1otkjW8ZHo_lIKteVC2fW9JSm4dYJFdq__WQaCSrjQElt8s1aalFSZQCawxOi1CG7enh9NG79d3OQH5QKsJVrtK2gImGvwKUcxmMpKmsspNQ1IkvX0pTsXc7_KwtWXqD-XO0NCg008ZkINYCZAi3vBajFo_Uf5EBOaGyS97uycdakSQ64SaXrxs6LjLQz8f1pvSt_BiWnSWSvi_vXMJUdKMdTioYNL82j0sw1mq95Q4HCCbkgz1QUDulTtFI0CKAtLLNPeZ6Rnbqfr9iYTXm3V8mDUdqQGzZfa8Bxcdpic0ShsOmXn_LvS-3eESbcXxOyFA4Xdu8xDDtR3A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:48.8979275Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:49.257 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NTAsImV4cCI6MTc0NzQyMTQ1MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5MjZEQTk1NTVDNTQzOENBMDEzOTA2M0QyMUZENkM0MCIsImlhdCI6MTc0NzQxNzg1MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.G6eaE2e1otkjW8ZHo_lIKteVC2fW9JSm4dYJFdq__WQaCSrjQElt8s1aalFSZQCawxOi1CG7enh9NG79d3OQH5QKsJVrtK2gImGvwKUcxmMpKmsspNQ1IkvX0pTsXc7_KwtWXqD-XO0NCg008ZkINYCZAi3vBajFo_Uf5EBOaGyS97uycdakSQ64SaXrxs6LjLQz8f1pvSt_BiWnSWSvi_vXMJUdKMdTioYNL82j0sw1mq95Q4HCCbkgz1QUDulTtFI0CKAtLLNPeZ6Rnbqfr9iYTXm3V8mDUdqQGzZfa8Bxcdpic0ShsOmXn_LvS-3eESbcXxOyFA4Xdu8xDDtR3A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:48.8979275Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:55.074 +01:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:50:55.232 +01:00 [INF] Executed DbCommand (157ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:50:55.232 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NTYsImV4cCI6MTc0NzQyMTQ1NiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0NjdCNjg5Rjc1NkJFQkQzQjNCRjFDMzI2QUFBODNGOCIsImlhdCI6MTc0NzQxNzg1Niwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.KVEZEHvXeDuGw-EgQeIWq60044iy6sbKOrj5OnK6odIgux9QY54sOPMJzhxXqPO0z3FSSBlZwJguD8f947Yu7g8rX3AiHiLwdwMh4pYoTChzeAHb-wk5musEEwzPIO9iWQWFOXHaz6HtGyyXt9W7GS9qDmFRTY7ejzQNJPDAylaIKD7TXG-d6YaJCz2z1AcOOabp7HcqTr7_uT6SuZNCQ_SwCq2XMKh4wsghuXT4r7dCmjrGp5HR-7x6wqBG1A4D7I3NhDdH9j73B6fy5eBjLbdSPyGb2ePT26NV15d17qzvA_oOSmc7Tm7Lrs2Kr-yK0X-lHS4YMTIuMMYIyELkZw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:54.896596Z","status":false},"Message":null,"code":null}
+2025-05-16 18:50:55.233 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NTYsImV4cCI6MTc0NzQyMTQ1NiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI0NjdCNjg5Rjc1NkJFQkQzQjNCRjFDMzI2QUFBODNGOCIsImlhdCI6MTc0NzQxNzg1Niwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.KVEZEHvXeDuGw-EgQeIWq60044iy6sbKOrj5OnK6odIgux9QY54sOPMJzhxXqPO0z3FSSBlZwJguD8f947Yu7g8rX3AiHiLwdwMh4pYoTChzeAHb-wk5musEEwzPIO9iWQWFOXHaz6HtGyyXt9W7GS9qDmFRTY7ejzQNJPDAylaIKD7TXG-d6YaJCz2z1AcOOabp7HcqTr7_uT6SuZNCQ_SwCq2XMKh4wsghuXT4r7dCmjrGp5HR-7x6wqBG1A4D7I3NhDdH9j73B6fy5eBjLbdSPyGb2ePT26NV15d17qzvA_oOSmc7Tm7Lrs2Kr-yK0X-lHS4YMTIuMMYIyELkZw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:50:54.896596Z","status":false},"Message":null,"code":null}
+2025-05-16 18:51:00.987 +01:00 [INF] Executed DbCommand (220ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 18:51:01.149 +01:00 [INF] Executed DbCommand (161ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 18:51:01.150 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NjIsImV4cCI6MTc0NzQyMTQ2MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyN0RERjI0ODRCRDBBOEVGMTYxMDA2NTQ2MzFGODFCNyIsImlhdCI6MTc0NzQxNzg2Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.pbl07Tjoy2BFByARRWrQFvwKzZoN8ygNsKbEbrIfIkyJ9Pd43UzOJJEFrrTLslBuJV8CERDT4g5j2_YadgsJjElK2PkrjjQ8jvXjr07xpxCtL7iTe6h1hk3Mdaki8in8UBhmrYitAhubTq1w2EpvO4gpZtqw_rwbgKEygLDaX9xorGEfATuLOv_tKMVldnf0d_XLKhQKskLWN2Tq556U6nN8aWBDTbmSQWwbiN6-jXhDArHjxHjZIXKeXZ5mn_SXoW1XlaL-GekeUSqr0uKgNnTsAVeCkQ-_FzmDBx4enSBoz-Qe2yYW9pa7sEi1CQAlPER_7KJPrnodr55klc9chQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:51:00.7670907Z","status":false},"Message":null,"code":null}
+2025-05-16 18:51:01.150 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTc4NjIsImV4cCI6MTc0NzQyMTQ2MiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyN0RERjI0ODRCRDBBOEVGMTYxMDA2NTQ2MzFGODFCNyIsImlhdCI6MTc0NzQxNzg2Miwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.pbl07Tjoy2BFByARRWrQFvwKzZoN8ygNsKbEbrIfIkyJ9Pd43UzOJJEFrrTLslBuJV8CERDT4g5j2_YadgsJjElK2PkrjjQ8jvXjr07xpxCtL7iTe6h1hk3Mdaki8in8UBhmrYitAhubTq1w2EpvO4gpZtqw_rwbgKEygLDaX9xorGEfATuLOv_tKMVldnf0d_XLKhQKskLWN2Tq556U6nN8aWBDTbmSQWwbiN6-jXhDArHjxHjZIXKeXZ5mn_SXoW1XlaL-GekeUSqr0uKgNnTsAVeCkQ-_FzmDBx4enSBoz-Qe2yYW9pa7sEi1CQAlPER_7KJPrnodr55klc9chQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T18:51:00.7670907Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:03.575 +01:00 [INF] Executed DbCommand (194ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:03.755 +01:00 [INF] Executed DbCommand (179ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:03.756 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MDMsImV4cCI6MTc0NzQyMjAwMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGMDYzQkM0QkU2RUIzMzBGQzY1NTAxOUQwQzAyRTdEOSIsImlhdCI6MTc0NzQxODQwMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.dpEO_OuOodfHgsO0eOYFoPMlZNkC1jkG9dHMN623P-w1T6kMpEnYaUva9RmggUWD6073n0TVo-HKoAeNf35oSRTUnoOehP-qOw-UR1s-yp_Y7hlgt4WF7DY53n6JjtiWXnVsFw0SDMn2YAV_YSmpp_INCZDydoF3W58xiWBfZA76jHa-aRVNg5mut9v78bQzI3p1cdsctGVc-EhHTxutnJjN_SMj7glcpohe8lEen4LcLY5kzLziGXicY-gkS4mFHk3oWa2s7UAnQdHyJOj4FQzT_U6BJTh9SNRXHawe0Lmf1RnbbdHROesq3Oi5dNInkg6lNjTZmhR67N7QF1BbRw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:02.5844259Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:03.756 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MDMsImV4cCI6MTc0NzQyMjAwMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGMDYzQkM0QkU2RUIzMzBGQzY1NTAxOUQwQzAyRTdEOSIsImlhdCI6MTc0NzQxODQwMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.dpEO_OuOodfHgsO0eOYFoPMlZNkC1jkG9dHMN623P-w1T6kMpEnYaUva9RmggUWD6073n0TVo-HKoAeNf35oSRTUnoOehP-qOw-UR1s-yp_Y7hlgt4WF7DY53n6JjtiWXnVsFw0SDMn2YAV_YSmpp_INCZDydoF3W58xiWBfZA76jHa-aRVNg5mut9v78bQzI3p1cdsctGVc-EhHTxutnJjN_SMj7glcpohe8lEen4LcLY5kzLziGXicY-gkS4mFHk3oWa2s7UAnQdHyJOj4FQzT_U6BJTh9SNRXHawe0Lmf1RnbbdHROesq3Oi5dNInkg6lNjTZmhR67N7QF1BbRw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:02.5844259Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:09.452 +01:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:09.648 +01:00 [INF] Executed DbCommand (194ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:09.648 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MTAsImV4cCI6MTc0NzQyMjAxMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxNkFERjFDQTY0RkZDOTdFQTFENjZEN0IxQkU0NjM1NCIsImlhdCI6MTc0NzQxODQxMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.C72q-hGEhWNFHhu48IhcX_5r5nVFxAgXiKKFTbeDp9zwztC07KYXhFClacrzVT4lj1REcCmIJ9cqX4hwNn8TcF3KBFBWsCEKFfK0S8e8xf4DbcGbt-wCd1hNdTbgmsAAlnlk4why7oFmgY_3a0KKxQCUNqiAYfHhwpheXxHsJma3raCP9d2FmhvedkM_N8-0MNN3DrYhd4My2d7fxquNenVI_1YkTNdlSTcCPR4sFC-dKG2jPLeNGJeAJmpwtfFUFWHcdFAVmOY6B4YeibnidcbdvsbE2yiJdvR-M32u2G8wXpcEY6IqoKM4bmtBekdGJFD9hRqosGEyFMYGcs22rw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:09.2804823Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:09.649 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MTAsImV4cCI6MTc0NzQyMjAxMCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIxNkFERjFDQTY0RkZDOTdFQTFENjZEN0IxQkU0NjM1NCIsImlhdCI6MTc0NzQxODQxMCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.C72q-hGEhWNFHhu48IhcX_5r5nVFxAgXiKKFTbeDp9zwztC07KYXhFClacrzVT4lj1REcCmIJ9cqX4hwNn8TcF3KBFBWsCEKFfK0S8e8xf4DbcGbt-wCd1hNdTbgmsAAlnlk4why7oFmgY_3a0KKxQCUNqiAYfHhwpheXxHsJma3raCP9d2FmhvedkM_N8-0MNN3DrYhd4My2d7fxquNenVI_1YkTNdlSTcCPR4sFC-dKG2jPLeNGJeAJmpwtfFUFWHcdFAVmOY6B4YeibnidcbdvsbE2yiJdvR-M32u2G8wXpcEY6IqoKM4bmtBekdGJFD9hRqosGEyFMYGcs22rw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:09.2804823Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:15.492 +01:00 [INF] Executed DbCommand (351ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:15.764 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:15.765 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MTYsImV4cCI6MTc0NzQyMjAxNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5MzU1M0U3MTEyRDYzNEE4MTBCRTE5NjZGQkZENUZGNyIsImlhdCI6MTc0NzQxODQxNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.i2bPM0tcVqYf-VzTf9WYOMZwa5CNP1Nl5jzidHGmacZuU9swE6nPvudEIwV-gs3EKMhAWU25Dfzj0qt69nawIYT9GCWfNzcqAj12RPZLu1zY9HhLAq_PnSJY-qYyw_nIUBE4UoLZlibyoeJ726i5YI3X3eMGj2zMIElmRqgVEZtlAtwQeswSABFbbyQQIai6oxopuwgztWU9Hlt-uFzJ8JZ0hsva8rp2Z3SYPcALXCev8C8ZJjni_LiJMGLn1971zJ7W3q_rFnnL11YO-Kc_XAGGJ-HYqmXdHC0G0peecWfnRhhsoN6bZZ-VZRaZ4q7iKtHrREnJ0tL_Qfyzwv5Mog","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:15.1405404Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:15.765 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MTYsImV4cCI6MTc0NzQyMjAxNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5MzU1M0U3MTEyRDYzNEE4MTBCRTE5NjZGQkZENUZGNyIsImlhdCI6MTc0NzQxODQxNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.i2bPM0tcVqYf-VzTf9WYOMZwa5CNP1Nl5jzidHGmacZuU9swE6nPvudEIwV-gs3EKMhAWU25Dfzj0qt69nawIYT9GCWfNzcqAj12RPZLu1zY9HhLAq_PnSJY-qYyw_nIUBE4UoLZlibyoeJ726i5YI3X3eMGj2zMIElmRqgVEZtlAtwQeswSABFbbyQQIai6oxopuwgztWU9Hlt-uFzJ8JZ0hsva8rp2Z3SYPcALXCev8C8ZJjni_LiJMGLn1971zJ7W3q_rFnnL11YO-Kc_XAGGJ-HYqmXdHC0G0peecWfnRhhsoN6bZZ-VZRaZ4q7iKtHrREnJ0tL_Qfyzwv5Mog","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:15.1405404Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:22.123 +01:00 [INF] Executed DbCommand (397ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:22.455 +01:00 [INF] Executed DbCommand (331ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:22.456 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MjIsImV4cCI6MTc0NzQyMjAyMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyMjgxNjA2RkQ5NTgzMTFDRDE4RTZCODU1N0JBMjJDRCIsImlhdCI6MTc0NzQxODQyMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.na-HUXPKtNDuTPIjra-amIg6_itTfuAFPNSc-jU-hpm1V4ERrwzc6NjT4lfROne3K3n9YZSAjAr68Hk4StWqmPfOSpnu53SsMjYKlYYIrkIZvXuoMrB07WaXiSV_uYd0xSymgrzU6QH960RYU2jA30MFVigYB60Xzl0d1PuP08SWMR_nnDpkUTfxMSgiG-YolVhEGwJg80mQc2p40BU_65WcysQ9vXCOxrJkrBNmck9Vfvyyd-tK2Jw0--pX4Fq5ajzWsgrFRq7WKsAx5X-RzgwNkJ9i8nBDQUO3aNtJcwQVHBBH_yW1uhBvBdP3RiLPAX5uMoBMF07_f1v-v0OqUw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:21.7261943Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:22.456 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MjIsImV4cCI6MTc0NzQyMjAyMiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyMjgxNjA2RkQ5NTgzMTFDRDE4RTZCODU1N0JBMjJDRCIsImlhdCI6MTc0NzQxODQyMiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.na-HUXPKtNDuTPIjra-amIg6_itTfuAFPNSc-jU-hpm1V4ERrwzc6NjT4lfROne3K3n9YZSAjAr68Hk4StWqmPfOSpnu53SsMjYKlYYIrkIZvXuoMrB07WaXiSV_uYd0xSymgrzU6QH960RYU2jA30MFVigYB60Xzl0d1PuP08SWMR_nnDpkUTfxMSgiG-YolVhEGwJg80mQc2p40BU_65WcysQ9vXCOxrJkrBNmck9Vfvyyd-tK2Jw0--pX4Fq5ajzWsgrFRq7WKsAx5X-RzgwNkJ9i8nBDQUO3aNtJcwQVHBBH_yW1uhBvBdP3RiLPAX5uMoBMF07_f1v-v0OqUw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:21.7261943Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:28.261 +01:00 [INF] Executed DbCommand (173ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:28.581 +01:00 [INF] Executed DbCommand (319ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:28.582 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MjksImV4cCI6MTc0NzQyMjAyOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFRjZDNzM5NTg3NzA1MTZFMkQyNzU3RjdDNjYwNzg0NSIsImlhdCI6MTc0NzQxODQyOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.wxsOR_rRNgs7lf8mJhcuo2DsKFBLiQBZIxI_HM4Djg8hgL64HqQvvRsO3bnj8piLEeRzhqNLOSxPGgiGJpai6vEChlYIYHNZXTbggAnJgFrwIRoXGyYtX8dZwiPNI6e9JgCGjex03Zq9WOFZs5pbHMmCF7nSBJM70UnyB57FiNNfnwWYxLfAYP8tli_nsJMoz9n60UtFniiVaM4ZkkoFfJQEcV-4S6dX5x_wc_E5FCsAe6dMOVoW9yVDufmc8RoGs8iqGWflevvpn1NrlhteVepileM48afUd_Y5-iBulm6kF9t15AlheFtrMwvsXqbnW9CsmgSd-Jni4HSL3wZtbQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:28.0880356Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:28.582 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MjksImV4cCI6MTc0NzQyMjAyOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFRjZDNzM5NTg3NzA1MTZFMkQyNzU3RjdDNjYwNzg0NSIsImlhdCI6MTc0NzQxODQyOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.wxsOR_rRNgs7lf8mJhcuo2DsKFBLiQBZIxI_HM4Djg8hgL64HqQvvRsO3bnj8piLEeRzhqNLOSxPGgiGJpai6vEChlYIYHNZXTbggAnJgFrwIRoXGyYtX8dZwiPNI6e9JgCGjex03Zq9WOFZs5pbHMmCF7nSBJM70UnyB57FiNNfnwWYxLfAYP8tli_nsJMoz9n60UtFniiVaM4ZkkoFfJQEcV-4S6dX5x_wc_E5FCsAe6dMOVoW9yVDufmc8RoGs8iqGWflevvpn1NrlhteVepileM48afUd_Y5-iBulm6kF9t15AlheFtrMwvsXqbnW9CsmgSd-Jni4HSL3wZtbQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:28.0880356Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:34.485 +01:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:34.688 +01:00 [INF] Executed DbCommand (201ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:34.688 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MzUsImV4cCI6MTc0NzQyMjAzNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFOTEzQTgwMzNBMkJEMzZFREVCOEJCQUYwNzExNjQ0NyIsImlhdCI6MTc0NzQxODQzNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.h0eXo_vEYh2bitWP2zHfRjFYyfXwEY2J85-yqJcsOz8B9HVw6b3eY6k0lDdoxxVbnLO8lCuvSxS-RSpRMcutZ1eCZDbcfK28jlYX0_bFjHyEfAwqXw50sTOTDpL6BYPOC9V0hJvxZh-fB2Rd3tmbmL5JsZcELaW6skrHOl-lDngMzvwzLispFbJx0tAFmdINq8nGzwEsfm7FqMfVoY0cUxUkZZzTn47I5jpzv7IS56NCAW9vRUj7ZjrYN95t2i6urtByqfWMKkjOQaXEupscmrEcJuJXiqflMhF0WIpaOsbjtISSmpwPWNgVpHIDZwriiHlwvem-FawH8oi9KxnBRw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:34.3087819Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:34.688 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0MzUsImV4cCI6MTc0NzQyMjAzNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFOTEzQTgwMzNBMkJEMzZFREVCOEJCQUYwNzExNjQ0NyIsImlhdCI6MTc0NzQxODQzNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.h0eXo_vEYh2bitWP2zHfRjFYyfXwEY2J85-yqJcsOz8B9HVw6b3eY6k0lDdoxxVbnLO8lCuvSxS-RSpRMcutZ1eCZDbcfK28jlYX0_bFjHyEfAwqXw50sTOTDpL6BYPOC9V0hJvxZh-fB2Rd3tmbmL5JsZcELaW6skrHOl-lDngMzvwzLispFbJx0tAFmdINq8nGzwEsfm7FqMfVoY0cUxUkZZzTn47I5jpzv7IS56NCAW9vRUj7ZjrYN95t2i6urtByqfWMKkjOQaXEupscmrEcJuJXiqflMhF0WIpaOsbjtISSmpwPWNgVpHIDZwriiHlwvem-FawH8oi9KxnBRw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:34.3087819Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:40.716 +01:00 [INF] Executed DbCommand (245ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:41.060 +01:00 [INF] Executed DbCommand (344ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:41.061 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NDEsImV4cCI6MTc0NzQyMjA0MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGNTBGODEzOUJGMkFFQjZFNjM4RTkzRjc1NjYzQTVCNyIsImlhdCI6MTc0NzQxODQ0MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rAVYXelfrxHQPGOZaI5WVHkfm2HDzawd8iZC2VX3kJEcim8St2dcl-j9KWenApEvR870-UEDVK7WA9jFvZu33T33XOwabS1zVhER7dXPPZ5oEOhVNUNBWaaSxR6ew6EMrnDnEL2i6cEhISmzFUb-Ul9JHoZt0D6zm24l7nfmgBXfG6JbjMexFpjXJ6mp7Xz-flA70Nu3QG9wICxrUQ0jRbXLpIb3J9QLQdiLNMZGRMF5eSCDMbfuyeZ4lJ2Es5xh89R87NXS-ZD4PizfZJunVxNgQqhlA3D5oByvrbTJz_bShNf21DshsQqibOWsvBOBCq68TDAYqgXqdTM-uw3bog","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:40.4704094Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:41.061 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NDEsImV4cCI6MTc0NzQyMjA0MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGNTBGODEzOUJGMkFFQjZFNjM4RTkzRjc1NjYzQTVCNyIsImlhdCI6MTc0NzQxODQ0MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rAVYXelfrxHQPGOZaI5WVHkfm2HDzawd8iZC2VX3kJEcim8St2dcl-j9KWenApEvR870-UEDVK7WA9jFvZu33T33XOwabS1zVhER7dXPPZ5oEOhVNUNBWaaSxR6ew6EMrnDnEL2i6cEhISmzFUb-Ul9JHoZt0D6zm24l7nfmgBXfG6JbjMexFpjXJ6mp7Xz-flA70Nu3QG9wICxrUQ0jRbXLpIb3J9QLQdiLNMZGRMF5eSCDMbfuyeZ4lJ2Es5xh89R87NXS-ZD4PizfZJunVxNgQqhlA3D5oByvrbTJz_bShNf21DshsQqibOWsvBOBCq68TDAYqgXqdTM-uw3bog","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:40.4704094Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:46.812 +01:00 [INF] Executed DbCommand (244ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:46.983 +01:00 [INF] Executed DbCommand (170ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:46.984 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NDcsImV4cCI6MTc0NzQyMjA0NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzMkI0MzVGOUFBQzBGM0QzOUQxRTNCNkRCNkE5MEQwMyIsImlhdCI6MTc0NzQxODQ0Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.YB3e4gob7fRpPrIHLuTGRtcm81_rHBDKmYwr4PQSFjCOqY5OYVUcf-9dWE_3lsd-qR72452gFs6OcAHNCdO7UiuivUImvXLRKcgFEQg5M3dypTQoT4Z6eDnZjiMX--uIiQZ8sx7KS0yK9J3uyxPO9w5A95o4plSB_hRcDH59nt1sxQf4HocivKq60wUH_svBBIhsrwh16j-UwAM8o5J0YY8TNkYZPWtBC-yFWbQ6YviL1JJb21K4Q1OkimIuLpXnXMBtKdWc-sPLwWrtKoRyYh-M8k6RFsLM3tIdmd6OFA3vxc8DfmmDhGk_7XLsTsEyD1YnYAGgaCifNANca4udAg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:46.5683649Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:46.984 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NDcsImV4cCI6MTc0NzQyMjA0NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzMkI0MzVGOUFBQzBGM0QzOUQxRTNCNkRCNkE5MEQwMyIsImlhdCI6MTc0NzQxODQ0Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.YB3e4gob7fRpPrIHLuTGRtcm81_rHBDKmYwr4PQSFjCOqY5OYVUcf-9dWE_3lsd-qR72452gFs6OcAHNCdO7UiuivUImvXLRKcgFEQg5M3dypTQoT4Z6eDnZjiMX--uIiQZ8sx7KS0yK9J3uyxPO9w5A95o4plSB_hRcDH59nt1sxQf4HocivKq60wUH_svBBIhsrwh16j-UwAM8o5J0YY8TNkYZPWtBC-yFWbQ6YviL1JJb21K4Q1OkimIuLpXnXMBtKdWc-sPLwWrtKoRyYh-M8k6RFsLM3tIdmd6OFA3vxc8DfmmDhGk_7XLsTsEyD1YnYAGgaCifNANca4udAg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:46.5683649Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:52.940 +01:00 [INF] Executed DbCommand (218ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:53.173 +01:00 [INF] Executed DbCommand (233ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:53.173 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NTQsImV4cCI6MTc0NzQyMjA1NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzRTlDQjAwMEY4NDI4RkM5MEZGM0ZDQ0ExNDgyNTVBMyIsImlhdCI6MTc0NzQxODQ1NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.YL0S__eZ7jA3gsYlgSfG11qplUG7kMNeJMJR1S_JZHpHi0TfbrL2vSqe1Es9vTtMusQxat8ZBS3Toaq3WA8QJrlB1VzceSRueNfr1dsZrkyqqvFIcuiYfI1ZfiOKmTzIvuG3BfZZ8jPqF4NWQdVZrk6bBZozAwIxkPuIEkeV2QKJ728GkD43_e4nDtWFjTumTUC8zdiYka0Eonl6Ws7WqN7955pW473pUtwv1CNkg1lE9qPMZHQhdwYFz7umVyAMxGfSn2fyk8AY3SvAGNJtBTLxFfTJmp9CgdmpEAcW4Lz3bwzfz6-4dW0I686gao3H4Z4PewKfn3mHXModmfL8qg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:52.7212935Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:53.174 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NTQsImV4cCI6MTc0NzQyMjA1NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzRTlDQjAwMEY4NDI4RkM5MEZGM0ZDQ0ExNDgyNTVBMyIsImlhdCI6MTc0NzQxODQ1NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.YL0S__eZ7jA3gsYlgSfG11qplUG7kMNeJMJR1S_JZHpHi0TfbrL2vSqe1Es9vTtMusQxat8ZBS3Toaq3WA8QJrlB1VzceSRueNfr1dsZrkyqqvFIcuiYfI1ZfiOKmTzIvuG3BfZZ8jPqF4NWQdVZrk6bBZozAwIxkPuIEkeV2QKJ728GkD43_e4nDtWFjTumTUC8zdiYka0Eonl6Ws7WqN7955pW473pUtwv1CNkg1lE9qPMZHQhdwYFz7umVyAMxGfSn2fyk8AY3SvAGNJtBTLxFfTJmp9CgdmpEAcW4Lz3bwzfz6-4dW0I686gao3H4Z4PewKfn3mHXModmfL8qg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:52.7212935Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:58.865 +01:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:00:59.026 +01:00 [INF] Executed DbCommand (160ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:00:59.026 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NjAsImV4cCI6MTc0NzQyMjA2MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyQTQ2MDY1RURDMUY4QTdENTEzRkNDNjI4RjQwMkI4NiIsImlhdCI6MTc0NzQxODQ2MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.VRGLHahAOnEFiG7V4pxR7APSY0-VzBOQd-3IwVqN1VuDnJGe7buzgG1mzA1ks63GrjGzAtgtoFMdUo_24mvwEbT89SkBY3ZeY4uNDBi4kdy4MzfwfxJOrSFPz4cCvEsL9ajTr7NhQwtFVjKa6Ai8U7MgjqMMkPJrj8LWM2HFutrAbASCa9aSQ1jA14AUhfHXZx9cBjnG2f2vtaDfSYK4H3dNRq8f-H8w_DWoLM-ygJGNaaNT_COdFC-EUdj6JWuW9-6GvwBZBJx1YZvSaR7kGAXjQ0KUXk65IsALIEDTA6O5381Gu-I4fJ8jcEOpONWu18GSPaf4feE0hm3XsSWceA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:58.7067075Z","status":false},"Message":null,"code":null}
+2025-05-16 19:00:59.026 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MTg0NjAsImV4cCI6MTc0NzQyMjA2MCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyQTQ2MDY1RURDMUY4QTdENTEzRkNDNjI4RjQwMkI4NiIsImlhdCI6MTc0NzQxODQ2MCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.VRGLHahAOnEFiG7V4pxR7APSY0-VzBOQd-3IwVqN1VuDnJGe7buzgG1mzA1ks63GrjGzAtgtoFMdUo_24mvwEbT89SkBY3ZeY4uNDBi4kdy4MzfwfxJOrSFPz4cCvEsL9ajTr7NhQwtFVjKa6Ai8U7MgjqMMkPJrj8LWM2HFutrAbASCa9aSQ1jA14AUhfHXZx9cBjnG2f2vtaDfSYK4H3dNRq8f-H8w_DWoLM-ygJGNaaNT_COdFC-EUdj6JWuW9-6GvwBZBJx1YZvSaR7kGAXjQ0KUXk65IsALIEDTA6O5381Gu-I4fJ8jcEOpONWu18GSPaf4feE0hm3XsSWceA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:00:58.7067075Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:06.306 +01:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:06.510 +01:00 [INF] Executed DbCommand (203ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:06.510 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MDUsImV4cCI6MTc0NzQyNTAwNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMTA3ODJBNzE4MjY4RjVFQURFRkYyNzhDNUY4QTk2QSIsImlhdCI6MTc0NzQyMTQwNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.tqbg64eF6UFDugerg3AOLXnYvZli2YeW7KMpgL5NIAKDt9q3AmweGN4vUaG8Pk1I6S3ljPtQh3PAmATz-faRrr9X1J9ru8BbTEpNvMPeTdQQvHa19ca5mCnKYmJyRSvrzmUn4s52D4O_rV5H0XCxlMvn9WXlPPmVlxku3B_UMnpQJzfqP86yUjDQj5cQydLLOyUlnatlgwMowizOf-WrkBFyNuXmH06_DQRKln3ZWWYcUB0_plALsnJVXxlCePPz6ySRq-OUST66nA3pfDj8NYfvOBQaN97Fa2QY1TBMH-utXAn6omigoYiALNPeBPTjJzvyaDUAhgmlJkfqcnw_ZQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:05.1173165Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:06.511 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MDUsImV4cCI6MTc0NzQyNTAwNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwMTA3ODJBNzE4MjY4RjVFQURFRkYyNzhDNUY4QTk2QSIsImlhdCI6MTc0NzQyMTQwNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.tqbg64eF6UFDugerg3AOLXnYvZli2YeW7KMpgL5NIAKDt9q3AmweGN4vUaG8Pk1I6S3ljPtQh3PAmATz-faRrr9X1J9ru8BbTEpNvMPeTdQQvHa19ca5mCnKYmJyRSvrzmUn4s52D4O_rV5H0XCxlMvn9WXlPPmVlxku3B_UMnpQJzfqP86yUjDQj5cQydLLOyUlnatlgwMowizOf-WrkBFyNuXmH06_DQRKln3ZWWYcUB0_plALsnJVXxlCePPz6ySRq-OUST66nA3pfDj8NYfvOBQaN97Fa2QY1TBMH-utXAn6omigoYiALNPeBPTjJzvyaDUAhgmlJkfqcnw_ZQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:05.1173165Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:12.186 +01:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:12.343 +01:00 [INF] Executed DbCommand (156ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:12.343 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MTMsImV4cCI6MTc0NzQyNTAxMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1Q0FCRTlEM0IyMDkwMkM0NTlDRTQzMDhBNjY0NkU4OSIsImlhdCI6MTc0NzQyMTQxMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rktAsQWy_IF4W2KknQKBawvGBTUHNBDvCrin8Un2UI2g8OkkrnEQ0tdfsIy-S1ZiPVYTkkyc9f8OmOm35-WoWbWVaaTmGYusfZSCaja-_NmmMFPmeZCd_bjIsF0A8YJDnDvCnFBRmGK30G74WoT3jEv1Vota-48Yfb7_wb2wXwsNT1MrviVLEVdLGamOR0AJGDEXOZtSN2_YV-IqDTuKA00z4jwA_eJbKXHREFz8bKl47288hbIpytxHlV1Miz3SnGrb0jfyumoKvLv8VmmYMGga_B52sqBpDN9xpPbrbR3LbyQKYtuCNfB9BJa3qjAefCV68dFhU5UxZC0Il9yW6A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:12.0142103Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:12.343 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MTMsImV4cCI6MTc0NzQyNTAxMywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1Q0FCRTlEM0IyMDkwMkM0NTlDRTQzMDhBNjY0NkU4OSIsImlhdCI6MTc0NzQyMTQxMywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.rktAsQWy_IF4W2KknQKBawvGBTUHNBDvCrin8Un2UI2g8OkkrnEQ0tdfsIy-S1ZiPVYTkkyc9f8OmOm35-WoWbWVaaTmGYusfZSCaja-_NmmMFPmeZCd_bjIsF0A8YJDnDvCnFBRmGK30G74WoT3jEv1Vota-48Yfb7_wb2wXwsNT1MrviVLEVdLGamOR0AJGDEXOZtSN2_YV-IqDTuKA00z4jwA_eJbKXHREFz8bKl47288hbIpytxHlV1Miz3SnGrb0jfyumoKvLv8VmmYMGga_B52sqBpDN9xpPbrbR3LbyQKYtuCNfB9BJa3qjAefCV68dFhU5UxZC0Il9yW6A","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:12.0142103Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:18.006 +01:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:18.239 +01:00 [INF] Executed DbCommand (232ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:18.240 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MTksImV4cCI6MTc0NzQyNTAxOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3NThDMTdENDdGMEQwN0MzRjQ5NTg5Q0Q3MkQ0RTk2NSIsImlhdCI6MTc0NzQyMTQxOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.JntCt_Ac4Lydyf9e0ItRBMZLspOQGWPpsEXbxAD5E7jekpyXU_xyt0Mh-hNlpVgWi9dFvInzm5ix_XQX7j3lRzYsOyUBOqkOkOMSEISuWBvK_FMDVl9RuLpkKDD5mhCqCUxG93V-tM-XocR5tMa7RmCaenrUiW-aG2TCF0_HFk4fi6cctfPvs7O4mbALqEfgLpjfiRmmBgKY-KLsuLO5yxqFgIqBJXw5PNUlBhGX1jH9ddxTb8lwZQblzQ7cOvSnr5mCNDpJlpuPEIcCHsgRX13PFBF6IMuU9BgzLEYRw-w32G-iJ4dxXYzNQO8RPh8mohOukHuF_7MJJv6I5oMusg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:17.8450089Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:18.240 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MTksImV4cCI6MTc0NzQyNTAxOSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3NThDMTdENDdGMEQwN0MzRjQ5NTg5Q0Q3MkQ0RTk2NSIsImlhdCI6MTc0NzQyMTQxOSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.JntCt_Ac4Lydyf9e0ItRBMZLspOQGWPpsEXbxAD5E7jekpyXU_xyt0Mh-hNlpVgWi9dFvInzm5ix_XQX7j3lRzYsOyUBOqkOkOMSEISuWBvK_FMDVl9RuLpkKDD5mhCqCUxG93V-tM-XocR5tMa7RmCaenrUiW-aG2TCF0_HFk4fi6cctfPvs7O4mbALqEfgLpjfiRmmBgKY-KLsuLO5yxqFgIqBJXw5PNUlBhGX1jH9ddxTb8lwZQblzQ7cOvSnr5mCNDpJlpuPEIcCHsgRX13PFBF6IMuU9BgzLEYRw-w32G-iJ4dxXYzNQO8RPh8mohOukHuF_7MJJv6I5oMusg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:17.8450089Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:24.969 +01:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:25.137 +01:00 [INF] Executed DbCommand (167ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:25.137 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MjUsImV4cCI6MTc0NzQyNTAyNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBQTYxNUFGODY4MDgwODg5MURFQzEwQkMwODJBNjM3RiIsImlhdCI6MTc0NzQyMTQyNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.qJJRp3ReXYIPROZG_9awxYUU6GSMvtKUAmoZgjUU8jPtqh6EmaQVPkjaxfHFDhQY8IkgARfgfaVBS6GaaBRAkx6YWFr3nBv4jqhRZrKIINl41jkmHh8ivT8KPAsFaVysUOW9qROqmvTCh0Czv-otKkNTYStpRq4hKdhLF7QJGzjMXR1mr6K5PusyMnxneV-_K6iDBisQFz1jn1s-_SZMo_dzhSm_gK7MZe7N-FO6sH-wrKlg4TIhjBJsSbkTJTFr_hZt3oSD5WZnVzZxLNdoGn2tUZO51e_a1l7ygv4rXkdDLxve8-yhbamDImwlATww9XKVsfIfrxYDrQA_vNLr7g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:24.8000375Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:25.137 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MjUsImV4cCI6MTc0NzQyNTAyNSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBQTYxNUFGODY4MDgwODg5MURFQzEwQkMwODJBNjM3RiIsImlhdCI6MTc0NzQyMTQyNSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.qJJRp3ReXYIPROZG_9awxYUU6GSMvtKUAmoZgjUU8jPtqh6EmaQVPkjaxfHFDhQY8IkgARfgfaVBS6GaaBRAkx6YWFr3nBv4jqhRZrKIINl41jkmHh8ivT8KPAsFaVysUOW9qROqmvTCh0Czv-otKkNTYStpRq4hKdhLF7QJGzjMXR1mr6K5PusyMnxneV-_K6iDBisQFz1jn1s-_SZMo_dzhSm_gK7MZe7N-FO6sH-wrKlg4TIhjBJsSbkTJTFr_hZt3oSD5WZnVzZxLNdoGn2tUZO51e_a1l7ygv4rXkdDLxve8-yhbamDImwlATww9XKVsfIfrxYDrQA_vNLr7g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:24.8000375Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:30.892 +01:00 [INF] Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:31.044 +01:00 [INF] Executed DbCommand (151ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:31.044 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MzEsImV4cCI6MTc0NzQyNTAzMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGRjI1REIzNTFCOUYzQTNEQjNERUU3NTVBM0Y4Mjc5NCIsImlhdCI6MTc0NzQyMTQzMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.wGsyRNFJxM-MRkB1wVoY6clW_O5XMgJvKcJId64GLVLJeBfe08AhR_SawnhAjfVra59LD-gZaEnvbSNmj2Sa1qB0llzUVPQVAqBy8MNkJX-KM_N5CzC0Bbtie2jHDAu1SFnOC_n7ZOqH-VkySloEi1aL0Ar_J3V17wAjRAFoE8BjLUhSJ64DAvlpHnkDAausIjV0Jh8tnAWrMdjosHBRmI7wDUpTXk0OTOD-tZks372-skKzVMSVNzj65cRvKAV4zDuM4suxx0m5RC4gUYpYJBFWwmrckbAyiesuMvfghU2EfnULaSc0SU7ChkhEt5y5jW5lUm3tDpfCPZ9vlYbilQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:30.6540955Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:31.045 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MzEsImV4cCI6MTc0NzQyNTAzMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGRjI1REIzNTFCOUYzQTNEQjNERUU3NTVBM0Y4Mjc5NCIsImlhdCI6MTc0NzQyMTQzMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.wGsyRNFJxM-MRkB1wVoY6clW_O5XMgJvKcJId64GLVLJeBfe08AhR_SawnhAjfVra59LD-gZaEnvbSNmj2Sa1qB0llzUVPQVAqBy8MNkJX-KM_N5CzC0Bbtie2jHDAu1SFnOC_n7ZOqH-VkySloEi1aL0Ar_J3V17wAjRAFoE8BjLUhSJ64DAvlpHnkDAausIjV0Jh8tnAWrMdjosHBRmI7wDUpTXk0OTOD-tZks372-skKzVMSVNzj65cRvKAV4zDuM4suxx0m5RC4gUYpYJBFWwmrckbAyiesuMvfghU2EfnULaSc0SU7ChkhEt5y5jW5lUm3tDpfCPZ9vlYbilQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:30.6540955Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:36.679 +01:00 [INF] Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:36.862 +01:00 [INF] Executed DbCommand (182ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:36.862 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MzcsImV4cCI6MTc0NzQyNTAzNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzODAxQzQ1RjUyMzQ2Nzg5MkQwQjVDQjQzQ0NEQ0RGMSIsImlhdCI6MTc0NzQyMTQzNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.IqUmZAqqCAZBA0WU9K5D6hPQXL9UMdZB2aV2gLbGa6NBG2Uv-ZFewksQM1YIQd_LI7X_skov7W3vz-i0CcFeY2rBtUuGGbPu-eJSVGisKrYTrmSs14pEV1sCxFb-XbtS19Pp576X0KlP4iGw1ruY68jvWMmdEA95NTLS8pBAKHTayI6nKG8etGn4cRc_6vrrJnjmZSPaKTjzDJklq67sZc06M80jabVssh79pkkXkHilvRKlD0d6bVazMeQt0nI1112Ch1d-8GBbs2ziijy1eeYR-4Oj1qQoQWOwjCK8qLdQXJX4XUfFHgazeFZaNutOdWMPSKezLqq8JvKDAXDctA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:36.5067123Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:36.863 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0MzcsImV4cCI6MTc0NzQyNTAzNywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzODAxQzQ1RjUyMzQ2Nzg5MkQwQjVDQjQzQ0NEQ0RGMSIsImlhdCI6MTc0NzQyMTQzNywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.IqUmZAqqCAZBA0WU9K5D6hPQXL9UMdZB2aV2gLbGa6NBG2Uv-ZFewksQM1YIQd_LI7X_skov7W3vz-i0CcFeY2rBtUuGGbPu-eJSVGisKrYTrmSs14pEV1sCxFb-XbtS19Pp576X0KlP4iGw1ruY68jvWMmdEA95NTLS8pBAKHTayI6nKG8etGn4cRc_6vrrJnjmZSPaKTjzDJklq67sZc06M80jabVssh79pkkXkHilvRKlD0d6bVazMeQt0nI1112Ch1d-8GBbs2ziijy1eeYR-4Oj1qQoQWOwjCK8qLdQXJX4XUfFHgazeFZaNutOdWMPSKezLqq8JvKDAXDctA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:36.5067123Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:42.625 +01:00 [INF] Executed DbCommand (251ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:42.785 +01:00 [INF] Executed DbCommand (159ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:42.786 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0NDMsImV4cCI6MTc0NzQyNTA0MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1Q0JCQTZFMURDQjRBNEM5NjU3QkNBRjU0Q0Y4MEMyRCIsImlhdCI6MTc0NzQyMTQ0Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Q6v5Gi70mKNq602MIAZOgxtw2IgbWe0s711EId1oaou4W7IzMImGQxurKQWUjQMawJSgUcUwB-JlnZ08qGdDBYCe4h4Cysp36uY_hkn9uqpo4mlSIzIGItxfVhaJg1YYzcxdLVA7j47hLZFdYrV9E28LjfRQQOvhDJAqzqjPfeKIVNRmFgkRk3iq9Esp0LVCci4j3n0FJSVa3g2PZoVmD2I-Cq5ns9R_NTQOywpowzSoR5IITr9NUlIVVl2d1u-F_pQCCHGKWGxK-XNNsN7JFJMQPGzPUFF0s2jBvsfh5s-XA8OuRDEyiPIYjwlszNb9Yu-UZfihG4FZnplEU4Oueg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:42.3730651Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:42.786 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0NDMsImV4cCI6MTc0NzQyNTA0MywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI1Q0JCQTZFMURDQjRBNEM5NjU3QkNBRjU0Q0Y4MEMyRCIsImlhdCI6MTc0NzQyMTQ0Mywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Q6v5Gi70mKNq602MIAZOgxtw2IgbWe0s711EId1oaou4W7IzMImGQxurKQWUjQMawJSgUcUwB-JlnZ08qGdDBYCe4h4Cysp36uY_hkn9uqpo4mlSIzIGItxfVhaJg1YYzcxdLVA7j47hLZFdYrV9E28LjfRQQOvhDJAqzqjPfeKIVNRmFgkRk3iq9Esp0LVCci4j3n0FJSVa3g2PZoVmD2I-Cq5ns9R_NTQOywpowzSoR5IITr9NUlIVVl2d1u-F_pQCCHGKWGxK-XNNsN7JFJMQPGzPUFF0s2jBvsfh5s-XA8OuRDEyiPIYjwlszNb9Yu-UZfihG4FZnplEU4Oueg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:42.3730651Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:48.792 +01:00 [INF] Executed DbCommand (400ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 19:50:49.185 +01:00 [INF] Executed DbCommand (392ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 19:50:49.186 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0NDksImV4cCI6MTc0NzQyNTA0OSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGNTFFRUE3MUFBMTdGOTM3QUU5OUExNDRGODgxQTUzQyIsImlhdCI6MTc0NzQyMTQ0OSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.v7uyi6l2fKk4-FzYdqxlufVBVFKgGmPVianGzGdSCFTn8Sat4Q3naQ-GBjB2MYfM9cACitI3KuVHeGPRDkHbjAX8y937i2tNJ7P7NscjNh0K_0SXLzfK5_WaGgp96T9jFgRQGokYFrvQzbguzpYQOe_VonNe9MqNC9AsL84mi4vkVrAh4TZxApA_u2scoPcvSej8bqiUsAFX48-cMrZK2oTS51StRfLvr5T6xwtA1S93m9PyR21K7dQF_HW8Z3chbKJ6try63VvlJxsVE7KhAw7TDf0qsDVZB_NAf0Pd_XndMjbZrKhIPU3-0THp5YvqIoB2ojQPpDh9iBUOXLjGrg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:48.3923992Z","status":false},"Message":null,"code":null}
+2025-05-16 19:50:49.186 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjE0NDksImV4cCI6MTc0NzQyNTA0OSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJGNTFFRUE3MUFBMTdGOTM3QUU5OUExNDRGODgxQTUzQyIsImlhdCI6MTc0NzQyMTQ0OSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.v7uyi6l2fKk4-FzYdqxlufVBVFKgGmPVianGzGdSCFTn8Sat4Q3naQ-GBjB2MYfM9cACitI3KuVHeGPRDkHbjAX8y937i2tNJ7P7NscjNh0K_0SXLzfK5_WaGgp96T9jFgRQGokYFrvQzbguzpYQOe_VonNe9MqNC9AsL84mi4vkVrAh4TZxApA_u2scoPcvSej8bqiUsAFX48-cMrZK2oTS51StRfLvr5T6xwtA1S93m9PyR21K7dQF_HW8Z3chbKJ6try63VvlJxsVE7KhAw7TDf0qsDVZB_NAf0Pd_XndMjbZrKhIPU3-0THp5YvqIoB2ojQPpDh9iBUOXLjGrg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T19:50:48.3923992Z","status":false},"Message":null,"code":null}
+2025-05-16 20:50:24.147 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:24.147 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:29.163 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:29.163 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:34.171 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:34.171 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:39.259 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:39.259 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:44.269 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:44.269 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:49.295 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:49.295 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:54.298 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:54.298 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:59.309 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:50:59.309 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:04.309 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:04.309 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:07.447 +01:00 [ERR] Failed executing DbCommand (34,316ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 20:51:07.562 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CentralPG.Data.DataBaseContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-05-16 20:51:07.808 +01:00 [INF] TOKEN ==> {"Data":null,"Message":"An exception has been raised that is likely due to a transient failure.","code":null}
+2025-05-16 20:51:07.808 +01:00 [INF] Login in==> {"Data":null,"Message":"An exception has been raised that is likely due to a transient failure.","code":null}
+2025-05-16 20:51:09.319 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:09.319 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:14.326 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:14.326 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:19.337 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:19.337 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:24.350 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:24.350 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:29.350 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:29.350 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:34.358 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:34.358 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:39.369 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:39.369 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:44.375 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:44.375 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:49.381 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:49.381 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:54.387 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:54.387 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:59.403 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:51:59.403 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:04.411 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:04.411 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:09.427 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:09.427 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:14.433 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:14.433 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:19.439 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:19.439 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:24.443 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:24.443 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:29.444 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:29.444 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:34.451 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:34.451 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:39.465 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:39.465 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:44.470 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:44.470 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:49.509 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:49.509 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:54.520 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:54.520 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:59.523 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:52:59.524 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:04.527 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:04.528 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:09.529 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:09.529 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:14.533 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:14.533 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:19.539 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:19.539 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:24.551 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:24.551 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:29.565 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:29.565 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:34.570 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:34.570 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:39.577 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:39.577 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:44.582 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:44.583 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:49.591 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:49.591 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:54.600 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:54.600 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:59.604 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:53:59.604 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:04.618 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:04.619 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:09.633 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:09.633 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:14.648 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:14.648 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:19.656 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:19.656 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:24.659 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:24.659 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:29.672 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:29.672 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:34.683 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:34.683 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:39.693 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:39.693 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:44.696 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:44.696 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:49.711 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:49.711 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:54.724 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:54.725 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:59.727 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:54:59.727 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:04.732 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:04.732 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:09.751 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:09.751 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:14.757 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:14.757 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:19.767 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:19.767 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:24.772 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:24.772 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:29.785 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:29.786 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:34.799 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:34.799 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:39.800 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:39.801 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:44.802 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:44.802 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:49.812 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:49.812 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:54.819 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:54.820 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:59.829 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:55:59.830 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:04.836 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:04.836 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:09.844 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:09.844 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:14.854 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:14.854 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:19.862 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:19.862 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:24.876 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:24.876 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:29.881 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:29.881 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:34.893 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:34.894 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:39.908 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:39.908 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:44.915 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:44.915 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:49.917 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:49.917 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:54.925 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:54.925 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:59.926 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:56:59.927 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:04.936 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:04.937 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:09.950 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:09.950 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:14.964 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:14.964 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:19.976 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:19.976 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:24.978 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:24.978 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:29.982 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:29.982 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:34.997 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:34.997 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:40.000 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:40.000 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:45.008 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:45.008 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:50.009 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:50.009 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:55.010 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:57:55.010 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:00.011 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:00.011 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:05.025 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:05.025 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:10.034 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:10.035 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:15.045 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:15.045 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:20.050 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:20.050 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:25.054 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:25.054 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:30.065 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:30.065 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:35.066 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:35.066 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:40.067 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:40.067 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:45.080 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:45.080 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:50.094 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:50.094 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:55.105 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:58:55.105 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:00.110 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:00.110 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:05.121 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:05.121 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:10.124 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:10.124 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:15.132 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:15.132 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:20.140 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:20.140 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:25.140 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:25.140 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:30.142 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:30.142 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:35.143 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:35.143 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:40.154 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:40.154 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:45.169 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:45.169 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:50.169 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:50.169 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:55.171 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 20:59:55.171 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 21:00:00.186 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 21:00:00.186 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-16 21:00:07.262 +01:00 [INF] Executed DbCommand (234ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:07.589 +01:00 [INF] Executed DbCommand (326ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:07.590 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MDYsImV4cCI6MTc0NzQyOTIwNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5RDM5RkRGMzU2M0U0NDg5NTZBQTU2NUU3NDQ2QzdCNiIsImlhdCI6MTc0NzQyNTYwNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.qjsIFZlPVL0RJVjJ6efL1Kn1797TjI5nuqWjTy_OqmiAe8Otsg9Q-9uxqO6TDERVEi1hGhcyQKvjfBWJ89Idq3hRyOvz8ltZlKhw_V6Nbi3Iauha4CUwCLdu1q0XaZsV-PMJc150zj8VFhWN0iSz8nGHxMtXDsJXDHWzZEYqWj3n4V0j7-YqpQ4aY4YTXNca6j9GA-vtlE2VXlrru1diF5PSwvvZkffd5ofMxyWxOpXY1rZKIqtl-xeU77wj4S-rtaEote-c7bN205Z2rvq2CFGa7IzAtPu9yqPzuef-PSfckWhar8RJpo9gdH1cEO6SXqAS5Q1w53CEXuHKkIK2bA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:05.4286362Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:07.590 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MDYsImV4cCI6MTc0NzQyOTIwNiwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI5RDM5RkRGMzU2M0U0NDg5NTZBQTU2NUU3NDQ2QzdCNiIsImlhdCI6MTc0NzQyNTYwNiwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.qjsIFZlPVL0RJVjJ6efL1Kn1797TjI5nuqWjTy_OqmiAe8Otsg9Q-9uxqO6TDERVEi1hGhcyQKvjfBWJ89Idq3hRyOvz8ltZlKhw_V6Nbi3Iauha4CUwCLdu1q0XaZsV-PMJc150zj8VFhWN0iSz8nGHxMtXDsJXDHWzZEYqWj3n4V0j7-YqpQ4aY4YTXNca6j9GA-vtlE2VXlrru1diF5PSwvvZkffd5ofMxyWxOpXY1rZKIqtl-xeU77wj4S-rtaEote-c7bN205Z2rvq2CFGa7IzAtPu9yqPzuef-PSfckWhar8RJpo9gdH1cEO6SXqAS5Q1w53CEXuHKkIK2bA","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:05.4286362Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:13.685 +01:00 [INF] Executed DbCommand (219ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:14.021 +01:00 [INF] Executed DbCommand (335ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:14.021 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MTQsImV4cCI6MTc0NzQyOTIxNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDNzM0MjM4QkYxRDM0RDMyODdGMjQzNjY3MjdBODAzOCIsImlhdCI6MTc0NzQyNTYxNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.GXFCI2ZIqQJqiDd26T61EsCmbjgNxEuT87qu_ziUrCituOgAniJP7-Q2ECG4blotLMgI8MonAxfL0lkHzXOWCwn5R7ygktDWI8n5VpN8O-MhUP-KgIV5RmrUOotURyJ-hEyb6w8tNXKdBcDQeUY0LQfDIW0tzs9DjPquBiE5-lJ9kwSCRZGgdTnBk4qlj6LE3tyQfmdGdDTXZ8Xd5lB1iH0se3l08vdFJDahxA7IvG4YO-wwlKvtBWu2DdACSmHZJKUc8IQjK700E3a9Mr0QAkh1BTTUqfXTb9XZMxkKmXkJMby7sC_eiOiVIsA-Fu-RaF00QVBdYviEmQNcgcSs8g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:13.4656123Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:14.022 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MTQsImV4cCI6MTc0NzQyOTIxNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJDNzM0MjM4QkYxRDM0RDMyODdGMjQzNjY3MjdBODAzOCIsImlhdCI6MTc0NzQyNTYxNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.GXFCI2ZIqQJqiDd26T61EsCmbjgNxEuT87qu_ziUrCituOgAniJP7-Q2ECG4blotLMgI8MonAxfL0lkHzXOWCwn5R7ygktDWI8n5VpN8O-MhUP-KgIV5RmrUOotURyJ-hEyb6w8tNXKdBcDQeUY0LQfDIW0tzs9DjPquBiE5-lJ9kwSCRZGgdTnBk4qlj6LE3tyQfmdGdDTXZ8Xd5lB1iH0se3l08vdFJDahxA7IvG4YO-wwlKvtBWu2DdACSmHZJKUc8IQjK700E3a9Mr0QAkh1BTTUqfXTb9XZMxkKmXkJMby7sC_eiOiVIsA-Fu-RaF00QVBdYviEmQNcgcSs8g","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:13.4656123Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:20.393 +01:00 [INF] Executed DbCommand (683ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:20.682 +01:00 [INF] Executed DbCommand (287ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:20.682 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MjEsImV4cCI6MTc0NzQyOTIyMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJCOTAzOTQ3MEUxRkJENzIzMjZBREQ0OTQ0OUFBODEwMyIsImlhdCI6MTc0NzQyNTYyMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.oxykaSd7fqiuy-nSr--tyOR9l7EC9xsz4sno3xYm2W4_QYH-JrtvdPHDUccjWjJoi7mENwhRERISmvkcraKTWvQM_b2WZlToJDkMWvZ_OuqqvGtarvEy3zGJNQoVPb3y3-mQmCtTs0AuHA_qMUrdlByb7WK69adgEsNpr1juYn2tDIwxKij8d4RUbf58z54d9bUiTGKb3rSQIvcNWgaUghLBxPAeYpf74fGQ8KwkL12U5N0IHKGjd9fcqp7-KArRGKLKQWGF8zBFwsRDOnDz9e0Rkk8A-0CHHH2zcOZgXPjU7TqevraMMYiO_LRcfKAgXoUycPJvsSkZ2U1cU1uHvw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:19.710355Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:20.683 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MjEsImV4cCI6MTc0NzQyOTIyMSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJCOTAzOTQ3MEUxRkJENzIzMjZBREQ0OTQ0OUFBODEwMyIsImlhdCI6MTc0NzQyNTYyMSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.oxykaSd7fqiuy-nSr--tyOR9l7EC9xsz4sno3xYm2W4_QYH-JrtvdPHDUccjWjJoi7mENwhRERISmvkcraKTWvQM_b2WZlToJDkMWvZ_OuqqvGtarvEy3zGJNQoVPb3y3-mQmCtTs0AuHA_qMUrdlByb7WK69adgEsNpr1juYn2tDIwxKij8d4RUbf58z54d9bUiTGKb3rSQIvcNWgaUghLBxPAeYpf74fGQ8KwkL12U5N0IHKGjd9fcqp7-KArRGKLKQWGF8zBFwsRDOnDz9e0Rkk8A-0CHHH2zcOZgXPjU7TqevraMMYiO_LRcfKAgXoUycPJvsSkZ2U1cU1uHvw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:19.710355Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:27.091 +01:00 [INF] Executed DbCommand (317ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:27.398 +01:00 [INF] Executed DbCommand (304ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:27.398 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MjgsImV4cCI6MTc0NzQyOTIyOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3MjFCMTQ1NDFDQkZBRTg4QjZDN0Y3RkFFRDhGMDI1RCIsImlhdCI6MTc0NzQyNTYyOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.qwyxdvQLthbZgKy0sUS2dSonNwcihIMxUKnympTIAZtkjTxlgM6Oy7cEE_pR8-5Sc1DQ7HpIv9n3ZnAmKJgLHYp_RYTDVcvZnwFiAyL7-1eWuYxmaVPoArvsovnPgtF2-a7b_FagYjg6MWfu4Vms10bseTK84kSxQRdVItKhAnkZ2gK9Iq3p87SE6OCYsAorB2iP72tnv2mcylMw_teIdIXxIollWxgBNPr1AlwbuQKgSxeMGkkmv5sZ-JPj-EUndDce0fnnrdl1VIU4q0QLs8YXD_qVsMokSkZv3o94WvZAGiYD1T788U6eEiZlhrM5s07-wGhJ5sb355dQoNfRzw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:26.7744159Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:27.398 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MjgsImV4cCI6MTc0NzQyOTIyOCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiI3MjFCMTQ1NDFDQkZBRTg4QjZDN0Y3RkFFRDhGMDI1RCIsImlhdCI6MTc0NzQyNTYyOCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.qwyxdvQLthbZgKy0sUS2dSonNwcihIMxUKnympTIAZtkjTxlgM6Oy7cEE_pR8-5Sc1DQ7HpIv9n3ZnAmKJgLHYp_RYTDVcvZnwFiAyL7-1eWuYxmaVPoArvsovnPgtF2-a7b_FagYjg6MWfu4Vms10bseTK84kSxQRdVItKhAnkZ2gK9Iq3p87SE6OCYsAorB2iP72tnv2mcylMw_teIdIXxIollWxgBNPr1AlwbuQKgSxeMGkkmv5sZ-JPj-EUndDce0fnnrdl1VIU4q0QLs8YXD_qVsMokSkZv3o94WvZAGiYD1T788U6eEiZlhrM5s07-wGhJ5sb355dQoNfRzw","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:26.7744159Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:33.504 +01:00 [INF] Executed DbCommand (257ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:33.914 +01:00 [INF] Executed DbCommand (410ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:33.915 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MzQsImV4cCI6MTc0NzQyOTIzNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBQzAwRjFGMTczNTJBQTRGQUVGNDAxNEY3NDhDNDNCNiIsImlhdCI6MTc0NzQyNTYzNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.eRkewvYVAzLl0fP9HitgGZTWq1IhPbT1i7rQKITYVAvp0pQYtnf_MPS-OUcyy_xASU7I3Mrc988bu-CNHb81J08V0h4EdJAtOzmIoPjqskTnRg3arKKGMH7BihCatxu_6gJ8B1hZshBUG74f91o0LNDMBJzP1Q3LvgZRypUbQleGIiDqk8yGsGGut_rLLrB1Bf_hDMJofX9wXmH2znCRHxwMaUxxW1PQFGzqZnh9zYhSJ5T4x7DvMwKa_lKu8CUF_xHlDeQA2-0x-9016f_D02YdHS-0vl4b6o5pmA2uiQz3r2tOZgEujYXNbZuFld1jP8gsU8EKvedgqhJOMCmD9w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:33.2468993Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:33.915 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2MzQsImV4cCI6MTc0NzQyOTIzNCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJBQzAwRjFGMTczNTJBQTRGQUVGNDAxNEY3NDhDNDNCNiIsImlhdCI6MTc0NzQyNTYzNCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.eRkewvYVAzLl0fP9HitgGZTWq1IhPbT1i7rQKITYVAvp0pQYtnf_MPS-OUcyy_xASU7I3Mrc988bu-CNHb81J08V0h4EdJAtOzmIoPjqskTnRg3arKKGMH7BihCatxu_6gJ8B1hZshBUG74f91o0LNDMBJzP1Q3LvgZRypUbQleGIiDqk8yGsGGut_rLLrB1Bf_hDMJofX9wXmH2znCRHxwMaUxxW1PQFGzqZnh9zYhSJ5T4x7DvMwKa_lKu8CUF_xHlDeQA2-0x-9016f_D02YdHS-0vl4b6o5pmA2uiQz3r2tOZgEujYXNbZuFld1jP8gsU8EKvedgqhJOMCmD9w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:33.2468993Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:40.195 +01:00 [INF] Executed DbCommand (208ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:40.458 +01:00 [INF] Executed DbCommand (263ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:40.458 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NDEsImV4cCI6MTc0NzQyOTI0MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFRkFGQ0Y3RTczNzM0OEVCN0M5RDIxMTk4RjlERUUwRCIsImlhdCI6MTc0NzQyNTY0MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.IzUp-kUOgzMdS59saZhb-buCY1_Y32xXn2nGMki-Pq2GqAPJqUi6Bw77dUAUt2o_KfxTz7J13pYTOUaQGSdrQ1ndUsgBJ6Mt7UUGqwq21tiHVsm3aAu2dqKl8PaMylIbPEK5XfxPtk5rrQBqWB_OA9POv_JBL-mCHzppHa8Epuu_1SEnqeoUEbwKaZAhpJDPR5d5sp6vNPhTvJ_wZQOnRI_IKo0xFFLJGdWnhjX0oz6YUmnRa-YZjc3kORD5K6MdCx3exObIp2uGts1ii_NiIJXgYKf099jMO5orW5TiJ3J6VUEpE5vB96zNqsx8xt2_wFUVcquVaocZRNLvDftkmg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:39.9865174Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:40.458 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NDEsImV4cCI6MTc0NzQyOTI0MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiJFRkFGQ0Y3RTczNzM0OEVCN0M5RDIxMTk4RjlERUUwRCIsImlhdCI6MTc0NzQyNTY0MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.IzUp-kUOgzMdS59saZhb-buCY1_Y32xXn2nGMki-Pq2GqAPJqUi6Bw77dUAUt2o_KfxTz7J13pYTOUaQGSdrQ1ndUsgBJ6Mt7UUGqwq21tiHVsm3aAu2dqKl8PaMylIbPEK5XfxPtk5rrQBqWB_OA9POv_JBL-mCHzppHa8Epuu_1SEnqeoUEbwKaZAhpJDPR5d5sp6vNPhTvJ_wZQOnRI_IKo0xFFLJGdWnhjX0oz6YUmnRa-YZjc3kORD5K6MdCx3exObIp2uGts1ii_NiIJXgYKf099jMO5orW5TiJ3J6VUEpE5vB96zNqsx8xt2_wFUVcquVaocZRNLvDftkmg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:39.9865174Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:46.510 +01:00 [INF] Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:47.471 +01:00 [INF] Executed DbCommand (960ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:47.471 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NDcsImV4cCI6MTc0NzQyOTI0NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwOTkyRUM5OTBGOUM4OUJENkY2NUUxQjUwRUY3OTc4MiIsImlhdCI6MTc0NzQyNTY0Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.HP3BJ505TtHyUgk-4JO1gvJfsru0AMins6nkyGEted7rEUNBv9B_oNXCUCFKltdC8ZgX9Ebq7o-O_hKDT6ps1FuE9DAEf71Zh1tgQY2F1joLTT2bzjVLCUHdVdl2oH8pnlhElCdWEpnN9FAaAu9lG73lGy4aZyaOVYOb3NBRgsrVU-5eMso2KFt2ummqC4ABKyllMazX5l56zO8pRYkHv8P6P2YsVCIs93wZr2ujNlndmpNU1dbEuyfBaXG3Jp8qYooXMmE_SL6i8YQ90JQ0IFpbpr6e9Oieq68DUj_XPuvY1LxzdoAI0vU5RJlK_-YtIkwAp2eIwQZ73HaxyGAqTg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:46.3045693Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:47.471 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NDcsImV4cCI6MTc0NzQyOTI0NywiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIwOTkyRUM5OTBGOUM4OUJENkY2NUUxQjUwRUY3OTc4MiIsImlhdCI6MTc0NzQyNTY0Nywic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.HP3BJ505TtHyUgk-4JO1gvJfsru0AMins6nkyGEted7rEUNBv9B_oNXCUCFKltdC8ZgX9Ebq7o-O_hKDT6ps1FuE9DAEf71Zh1tgQY2F1joLTT2bzjVLCUHdVdl2oH8pnlhElCdWEpnN9FAaAu9lG73lGy4aZyaOVYOb3NBRgsrVU-5eMso2KFt2ummqC4ABKyllMazX5l56zO8pRYkHv8P6P2YsVCIs93wZr2ujNlndmpNU1dbEuyfBaXG3Jp8qYooXMmE_SL6i8YQ90JQ0IFpbpr6e9Oieq68DUj_XPuvY1LxzdoAI0vU5RJlK_-YtIkwAp2eIwQZ73HaxyGAqTg","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:46.3045693Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:53.537 +01:00 [INF] Executed DbCommand (326ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:00:53.947 +01:00 [INF] Executed DbCommand (409ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:00:53.948 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NTQsImV4cCI6MTc0NzQyOTI1NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyMUIyODNENTE0QjUxRjRDRTE0QTRGOUI3QkQ5OEU4QSIsImlhdCI6MTc0NzQyNTY1NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.OCBskwgEPuwQHqe9fDwPebJx5H2eDZ4Ffo2gkp37YDUK1knGpWTkXJgi-V376Qx03PCsKv4gzLMrSS2Zr1O45Kapv1Wc1t-QhzJOiE9hq3eo5SqM0kQ6fDd1_UvE8r-iK15NAjXTKgBocfigpGpbw3QY9vXcfl8IuSi1UqcNCwzg1ejSzMvdzqrNaZu9-w5j0Nxxem6-xQAJhXqmDF7oEFKD_2jFLMSAoHpnZCxuEERPq8mUtXigTDoEzp__sZ1tIYaXIMrxU1IJ6S6gLbfUJGMm1kB9pNWIEFjj_R8ywdO8V8JoyYjw6sQ_v13ehm4BNfivEgZDMRdsIg_ZSGunYQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:53.2112052Z","status":false},"Message":null,"code":null}
+2025-05-16 21:00:53.948 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NTQsImV4cCI6MTc0NzQyOTI1NCwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIyMUIyODNENTE0QjUxRjRDRTE0QTRGOUI3QkQ5OEU4QSIsImlhdCI6MTc0NzQyNTY1NCwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.OCBskwgEPuwQHqe9fDwPebJx5H2eDZ4Ffo2gkp37YDUK1knGpWTkXJgi-V376Qx03PCsKv4gzLMrSS2Zr1O45Kapv1Wc1t-QhzJOiE9hq3eo5SqM0kQ6fDd1_UvE8r-iK15NAjXTKgBocfigpGpbw3QY9vXcfl8IuSi1UqcNCwzg1ejSzMvdzqrNaZu9-w5j0Nxxem6-xQAJhXqmDF7oEFKD_2jFLMSAoHpnZCxuEERPq8mUtXigTDoEzp__sZ1tIYaXIMrxU1IJ6S6gLbfUJGMm1kB9pNWIEFjj_R8ywdO8V8JoyYjw6sQ_v13ehm4BNfivEgZDMRdsIg_ZSGunYQ","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:53.2112052Z","status":false},"Message":null,"code":null}
+2025-05-16 21:01:00.381 +01:00 [INF] Executed DbCommand (384ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-16 21:01:00.826 +01:00 [INF] Executed DbCommand (444ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2025-05-16 21:01:00.826 +01:00 [INF] TOKEN ==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NjEsImV4cCI6MTc0NzQyOTI2MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzNEUzRjIzRjZERUVERDZGMDRGMTJDMjQ4QTI4ODFGNiIsImlhdCI6MTc0NzQyNTY2MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Jcc8rIUaywQi1banRxZ_FJxJJXM6beh1rxf3Y62xK68ayCpFGhFxRyD6AM2-2Zy8_x-rdMPPeueZAd0dGiZITlaZoPzIBhkdNWt4K5I9Rh5HJ_y8iUi3IKQnKTRscuk664f0vuC3sCZJneGPJ5D5NgPXnJYf8mu8EzLV34gfttE3ckhWQqcHnKdKro5BjBoKvtFGqSKsOfUvS4m35-CG6owR5ehC8Iax1k98OjREciWcc33C0aJNETywNpyIN0zoMK3k1C-QuwFWJROAVAuO6DreY-w3odm8yRbPqVpnt1jt3kjG5I7u-EcHsA5nszZ-pmGk0SFHKHFdCPu2bpPU7w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:59.9975064Z","status":false},"Message":null,"code":null}
+2025-05-16 21:01:00.827 +01:00 [INF] Login in==> {"Data":{"Id":0,"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkU4NzcxNTMxMzU1MTRGMjhCN0M5NDE1NjY1N0REOEFCRURDODI4M0VSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjZIY1ZNVFZSVHlpM3lVRldaWDNZcS0zSUtENCJ9.eyJuYmYiOjE3NDc0MjU2NjEsImV4cCI6MTc0NzQyOTI2MSwiaXNzIjoiaHR0cDovLzE3OC42Mi4xMTYuMjMzIiwiYXVkIjpbInBheW1lbnRhcGkiLCJodHRwOi8vMTc4LjYyLjExNi4yMzMvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6Ik5haTAwMDAzMTkiLCJqdGkiOiIzNEUzRjIzRjZERUVERDZGMDRGMTJDMjQ4QTI4ODFGNiIsImlhdCI6MTc0NzQyNTY2MSwic2NvcGUiOlsicGF5bWVudGFwaSJdfQ.Jcc8rIUaywQi1banRxZ_FJxJJXM6beh1rxf3Y62xK68ayCpFGhFxRyD6AM2-2Zy8_x-rdMPPeueZAd0dGiZITlaZoPzIBhkdNWt4K5I9Rh5HJ_y8iUi3IKQnKTRscuk664f0vuC3sCZJneGPJ5D5NgPXnJYf8mu8EzLV34gfttE3ckhWQqcHnKdKro5BjBoKvtFGqSKsOfUvS4m35-CG6owR5ehC8Iax1k98OjREciWcc33C0aJNETywNpyIN0zoMK3k1C-QuwFWJROAVAuO6DreY-w3odm8yRbPqVpnt1jt3kjG5I7u-EcHsA5nszZ-pmGk0SFHKHFdCPu2bpPU7w","expires_in":3600,"refreshtoken":null,"timeGenerated":"2025-05-16T21:00:59.9975064Z","status":false},"Message":null,"code":null}

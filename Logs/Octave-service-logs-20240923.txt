@@ -1,0 +1,1391 @@
+2024-09-23 12:09:49.785 +01:00 [INF] Starting up the application
+2024-09-23 12:09:52.341 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 12:09:52.346 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 12:09:52.347 +01:00 [INF] Hosting environment: Development
+2024-09-23 12:09:52.347 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 12:09:52.681 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 12:09:52.736 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 12:09:52.785 +01:00 [INF] HTTP GET / responded 404 in 43.5129 ms
+2024-09-23 12:09:52.809 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 130.7519ms
+2024-09-23 12:09:52.819 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 12:09:56.502 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-09-23 12:09:56.618 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 115.8012ms
+2024-09-23 12:09:56.626 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.css - null null
+2024-09-23 12:09:56.626 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - null null
+2024-09-23 12:09:56.626 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - null null
+2024-09-23 12:09:56.665 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-23 12:09:56.665 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.css - 200 202 text/css 39.677ms
+2024-09-23 12:09:56.666 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-23 12:09:56.680 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-23 12:09:56.680 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-23 12:09:56.683 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui.css - 200 152034 text/css 57.3394ms
+2024-09-23 12:09:56.683 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 17.5191ms
+2024-09-23 12:09:56.697 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-09-23 12:09:56.698 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 1.5245ms
+2024-09-23 12:09:56.736 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-23 12:09:56.737 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 110.9844ms
+2024-09-23 12:09:57.510 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-09-23 12:09:57.716 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 206.0113ms
+2024-09-23 12:11:08.118 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 600
+2024-09-23 12:11:08.128 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:11:08.163 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:11:09.552 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 12:11:15.236 +01:00 [INF] Executed DbCommand (304ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:11:32.030 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 12:11:37.779 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 12:11:37.789 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 29623.1875ms
+2024-09-23 12:11:37.789 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:11:37.790 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 29672.5657 ms
+2024-09-23 12:11:37.799 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 29681.5746ms
+2024-09-23 12:15:10.998 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 610
+2024-09-23 12:15:11.005 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:15:11.006 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:15:11.508 +01:00 [INF] Executed DbCommand (483ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:15:18.554 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 12:15:25.503 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-09-23 12:15:25.537 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 19.9006ms
+2024-09-23 12:15:25.538 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 12:15:25.544 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 14537.8247ms
+2024-09-23 12:15:25.544 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:15:25.544 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 14541.6124 ms
+2024-09-23 12:15:25.544 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 499 null application/json; charset=utf-8 14546.4559ms
+2024-09-23 12:15:25.618 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-09-23 12:15:25.618 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 0.5271ms
+2024-09-23 12:15:26.418 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-09-23 12:15:26.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.6069ms
+2024-09-23 12:15:26.491 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/favicon-32x32.png - null null
+2024-09-23 12:15:26.492 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-23 12:15:26.492 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/favicon-32x32.png - 200 628 image/png 0.4266ms
+2024-09-23 12:19:57.527 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 598
+2024-09-23 12:19:57.529 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:19:57.532 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:20:04.994 +01:00 [INF] Executed DbCommand (274ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:20:37.019 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 12:20:40.463 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 12:20:40.463 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 42930.5489ms
+2024-09-23 12:20:40.463 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:20:40.463 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 42935.8294 ms
+2024-09-23 12:20:40.463 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 42936.2703ms
+2024-09-23 12:26:29.010 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 685
+2024-09-23 12:26:29.013 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:26:29.014 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:26:29.033 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:26:29.053 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 39.2032ms
+2024-09-23 12:26:29.053 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:26:29.053 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 42.8071 ms
+2024-09-23 12:26:29.053 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 43.1239ms
+2024-09-23 12:26:46.897 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 687
+2024-09-23 12:26:46.897 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:26:46.897 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:26:46.899 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:26:46.899 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 1.6883ms
+2024-09-23 12:26:46.899 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:26:46.899 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 2.0512 ms
+2024-09-23 12:26:46.899 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 2.6794ms
+2024-09-23 12:26:53.328 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 687
+2024-09-23 12:26:53.328 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:26:53.328 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:26:53.330 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:26:53.330 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 1.9564ms
+2024-09-23 12:26:53.330 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:26:53.330 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 2.4542 ms
+2024-09-23 12:26:53.330 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 2.6981ms
+2024-09-23 12:28:30.823 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 719
+2024-09-23 12:28:30.823 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:28:30.824 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:28:30.867 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:28:30.874 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 49.7425ms
+2024-09-23 12:28:30.874 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:28:30.875 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 51.5799 ms
+2024-09-23 12:28:30.875 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 52.1552ms
+2024-09-23 12:28:54.151 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 686
+2024-09-23 12:28:54.152 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:28:54.152 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:28:56.816 +01:00 [INF] Executed DbCommand (272ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:29:21.959 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 12:29:30.871 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 12:29:30.872 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 36719.8156ms
+2024-09-23 12:29:30.872 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:29:30.873 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 36721.3267 ms
+2024-09-23 12:29:30.874 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 36722.512ms
+2024-09-23 12:31:24.506 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 692
+2024-09-23 12:31:24.506 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:31:24.507 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:31:24.511 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:31:24.512 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 3.891ms
+2024-09-23 12:31:24.512 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:31:24.512 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 5.6017 ms
+2024-09-23 12:31:24.512 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 6.2988ms
+2024-09-23 12:32:46.515 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 698
+2024-09-23 12:32:46.516 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:32:46.516 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:32:46.523 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:32:46.523 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 6.6541ms
+2024-09-23 12:32:46.524 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:32:46.524 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 8.4016 ms
+2024-09-23 12:32:46.525 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 9.234ms
+2024-09-23 12:33:04.285 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 700
+2024-09-23 12:33:04.285 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:33:04.286 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:33:04.294 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:33:04.295 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 8.753ms
+2024-09-23 12:33:04.295 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:33:04.295 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 10.4074 ms
+2024-09-23 12:33:04.296 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 11.3526ms
+2024-09-23 12:34:27.253 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 700
+2024-09-23 12:34:27.255 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:34:27.256 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:34:27.262 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:34:27.262 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 6.4907ms
+2024-09-23 12:34:27.263 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:34:27.263 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 8.8274 ms
+2024-09-23 12:34:27.264 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 10.5573ms
+2024-09-23 12:34:37.002 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 698
+2024-09-23 12:34:37.003 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:34:37.004 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:34:37.009 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:34:37.010 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 5.641ms
+2024-09-23 12:34:37.010 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:34:37.010 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 7.3290 ms
+2024-09-23 12:34:37.010 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 8.4183ms
+2024-09-23 12:35:54.498 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 644
+2024-09-23 12:35:54.504 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:35:54.513 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:35:54.526 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:35:54.526 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 8.3666ms
+2024-09-23 12:35:54.526 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:35:54.527 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 23.0678 ms
+2024-09-23 12:35:54.527 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 28.7943ms
+2024-09-23 12:36:58.123 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 598
+2024-09-23 12:36:58.126 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:36:58.126 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:37:00.373 +01:00 [INF] Executed DbCommand (362ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:37:11.735 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 12:37:28.224 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 12:37:28.225 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 30095.1218ms
+2024-09-23 12:37:28.226 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:37:28.226 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 30102.0517 ms
+2024-09-23 12:37:28.226 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 30103.1441ms
+2024-09-23 12:48:49.336 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 646
+2024-09-23 12:48:49.348 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:48:49.352 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:48:49.358 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 12:48:49.359 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 6.7276ms
+2024-09-23 12:48:49.359 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:48:49.359 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 15.5796 ms
+2024-09-23 12:48:49.360 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 23.8295ms
+2024-09-23 12:49:54.231 +01:00 [INF] Starting up the application
+2024-09-23 12:49:56.558 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 12:49:56.568 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 12:49:56.570 +01:00 [INF] Hosting environment: Development
+2024-09-23 12:49:56.570 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 12:49:57.058 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 12:49:57.135 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 12:49:57.205 +01:00 [INF] HTTP GET / responded 404 in 61.4332 ms
+2024-09-23 12:49:57.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 178.3735ms
+2024-09-23 12:49:57.247 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 12:50:04.916 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-09-23 12:50:05.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 325.886ms
+2024-09-23 12:50:05.332 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-09-23 12:50:05.337 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 4.0722ms
+2024-09-23 12:50:06.894 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-09-23 12:50:07.228 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 333.9808ms
+2024-09-23 12:51:26.615 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 571
+2024-09-23 12:51:26.625 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:51:26.742 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:51:31.011 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 12:51:36.350 +01:00 [INF] Executed DbCommand (439ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:51:53.855 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 12:51:58.070 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 12:51:58.099 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 31348.0741ms
+2024-09-23 12:51:58.100 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:51:58.103 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 31486.8020 ms
+2024-09-23 12:51:58.121 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 31505.6796ms
+2024-09-23 12:52:37.795 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 598
+2024-09-23 12:52:37.799 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 12:52:37.799 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 12:52:38.173 +01:00 [INF] Executed DbCommand (324ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 12:52:51.952 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 13:05:54.702 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:05:54.712 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 796912.279ms
+2024-09-23 13:05:54.713 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:05:54.713 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 796917.7591 ms
+2024-09-23 13:05:54.715 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 796919.9751ms
+2024-09-23 13:06:06.923 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 646
+2024-09-23 13:06:06.924 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:06:06.925 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:06:06.952 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-23 13:06:07.014 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 88.0258ms
+2024-09-23 13:06:07.014 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:06:07.014 +01:00 [INF] HTTP POST /Payment/advice responded 400 in 90.3621 ms
+2024-09-23 13:06:07.015 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 400 null application/problem+json; charset=utf-8 91.963ms
+2024-09-23 13:07:52.334 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:07:52.350 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:07:52.355 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:07:52.886 +01:00 [INF] Executed DbCommand (274ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:08:13.288 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 13:15:10.667 +01:00 [INF] Starting up the application
+2024-09-23 13:15:13.375 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:15:13.392 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:15:13.395 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:15:13.395 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:15:14.251 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:15:14.319 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:15:14.379 +01:00 [INF] HTTP GET / responded 404 in 50.5103 ms
+2024-09-23 13:15:14.404 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 159.3989ms
+2024-09-23 13:15:14.418 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:16:13.645 +01:00 [INF] Starting up the application
+2024-09-23 13:16:15.421 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:16:15.440 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:16:15.441 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:16:15.442 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:16:16.053 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:16:16.148 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:16:16.229 +01:00 [INF] HTTP GET / responded 404 in 67.1651 ms
+2024-09-23 13:16:16.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 215.8284ms
+2024-09-23 13:16:16.289 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:16:29.820 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:16:29.879 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:16:29.947 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:18:30.491 +01:00 [INF] Executed DbCommand (553ms) [Parameters=[@p0='?', @p1='?' (DbType = Int64), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Auths" (access_token, expires_in, refreshtoken, status, "timeGenerated")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2024-09-23 13:18:45.088 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:18:45.698 +01:00 [INF] Executed DbCommand (317ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:20:06.157 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/advice: Error while copying content to a stream. 
+2024-09-23 13:23:08.267 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 669
+2024-09-23 13:23:08.281 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:23:08.282 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:23:08.676 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 385.4302ms
+2024-09-23 13:23:08.677 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:23:08.678 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:23:08.680 +01:00 [ERR] HTTP POST /Payment/advice responded 500 in 408.9111 ms
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Unexpected end of request content.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Text.Json.Serialization.ReadBufferState.ReadFromStreamAsync(Stream utf8Json, CancellationToken cancellationToken, Boolean fillBuffer)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-23 13:23:08.693 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 499 null null 426.1146ms
+2024-09-23 13:23:08.702 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 398753.4729ms
+2024-09-23 13:23:08.703 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:23:08.705 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 398882.3581 ms
+2024-09-23 13:23:08.717 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 398897.4729ms
+2024-09-23 13:23:14.511 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:23:14.513 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:23:14.514 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:24:15.737 +01:00 [INF] Executed DbCommand (361ms) [Parameters=[@p0='?', @p1='?' (DbType = Int64), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Auths" (access_token, expires_in, refreshtoken, status, "timeGenerated")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2024-09-23 13:24:16.045 +01:00 [INF] Executed DbCommand (301ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:25:53.563 +01:00 [INF] Starting up the application
+2024-09-23 13:25:55.815 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:25:55.830 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:25:55.832 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:25:55.833 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:25:56.216 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:25:56.292 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:25:56.347 +01:00 [INF] HTTP GET / responded 404 in 47.7654 ms
+2024-09-23 13:25:56.369 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 156.6964ms
+2024-09-23 13:25:56.382 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:26:07.722 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:26:07.768 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:26:07.972 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:26:46.378 +01:00 [INF] Starting up the application
+2024-09-23 13:26:49.623 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:26:49.633 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:26:49.634 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:26:49.634 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:26:50.146 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:26:50.227 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:26:50.327 +01:00 [INF] HTTP GET / responded 404 in 85.0346 ms
+2024-09-23 13:26:50.365 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 222.7704ms
+2024-09-23 13:26:50.380 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:26:53.982 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:26:54.044 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:26:54.108 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:26:58.344 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:27:02.535 +01:00 [INF] Executed DbCommand (353ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:28:47.091 +01:00 [INF] Starting up the application
+2024-09-23 13:28:49.812 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:28:49.823 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:28:49.824 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:28:49.825 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:28:50.391 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:28:50.468 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:28:50.554 +01:00 [INF] HTTP GET / responded 404 in 77.6706 ms
+2024-09-23 13:28:50.581 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 194.7315ms
+2024-09-23 13:28:50.599 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:28:54.489 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:28:54.576 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:28:54.649 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:28:58.934 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:28:59.026 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 4357.0392ms
+2024-09-23 13:28:59.026 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:28:59.027 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 4535.7384 ms
+2024-09-23 13:28:59.052 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 4561.8688ms
+2024-09-23 13:32:36.273 +01:00 [INF] Starting up the application
+2024-09-23 13:32:38.755 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:32:38.769 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:32:38.771 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:32:38.771 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:32:39.336 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:32:39.450 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:32:39.591 +01:00 [INF] HTTP GET / responded 404 in 127.4022 ms
+2024-09-23 13:32:39.623 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 291.1493ms
+2024-09-23 13:32:39.645 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:33:14.619 +01:00 [INF] Starting up the application
+2024-09-23 13:33:17.082 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:33:17.093 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:33:17.094 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:33:17.094 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:33:17.524 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:33:17.566 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:33:17.614 +01:00 [INF] HTTP GET / responded 404 in 38.9613 ms
+2024-09-23 13:33:17.639 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 117.8903ms
+2024-09-23 13:33:17.655 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:33:25.187 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:33:25.240 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:33:25.323 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:33:41.623 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:33:45.599 +01:00 [INF] Executed DbCommand (392ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:33:46.108 +01:00 [INF] Executed DbCommand (393ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:33:46.525 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:33:46.565 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 21230.4725ms
+2024-09-23 13:33:46.568 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:33:46.570 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 21378.9282 ms
+2024-09-23 13:33:46.629 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 21442.6953ms
+2024-09-23 13:34:17.484 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:34:17.556 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:34:17.557 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:35:36.801 +01:00 [INF] Executed DbCommand (374ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:36:28.412 +01:00 [INF] Executed DbCommand (392ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:37:31.980 +01:00 [INF] Starting up the application
+2024-09-23 13:37:34.199 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:37:34.223 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:37:34.225 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:37:34.225 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:37:34.860 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:37:34.942 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:37:35.011 +01:00 [INF] HTTP GET / responded 404 in 57.9237 ms
+2024-09-23 13:37:35.034 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 177.8761ms
+2024-09-23 13:37:35.052 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:37:41.854 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:37:41.870 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:37:41.975 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:38:08.423 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:38:12.137 +01:00 [INF] Executed DbCommand (380ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:38:34.780 +01:00 [INF] Executed DbCommand (297ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:42:28.882 +01:00 [INF] Starting up the application
+2024-09-23 13:42:31.792 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:42:31.814 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:42:31.816 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:42:31.816 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:42:32.259 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:42:32.341 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:42:32.402 +01:00 [INF] HTTP GET / responded 404 in 53.3297 ms
+2024-09-23 13:42:32.424 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 168.9112ms
+2024-09-23 13:42:32.444 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:42:50.032 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:42:50.121 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:42:50.266 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:43:47.404 +01:00 [INF] Starting up the application
+2024-09-23 13:43:49.847 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:43:49.866 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:43:49.869 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:43:49.869 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:43:50.478 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:43:50.559 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:43:50.621 +01:00 [INF] HTTP GET / responded 404 in 52.5690 ms
+2024-09-23 13:43:50.644 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 167.8885ms
+2024-09-23 13:43:50.658 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:43:57.479 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:43:57.514 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:43:57.592 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:44:48.034 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:44:52.957 +01:00 [INF] Executed DbCommand (416ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:45:06.157 +01:00 [INF] Executed DbCommand (488ms) [Parameters=[@p0='?', @p1='?' (DbType = Int64), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Auths" (access_token, expires_in, refreshtoken, status, "timeGenerated")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2024-09-23 13:45:12.803 +01:00 [INF] Executed DbCommand (337ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:48:14.409 +01:00 [INF] Starting up the application
+2024-09-23 13:48:17.118 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:48:17.129 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:48:17.130 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:48:17.130 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:48:17.464 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:48:17.534 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:48:17.577 +01:00 [INF] HTTP GET / responded 404 in 36.3468 ms
+2024-09-23 13:48:17.608 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 147.497ms
+2024-09-23 13:48:17.631 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:53:14.804 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:53:14.873 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:53:15.028 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:53:24.157 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:53:30.024 +01:00 [INF] Executed DbCommand (584ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:53:31.674 +01:00 [INF] Executed DbCommand (587ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 13:53:38.972 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:54:31.801 +01:00 [INF] Starting up the application
+2024-09-23 13:54:35.406 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:54:35.449 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:54:35.450 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:54:35.450 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:54:36.085 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:54:36.154 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:54:36.209 +01:00 [INF] HTTP GET / responded 404 in 44.5263 ms
+2024-09-23 13:54:36.235 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 157.1548ms
+2024-09-23 13:54:36.251 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:54:47.186 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:54:47.210 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:54:47.280 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:54:50.839 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:54:54.080 +01:00 [INF] Executed DbCommand (404ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:55:54.366 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:55:54.401 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 67111.5419ms
+2024-09-23 13:55:54.403 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:55:54.404 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 67215.5099 ms
+2024-09-23 13:55:54.422 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 67235.7481ms
+2024-09-23 13:56:42.592 +01:00 [INF] Starting up the application
+2024-09-23 13:56:44.870 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 13:56:44.884 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 13:56:44.887 +01:00 [INF] Hosting environment: Development
+2024-09-23 13:56:44.887 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 13:56:45.267 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 13:56:45.324 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 13:56:45.360 +01:00 [INF] HTTP GET / responded 404 in 30.7518 ms
+2024-09-23 13:56:45.380 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 122.9883ms
+2024-09-23 13:56:45.393 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 13:58:38.118 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 645
+2024-09-23 13:58:38.172 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:58:38.231 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:58:42.716 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 13:58:46.854 +01:00 [INF] Executed DbCommand (429ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:59:14.117 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:59:14.158 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 35920.3135ms
+2024-09-23 13:59:14.160 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:59:14.162 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 36040.9819 ms
+2024-09-23 13:59:14.183 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 36065.2515ms
+2024-09-23 13:59:44.411 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 598
+2024-09-23 13:59:44.419 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:59:44.419 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 13:59:44.845 +01:00 [INF] Executed DbCommand (370ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 13:59:49.097 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 13:59:49.099 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 4679.3346ms
+2024-09-23 13:59:49.100 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 13:59:49.100 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 4686.0474 ms
+2024-09-23 13:59:49.101 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 4689.797ms
+2024-09-23 14:01:08.300 +01:00 [INF] Starting up the application
+2024-09-23 14:01:10.905 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 14:01:10.941 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:01:10.953 +01:00 [INF] Hosting environment: Development
+2024-09-23 14:01:10.953 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 14:01:11.509 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 14:01:11.588 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 14:01:11.655 +01:00 [INF] HTTP GET / responded 404 in 54.3964 ms
+2024-09-23 14:01:11.685 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 182.4763ms
+2024-09-23 14:01:11.700 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 14:01:16.190 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice - application/json 598
+2024-09-23 14:01:16.208 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 14:01:16.304 +01:00 [INF] Route matched with {action = "CreateAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAdvice(CentralPG.Models.AdviceModel) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 14:01:20.750 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 14:01:24.211 +01:00 [INF] Executed DbCommand (400ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:01:25.361 +01:00 [INF] Executed DbCommand (318ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 14:01:25.812 +01:00 [INF] Executed DbCommand (372ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:01:48.026 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 14:01:48.089 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG) in 31774.4429ms
+2024-09-23 14:01:48.092 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.CreateAdvice (OCPG)'
+2024-09-23 14:01:48.095 +01:00 [INF] HTTP POST /Payment/advice responded 200 in 31902.8156 ms
+2024-09-23 14:01:48.132 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice - 200 null application/json; charset=utf-8 31941.5911ms
+2024-09-23 14:02:17.365 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - null null
+2024-09-23 14:02:17.428 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-09-23 14:02:17.463 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 14:02:17.937 +01:00 [INF] Executed DbCommand (323ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:02:18.991 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 14:02:18.994 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 1529.3236ms
+2024-09-23 14:02:18.994 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-09-23 14:02:18.995 +01:00 [INF] HTTP GET /Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d responded 200 in 1603.5988 ms
+2024-09-23 14:02:18.997 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 1631.9993ms
+2024-09-23 14:02:54.686 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - null null
+2024-09-23 14:02:54.702 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-09-23 14:02:54.703 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 14:02:55.412 +01:00 [INF] Executed DbCommand (298ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:09:45.153 +01:00 [INF] Starting up the application
+2024-09-23 14:09:48.140 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 14:09:48.157 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:09:48.159 +01:00 [INF] Hosting environment: Development
+2024-09-23 14:09:48.160 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 14:09:48.627 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 14:09:48.715 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 14:09:48.809 +01:00 [INF] HTTP GET / responded 404 in 84.7859 ms
+2024-09-23 14:09:48.835 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 214.1324ms
+2024-09-23 14:09:48.868 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 14:25:54.621 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - null null
+2024-09-23 14:25:54.682 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-09-23 14:25:54.774 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 14:25:58.665 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 14:26:02.480 +01:00 [INF] Executed DbCommand (425ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:28:18.162 +01:00 [INF] Starting up the application
+2024-09-23 14:28:20.633 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 14:28:20.642 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:28:20.644 +01:00 [INF] Hosting environment: Development
+2024-09-23 14:28:20.644 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 14:28:21.573 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 14:28:21.657 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 14:28:21.752 +01:00 [INF] HTTP GET / responded 404 in 77.2077 ms
+2024-09-23 14:28:21.785 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 218.8873ms
+2024-09-23 14:28:21.808 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 14:28:31.656 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - null null
+2024-09-23 14:28:31.691 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-09-23 14:28:31.833 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2024-09-23 14:28:34.605 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 14:28:37.587 +01:00 [INF] Executed DbCommand (359ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:31:23.566 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[OCPG.Models.GetAdviceModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 14:31:23.696 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 171853.1779ms
+2024-09-23 14:31:23.698 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2024-09-23 14:31:23.700 +01:00 [INF] HTTP GET /Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d responded 200 in 172033.2976 ms
+2024-09-23 14:31:23.725 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 172069.5912ms
+2024-09-23 14:45:53.128 +01:00 [INF] Starting up the application
+2024-09-23 14:45:56.064 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 14:45:56.072 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 14:45:56.073 +01:00 [INF] Hosting environment: Development
+2024-09-23 14:45:56.073 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 14:45:56.994 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 14:45:57.092 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 14:45:57.174 +01:00 [INF] HTTP GET / responded 404 in 73.8764 ms
+2024-09-23 14:45:57.208 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 219.4361ms
+2024-09-23 14:45:57.249 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 14:46:16.862 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-09-23 14:46:17.265 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 402.7617ms
+2024-09-23 14:46:17.315 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-09-23 14:46:17.318 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 3.665ms
+2024-09-23 14:46:19.163 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-09-23 14:46:19.596 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 432.7244ms
+2024-09-23 14:48:06.771 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 14:48:06.793 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 14:48:06.900 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 14:48:10.738 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 14:48:14.629 +01:00 [INF] Executed DbCommand (357ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:48:16.001 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 14:48:16.115 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 9187.0792ms
+2024-09-23 14:48:16.118 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 14:48:16.131 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 9358.7110 ms
+2024-09-23 14:48:16.167 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 9395.4875ms
+2024-09-23 14:49:05.153 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 14:49:05.184 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 14:49:05.185 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 14:49:15.722 +01:00 [INF] Executed DbCommand (283ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 14:55:10.761 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 14:55:10.770 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 365583.7509ms
+2024-09-23 14:55:10.770 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 14:55:10.770 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 365616.6593 ms
+2024-09-23 14:55:10.771 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 365618.1384ms
+2024-09-23 14:55:27.956 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 14:55:27.957 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 14:55:27.957 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 14:55:44.031 +01:00 [INF] Executed DbCommand (345ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 18:35:24.561 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 18:35:24.562 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 13206621.0365ms
+2024-09-23 18:35:24.563 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 18:35:24.563 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 13206622.3123 ms
+2024-09-23 18:35:24.566 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 13206626.3555ms
+2024-09-23 18:35:24.605 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 18:35:24.605 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 19:03:29.288 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 19:03:29.289 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:03:29.289 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:03:44.419 +01:00 [INF] Executed DbCommand (277ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:03:58.346 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/process/bankaccount/1d811d1f-5ce5-498d-adf5-d88aa6d88f8d: Error while copying content to a stream. <---->  The response ended prematurely. (ResponseEnded) 
+2024-09-23 19:05:00.381 +01:00 [INF] Starting up the application
+2024-09-23 19:05:02.845 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:05:02.850 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:05:02.851 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:05:02.851 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:05:03.098 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:05:03.144 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:05:03.186 +01:00 [INF] HTTP GET / responded 404 in 35.5224 ms
+2024-09-23 19:05:03.206 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 110.6678ms
+2024-09-23 19:05:03.217 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:05:30.810 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 19:05:30.833 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:05:30.873 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:05:38.316 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:05:40.771 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:05:44.613 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/processpayment/bank?adviceReferenc=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d: Error while copying content to a stream. <---->  The response ended prematurely. (ResponseEnded) 
+2024-09-23 19:06:02.649 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 19:06:02.662 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 31784.5296ms
+2024-09-23 19:06:02.662 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:06:02.663 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 31851.4382 ms
+2024-09-23 19:06:02.674 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 31863.9244ms
+2024-09-23 19:07:46.136 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 19:07:46.140 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:07:46.141 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:07:52.105 +01:00 [INF] Executed DbCommand (290ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:07:56.162 +01:00 [INF] Request error from https://api.pelpay.ng/Payment/processpayment/bank?adviceReferenc=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d: Error while copying content to a stream. <---->  The response ended prematurely. (ResponseEnded) 
+2024-09-23 19:08:00.235 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 19:08:00.236 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 14094.2975ms
+2024-09-23 19:08:00.236 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:08:00.236 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 14098.6349 ms
+2024-09-23 19:08:00.236 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 14099.9405ms
+2024-09-23 19:08:23.928 +01:00 [INF] Starting up the application
+2024-09-23 19:08:25.270 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:08:25.276 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:08:25.278 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:08:25.278 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:08:25.486 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:08:25.516 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:08:25.547 +01:00 [INF] HTTP GET / responded 404 in 26.7604 ms
+2024-09-23 19:08:25.563 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 78.2469ms
+2024-09-23 19:08:25.573 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:08:33.241 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 19:08:33.258 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:08:33.311 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:08:34.966 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:08:37.423 +01:00 [INF] Executed DbCommand (310ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:08:37.898 +01:00 [INF] Executed DbCommand (317ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:08:41.842 +01:00 [INF] Executed DbCommand (281ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:08:52.209 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 19:08:52.219 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 18905.0973ms
+2024-09-23 19:08:52.220 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:08:52.220 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 18978.1087 ms
+2024-09-23 19:08:52.228 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 18987.6003ms
+2024-09-23 19:08:57.671 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 19:08:57.674 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:08:57.674 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:08:58.546 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:08:58.839 +01:00 [INF] Executed DbCommand (291ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:09:11.594 +01:00 [INF] Executed DbCommand (299ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:11:51.593 +01:00 [INF] Starting up the application
+2024-09-23 19:11:52.935 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:11:52.942 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:11:52.943 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:11:52.943 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:11:53.212 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:11:53.260 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:11:53.299 +01:00 [INF] HTTP GET / responded 404 in 33.8725 ms
+2024-09-23 19:11:53.319 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 112.4993ms
+2024-09-23 19:11:53.328 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:12:03.001 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 101
+2024-09-23 19:12:03.021 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:12:03.058 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:12:04.618 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:12:10.475 +01:00 [INF] Executed DbCommand (345ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:12:11.068 +01:00 [INF] Executed DbCommand (305ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:12:26.147 +01:00 [INF] Executed DbCommand (333ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:12:57.832 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-09-23 19:12:57.850 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.CardPayment, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 19:12:57.863 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 54801.2577ms
+2024-09-23 19:12:57.864 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:12:57.865 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 54861.5746 ms
+2024-09-23 19:12:57.874 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 54872.8278ms
+2024-09-23 19:12:57.912 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 79.8157ms
+2024-09-23 19:12:57.972 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-09-23 19:12:57.973 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 0.9995ms
+2024-09-23 19:12:58.667 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-09-23 19:12:58.776 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.6372ms
+2024-09-23 19:16:05.723 +01:00 [INF] Starting up the application
+2024-09-23 19:16:06.735 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:16:06.739 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:16:06.740 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:16:06.740 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:16:06.966 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:16:07.029 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:16:07.088 +01:00 [INF] HTTP GET / responded 404 in 47.6275 ms
+2024-09-23 19:16:07.110 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 147.1201ms
+2024-09-23 19:16:07.123 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:18:16.906 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 86
+2024-09-23 19:18:16.918 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:18:16.986 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:18:18.778 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:18:21.186 +01:00 [INF] Executed DbCommand (396ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:18:21.672 +01:00 [INF] Executed DbCommand (314ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:18:34.424 +01:00 [INF] Executed DbCommand (274ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:21:04.339 +01:00 [INF] Starting up the application
+2024-09-23 19:21:05.410 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:21:05.418 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:21:05.419 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:21:05.419 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:21:05.642 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:21:05.695 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:21:05.730 +01:00 [INF] HTTP GET / responded 404 in 31.5784 ms
+2024-09-23 19:21:05.747 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 108.6749ms
+2024-09-23 19:21:05.756 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:21:30.297 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 86
+2024-09-23 19:21:30.314 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:21:30.387 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:21:32.034 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:21:34.640 +01:00 [INF] Executed DbCommand (291ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:21:35.116 +01:00 [INF] Executed DbCommand (305ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:21:39.047 +01:00 [INF] Executed DbCommand (303ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:21:40.361 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 19:21:40.391 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 9999.5654ms
+2024-09-23 19:21:40.391 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:21:40.392 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 10093.2198 ms
+2024-09-23 19:21:40.399 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 10101.3769ms
+2024-09-23 19:23:04.519 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 86
+2024-09-23 19:23:04.535 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:23:04.535 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:23:05.339 +01:00 [INF] Executed DbCommand (262ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:23:05.633 +01:00 [INF] Executed DbCommand (290ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:23:05.924 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:27:03.288 +01:00 [INF] Starting up the application
+2024-09-23 19:27:04.188 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:27:04.193 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:27:04.193 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:27:04.193 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:27:04.654 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:27:04.695 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:27:04.735 +01:00 [INF] HTTP GET / responded 404 in 34.1173 ms
+2024-09-23 19:27:04.754 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 102.3699ms
+2024-09-23 19:27:04.764 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:27:24.108 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - application/json 86
+2024-09-23 19:27:24.115 +01:00 [INF] Executing endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:27:24.150 +01:00 [INF] Route matched with {action = "ProcessPaymentBank", controller = "ProcessTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPaymentBank(CentralPG.Models.BankPayment, System.String) on controller CentralPG.Controllers.ProcessTransactions (OCPG).
+2024-09-23 19:27:25.631 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-09-23 19:27:28.344 +01:00 [INF] Executed DbCommand (615ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:27:28.829 +01:00 [INF] Executed DbCommand (313ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Auths" SET access_token = @p0, "timeGenerated" = @p1
+WHERE "Id" = @p2;
+2024-09-23 19:27:29.151 +01:00 [INF] Executed DbCommand (313ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2024-09-23 19:28:34.228 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-23 19:28:34.252 +01:00 [INF] Executed action CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG) in 70098.2825ms
+2024-09-23 19:28:34.253 +01:00 [INF] Executed endpoint 'CentralPG.Controllers.ProcessTransactions.ProcessPaymentBank (OCPG)'
+2024-09-23 19:28:34.254 +01:00 [INF] HTTP POST /Payment/processpayment/bank responded 200 in 70144.0347 ms
+2024-09-23 19:28:34.263 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/processpayment/bank?adviceReference=1d811d1f-5ce5-498d-adf5-d88aa6d88f8d - 200 null application/json; charset=utf-8 70154.9834ms
+2024-09-23 19:31:37.768 +01:00 [INF] Starting up the application
+2024-09-23 19:31:39.140 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-23 19:31:39.146 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-23 19:31:39.147 +01:00 [INF] Hosting environment: Development
+2024-09-23 19:31:39.147 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-23 19:31:39.389 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2024-09-23 19:31:39.437 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-23 19:31:39.476 +01:00 [INF] HTTP GET / responded 404 in 32.8450 ms
+2024-09-23 19:31:39.493 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 108.164ms
+2024-09-23 19:31:39.503 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2024-09-23 19:32:48.877 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2024-09-23 19:32:48.989 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 111.7245ms
+2024-09-23 19:32:49.018 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2024-09-23 19:32:49.022 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 3.6783ms
+2024-09-23 19:32:49.599 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - null null
+2024-09-23 19:32:49.738 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.5124ms
+2024-09-23 20:00:01.483 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:01.483 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:06.490 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:06.491 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:11.505 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:11.505 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:16.513 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:16.513 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:21.523 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:21.524 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:26.527 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:26.528 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:31.530 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:31.530 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:36.548 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:36.548 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:41.554 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:41.554 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:46.558 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:46.559 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:51.566 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:51.567 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:56.574 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:00:56.575 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:01.579 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:01.579 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:06.587 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:06.588 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:11.589 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:11.590 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:16.597 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:16.597 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:21.602 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:21.603 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:26.615 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:26.615 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:31.620 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:31.620 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:36.628 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:36.629 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:41.645 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:41.645 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:46.651 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:46.652 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:51.667 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:51.668 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:56.680 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:01:56.680 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:01.684 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:01.685 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:06.691 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:06.691 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:11.707 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:11.708 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:16.711 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:16.712 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:21.717 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:21.718 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:26.724 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:26.724 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:31.730 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:31.730 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:36.735 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:36.735 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:41.742 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:41.743 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:46.756 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:46.757 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:51.767 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:51.767 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:56.773 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:02:56.773 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:01.780 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:01.781 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:06.790 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:06.790 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:11.793 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:11.793 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:16.802 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:16.802 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:21.810 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:21.810 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:26.825 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:26.825 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:31.837 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:31.837 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:36.851 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:36.851 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:41.867 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:41.867 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:46.878 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:46.879 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:51.880 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:51.880 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:56.881 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:03:56.881 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:01.885 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:01.885 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:06.897 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:06.897 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:11.912 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:11.912 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:16.925 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:16.925 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:21.929 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:21.929 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:26.943 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:26.943 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:31.945 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:31.946 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:36.954 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:36.954 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:41.970 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:41.971 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:46.983 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:46.983 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:51.987 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:51.987 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:57.002 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:04:57.002 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:02.014 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:02.014 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:07.022 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:07.023 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:12.032 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:12.032 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:17.035 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:17.035 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:22.046 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:22.046 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:27.050 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:27.050 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:32.060 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:32.061 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:37.065 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:37.065 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:42.070 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:42.070 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:47.078 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:47.079 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:52.081 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:52.081 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:57.096 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:05:57.096 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:02.098 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:02.098 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:07.100 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:07.100 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:12.110 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:12.110 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:17.115 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:17.115 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:22.122 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:22.122 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:27.129 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:27.129 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:32.135 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:32.135 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:37.143 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:37.143 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:42.154 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:42.154 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:47.159 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:47.159 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:52.167 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:52.167 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:57.179 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:06:57.179 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:02.180 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:02.180 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:07.193 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:07.194 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:12.199 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:12.199 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:17.209 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:17.209 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:22.220 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:22.220 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:27.227 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:27.227 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:32.233 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:32.233 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:37.245 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:37.245 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:42.252 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:42.252 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:47.298 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:47.298 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:52.310 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:52.310 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:57.323 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:07:57.323 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:02.324 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:02.324 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:07.329 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:07.330 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:12.333 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:12.333 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:17.347 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:17.347 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:22.353 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:22.353 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:27.361 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:27.361 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:32.363 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:32.363 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:37.370 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:37.371 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:42.373 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:42.373 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:47.386 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:47.386 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:52.400 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:52.400 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:57.413 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:08:57.413 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:02.416 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:02.416 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:07.423 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:07.423 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:12.432 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:12.433 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:17.433 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:17.433 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:22.449 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:22.449 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:27.462 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:27.462 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:32.476 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:32.476 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:37.486 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:37.486 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:42.490 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:42.490 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:47.495 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:47.495 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:52.499 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:52.499 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:57.504 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:09:57.504 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:02.513 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:02.514 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:07.514 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:07.514 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:12.523 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:12.524 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:17.528 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:17.529 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:22.530 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:22.530 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:27.532 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:27.532 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:32.538 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:32.538 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:37.551 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:37.551 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:42.553 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:42.554 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:47.568 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:47.569 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:52.573 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:52.573 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:57.576 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:10:57.577 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:02.591 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:02.592 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:07.608 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:07.608 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:12.616 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:12.616 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:17.621 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:17.622 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:22.628 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:22.628 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:27.635 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:27.635 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:32.638 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:32.638 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:37.642 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:37.642 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:42.655 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:42.655 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:47.669 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:47.669 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:52.682 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:52.682 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:57.695 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:11:57.696 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:02.710 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:02.710 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:07.721 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:07.721 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:12.731 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:12.731 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:17.733 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:17.734 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:22.745 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:22.745 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:27.755 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:27.756 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:32.770 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:32.770 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:37.785 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:37.785 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:42.787 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:42.787 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:47.802 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:47.802 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:52.813 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:52.814 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:57.822 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:12:57.822 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:02.824 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:02.824 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:07.827 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:07.827 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:12.828 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:12.828 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:17.835 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:17.835 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:22.841 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:22.842 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:27.851 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:27.851 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:32.861 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:32.862 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:37.869 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:37.870 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:42.885 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:42.886 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:47.890 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:47.890 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:52.901 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:52.901 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:57.912 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:13:57.912 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:02.924 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:02.924 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:07.939 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:07.939 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:12.942 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:12.942 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:17.948 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:17.948 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:22.952 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:22.952 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:27.960 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:27.961 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:32.964 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:32.964 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:37.969 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:37.969 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:42.973 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:42.973 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:47.988 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:47.988 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:52.995 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:52.995 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:58.010 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:14:58.010 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:03.025 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:03.025 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:08.032 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:08.032 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:13.046 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:13.046 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:18.050 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:18.050 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:23.052 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:23.052 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:28.053 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:28.053 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:33.055 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:33.055 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:38.064 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:38.064 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:43.066 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:43.066 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:48.082 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:48.082 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:53.095 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:53.095 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:58.111 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:15:58.111 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:03.117 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:03.117 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:08.131 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:08.131 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:13.134 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:13.134 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:18.142 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:18.143 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:23.155 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:23.156 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:28.171 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:28.172 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:33.179 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:33.179 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:38.186 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:38.186 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:43.189 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:43.189 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:48.195 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:48.195 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:53.197 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:53.197 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:58.206 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:16:58.206 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:03.211 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:03.211 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:08.219 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:08.220 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:13.221 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:13.221 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:18.221 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:18.221 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:23.222 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:23.222 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:28.223 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:28.223 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:33.225 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:33.225 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:38.226 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:38.227 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:43.238 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:43.238 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:48.252 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:17:48.252 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:35.017 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:35.018 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:40.037 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:40.037 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:45.045 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:45.045 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:50.054 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:50.054 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:55.063 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-23 20:18:55.064 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}

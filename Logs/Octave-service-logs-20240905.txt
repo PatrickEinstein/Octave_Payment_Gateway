@@ -1,0 +1,15 @@
+2024-09-05 14:24:14.445 +01:00 [INF] Starting up the application
+2024-09-05 14:24:16.455 +01:00 [INF] Now listening on: http://localhost:5331
+2024-09-05 14:24:16.467 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-05 14:24:16.467 +01:00 [INF] Hosting environment: Development
+2024-09-05 14:24:16.468 +01:00 [INF] Content root path: C:\Users\MY LAPTOP\Desktop\Octave\OCPG
+2024-09-05 14:24:17.148 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - -
+2024-09-05 14:24:17.297 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-09-05 14:24:17.396 +01:00 [INF] HTTP GET / responded 404 in 88.4753 ms
+2024-09-05 14:24:17.445 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - - - 404 0 - 307.4071ms
+2024-09-05 14:24:20.888 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - -
+2024-09-05 14:24:21.596 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - - - 200 - text/html;charset=utf-8 708.4123ms
+2024-09-05 14:24:22.566 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - -
+2024-09-05 14:24:22.801 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 235.5934ms
+2024-09-05 14:24:30.904 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2024-09-05 14:24:30.905 +01:00 [INF] Called OCPG.Models.serviceResponse`1[System.String]
