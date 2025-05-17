@@ -4513,3 +4513,77 @@ RETURNING "Id";
 2025-05-17 20:22:04.731 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
 2025-05-17 20:22:09.742 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
 2025-05-17 20:22:09.742 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:20.843 +01:00 [INF] Starting up the application
+2025-05-17 20:22:21.885 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-17 20:22:21.893 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 20:22:21.895 +01:00 [INF] Hosting environment: Development
+2025-05-17 20:22:21.895 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-17 20:22:22.212 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-17 20:22:22.263 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-17 20:22:22.384 +01:00 [INF] HTTP GET / responded 404 in 111.0170 ms
+2025-05-17 20:22:22.405 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 196.0075ms
+2025-05-17 20:22:22.418 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-17 20:22:26.627 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:26.627 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:28.512 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.html - null null
+2025-05-17 20:22:28.613 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.html - 200 null text/html;charset=utf-8 101.3575ms
+2025-05-17 20:22:28.670 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/index.js - null null
+2025-05-17 20:22:28.672 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/index.js - 200 null application/javascript;charset=utf-8 2.5966ms
+2025-05-17 20:22:29.013 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/swagger/v2/swagger.json - null null
+2025-05-17 20:22:29.364 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/swagger/v2/swagger.json - 200 null application/json;charset=utf-8 350.3159ms
+2025-05-17 20:22:31.640 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:31.640 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:36.645 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:36.645 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:41.651 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:41.651 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:46.662 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:46.662 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:47.843 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/login - application/json 71
+2025-05-17 20:22:47.856 +01:00 [INF] CORS policy execution successful.
+2025-05-17 20:22:47.858 +01:00 [INF] Executing endpoint 'OCPG.Controllers.AuthController.Register (OCPG)'
+2025-05-17 20:22:47.891 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CentralPG.Core.Dtos.CustomerLoginModel) on controller OCPG.Controllers.AuthController (OCPG).
+2025-05-17 20:22:51.678 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:51.679 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:51.873 +01:00 [INF] Executed DbCommand (454ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."FirstName", c."LastName", c."PhoneNumber", c."Address", c."Email"
+FROM "Customers" AS c
+WHERE c."Email" = @__email_0
+LIMIT 2
+2025-05-17 20:22:51.922 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Core.Models.Entities.AuthTokens'.
+2025-05-17 20:22:51.946 +01:00 [INF] Executed action OCPG.Controllers.AuthController.Register (OCPG) in 4050.9254ms
+2025-05-17 20:22:51.946 +01:00 [INF] Executed endpoint 'OCPG.Controllers.AuthController.Register (OCPG)'
+2025-05-17 20:22:51.946 +01:00 [INF] HTTP POST /login responded 200 in 4102.7721 ms
+2025-05-17 20:22:51.962 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/login - 200 null application/json; charset=utf-8 4119.4736ms
+2025-05-17 20:22:56.691 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:22:56.692 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:01.702 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:01.702 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:06.716 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:06.716 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:11.727 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:11.728 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:16.740 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:16.740 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:21.755 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:21.755 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:26.763 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:26.763 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:31.768 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:31.769 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:36.773 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:36.773 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:41.779 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:41.779 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:46.789 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:46.790 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:51.805 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:51.805 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:56.821 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:23:56.821 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:24:01.830 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:24:01.831 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:24:06.842 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:24:06.842 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:24:11.847 +01:00 [INF] {"Data":null,"Message":"Hello World!","code":null}
+2025-05-17 20:24:11.848 +01:00 [INF] Called {"Data":null,"Message":"Hello World!","code":null}
