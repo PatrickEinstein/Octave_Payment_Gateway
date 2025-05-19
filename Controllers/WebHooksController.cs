@@ -33,7 +33,7 @@ namespace OCPG.Controllers
 
             logger.LogInformation($"Wallet Transaction Notification Callback Response: {bodyString}");
 
-            if (channel == ChannelCode.ChamsSwitch)
+            if (channel == ChannelCode.chamsSwitch)
             {
                 var payload = JsonSerializer.Deserialize<WebHookRequestModel>(bodyString);
 

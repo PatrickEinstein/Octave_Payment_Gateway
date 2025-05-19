@@ -14,7 +14,7 @@ namespace OCPG.Core.Models
         public string merchantCode { get; set; }
     }
 
-      public class PaystackAuthConfig
+    public class PaystackAuthConfig
     {
         public string ClientId { get; set; }
         public string clientSecret { get; set; }
@@ -22,4 +22,17 @@ namespace OCPG.Core.Models
         public string callBackUrl { get; set; }
         public string merchantCode { get; set; }
     }
+
+    public class FlutterAuthConfig
+    {
+        public string ClientId { get; set; }
+        public string clientSecret { get; set; }
+        public string integrationKey { get; set; }
+        public string callBackUrl { get; set; }
+        public string merchantCode { get; set; }
+        public string encryptionKey { get; set; }
+        public string authToken { get; set; }
+    }
+    
+
 }

@@ -26,6 +26,8 @@ namespace accessFT.Infrastructures.Services.Switches
         private readonly DataBaseContext dataBaseContext;
         private readonly PaystackAuthConfig paystackAuthConfig;
         private readonly PayStackAppUrls payStackAppUrls;
+        private readonly FlutterAuthConfig flutterAuthConfig;
+        private readonly FlutterWaveAppUrls flutterWaveAppUrls;
         private readonly AuthConfig authConfig;
         private readonly IPaymentRepository paymentRepository;
 
@@ -35,7 +37,9 @@ namespace accessFT.Infrastructures.Services.Switches
         AuthConfig authConfig, IPaymentRepository paymentRepository,
         DataBaseContext dataBaseContext,
         PaystackAuthConfig paystackAuthConfig,
-        PayStackAppUrls payStackAppUrls
+        PayStackAppUrls payStackAppUrls,
+        FlutterAuthConfig flutterAuthConfig,
+        FlutterWaveAppUrls flutterWaveAppUrls
         )
         {
             this.ApiCaller = apiCaller;
@@ -44,6 +48,8 @@ namespace accessFT.Infrastructures.Services.Switches
             this.dataBaseContext = dataBaseContext;
             this.paystackAuthConfig = paystackAuthConfig;
             this.payStackAppUrls = payStackAppUrls;
+            this.flutterAuthConfig = flutterAuthConfig;
+            this.flutterWaveAppUrls = flutterWaveAppUrls;
             this.appUrl = appUrl;
         }
 
@@ -57,8 +63,9 @@ namespace accessFT.Infrastructures.Services.Switches
 
             IPaymentProcessor cardProcessor = channelCode.ToString() switch
             {
-                "ChamsSwitch" => new ChamsSwitch(appUrl, ApiCaller, authConfig, paymentRepository, dataBaseContext),
+                "chamsSwitch" => new ChamsSwitch(appUrl, ApiCaller, authConfig, paymentRepository, dataBaseContext),
                 "paystack" => new PayStack(payStackAppUrls, ApiCaller, paystackAuthConfig, paymentRepository, dataBaseContext),
+                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository, dataBaseContext),
                 _ => null,
             };
 

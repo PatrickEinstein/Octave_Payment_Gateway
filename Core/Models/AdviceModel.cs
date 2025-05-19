@@ -11,7 +11,7 @@ namespace CentralPG.Models
     public class AdviceModel
     {
 
-        public AdviceModel(AppUrl appUrl, AuthConfig authConfig)
+        public AdviceModel(AppUrl appUrl = null, AuthConfig authConfig = null)
         {
             Guid guid = Guid.NewGuid();
             adviceReference = guid.ToString();

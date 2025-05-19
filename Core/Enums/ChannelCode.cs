@@ -2,6 +2,6 @@ namespace OCPG.Core.Enums
 {
     public enum ChannelCode
     {
-        ChamsSwitch, paystack
+        chamsSwitch, paystack, flutterWave
     }
 }

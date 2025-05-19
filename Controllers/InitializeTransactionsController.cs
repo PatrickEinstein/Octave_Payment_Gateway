@@ -28,7 +28,7 @@ namespace OCPG.Controllers
         [HttpGet("/Payment/advice/{adviceReference}")]
         public async Task<IActionResult> GetAdvice(string adviceReference = "dc8063c591dc48f4952456c6664ca510")
         {
-            return Ok(await paymentManager.GetTransactionStatus(adviceReference, ChannelCode.ChamsSwitch));
+            return Ok(await paymentManager.GetTransactionStatus(adviceReference));
         }
 
       

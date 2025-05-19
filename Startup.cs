@@ -28,6 +28,8 @@ using OCPG.Infrastructure.Service.Switches;
 using OCPG.Core.Models;
 using OCPG.Infrastructure.Interfaces.IRepositories;
 using OCPG.Infrastructure.Service.Repositories;
+using OCPG.Infrastructure.Interfaces.ICryptographies;
+using OCPG.Infrastructure;
 
 
 namespace CentralPG
@@ -48,7 +50,9 @@ namespace CentralPG
             services.AddSingleton(Configuration.GetSection(nameof(AuthConfig)).Get<AuthConfig>());
             services.AddSingleton(Configuration.GetSection(nameof(PaystackAuthConfig)).Get<PaystackAuthConfig>());
             services.AddSingleton(Configuration.GetSection(nameof(PayStackAppUrls)).Get<PayStackAppUrls>());
-            
+            services.AddSingleton(Configuration.GetSection(nameof(FlutterAuthConfig)).Get<FlutterAuthConfig>());
+            services.AddSingleton(Configuration.GetSection(nameof(FlutterWaveAppUrls)).Get<FlutterWaveAppUrls>());
+
             services.AddDbContext<DataBaseContext>(options =>
                                   {
                                       var connectionString = Configuration.GetConnectionString("DefaultConnection");
@@ -59,9 +63,9 @@ namespace CentralPG
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v2", new OpenApiInfo { Title = "Octave PaymentGateway", Version = "v2" });
-              
+
             });
-          
+
             services.AddCors(Options =>
             Options.AddPolicy("CorsPolicy",
                 builder =>
@@ -106,6 +110,9 @@ namespace CentralPG
             services.AddScoped<ICardSwitcher, CardSwitcher>();
             services.AddScoped<IBankTransferSwitcher, BankTransferSwitcher>();
             services.AddScoped<IDirectDebitSwitcher, DirectDebitSwitcher>();
+
+            // UTILS
+            services.AddSingleton<IFlutterCryptography, FlutterCryptographyCryptography>();
 
         }
 

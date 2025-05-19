@@ -34,7 +34,7 @@ namespace OCPG.Infrastructure.Service.Managers
             this.paymentRepository = paymentRepository;
         }
 
-        public async Task<serviceResponse<PaymentTransactions>> GetTransactionStatus(string adviceReference, ChannelCode channel)
+        public async Task<serviceResponse<PaymentTransactions>> GetTransactionStatus(string adviceReference)
         {
             serviceResponse<PaymentTransactions> res = new serviceResponse<PaymentTransactions>();
 
