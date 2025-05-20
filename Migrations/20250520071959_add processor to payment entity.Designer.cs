@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace OCPG.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20250517191742_mig1")]
-    partial class mig1
+    [Migration("20250520071959_add processor to payment entity")]
+    partial class addprocessortopaymententity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -145,6 +145,9 @@ namespace OCPG.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("paymentReference")
+                        .HasColumnType("text");
+
+                    b.Property<string>("processor")
                         .HasColumnType("text");
 
                     b.Property<string>("requestPayload")

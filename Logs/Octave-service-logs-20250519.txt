@@ -90,3 +90,271 @@ LIMIT 1
 2025-05-19 22:08:52.489 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
 2025-05-19 22:08:52.489 +01:00 [INF] HTTP GET /Payment/advice/00000000-0000-0000-0000-000000000000 responded 200 in 236.0784 ms
 2025-05-19 22:08:52.490 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/00000000-0000-0000-0000-000000000000 - 200 null application/json; charset=utf-8 236.6151ms
+2025-05-19 22:09:42.048 +01:00 [INF] Starting up the application
+2025-05-19 22:09:43.531 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-19 22:09:43.542 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 22:09:43.544 +01:00 [INF] Hosting environment: Development
+2025-05-19 22:09:43.544 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-19 22:09:43.998 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-19 22:09:44.064 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-19 22:09:44.163 +01:00 [INF] HTTP GET / responded 404 in 89.4595 ms
+2025-05-19 22:09:44.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 192.3255ms
+2025-05-19 22:09:44.195 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-19 22:14:30.851 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:14:30.882 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:14:30.885 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:14:30.972 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:15:20.407 +01:00 [INF] Executed DbCommand (254ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:15:40.565 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:15:40.597 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 69618.7477ms
+2025-05-19 22:15:40.597 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:15:40.599 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 69744.2209 ms
+2025-05-19 22:15:40.630 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 69779.1072ms
+2025-05-19 22:15:49.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/00000000-0000-0000-0000-000000000000 - null null
+2025-05-19 22:15:49.368 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:15:49.374 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:15:50.889 +01:00 [INF] Executed DbCommand (1,022ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0
+LIMIT 1
+2025-05-19 22:15:50.902 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:15:50.908 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 1533.4663ms
+2025-05-19 22:15:50.908 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:15:50.908 +01:00 [INF] HTTP GET /Payment/advice/00000000-0000-0000-0000-000000000000 responded 200 in 1543.8643 ms
+2025-05-19 22:15:50.912 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/00000000-0000-0000-0000-000000000000 - 200 null application/json; charset=utf-8 1569.2818ms
+2025-05-19 22:20:47.219 +01:00 [INF] Starting up the application
+2025-05-19 22:20:49.635 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-19 22:20:49.651 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 22:20:49.652 +01:00 [INF] Hosting environment: Development
+2025-05-19 22:20:49.652 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-19 22:20:50.218 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-19 22:20:50.332 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-19 22:20:50.487 +01:00 [INF] HTTP GET / responded 404 in 145.9674 ms
+2025-05-19 22:20:50.528 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 315.2857ms
+2025-05-19 22:20:50.546 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-19 22:20:56.988 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:20:57.009 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:20:57.020 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:20:57.094 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:21:36.806 +01:00 [INF] Executed DbCommand (305ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:21:43.564 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:21:43.619 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 46509.7111ms
+2025-05-19 22:21:43.620 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:21:43.621 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 46629.5496 ms
+2025-05-19 22:21:43.644 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 46664.0625ms
+2025-05-19 22:22:05.466 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/eecf7240-9535-459a-ae0a-68c027ab887e - null null
+2025-05-19 22:22:05.486 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:22:05.505 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:22:06.156 +01:00 [INF] Executed DbCommand (201ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0
+LIMIT 1
+2025-05-19 22:22:06.165 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:22:06.170 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 664.3375ms
+2025-05-19 22:22:06.170 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:22:06.170 +01:00 [INF] HTTP GET /Payment/advice/eecf7240-9535-459a-ae0a-68c027ab887e responded 200 in 701.0518 ms
+2025-05-19 22:22:06.172 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/eecf7240-9535-459a-ae0a-68c027ab887e - 200 null application/json; charset=utf-8 706.2104ms
+2025-05-19 22:22:28.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/23567890987654567mplpmmm898765678 - null null
+2025-05-19 22:22:28.344 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:22:28.344 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:22:28.629 +01:00 [INF] Executed DbCommand (239ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0
+LIMIT 1
+2025-05-19 22:22:28.631 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:22:28.632 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 286.9077ms
+2025-05-19 22:22:28.632 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:22:28.638 +01:00 [INF] HTTP GET /Payment/advice/23567890987654567mplpmmm898765678 responded 200 in 293.9899 ms
+2025-05-19 22:22:28.639 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/23567890987654567mplpmmm898765678 - 200 null application/json; charset=utf-8 295.0576ms
+2025-05-19 22:25:35.106 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:25:35.110 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:25:35.112 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:25:35.113 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:25:35.640 +01:00 [INF] Executed DbCommand (479ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:25:35.642 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:25:35.643 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 529.8368ms
+2025-05-19 22:25:35.643 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:25:35.643 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 535.1777 ms
+2025-05-19 22:25:35.643 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 537.4908ms
+2025-05-19 22:26:00.300 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:26:00.301 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:26:00.301 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:26:00.302 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:26:00.529 +01:00 [INF] Executed DbCommand (223ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:26:00.532 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:26:00.533 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 231.2248ms
+2025-05-19 22:26:00.533 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:26:00.533 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 232.7630 ms
+2025-05-19 22:26:00.533 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 233.5311ms
+2025-05-19 22:26:15.796 +01:00 [INF] Starting up the application
+2025-05-19 22:26:17.397 +01:00 [INF] Now listening on: http://localhost:5331
+2025-05-19 22:26:17.405 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 22:26:17.407 +01:00 [INF] Hosting environment: Development
+2025-05-19 22:26:17.407 +01:00 [INF] Content root path: D:\ACTIVE\Octave\OCPG
+2025-05-19 22:26:18.124 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/ - null null
+2025-05-19 22:26:18.182 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-19 22:26:18.262 +01:00 [INF] HTTP GET / responded 404 in 74.0668 ms
+2025-05-19 22:26:18.281 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/ - 404 0 null 159.5943ms
+2025-05-19 22:26:18.296 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5331/, Response status code: 404
+2025-05-19 22:26:21.607 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:26:21.633 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:26:21.637 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:26:21.675 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:26:26.176 +01:00 [INF] Executed DbCommand (296ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:26:26.266 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:26:26.286 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 4606.2028ms
+2025-05-19 22:26:26.286 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:26:26.289 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 4680.0002 ms
+2025-05-19 22:26:26.300 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 4692.1854ms
+2025-05-19 22:27:30.646 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:27:30.687 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:27:30.688 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:27:30.688 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:27:30.968 +01:00 [INF] Executed DbCommand (192ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:27:30.970 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:27:30.971 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 282.732ms
+2025-05-19 22:27:30.971 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:27:30.972 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 290.8004 ms
+2025-05-19 22:27:30.972 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 325.8603ms
+2025-05-19 22:28:11.770 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - application/json 663
+2025-05-19 22:28:11.770 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:28:11.771 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:28:11.771 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:34:10.558 +01:00 [INF] Executed DbCommand (272ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Double), @p3='?' (DbType = Double), @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO payment ("accountNumberMasked", "adviceReference", amount, "amountCollected", "callbackUrl", channel, "currencyCode", "customerName", "isNotified", "merchantCode", "merchantReference", narration, "notificationUrl", "paymentDate", "paymentReference", "requestPayload", "responsePayload", "transactionStatus")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2025-05-19 22:34:10.559 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:34:10.560 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 358788.4727ms
+2025-05-19 22:34:10.560 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:34:10.560 +01:00 [INF] HTTP POST /Payment/advice/2 responded 200 in 358789.8395 ms
+2025-05-19 22:34:10.560 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/2 - 200 null application/json; charset=utf-8 358790.2952ms
+2025-05-19 22:34:44.271 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 663
+2025-05-19 22:34:44.272 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:34:44.272 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:34:44.273 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:34:50.097 +01:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-05-19 22:34:50.385 +01:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:34:51.809 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:34:51.810 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 7536.4972ms
+2025-05-19 22:34:51.810 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:34:51.811 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 7538.7527 ms
+2025-05-19 22:34:51.811 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 7540.4279ms
+2025-05-19 22:35:02.794 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 665
+2025-05-19 22:35:02.795 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:35:02.795 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:35:02.797 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:35:02.986 +01:00 [INF] Executed DbCommand (184ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:35:04.283 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:35:04.283 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1486.0125ms
+2025-05-19 22:35:04.283 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:35:04.283 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 1488.1862 ms
+2025-05-19 22:35:04.283 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 1489.9547ms
+2025-05-19 22:35:36.248 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 659
+2025-05-19 22:35:36.249 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:35:36.249 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:35:36.249 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:35:36.450 +01:00 [INF] Executed DbCommand (198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:35:37.052 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:35:37.053 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 803.4974ms
+2025-05-19 22:35:37.053 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:35:37.056 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 807.0752 ms
+2025-05-19 22:35:37.056 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 807.7319ms
+2025-05-19 22:35:49.311 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 652
+2025-05-19 22:35:49.311 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:35:49.312 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:35:49.312 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:35:49.508 +01:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:35:50.247 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:35:50.247 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 935.081ms
+2025-05-19 22:35:50.248 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:35:50.248 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 936.7616 ms
+2025-05-19 22:35:50.248 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 937.4464ms
+2025-05-19 22:36:05.693 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 652
+2025-05-19 22:36:05.695 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:36:05.695 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:36:05.695 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:36:06.206 +01:00 [INF] Executed DbCommand (497ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:36:07.613 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:36:07.614 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1918.9703ms
+2025-05-19 22:36:07.614 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:36:07.614 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 1919.7291 ms
+2025-05-19 22:36:07.615 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 1921.3857ms
+2025-05-19 22:36:21.923 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 633
+2025-05-19 22:36:21.923 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:36:21.923 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:36:21.924 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:36:22.154 +01:00 [INF] Executed DbCommand (227ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:36:22.941 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:36:22.942 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1017.9564ms
+2025-05-19 22:36:22.942 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:36:22.942 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 1018.4542 ms
+2025-05-19 22:36:22.942 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 1018.7797ms
+2025-05-19 22:37:02.603 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - application/json 633
+2025-05-19 22:37:02.604 +01:00 [INF] CORS policy execution successful.
+2025-05-19 22:37:02.605 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:37:02.605 +01:00 [INF] Route matched with {action = "InitiateTransaction", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InitiateTransaction(CentralPG.Models.AdviceModelReq, OCPG.Core.Enums.ChannelCode) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:37:03.706 +01:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a.access_token, a.expires_in, a.refreshtoken, a.status, a."timeGenerated"
+FROM "Auths" AS a
+LIMIT 1
+2025-05-19 22:37:04.389 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Models.AdviceResponseModel, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:37:04.389 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG) in 1784.0443ms
+2025-05-19 22:37:04.389 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.InitiateTransaction (OCPG)'
+2025-05-19 22:37:04.389 +01:00 [INF] HTTP POST /Payment/advice/0 responded 200 in 1785.8670 ms
+2025-05-19 22:37:04.390 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5331/Payment/advice/0 - 200 null application/json; charset=utf-8 1786.7359ms
+2025-05-19 22:37:26.693 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5331/Payment/advice/235765678 - null null
+2025-05-19 22:37:26.707 +01:00 [INF] Executing endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:37:26.715 +01:00 [INF] Route matched with {action = "GetAdvice", controller = "InitializeTransactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAdvice(System.String) on controller OCPG.Controllers.InitializeTransactions (OCPG).
+2025-05-19 22:37:26.952 +01:00 [INF] Executed DbCommand (189ms) [Parameters=[@__parameter_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p."accountNumberMasked", p."adviceReference", p.amount, p."amountCollected", p."callbackUrl", p.channel, p."currencyCode", p."customerName", p."isNotified", p."merchantCode", p."merchantReference", p.narration, p."notificationUrl", p."paymentDate", p."paymentReference", p."requestPayload", p."responsePayload", p."transactionStatus"
+FROM payment AS p
+WHERE p."paymentReference" = @__parameter_0
+LIMIT 1
+2025-05-19 22:37:26.960 +01:00 [INF] Executing OkObjectResult, writing value of type 'CentralPG.Models.serviceResponse`1[[CentralPG.Core.Models.Entities.PaymentTransactions, OCPG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-19 22:37:26.987 +01:00 [INF] Executed action OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG) in 272.1524ms
+2025-05-19 22:37:26.987 +01:00 [INF] Executed endpoint 'OCPG.Controllers.InitializeTransactions.GetAdvice (OCPG)'
+2025-05-19 22:37:26.987 +01:00 [INF] HTTP GET /Payment/advice/235765678 responded 200 in 280.2479 ms
+2025-05-19 22:37:26.987 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5331/Payment/advice/235765678 - 200 null application/json; charset=utf-8 294.4577ms
+2025-05-19 23:56:33.099 +01:00 [INF] Request error from https://api.pelpay.ng/api/Account/login: No such host is known. (api.pelpay.ng:443) <---->  No such host is known. 
+2025-05-19 23:56:33.736 +01:00 [INF] TOKEN ==> {"Data":null,"Message":"\u0027R\u0027 is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.","code":null}
+2025-05-19 23:56:33.736 +01:00 [INF] Login in==> {"Data":null,"Message":"\u0027R\u0027 is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.","code":null}

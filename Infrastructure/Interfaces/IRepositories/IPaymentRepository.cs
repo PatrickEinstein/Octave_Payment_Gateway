@@ -12,6 +12,7 @@ namespace OCPG.Infrastructure.Interfaces.IRepositories
         Task<bool> CreatePayment(PaymentTransactions paymentTransactions);
         Task<PaymentTransactions> GetPaymentByPaymentReference(string parameter);
         Task<PaymentTransactions> GetPaymentByAdviceReference(string parameter);
+        Task<PaymentTransactions> GetPaymentByMerchantference(string parameter);
         Task<bool> UpdatePayment(PaymentTransactions paymentTransactions);
         Task<bool> UpdateChamsSwitchWebhook(WebHookRequestModel paymentTransactions);
 

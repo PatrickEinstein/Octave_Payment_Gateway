@@ -123,6 +123,7 @@ public class ChamsSwitch : IPaymentProcessor
             var accessToken = token.access_token;
             var res = await ApiCaller.POST(Load, apiUrl, accessToken, headers);
             var resApi = JsonSerializer.Deserialize<AdviceResponseModel>(res);
+            resApi.responseData.processor = "ChamsSwitch";
             serviceResponse.Data = resApi;
             return serviceResponse;
         }

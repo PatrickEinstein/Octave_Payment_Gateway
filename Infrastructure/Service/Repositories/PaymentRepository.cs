@@ -41,9 +41,16 @@ namespace OCPG.Infrastructure.Service.Repositories
 
         public async Task<PaymentTransactions> GetPaymentByAdviceReference(string parameter)
         {
-            var gottenPayment = await dataBaseContext.payment.FirstOrDefaultAsync(c => c.paymentReference == parameter);
+            var gottenPayment = await dataBaseContext.payment.FirstOrDefaultAsync(c => c.adviceReference == parameter);
             return gottenPayment;
         }
+
+          public async Task<PaymentTransactions> GetPaymentByMerchantference(string parameter)
+        {
+            var gottenPayment = await dataBaseContext.payment.FirstOrDefaultAsync(c => c.merchantReference == parameter);
+            return gottenPayment;
+        }
+
 
         public async Task<List<PaymentTransactions>> GetAllPaymentsAsync()
         {
@@ -62,6 +69,8 @@ namespace OCPG.Infrastructure.Service.Repositories
                 paymentToUpdate.accountNumberMasked = paymentTransactions.accountNumberMasked;
                 paymentToUpdate.merchantCode = paymentTransactions.merchantCode;
                 paymentToUpdate.responsePayload = paymentTransactions.responsePayload;
+                paymentToUpdate.authMode = paymentTransactions.authMode;
+                paymentToUpdate.authFields = paymentTransactions.authFields;
                 await dataBaseContext.SaveChangesAsync();
                 return true;
             }

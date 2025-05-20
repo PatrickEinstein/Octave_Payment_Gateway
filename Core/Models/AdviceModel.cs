@@ -117,18 +117,22 @@ namespace CentralPG.Models
         public double amount { get; set; }
         public string narration { get; set; }
         public string customerId { get; set; }
-        public int charge { get; set; }
+        public double charge { get; set; }
         public string status { get; set; }
         public string customerFullName { get; set; }
         public string merchantName { get; set; }
         public string merchantId { get; set; }
+        public string merchantCode { get; set; }
         public string paymentUrl { get; set; }
         public string message { get; set; }
         public string authorization_url { get; set; }
         public string access_code { get; set; }
         public string reference { get; set; }
-
+        public string processor { get; set; }
         public List<string> channel { get; set; }
+        public double customerCharge { get; set; }
+        public double merchantCharge { get; set; }
+        public string vat { get; set; }
     }
 
     public class ProcessBankPaymentResponseModel
@@ -205,6 +209,7 @@ namespace CentralPG.Models
 
         // public AdviceData? ResponseData { get; set; }
         public ProcessCardData? responseData { get; set; }
+        //  public object? responseData { get; set; }
 
         // public string? Message { get; set; }
         public string? message { get; set; }
@@ -230,6 +235,8 @@ namespace CentralPG.Models
         public string message { get; set; }
         public FormData formData { get; set; }
         public string paymentLink { get; set; }
+        public string authMode { get; set; }
+        public List<string> authFields { get; set; }
 
     }
     public class FormData
@@ -246,6 +253,11 @@ namespace CentralPG.Models
     {
         public string paymentreference { get; set; }
         public string value { get; set; }
+        public string? city { get; set; }
+        public string? address { get; set; }
+        public string? state { get; set; }
+        public string? country { get; set; }
+        public string? zipcode { get; set; }
         public ChannelCode channel { get; set; }
     }
 

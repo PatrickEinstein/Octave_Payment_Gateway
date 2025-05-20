@@ -5,13 +5,20 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Text;
 using OCPG.Infrastructure.Interfaces.ICryptographies;
+using OCPG.Core.Models;
+using System.IO;
 
 namespace OCPG.Infrastructure
 {
     public class FlutterCryptographyCryptography : IFlutterCryptography
     {
+        public FlutterCryptographyCryptography(CryptographyConfig authConfig)
+        {
+            this.authConfig = authConfig;
+        }
 
         private const string DefaultString = "";
+        private readonly CryptographyConfig authConfig;
 
         public string EncryptFlutter3DESAlgo(string data, string encryptionKey)
         {
@@ -88,6 +95,59 @@ namespace OCPG.Infrastructure
             catch (Exception ex)
             {
                 return ex.ToString();
+            }
+        }
+
+        public byte[] EncryptAES(string plainText)
+        {
+            using (Aes aesAlg = Aes.Create())
+            {
+                var key = authConfig.generalEncryptionKey;
+                var iv = authConfig.generalEncryptionIV;
+                aesAlg.Key = Encoding.UTF8.GetBytes(key);
+                aesAlg.IV = Encoding.UTF8.GetBytes(iv);
+                aesAlg.Mode = CipherMode.CBC;
+
+                ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+
+                using (MemoryStream msEncrypt = new MemoryStream())
+                {
+                    using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                    {
+                        using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                        {
+                            swEncrypt.Write(plainText);
+                        }
+                    }
+
+                    return msEncrypt.ToArray();
+                }
+            }
+        }
+
+        public string DecryptAES(byte[] cipherText)
+        {
+            using (Aes aesAlg = Aes.Create())
+            {
+                var key = authConfig.generalEncryptionKey;
+                var iv = authConfig.generalEncryptionIV;
+                aesAlg.Key = Encoding.UTF8.GetBytes(key);
+                aesAlg.IV = Encoding.UTF8.GetBytes(iv);
+                aesAlg.Mode = CipherMode.CBC;
+
+
+                ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+
+                using (MemoryStream msDecrypt = new MemoryStream(cipherText))
+                {
+                    using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                    {
+                        using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                        {
+                            return srDecrypt.ReadToEnd();
+                        }
+                    }
+                }
             }
         }
 

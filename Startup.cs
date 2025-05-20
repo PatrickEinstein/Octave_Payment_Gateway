@@ -52,6 +52,7 @@ namespace CentralPG
             services.AddSingleton(Configuration.GetSection(nameof(PayStackAppUrls)).Get<PayStackAppUrls>());
             services.AddSingleton(Configuration.GetSection(nameof(FlutterAuthConfig)).Get<FlutterAuthConfig>());
             services.AddSingleton(Configuration.GetSection(nameof(FlutterWaveAppUrls)).Get<FlutterWaveAppUrls>());
+            services.AddSingleton(Configuration.GetSection(nameof(CryptographyConfig)).Get<CryptographyConfig>());
 
             services.AddDbContext<DataBaseContext>(options =>
                                   {
@@ -96,6 +97,7 @@ namespace CentralPG
             services.AddScoped<ITestRepository, TestRespository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<ICardRepository, CardRepository>();
 
 
             // Tasks

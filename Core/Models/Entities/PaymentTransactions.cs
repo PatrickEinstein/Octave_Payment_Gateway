@@ -28,5 +28,8 @@ namespace CentralPG.Core.Models.Entities
         public string notificationUrl { get; set; }
         public string callbackUrl { get; set; }
         public bool isNotified { get; set; } = false;
+        public string processor { get; set; }
+        public string? authMode { get; set; }
+        public string authFields { get; set; }
     }
 }

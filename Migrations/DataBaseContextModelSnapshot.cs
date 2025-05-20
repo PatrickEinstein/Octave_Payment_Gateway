@@ -144,6 +144,9 @@ namespace OCPG.Migrations
                     b.Property<string>("paymentReference")
                         .HasColumnType("text");
 
+                    b.Property<string>("processor")
+                        .HasColumnType("text");
+
                     b.Property<string>("requestPayload")
                         .HasColumnType("text");
 

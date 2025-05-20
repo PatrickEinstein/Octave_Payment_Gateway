@@ -32,5 +32,6 @@ namespace OCPG.Models
         public decimal customerCharge { get; set; }
         public decimal merchantCharge { get; set; }
         public decimal catCharge { get; set; }
+        public string processor { get; set; }
     }
 }

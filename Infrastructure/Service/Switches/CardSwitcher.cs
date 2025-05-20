@@ -10,6 +10,7 @@ using CentralPG.Models;
 using Microsoft.EntityFrameworkCore.Storage;
 using OCPG.Core.Enums;
 using OCPG.Core.Models;
+using OCPG.Infrastructure.Interfaces.ICryptographies;
 using OCPG.Infrastructure.Interfaces.IRepositories;
 using OCPG.Infrastructure.Interfaces.ISwitches;
 using OCPG.Infrastructure.Service.Processors;
@@ -28,6 +29,8 @@ namespace accessFT.Infrastructures.Services.Switches
         private readonly PayStackAppUrls payStackAppUrls;
         private readonly FlutterAuthConfig flutterAuthConfig;
         private readonly FlutterWaveAppUrls flutterWaveAppUrls;
+        private readonly IFlutterCryptography flutterCryptography;
+        private readonly ICardRepository cardRepository;
         private readonly AuthConfig authConfig;
         private readonly IPaymentRepository paymentRepository;
 
@@ -39,7 +42,9 @@ namespace accessFT.Infrastructures.Services.Switches
         PaystackAuthConfig paystackAuthConfig,
         PayStackAppUrls payStackAppUrls,
         FlutterAuthConfig flutterAuthConfig,
-        FlutterWaveAppUrls flutterWaveAppUrls
+        FlutterWaveAppUrls flutterWaveAppUrls,
+        IFlutterCryptography flutterCryptography,
+        ICardRepository cardRepository
         )
         {
             this.ApiCaller = apiCaller;
@@ -50,6 +55,8 @@ namespace accessFT.Infrastructures.Services.Switches
             this.payStackAppUrls = payStackAppUrls;
             this.flutterAuthConfig = flutterAuthConfig;
             this.flutterWaveAppUrls = flutterWaveAppUrls;
+            this.flutterCryptography = flutterCryptography;
+            this.cardRepository = cardRepository;
             this.appUrl = appUrl;
         }
 
@@ -65,7 +72,7 @@ namespace accessFT.Infrastructures.Services.Switches
             {
                 "chamsSwitch" => new ChamsSwitch(appUrl, ApiCaller, authConfig, paymentRepository, dataBaseContext),
                 "paystack" => new PayStack(payStackAppUrls, ApiCaller, paystackAuthConfig, paymentRepository, dataBaseContext),
-                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository, dataBaseContext),
+                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository,dataBaseContext, flutterCryptography, cardRepository),
                 _ => null,
             };
 

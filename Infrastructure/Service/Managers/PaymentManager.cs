@@ -46,6 +46,15 @@ namespace OCPG.Infrastructure.Service.Managers
 
         public async Task<serviceResponse<AdviceResponseModel>> InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode)
         {
+            var existingTransaction = await paymentRepository.GetPaymentByMerchantference(advice.merchantRef);
+            if (existingTransaction != null)
+            {
+                return new serviceResponse<AdviceResponseModel>
+                {
+                    Message = "Transaction already exists",
+                    Data = null
+                };
+            }
             serviceResponse<AdviceResponseModel> res = new serviceResponse<AdviceResponseModel>();
 
             AdviceModel load = new AdviceModel(appUrl, authConfig)
@@ -82,12 +91,14 @@ namespace OCPG.Infrastructure.Service.Managers
                         notificationUrl = advice.notificationUrl,
                         callbackUrl = advice.callBackUrlDomain + "status/",
                         paymentDate = DateTime.Now.ToString(),
-                        narration = resp.Data.responseData.narration
+                        narration = resp.Data.responseData.narration,
+                        processor = resp.Data.responseData.processor,
                     };
                     var isCreatedPayment = await paymentRepository.CreatePayment(payment);
                 }
                 catch (Exception e)
                 {
+                    resp.Message = $"{e.Message}";
                     Console.WriteLine($"saving payment failed ==> {e.Message}");
                 }
             }
@@ -121,6 +132,8 @@ namespace OCPG.Infrastructure.Service.Managers
                         accountNumberMasked = resp.responseData.accountNumberMasked,
                         merchantCode = resp.responseData.merchantCode,
                         adviceReference = adviceReference,
+                        authMode = resp.responseData.authMode,
+                        authFields = JsonSerializer.Serialize(resp.responseData.authFields),
                     };
                     var isCreatedPayment = await paymentRepository.UpdatePayment(payment);
                 }

@@ -7,31 +7,12 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace OCPG.Migrations
 {
     /// <inheritdoc />
-    public partial class mig1 : Migration
+    public partial class addprocessortopaymententity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-           
-
-            migrationBuilder.CreateTable(
-                name: "Customers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    FirstName = table.Column<string>(type: "character varying(160)", maxLength: 160, nullable: false),
-                    LastName = table.Column<string>(type: "character varying(160)", maxLength: 160, nullable: false),
-                    PhoneNumber = table.Column<string>(type: "character varying(24)", maxLength: 24, nullable: false),
-                    Address = table.Column<string>(type: "character varying(300)", maxLength: 300, nullable: false),
-                    Email = table.Column<string>(type: "text", nullable: false),
-                    Password = table.Column<string>(type: "text", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Customers", x => x.Id);
-                });
-
+            
             migrationBuilder.CreateTable(
                 name: "payment",
                 columns: table => new
@@ -55,7 +36,8 @@ namespace OCPG.Migrations
                     channel = table.Column<string>(type: "text", nullable: true),
                     notificationUrl = table.Column<string>(type: "text", nullable: true),
                     callbackUrl = table.Column<string>(type: "text", nullable: true),
-                    isNotified = table.Column<bool>(type: "boolean", nullable: false)
+                    isNotified = table.Column<bool>(type: "boolean", nullable: false),
+                    processor = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
