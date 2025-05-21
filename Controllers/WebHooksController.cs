@@ -31,24 +31,11 @@ namespace OCPG.Controllers
         {
             string bodyString = await new StreamReader(Request.Body).ReadToEndAsync();
 
-            logger.LogInformation($"Wallet Transaction Notification Callback Response: {bodyString}");
+            logger.LogInformation($"Wallet Transaction Notification Callback Response: {bodyString} to channel {JsonSerializer.Serialize(channel)}");
 
-            if (channel == ChannelCode.chamsSwitch)
-            {
-                var payload = JsonSerializer.Deserialize<WebHookRequestModel>(bodyString);
+            var res = paymentManager.WebHookNotification(bodyString, channel);
 
-                if (payload != null)
-                {
-                    var res = await paymentManager.WebHookNotification(payload, channel);
-                    return Ok(res);
-                }
-                else
-                {
-                    logger.LogError("Deserialization of WebHookRequestModel failed.");
-                    return BadRequest("Invalid payload.");
-                }
-            }
-            return BadRequest("Invalid channel.");
+            return Ok(res);
         }
     }
 }

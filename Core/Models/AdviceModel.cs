@@ -262,6 +262,14 @@ namespace CentralPG.Models
     }
 
 
+     public class ValidatePayment
+    {
+        public string otp { get; set; }
+        public string paymentReference { get; set; }
+
+    }
+
+
     public class FormDataDetailsCompletePayment
     {
 
@@ -290,6 +298,8 @@ namespace CentralPG.Models
 
 
         public string paymentReference { get; set; }
+
+        public string adviceReference { get; set; }
 
 
         public string merchantReference { get; set; }
@@ -327,7 +337,7 @@ namespace CentralPG.Models
 
         public string message { get; set; }
 
-
+        public string processor_message {get; set;}
         public FormDataCompletePayment formData { get; set; }
 
 
@@ -474,6 +484,7 @@ namespace CentralPG.Models
         public string phoneNumber { get; set; }
         public string email { get; set; }
         public string nin { get; set; }
+        public string bvn { get; set; }
         public string preferred_bank { get; set; }
         public string first_name { get; set; }
         public string middle_name { get; set; }
@@ -495,6 +506,10 @@ namespace CentralPG.Models
     public class WemaWalletGenerateAccountResponseData
     {
         public string trackingId { get; set; }
+        public string flw_ref { get; set; }
+        public string order_ref { get; set; }
+        public string account_number { get; set; }
+
     }
     public class WemaGenerateAccountCallbackData
     {

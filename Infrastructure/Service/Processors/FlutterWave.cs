@@ -12,6 +12,7 @@ using CentralPG.Interfaces.IProcessors;
 using CentralPG.Models;
 using Microsoft.AspNetCore.Authorization;
 using OCPG.Core.Models;
+using OCPG.Core.Models.Entities;
 using OCPG.Infrastructure.Interfaces.ICryptographies;
 using OCPG.Infrastructure.Interfaces.IRepositories;
 using OCPG.Infrastructure.Service.Repositories;
@@ -196,7 +197,7 @@ namespace OCPG.Infrastructure.Service.Processors
                         zipcode = ""
                     }
                 };
-               
+
                 await cardRepository.CreateCard(adviceReference, Convert.ToBase64String(flutterCryptography.EncryptAES(JsonSerializer.Serialize(cardPayload))));
 
                 return resApi;
@@ -212,7 +213,7 @@ namespace OCPG.Infrastructure.Service.Processors
         {
             CompletePaymentResponseModel serviceResponse = new CompletePaymentResponseModel();
 
-            string apiUrl = "https://api.flutterwave.com/v3/charges?type=card";
+            string apiUrl = appUrl.BaseUrl + "/v3/charges?type=card";
             var cardToken = await cardRepository.GetCardByAdviceReference(cardDeetails.paymentreference);
             var decryptedCard = flutterCryptography.DecryptAES(Convert.FromBase64String(cardToken.token));
             var card = JsonSerializer.Deserialize<cardToken>(decryptedCard);
@@ -249,6 +250,31 @@ namespace OCPG.Infrastructure.Service.Processors
 
                 var res = await ApiCaller.POST(Load, apiUrl, authConfig.clientSecret, headers);
                 var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<FlutterChargeResponse, meta>>(res);
+                serviceResponse = new CompletePaymentResponseModel
+                {
+                    requestSuccessful = flutterResponse.status == "success" ? true : false,
+                    message = $"{flutterResponse.message} {flutterResponse.data.processor_response}",
+                    responseData = new ResponseDataCompletePayment
+                    {
+                        adviceReference = cardDeetails.paymentreference,
+                        paymentReference = flutterResponse.data.flw_ref,
+                        merchantReference = flutterResponse.data.tx_ref,
+                        amountCollected = (double)flutterResponse.data.amount,
+                        amount = (double)flutterResponse.data.amount + (double)flutterResponse.data.app_fee + (double)flutterResponse.data.merchant_fee,
+                        callBackUrl = card.redirect_url,
+                        processorCode = flutterResponse.data.processor_response,
+                        transactionStatus = flutterResponse.data.status,
+                        currencyCode = flutterResponse.data.currency,
+                        accountNumber = "",
+                        accountNumberMasked = card.card_number.Substring(0, 2) + "********" + card.card_number.Substring(8),
+                        narration = flutterResponse.data.narration,
+                        merchantCode = "",
+                        message = flutterResponse.message,
+                        customerName = flutterResponse.data.customer.name,
+                        paymentDate = flutterResponse.data.created_at.ToString(),
+                        paymentLink = flutterResponse.meta.authorization.mode == "otp" ? flutterResponse.meta.authorization.endpoint : flutterResponse.meta.authorization.redirect,
+                    }
+                };
                 return serviceResponse;
 
             }
@@ -257,6 +283,58 @@ namespace OCPG.Infrastructure.Service.Processors
                 serviceResponse.message = $"{ex.Message}";
                 return serviceResponse;
             }
+
+        }
+
+        public async Task<CompletePaymentResponseModel> ValidateCardPayment(ValidatePayment cardDeetails)
+        {
+            CompletePaymentResponseModel serviceResponse = new CompletePaymentResponseModel();
+
+            try
+            {
+                string apiUrl = "https://api.flutterwave.com/v3/validate-charge";
+                var Load = new StringContent(JsonSerializer.Serialize(new
+                {
+                    otp = cardDeetails.otp,
+                    flw_ref = cardDeetails.paymentReference,
+                    type = "card",
+                }), Encoding.UTF8, "application/json");
+                var res = await ApiCaller.POST(Load, apiUrl, authConfig.clientSecret, headers);
+                var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<FlutterChargeResponse, meta>>(res);
+                var payment = await paymentRepository.GetPaymentByPaymentReference(cardDeetails.paymentReference);
+                serviceResponse = new CompletePaymentResponseModel
+                {
+                    requestSuccessful = flutterResponse.status == "success" ? true : false,
+                    message = $"{flutterResponse.message} {flutterResponse.data.processor_response}",
+                    responseData = new ResponseDataCompletePayment
+                    {
+                        adviceReference = payment.adviceReference,
+                        paymentReference = flutterResponse.data.flw_ref,
+                        merchantReference = flutterResponse.data.tx_ref,
+                        amountCollected = (double)flutterResponse.data.amount,
+                        amount = (double)flutterResponse.data.amount + (double)flutterResponse.data.app_fee + (double)flutterResponse.data.merchant_fee,
+                        callBackUrl = payment.callbackUrl,
+                        processorCode = flutterResponse.data.processor_response,
+                        transactionStatus = flutterResponse.data.status,
+                        currencyCode = flutterResponse.data.currency,
+                        accountNumber = "",
+                        accountNumberMasked = payment.accountNumberMasked,
+                        narration = flutterResponse.data.narration,
+                        merchantCode = "",
+                        message = flutterResponse.message,
+                        customerName = flutterResponse.data.customer.name,
+                        paymentDate = flutterResponse.data.created_at.ToString(),
+                        paymentLink = flutterResponse.meta.authorization.redirect != null ? flutterResponse.meta.authorization.redirect : "",
+                    }
+                };
+                return serviceResponse;
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.message = $"{ex.Message}";
+                return serviceResponse;
+            }
+
 
         }
 
@@ -275,10 +353,7 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
-        public async Task<string> WebHookNotification(WebHookRequestModel cardDetails)
-        {
-            throw new NotImplementedException();
-        }
+
 
         public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber)
         {
@@ -300,10 +375,56 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
+
+
+
+        /// <summary>
+        /// Generate a new wallet account
+        /// </summary>
+        /// <param name="payload"></param>
+        /// <returns></returns>
+
         public async Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload)
         {
             WemaWalletGenerateAccountResponse response = new WemaWalletGenerateAccountResponse();
-            var apiUrl = $"https://api.paystack.co/dedicated_account";
+            try
+            {
+                var apiUrl = appUrl.BaseUrl + "/v3/virtual-account-numbers";
+
+                var walletPayload = new
+                {
+                    email = payload.email,
+                    tx_ref = Guid.NewGuid().ToString(),
+                    phonenumber = payload.phoneNumber,
+                    is_permanent = true,
+                    firstname = payload.first_name,
+                    lastname = payload.last_name,
+                    narration = $"open wallet for {payload.first_name} {payload.last_name}",
+                    bvn = payload.bvn,
+                };
+
+                var res = await ApiCaller.POST(new StringContent(JsonSerializer.Serialize(walletPayload), Encoding.UTF8, "application/json"), apiUrl, authConfig.clientSecret, headers);
+                var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<FlutterWallet, meta>>(res);
+
+                response = new WemaWalletGenerateAccountResponse
+                {
+                    message = flutterResponse.message,
+                    status = flutterResponse.status == "success" ? true : false,
+                    code = Convert.ToInt32(flutterResponse.data.response_code),
+                    data = new WemaWalletGenerateAccountResponseData
+                    {
+                        flw_ref = flutterResponse.data.flw_ref,
+                        order_ref = flutterResponse.data.order_ref,
+                        account_number = flutterResponse.data.account_number
+                    }
+                };
+            }
+            catch (Exception ex)
+            {
+                response.status = false;
+                response.message = ex.Message;
+
+            }
 
             return response;
         }
@@ -325,6 +446,34 @@ namespace OCPG.Infrastructure.Service.Processors
         public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model)
         {
             throw new NotImplementedException();
+        }
+
+
+
+
+        /// <summary>
+        /// WEBHOOK
+        /// </summary>
+        /// <param name="webhooks"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<string> WebHookNotification(string stream)
+        {
+
+            try
+            {
+
+                var FlutterWebhook = JsonSerializer.Deserialize<FlutterWebhook>(stream, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return $"{ex.Message}";
+            }
+
         }
 
     }

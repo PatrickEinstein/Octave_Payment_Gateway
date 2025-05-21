@@ -64,6 +64,15 @@
   "shouldSaveCard": true,
   "channel": 0
 }
+{
+  "cardNumber": "5531886652142950",
+  "expiredMonth": "09",
+  "expiredYear": "32",
+  "cvv": "564",
+  "cardPin": "0098",
+  "shouldSaveCard": true,
+  "channel": 0
+}
 
 
 
@@ -80,4 +89,32 @@
   "narration": "",
   "customerName": "",
   "paymentDate": "2024-10-30T18:15:51.294559+00:00"
+}
+
+
+
+//FLUTTER  WEBHOOK
+{
+  "event": "transfer.completed",
+  "event.type": "Transfer",
+  "data": {
+    "id": 33286,
+    "account_number": "0690000033",
+    "bank_name": "ACCESS BANK NIGERIA",
+    "bank_code": "044",
+    "fullname": "Bale Gary",
+    "created_at": "2020-04-14T16:39:17.000Z",
+    "currency": "NGN",
+    "debit_currency": "NGN",
+    "amount": 30020,
+    "fee": 26.875,
+    "status": "SUCCESSFUL",
+    "reference": "a0a827b1eca65311_PMCKDU_5",
+    "meta": null,
+    "narration": "lolololo",
+    "approver": null,
+    "complete_message": "Successful",
+    "requires_approval": 0,
+    "is_approved": 1
+  }
 }

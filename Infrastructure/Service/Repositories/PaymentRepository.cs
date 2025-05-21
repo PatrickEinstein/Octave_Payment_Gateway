@@ -69,8 +69,9 @@ namespace OCPG.Infrastructure.Service.Repositories
                 paymentToUpdate.accountNumberMasked = paymentTransactions.accountNumberMasked;
                 paymentToUpdate.merchantCode = paymentTransactions.merchantCode;
                 paymentToUpdate.responsePayload = paymentTransactions.responsePayload;
-                paymentToUpdate.authMode = paymentTransactions.authMode;
-                paymentToUpdate.authFields = paymentTransactions.authFields;
+                paymentToUpdate.authMode = paymentTransactions.authMode ?? paymentToUpdate.authMode;
+                paymentToUpdate.authFields = paymentTransactions.authFields ?? paymentToUpdate.authFields;
+                paymentToUpdate.processor_message = paymentTransactions.processor_message ?? paymentToUpdate.processor_message;
                 await dataBaseContext.SaveChangesAsync();
                 return true;
             }

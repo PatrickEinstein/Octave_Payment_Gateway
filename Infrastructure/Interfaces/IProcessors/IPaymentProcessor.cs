@@ -18,10 +18,12 @@ namespace CentralPG.Interfaces.IProcessors
         Task<serviceResponse<AdviceResponseModel>> GenerateAdvice(AdviceModel advice);
         Task<ProcessCardResponseModel> ProcessCardPayment(CardPayment cardDeetails, string adviceReference);
         Task<CompletePaymentResponseModel> CompleteCardPayment(CompleteCardPayment cardDeetails);
+        Task<CompletePaymentResponseModel> ValidateCardPayment(ValidatePayment cardDeetails);
+
         Task<ProcessBankPaymentResponseModel> ProcessBankPayment(BankPayment cardDetails, string adviceReference);
         Task<serviceResponse<AdviceResponseModel>> CompleteBankPayment(CompleteCardPayment cardDetails);
         Task<BankTransferResponseModel> GenerateNewDynamicAccount(string merchantReference);
-        Task<string> WebHookNotification(WebHookRequestModel cardDetails);
+        Task<string> WebHookNotification(string stream);
 
 
 

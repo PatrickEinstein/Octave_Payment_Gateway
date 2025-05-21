@@ -4,4 +4,10 @@ namespace OCPG.Core.Enums
     {
         chamsSwitch, paystack, flutterWave
     }
+
+
+     public enum ValidateCardPaymentChannelCode
+    {
+        chamsSwitch, paystack, flutterWave
+    }
 }

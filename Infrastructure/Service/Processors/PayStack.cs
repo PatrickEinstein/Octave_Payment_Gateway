@@ -88,7 +88,7 @@ namespace OCPG.Infrastructure.Service.Processors
             serviceResponse<AdviceResponseModel> serviceResponse = new serviceResponse<AdviceResponseModel>();
             try
             {
-               
+
                 string apiUrl = $"{appUrl.BaseUrl}/transaction/transaction/initialize";
                 var payload = new StringContent(JsonSerializer.Serialize(new
                 {
@@ -130,6 +130,11 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
+        public async Task<CompletePaymentResponseModel> ValidateCardPayment(ValidatePayment cardDeetails)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<ProcessBankPaymentResponseModel> ProcessBankPayment(BankPayment cardDetails, string adviceReference)
         {
             throw new NotImplementedException();
@@ -145,10 +150,6 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
-        public async Task<string> WebHookNotification(WebHookRequestModel cardDetails)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber)
         {
@@ -221,6 +222,10 @@ namespace OCPG.Infrastructure.Service.Processors
         }
 
         public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model)
+        {
+            throw new NotImplementedException();
+        }
+        public async Task<string> WebHookNotification(string stream)
         {
             throw new NotImplementedException();
         }

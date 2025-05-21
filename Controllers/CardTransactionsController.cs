@@ -29,16 +29,21 @@ namespace CentralPG.Controllers
 
 
         [HttpPost("/Payment/processpayment/card/{channel}")]
-        public async Task<IActionResult> ProcessPaymentCard(CardPayment cardDetails, string adviceReference,ChannelCode channel)
+        public async Task<IActionResult> ProcessPaymentCard(CardPayment cardDetails, string adviceReference, ChannelCode channel)
         {
-            return Ok(await paymentManager.ProcessCardPayment(cardDetails, adviceReference,channel));
+            return Ok(await paymentManager.ProcessCardPayment(cardDetails, adviceReference, channel));
         }
         [HttpPost("/Payment/completepayment/card/{channel}")]
-        public async Task<IActionResult> CompletePaymentCard(CompleteCardPayment cardDeetails,ChannelCode channel)
+        public async Task<IActionResult> CompletePaymentCard(CompleteCardPayment cardDeetails, ChannelCode channel)
         {
-            return Ok(await paymentManager.CompleteCardPayment(cardDeetails,channel));
+            return Ok(await paymentManager.CompleteCardPayment(cardDeetails, channel));
         }
 
+        [HttpPost("/Payment/validate/card/{channel}")]
+        public async Task<IActionResult> ValidatePaymentCard(ValidatePayment paymentDetails, ValidateCardPaymentChannelCode channel)
+        {
+            return Ok(await paymentManager.ValidateCardPayment(paymentDetails, channel));
+        }
 
 
     }

@@ -188,6 +188,7 @@ public class ChamsSwitch : IPaymentProcessor
                                    $"?creq={resApi?.responseData?.formData?.formData?.JWT}" +
                                    $"&acsUrl={resApi?.responseData?.formData?.url}" +
                                    $"&paymentReference={resApi?.responseData?.formData?.formData?.PaymentReference}";
+            resApi.responseData.processor_message = "";
 
             return resApi;
         }
@@ -197,6 +198,12 @@ public class ChamsSwitch : IPaymentProcessor
             return serviceResponse;
         }
     }
+
+    public async Task<CompletePaymentResponseModel> ValidateCardPayment(ValidatePayment cardDeetails)
+    {
+        throw new NotImplementedException();
+    }
+
 
     /// <summary>
     /// Process Payment using Bank Information
@@ -283,11 +290,6 @@ public class ChamsSwitch : IPaymentProcessor
         }
     }
 
-    public async Task<string> WebHookNotification(WebHookRequestModel cardDetails)
-    {
-        serviceResponse<WebHookRequestModel> response = new serviceResponse<WebHookRequestModel>();
-        return JsonSerializer.Serialize(response);
-    }
 
 
     /////////////////////////////////////////WALLET MODULE //////////////////////////////////////////////////WALLET MODULE /////////////////////////////////////////////////
@@ -404,6 +406,11 @@ public class ChamsSwitch : IPaymentProcessor
         return resApi;
     }
 
+   public async Task<string> WebHookNotification(string stream)
+    {
+        serviceResponse<WebHookRequestModel> response = new serviceResponse<WebHookRequestModel>();
+        return JsonSerializer.Serialize(response);
+    }
 
 }
 

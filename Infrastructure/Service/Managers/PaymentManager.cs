@@ -43,6 +43,15 @@ namespace OCPG.Infrastructure.Service.Managers
 
             return res;
         }
+        public async Task<serviceResponse<PaymentTransactions>> GetTransactionStatusByPaymentReference(string paymentReference)
+        {
+            serviceResponse<PaymentTransactions> res = new serviceResponse<PaymentTransactions>();
+
+            var payres = await paymentRepository.GetPaymentByPaymentReference(paymentReference);
+            res.Data = payres;
+
+            return res;
+        }
 
         public async Task<serviceResponse<AdviceResponseModel>> InitiateTransaction(AdviceModelReq advice, ChannelCode channelCode)
         {
@@ -162,12 +171,14 @@ namespace OCPG.Infrastructure.Service.Managers
                 {
                     PaymentTransactions payment = new PaymentTransactions
                     {
-                        paymentReference = resp.responseData.paymentReference,
+                        paymentReference = resp.responseData.paymentReference != null ? resp.responseData.paymentReference : "",
+                        adviceReference = resp.responseData.adviceReference,
                         amountCollected = (double)resp.responseData.amountCollected,
                         transactionStatus = resp.responseData.transactionStatus,
                         responsePayload = JsonSerializer.Serialize(resp),
                         accountNumberMasked = resp.responseData.accountNumberMasked,
                         merchantCode = resp.responseData.merchantCode,
+                        processor_message = resp.responseData.processor_message ?? "",
                         // adviceReference = cardDeetails.a,
                     };
                     var isCreatedPayment = await paymentRepository.UpdatePayment(payment);
@@ -180,6 +191,44 @@ namespace OCPG.Infrastructure.Service.Managers
             return resp;
         }
 
+        public async Task<CompletePaymentResponseModel> ValidateCardPayment(ValidatePayment cardDeetails, ValidateCardPaymentChannelCode cc)
+        {
+            CompletePaymentResponseModel res = new CompletePaymentResponseModel();
+
+            ChannelCode channel = (ChannelCode)cc;
+
+            var processor = cardSwitcher.SwitchCardProcessor(channel);
+            if (processor == null)
+            {
+                res.message = "There is no such operation for the selected channel";
+                return res;
+            }
+            var resp = await processor.ValidateCardPayment(cardDeetails);
+            if (resp.requestSuccessful == true)
+            {
+                try
+                {
+                    PaymentTransactions payment = new PaymentTransactions
+                    {
+                        paymentReference = resp.responseData.paymentReference != null ? resp.responseData.paymentReference : "",
+                        adviceReference = resp.responseData.adviceReference,
+                        amountCollected = (double)resp.responseData.amountCollected,
+                        transactionStatus = resp.responseData.transactionStatus,
+                        responsePayload = JsonSerializer.Serialize(resp),
+                        accountNumberMasked = resp.responseData.accountNumberMasked,
+                        merchantCode = resp.responseData.merchantCode,
+                        processor_message = resp.responseData.processor_message ?? "",
+                        // adviceReference = cardDeetails.a,
+                    };
+                    var isCreatedPayment = await paymentRepository.UpdatePayment(payment);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"saving payment failed ==> {e.Message}");
+                }
+            }
+            return resp;
+        }
 
 
         // BANK PAYMENT
@@ -222,16 +271,6 @@ namespace OCPG.Infrastructure.Service.Managers
             return resp;
         }
 
-        public async Task<string> WebHookNotification(WebHookRequestModel cardDetails, ChannelCode channel)
-        {
-            var processor = cardSwitcher.SwitchCardProcessor(channel);
-            if (processor == null)
-            {
-                return $"There is no such operation for the selected channel";
-            }
-            var updatedTransaction = await paymentRepository.UpdateChamsSwitchWebhook(cardDetails);
-            return await processor.WebHookNotification(cardDetails);
-        }
 
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
 
@@ -332,6 +371,24 @@ namespace OCPG.Infrastructure.Service.Managers
         }
 
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
+        /// 
+        /// 
+        /// 
+        /// 
+        /// 
+        /// 
+        /// 
+        /// WEBHOOK
+        public async Task<string> WebHookNotification(string stream, ChannelCode channel)
+        {
+            var processor = cardSwitcher.SwitchCardProcessor(channel);
+            if (processor == null)
+            {
+                return $"There is no such operation for the selected channel";
+            }
+            return await processor.WebHookNotification(stream);
+        }
+
 
     }
 }
