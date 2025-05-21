@@ -141,14 +141,14 @@ namespace OCPG.Core.Models
 
     public class WebHookData
     {
-        public string? id { get; set; }
+        public long? id { get; set; }
         public string? tx_ref { get; set; }
         public string? flw_ref { get; set; }
         public string? device_fingerprint { get; set; }
-        public string? amount { get; set; }
+        public long? amount { get; set; }
         public string? currency { get; set; }
-        public string? charged_amount { get; set; }
-        public string? app_fee { get; set; }
+        public long? charged_amount { get; set; }
+        public double? app_fee { get; set; }
         public string? merchant_fee { get; set; }
         public string? processor_response { get; set; }
         public string? auth_model { get; set; }
