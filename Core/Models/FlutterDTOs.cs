@@ -198,5 +198,16 @@ namespace OCPG.Core.Models
         public string name { get; set; }
     }
 
+
+   public class ChargeData
+{
+    public int chargeAmount { get; set; }   
+    public int fee { get; set; }   
+    public int merchantFee { get; set; }   
+    public int flutterwaveFee { get; set; }
+    public int stampDutyFee { get; set; }   
+    public string currency { get; set; }
+}
+
 }
 

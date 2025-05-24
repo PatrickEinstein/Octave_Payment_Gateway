@@ -51,11 +51,27 @@ namespace OCPG.Controllers
         {
             return Ok(await paymentManager.GetAllBanks(channelCode));
         }
-        [HttpGet("/get-charges/{pc}")]
-        public async Task<IActionResult> GetNipCharges(ChannelCode channelCode)
-        {
-            return Ok(await paymentManager.GetNipCharges(channelCode));
-        }
+       [HttpGet("/get-charges")]
+public async Task<IActionResult> GetNipCharges(
+    [FromQuery] ChannelCode channelCode,
+    [FromQuery] double amount = 0.00,
+    [FromQuery] PaymentType payment_type = PaymentType.bank_transfer,
+    [FromQuery] Currency currency = Currency.NGN)
+{
+
+           if (channelCode == ChannelCode.flutterWave && amount <= 0 )
+    {
+        return BadRequest("If Flutterwave is the channel, please input valid amount, currency, and payment_type.");
+    }
+
+       
+
+
+            var result = await paymentManager.GetNipCharges(channelCode, amount, payment_type, currency);
+    return Ok(result);
+}
+
+
         [HttpPost("/fund-transfer/{channelCode}")]
         public async Task<IActionResult> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode )
         {

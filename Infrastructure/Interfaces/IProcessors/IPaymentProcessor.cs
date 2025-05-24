@@ -9,6 +9,7 @@ using CentralPG.Interfaces;
 using OCPG.Models;
 using CentralPG.Core.Models.Entities;
 using OCPG.Core.Models;
+using OCPG.Core.Enums;
 
 namespace CentralPG.Interfaces.IProcessors
 {
@@ -33,7 +34,7 @@ namespace CentralPG.Interfaces.IProcessors
         Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload);
         
         Task<WemaWalletBankListRresponse> GetAllBanks();
-        Task<NipCharges> GetNipCharges();
+        Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency);
   
     }
 }

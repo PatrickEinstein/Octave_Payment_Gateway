@@ -383,7 +383,7 @@ public class ChamsSwitch : IPaymentProcessor
     }
 
 
-    public async Task<NipCharges> GetNipCharges()
+    public async Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency)
     {
         var apiUrl = $"{appUrl.BaseUrl}/debit/charges/035";
         var token = await dataBaseContext.Auths.FirstOrDefaultAsync();

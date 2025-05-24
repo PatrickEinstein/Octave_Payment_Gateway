@@ -11,6 +11,7 @@ using CentralPG.Data;
 using CentralPG.Infrasturcture.Interfaces.Utilities;
 using CentralPG.Interfaces.IProcessors;
 using CentralPG.Models;
+using OCPG.Core.Enums;
 using OCPG.Core.Models;
 using OCPG.Infrastructure.Interfaces.IRepositories;
 using OCPG.Models;
@@ -216,7 +217,7 @@ namespace OCPG.Infrastructure.Service.Processors
             return _;
         }
 
-        public async Task<NipCharges> GetNipCharges()
+        public async Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency)
         {
             throw new NotImplementedException();
         }

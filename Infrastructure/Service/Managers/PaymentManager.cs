@@ -360,14 +360,14 @@ namespace OCPG.Infrastructure.Service.Managers
             var updatedTransaction = await processor.GetAllBanks();
             return updatedTransaction;
         }
-        public async Task<NipCharges> GetNipCharges(ChannelCode channelCode)
+        public async Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
             if (processor == null)
             {
                 throw new BadHttpRequestException("There is no such operation for the selected channel");
             }
-            var updatedTransaction = await processor.GetNipCharges();
+            var updatedTransaction = await processor.GetNipCharges(channelCode, amount,payment_type, currency);
             return updatedTransaction;
         }
         public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode)

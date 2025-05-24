@@ -495,10 +495,42 @@ namespace OCPG.Infrastructure.Service.Processors
 }
 
 
-        public async Task<NipCharges> GetNipCharges()
+        public async Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount, PaymentType payment_type, Currency currency)
         {
-            var apiUrl = "https://api.flutterwave.com/v3/transactions/fee?amount=1000&currency=NGN&payment_type=card";
-            throw new NotImplementedException();
+            NipCharges nipCharges = new NipCharges
+            {
+                errorMessage = "",
+               result = new NipChargesResult
+               {
+                chargeFees = new List<NipChargesResultFee>()
+               }
+                
+            };
+            try
+            {
+                var apiUrl = $"https://api.flutterwave.com/v3/transactions/fee?amount={amount}&currency={currency}&payment_type={payment_type}";
+                var res = await ApiCaller.GET(apiUrl, authConfig.clientSecret, headers);
+                var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<ChargeData, meta>>(res);
+
+                nipCharges.result.chargeFees.Add(new NipChargesResultFee
+                {
+                    id = 1,
+                    chargeFeeName = ChannelCode.flutterWave.ToString(),
+                    transactionType = 1,
+                    charge = flutterResponse.data.fee + flutterResponse.data.flutterwaveFee + flutterResponse.data.merchantFee + flutterResponse.data.stampDutyFee,
+                    lower = 0,
+                    upper = amount
+                });
+                nipCharges.errorMessage = flutterResponse.message;
+                
+            }
+            catch (Exception ex)
+            {
+                nipCharges.errorMessage = $"Error fetching NIP charges: {ex.Message}";
+
+            }
+            return nipCharges;
+           
         }
 
         public async void CreditWallet(ConfirmWalletTransferStatus payload)

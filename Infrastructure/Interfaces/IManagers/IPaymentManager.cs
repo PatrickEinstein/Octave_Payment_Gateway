@@ -31,7 +31,7 @@ namespace OCPG.Infrastructure.Interfaces.IManagers
         Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload, ChannelCode channelCode);
         // Task<WemaWalletValidateOTPResponse> ValidateAccountwithOtp(WemaWalletValidateOTPRequest payload);
         Task<WemaWalletBankListRresponse> GetAllBanks(ChannelCode channelCode);
-        Task<NipCharges> GetNipCharges(ChannelCode channelCode);
+        Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency);
         Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode);
         Task<string> WebHookNotification(string stream, ChannelCode channelCode);
     }
