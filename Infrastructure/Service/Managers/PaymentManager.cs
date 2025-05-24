@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using OCPG.Core.Enums;
 using OCPG.Core.Models;
+using OCPG.Core.Models.Entities;
 using OCPG.Infrastructure.Interfaces.IManagers;
 using OCPG.Infrastructure.Interfaces.IRepositories;
 using OCPG.Infrastructure.Interfaces.ISwitches;
@@ -25,13 +26,20 @@ namespace OCPG.Infrastructure.Service.Managers
         private readonly AppUrl appUrl;
         private readonly AuthConfig authConfig;
         private readonly IPaymentRepository paymentRepository;
+        private readonly IWalletRepository walletRepository;
 
-        public PaymentManager(ICardSwitcher cardSwitcher, AppUrl appUrl, AuthConfig authConfig, IPaymentRepository paymentRepository)
+        public PaymentManager(ICardSwitcher cardSwitcher,
+        AppUrl appUrl,
+        AuthConfig authConfig,
+        IPaymentRepository paymentRepository,
+        IWalletRepository walletRepository
+        )
         {
             this.cardSwitcher = cardSwitcher;
             this.appUrl = appUrl;
             this.authConfig = authConfig;
             this.paymentRepository = paymentRepository;
+            this.walletRepository = walletRepository;
         }
 
         public async Task<serviceResponse<PaymentTransactions>> GetTransactionStatus(string adviceReference)
@@ -275,55 +283,12 @@ namespace OCPG.Infrastructure.Service.Managers
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
 
 
-        //////////// QUERY MODULE //////////////////
+       
 
-        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber, ChannelCode channelCode)
-        {
-            var processor = cardSwitcher.SwitchCardProcessor(channelCode);
-            if (processor == null)
-            {
-                throw new BadHttpRequestException("There is no such operation for the selected channel");
-            }
-            var updatedTransaction = await processor.NameEnquiry(accountNumber);
-            return updatedTransaction;
-        }
 
-        public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference, ChannelCode channelCode)
-        {
-            var processor = cardSwitcher.SwitchCardProcessor(channelCode);
-            if (processor == null)
-            {
-                throw new BadHttpRequestException("There is no such operation for the selected channel");
-            }
-            var updatedTransaction = await processor.ConfirmClientTransferStatus(clientTransactionReference);
-            return updatedTransaction;
-        }
-        public async Task<GetAccountDetails> GetAccountDetails(string accountNumber, ChannelCode channelCode)
-        {
-            var processor = cardSwitcher.SwitchCardProcessor(channelCode);
-            if (processor == null)
-            {
-                throw new BadHttpRequestException("There is no such operation for the selected channel");
-            }
-            var updatedTransaction = await processor.GetAccountDetails(accountNumber);
-            return updatedTransaction;
-        }
-        public async Task<string> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode)
-        {
-            var processor = cardSwitcher.SwitchCardProcessor(channelCode);
-            if (processor == null)
-            {
-                throw new BadHttpRequestException("There is no such operation for the selected channel");
-            }
-            var updatedTransaction = await processor.GetWalletTransactionHistory(model);
-            return updatedTransaction;
-        }
 
 
         //////////// CREATE WALLET MODULE //////////////////
-
-
-
         public async Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload, ChannelCode channelCode)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
@@ -338,7 +303,53 @@ namespace OCPG.Infrastructure.Service.Managers
         //////////// CREATE WALLET MODULE //////////////////
 
 
-        //////////// DEBIT WALLET MODULE //////////////////
+        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber, ChannelCode channelCode)
+        {
+            WalletAccountNameInquiryResponse response = new WalletAccountNameInquiryResponse();
+            var wallet = await walletRepository.GetWalletByAccountNumber(accountNumber);
+            if (wallet != null)
+            {
+                response.result = new NameInquiryResponseResult
+                {
+                    accountName = wallet.account_name,
+                    accountNumber = wallet.account_number,
+                };
+
+            }
+            return response;
+
+        }
+
+        public async Task<GetAccountDetails> GetAccountDetails(string accountNumber, ChannelCode channelCode)
+        {
+            var response = new GetAccountDetails();
+            var wallet = await walletRepository.GetWalletByAccountNumber(accountNumber);
+            if (wallet != null)
+            {
+                response.result = new GetAccountDetailsResult
+                {
+                    accountName = wallet.account_name,
+                    accountNumber = wallet.account_number,
+                    accountBalance = wallet.account_balance,
+                    accountMandate = wallet.account_mandate,
+                    accountType = wallet.account_type,
+                    walletProvider = wallet.wallet_provider,
+                    accountTrackerId = wallet.acccount_trackerId,
+                    accountTrackerRef = wallet.acccount_trackerRef,
+                    createdAt = wallet.created_at.ToString("yyyy-MM-dd HH:mm:ss")
+
+                };
+            }
+            return response;
+        }
+
+ 
+        public async Task<List<WalletTransactionHistory>> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode)
+        {
+            return await walletRepository.GetWalletTransactionHistory(model);
+        }
+
+
         public async Task<WemaWalletBankListRresponse> GetAllBanks(ChannelCode channelCode)
         {
             var processor = cardSwitcher.SwitchCardProcessor(channelCode);
@@ -361,23 +372,12 @@ namespace OCPG.Infrastructure.Service.Managers
         }
         public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode)
         {
-            var processor = cardSwitcher.SwitchCardProcessor(channelCode);
-            if (processor == null)
-            {
-                throw new BadHttpRequestException("There is no such operation for the selected channel");
-            }
-            var updatedTransaction = await processor.ProcessClientTransfer(model);
-            return updatedTransaction;
+            return await walletRepository.ProcessWalletToWalletTransfer(model);
         }
 
+
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
-        /// 
-        /// 
-        /// 
-        /// 
-        /// 
-        /// 
-        /// 
+
         /// WEBHOOK
         public async Task<string> WebHookNotification(string stream, ChannelCode channel)
         {

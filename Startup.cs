@@ -98,6 +98,7 @@ namespace CentralPG
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IPaymentRepository, PaymentRepository>();
             services.AddScoped<ICardRepository, CardRepository>();
+            services.AddScoped<IWalletRepository, WalletRepository>();
 
 
             // Tasks

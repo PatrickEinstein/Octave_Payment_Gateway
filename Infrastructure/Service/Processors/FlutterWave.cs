@@ -11,6 +11,7 @@ using CentralPG.Infrasturcture.Interfaces.Utilities;
 using CentralPG.Interfaces.IProcessors;
 using CentralPG.Models;
 using Microsoft.AspNetCore.Authorization;
+using OCPG.Core.Enums;
 using OCPG.Core.Models;
 using OCPG.Core.Models.Entities;
 using OCPG.Infrastructure.Interfaces.ICryptographies;
@@ -35,6 +36,7 @@ namespace OCPG.Infrastructure.Service.Processors
         private readonly DataBaseContext dataBaseContext;
         private readonly IFlutterCryptography flutterCryptography;
         private readonly ICardRepository cardRepository;
+        private readonly IWalletRepository walletRepository;
 
         public FlutterWave(FlutterWaveAppUrls appUrl,
         IApiCaller apiCaller,
@@ -42,8 +44,8 @@ namespace OCPG.Infrastructure.Service.Processors
         IPaymentRepository paymentRepository,
         DataBaseContext dataBaseContext,
         IFlutterCryptography flutterCryptography,
-        ICardRepository cardRepository
-
+        ICardRepository cardRepository,
+        IWalletRepository walletRepository
         )
         {
             this.ApiCaller = apiCaller;
@@ -52,6 +54,7 @@ namespace OCPG.Infrastructure.Service.Processors
             this.dataBaseContext = dataBaseContext;
             this.flutterCryptography = flutterCryptography;
             this.cardRepository = cardRepository;
+            this.walletRepository = walletRepository;
             this.appUrl = appUrl;
         }
 
@@ -60,6 +63,11 @@ namespace OCPG.Infrastructure.Service.Processors
         {
             throw new NotImplementedException();
         }
+
+
+
+
+        //////////////////START ----------------///////////////////// INITIALIZE PAYMENTS  ///////////////////
 
         public async Task<serviceResponse<GetAdviceModel>> GetAdvice(string adviceReference)
         {
@@ -125,6 +133,11 @@ namespace OCPG.Infrastructure.Service.Processors
                 return serviceResponse;
             }
         }
+
+        //////////////////END ----------------///////////////////// INITIALIZE PAYMENTS  ///////////////////
+
+
+        //////////////////START ----------------///////////////////// CARD PROCESSING  ///////////////////
 
         public async Task<ProcessCardResponseModel> ProcessCardPayment(CardPayment cardDeetails, string adviceReference)
         {
@@ -337,6 +350,11 @@ namespace OCPG.Infrastructure.Service.Processors
 
 
         }
+        //////////////////END ----------------///////////////////// CARD PROCESSING  ///////////////////
+
+
+
+        //////////////////START ----------------///////////////////// BANK  TRANSFER ///////////////////
 
         public async Task<ProcessBankPaymentResponseModel> ProcessBankPayment(BankPayment cardDetails, string adviceReference)
         {
@@ -353,29 +371,14 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
+        //////////////////END ----------------///////////////////// BANK TRANSFER  ///////////////////
 
 
-        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<GetAccountDetails> GetAccountDetails(string accountNumber)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<string> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model)
-        {
-            throw new NotImplementedException();
-        }
+       
 
 
+
+        //////////////////START ----------------///////////////////// WALLET  ///////////////////
 
 
         /// <summary>
@@ -406,6 +409,8 @@ namespace OCPG.Infrastructure.Service.Processors
                 var res = await ApiCaller.POST(new StringContent(JsonSerializer.Serialize(walletPayload), Encoding.UTF8, "application/json"), apiUrl, authConfig.clientSecret, headers);
                 var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<FlutterWallet, meta>>(res);
 
+
+
                 response = new WemaWalletGenerateAccountResponse
                 {
                     message = flutterResponse.message,
@@ -418,6 +423,24 @@ namespace OCPG.Infrastructure.Service.Processors
                         account_number = flutterResponse.data.account_number
                     }
                 };
+
+                Wallets wallet = new Wallets
+                {
+                    account_number = flutterResponse.data.account_number,
+                    account_name = $"{payload.first_name} {payload.last_name}",
+                    account_balance = 0.00,
+                    account_mandate = 0.00,
+                    acccount_trackerRef = flutterResponse.data.flw_ref,
+                    acccount_trackerId = flutterResponse.data.order_ref,
+                    wallet_provider = ChannelCode.flutterWave.ToString(),
+                    created_at = DateTime.Now
+                };
+
+                var isCreatedAccount = await walletRepository.CreateWallet(wallet);
+                if (!isCreatedAccount)
+                {
+                throw new Exception("Account creation failed, please try again later.");
+               }
             }
             catch (Exception ex)
             {
@@ -429,24 +452,61 @@ namespace OCPG.Infrastructure.Service.Processors
             return response;
         }
 
-        public async Task<WemaWalletBankListRresponse> GetAllBanks()
+       public async Task<WemaWalletBankListRresponse> GetAllBanks()
+{
+    var response = new WemaWalletBankListRresponse
+    {
+        result = new List<ResultList>(),
+        message = "Success"
+    };
+
+    try
+    {
+        var apiUrl = "https://api.flutterwave.com/v3/banks/NG";
+        var res = await ApiCaller.GET(apiUrl, authConfig.clientSecret, headers);
+
+        // Deserialize response
+        var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<List<FlutterBankList>, meta>>(res);
+
+        if (flutterResponse?.data != null)
         {
-            WemaWalletBankListRresponse _ = new WemaWalletBankListRresponse();
-            var apiUrl = $"https://api.paystack.co/dedicated_account/available_providers";
-
-
-            return _;
+            foreach (var bank in flutterResponse.data)
+            {
+                response.result.Add(new ResultList
+                {
+                    bankLogo = "",  
+                    provider_slug = "", 
+                    bankCode = bank.code,
+                    bankName = bank.name
+                });
+            }
         }
+        else
+        {
+            response.message = "No bank data found.";
+        }
+    }
+    catch (Exception ex)
+    {
+        response.message = $"Error: {ex.Message}";
+    }
+
+    return response;
+}
+
 
         public async Task<NipCharges> GetNipCharges()
         {
+            var apiUrl = "https://api.flutterwave.com/v3/transactions/fee?amount=1000&currency=NGN&payment_type=card";
             throw new NotImplementedException();
         }
 
-        public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model)
+        public async void CreditWallet(ConfirmWalletTransferStatus payload)
         {
-            throw new NotImplementedException();
+            walletRepository.CreditWallet(payload);
         }
+
+      
 
 
 
@@ -459,7 +519,6 @@ namespace OCPG.Infrastructure.Service.Processors
         /// <exception cref="NotImplementedException"></exception>
         public async Task<string> WebHookNotification(string stream)
         {
-
             try
             {
 
@@ -467,6 +526,51 @@ namespace OCPG.Infrastructure.Service.Processors
                 {
                     PropertyNameCaseInsensitive = true
                 });
+
+                if (FlutterWebhook.data.payment_type == "bank_transfer")
+                {
+                    ConfirmWalletTransferStatus confirmWalletTransferStatus = new ConfirmWalletTransferStatus
+                    {
+                        transfer_reference = FlutterWebhook.data.tx_ref,
+                        processor_reference = FlutterWebhook.data.flw_ref,
+                        amount = FlutterWebhook.data.amount.GetValueOrDefault(),
+                        processor_response = FlutterWebhook.data.processor_response,
+                        currency = FlutterWebhook.data.currency,
+                        status = FlutterWebhook.data.status,
+                        narration = FlutterWebhook.data.narration,
+                        created_at = FlutterWebhook.data.created_at,
+                        customer_name = FlutterWebhook.data.customer.name,
+                        phone_number = FlutterWebhook.data.customer.phone_number,
+                        email = FlutterWebhook.data.customer.email,
+                        provider = ChannelCode.flutterWave.ToString(),
+                    };
+                    this.CreditWallet(confirmWalletTransferStatus);
+
+                    WalletTransactionHistory walletTransactionHistory = new WalletTransactionHistory
+                    {
+                        originator_accountName = "",
+                        destination_accountName = FlutterWebhook.data.fullname,
+                        destination_accountNumber = FlutterWebhook.data.account_number,
+                        processor_reference = FlutterWebhook.data.flw_ref,
+                        transaction_reference = FlutterWebhook.data.tx_ref,
+                        amount = FlutterWebhook.data.amount.GetValueOrDefault(),
+                        transaction_type = FlutterWebhook.data.payment_type,
+                        status = CentralPG.Enums.OrderStatus.Successful,
+                        narration = FlutterWebhook.data.narration,
+                        transaction_date = FlutterWebhook.data.created_at,
+                        provider = ChannelCode.flutterWave,
+                    };
+                    walletRepository.CreateWalletTransactionHistory(walletTransactionHistory);
+                }
+                if (FlutterWebhook.data.payment_type == "card")
+                {
+                    PaymentTransactions paymentTransactions = new PaymentTransactions
+                    {
+                        transactionStatus = FlutterWebhook.data.status,
+                        paymentReference = FlutterWebhook.data.tx_ref,
+                    };
+                    await paymentRepository.UpdatePayment(paymentTransactions);
+                }
                 return "";
             }
             catch (Exception ex)

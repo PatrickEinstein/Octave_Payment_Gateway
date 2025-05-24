@@ -8,6 +8,7 @@ using CentralPG.Models;
 using CentralPG.Interfaces;
 using OCPG.Models;
 using CentralPG.Core.Models.Entities;
+using OCPG.Core.Models;
 
 namespace CentralPG.Interfaces.IProcessors
 {
@@ -28,15 +29,11 @@ namespace CentralPG.Interfaces.IProcessors
 
 
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
-        Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber);
-        Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference);
-        Task<GetAccountDetails> GetAccountDetails(string accountNumber);
-        Task<string> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model);
+       
         Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload);
-        // Task<WemaWalletValidateOTPResponse> ValidateAccountwithOtp(WemaWalletValidateOTPRequest payload);
+        
         Task<WemaWalletBankListRresponse> GetAllBanks();
         Task<NipCharges> GetNipCharges();
-        Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model);
-
+  
     }
 }

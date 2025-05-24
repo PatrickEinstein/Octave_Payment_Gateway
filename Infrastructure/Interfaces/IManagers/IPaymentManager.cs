@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using CentralPG.Core.Models.Entities;
 using CentralPG.Models;
 using OCPG.Core.Enums;
+using OCPG.Core.Models;
+using OCPG.Core.Models.Entities;
 using OCPG.Models;
 
 namespace OCPG.Infrastructure.Interfaces.IManagers
@@ -23,9 +25,9 @@ namespace OCPG.Infrastructure.Interfaces.IManagers
 
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
         Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber, ChannelCode channelCode);
-        Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference, ChannelCode channelCode);
+        
         Task<GetAccountDetails> GetAccountDetails(string accountNumber, ChannelCode channelCode);
-        Task<string> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode);
+       Task<List<WalletTransactionHistory>> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode);
         Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload, ChannelCode channelCode);
         // Task<WemaWalletValidateOTPResponse> ValidateAccountwithOtp(WemaWalletValidateOTPRequest payload);
         Task<WemaWalletBankListRresponse> GetAllBanks(ChannelCode channelCode);

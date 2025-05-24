@@ -31,6 +31,7 @@ namespace accessFT.Infrastructures.Services.Switches
         private readonly FlutterWaveAppUrls flutterWaveAppUrls;
         private readonly IFlutterCryptography flutterCryptography;
         private readonly ICardRepository cardRepository;
+        private readonly IWalletRepository walletRepository;
         private readonly AuthConfig authConfig;
         private readonly IPaymentRepository paymentRepository;
 
@@ -44,7 +45,8 @@ namespace accessFT.Infrastructures.Services.Switches
         FlutterAuthConfig flutterAuthConfig,
         FlutterWaveAppUrls flutterWaveAppUrls,
         IFlutterCryptography flutterCryptography,
-        ICardRepository cardRepository
+        ICardRepository cardRepository,
+        IWalletRepository walletRepository
         )
         {
             this.ApiCaller = apiCaller;
@@ -57,6 +59,7 @@ namespace accessFT.Infrastructures.Services.Switches
             this.flutterWaveAppUrls = flutterWaveAppUrls;
             this.flutterCryptography = flutterCryptography;
             this.cardRepository = cardRepository;
+            this.walletRepository = walletRepository;
             this.appUrl = appUrl;
         }
 
@@ -72,7 +75,7 @@ namespace accessFT.Infrastructures.Services.Switches
             {
                 "chamsSwitch" => new ChamsSwitch(appUrl, ApiCaller, authConfig, paymentRepository, dataBaseContext),
                 "paystack" => new PayStack(payStackAppUrls, ApiCaller, paystackAuthConfig, paymentRepository, dataBaseContext),
-                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository,dataBaseContext, flutterCryptography, cardRepository),
+                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository,dataBaseContext, flutterCryptography, cardRepository, walletRepository),
                 _ => null,
             };
 

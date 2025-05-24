@@ -7,9 +7,8 @@ namespace CentralPG.Enums;
 
     public enum OrderStatus
     {
-        Default,
-        Delivered,
-        Cancelled,
-        InProgress
+        Pending,
+        Successful,
+        Failed,
     }
 

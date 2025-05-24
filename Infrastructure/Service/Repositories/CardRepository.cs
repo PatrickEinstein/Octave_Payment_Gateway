@@ -23,13 +23,13 @@ namespace OCPG.Infrastructure.Service.Repositories
             try
             {
                
-                var existingCards = await dataBaseContext.cards
+                var existingCards = await dataBaseContext.Cards
                     .Where(c => c.adviceReference == adviceReference)
                     .ToListAsync();
 
                 if (existingCards.Any())
                 {
-                    dataBaseContext.cards.RemoveRange(existingCards);
+                    dataBaseContext.Cards.RemoveRange(existingCards);
                     await dataBaseContext.SaveChangesAsync();
                 }
 
@@ -39,7 +39,7 @@ namespace OCPG.Infrastructure.Service.Repositories
                     adviceReference = adviceReference,
                     token = token
                 };
-                await dataBaseContext.cards.AddAsync(newCard);
+                await dataBaseContext.Cards.AddAsync(newCard);
                 await dataBaseContext.SaveChangesAsync();
 
                 return true;
@@ -54,7 +54,7 @@ namespace OCPG.Infrastructure.Service.Repositories
 
         public async Task<Core.Models.Entities.Cards> GetCardByAdviceReference(string parameter)
         {
-            var gottenCard = await dataBaseContext.cards.FirstOrDefaultAsync(c => c.adviceReference == parameter);
+            var gottenCard = await dataBaseContext.Cards.FirstOrDefaultAsync(c => c.adviceReference == parameter);
             return gottenCard;
         }
 

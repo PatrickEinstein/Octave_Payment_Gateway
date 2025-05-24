@@ -156,7 +156,7 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
-        public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference)
+        public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(ConfirmWalletTransferStatus clientTransactionReference)
         {
             throw new NotImplementedException();
         }

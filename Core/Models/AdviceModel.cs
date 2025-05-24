@@ -451,10 +451,10 @@ namespace CentralPG.Models
 
     public class ResultList
     {
-        public string bankName { get; set; }
-        public string bankCode { get; set; }
-        public string bankLogo { get; set; }
-        public string provider_slug { get; set; }
+        public string? bankName { get; set; }
+        public string? bankCode { get; set; }
+        public string? bankLogo { get; set; }
+        public string? provider_slug { get; set; }
     }
 
 
@@ -489,7 +489,6 @@ namespace CentralPG.Models
         public string first_name { get; set; }
         public string middle_name { get; set; }
         public string last_name { get; set; }
-
     }
 
     public class WemaWalletGenerateAccountResponse
@@ -610,10 +609,11 @@ namespace CentralPG.Models
     public class WemaAccountTransactionHistoryRequest
 
     {
-        public string accountNumber { get; set; }
-        public string from { get; set; }
-        public string to { get; set; }
-        public string keyWord { get; set; }
+        public string? accountNumber { get; set; }
+        public string? transaction_reference { get; set; } // All, Debit, Credit
+        public string? from { get; set; }
+        public string? to { get; set; }
+        public string? keyWord { get; set; }
 
     }
 
@@ -703,9 +703,9 @@ namespace CentralPG.Models
     {
         public string destinationBankName { get; set; }
         public string destinationAccountName { get; set; }
-        public string sourceAccountNumber { get; set; }
         public string destinationBankCode { get; set; }
-        public ChannelCode channelCode { get; set; }
+        public string sourceAccountNumber { get; set; }
+  
     }
 
 
@@ -796,8 +796,15 @@ namespace CentralPG.Models
 
     public class GetAccountDetailsResult
     {
-        public string? walletNumber { get; set; }
+        public string? accountNumber { get; set; }
+        public string? accountName { get; set; }
+        public double? accountBalance { get; set; }
+        public double? accountMandate { get; set; }
         public string? availableBalance { get; set; }
+        public string? walletProvider { get; set; }
         public string? accountType { get; set; }
+        public string? accountTrackerRef { get; set; }
+        public string? accountTrackerId { get; set; }
+        public string? createdAt { get; set; }
     }
 }

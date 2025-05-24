@@ -310,7 +310,7 @@ public class ChamsSwitch : IPaymentProcessor
         var resApi = JsonSerializer.Deserialize<WalletAccountNameInquiryResponse>(res);
         return resApi;
     }
-    public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(string clientTransactionReference)
+    public async Task<CreditWalletRequestResponse> ConfirmClientTransferStatus(ConfirmWalletTransferStatus clientTransactionReference)
     {
 
         ConfirmCreditWalletTransactionResponse _ = new ConfirmCreditWalletTransactionResponse();

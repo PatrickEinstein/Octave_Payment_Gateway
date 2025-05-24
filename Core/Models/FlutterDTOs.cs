@@ -133,7 +133,7 @@ namespace OCPG.Core.Models
         public string? Event { get; set; }
         public WebHookData? data { get; set; }
 
-        public WebHookCustomer? customer { get; set; }
+
         public WebHookCard? card { get; set; }
         [JsonPropertyName("event.type")]
         public string? EventType { get; set; }
@@ -145,7 +145,7 @@ namespace OCPG.Core.Models
         public string? tx_ref { get; set; }
         public string? flw_ref { get; set; }
         public string? device_fingerprint { get; set; }
-        public long? amount { get; set; }
+        public double? amount { get; set; }
         public string? currency { get; set; }
         public long? charged_amount { get; set; }
         public double? app_fee { get; set; }
@@ -170,6 +170,7 @@ namespace OCPG.Core.Models
         public string complete_message { get; set; }
         public int requires_approval { get; set; }
         public int is_approved { get; set; }
+        public WebHookCustomer? customer { get; set; }
     }
     public class WebHookCustomer
     {
@@ -187,6 +188,14 @@ namespace OCPG.Core.Models
         public string? country { get; set; }
         public string? type { get; set; }
         public string? expiry { get; set; }
+    }
+    
+
+    public class FlutterBankList
+    {
+        
+        public string? code { get; set; }
+        public string name { get; set; }
     }
 
 }

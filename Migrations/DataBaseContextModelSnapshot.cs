@@ -111,6 +111,12 @@ namespace OCPG.Migrations
                     b.Property<double>("amountCollected")
                         .HasColumnType("double precision");
 
+                    b.Property<string>("authFields")
+                        .HasColumnType("text");
+
+                    b.Property<string>("authMode")
+                        .HasColumnType("text");
+
                     b.Property<string>("callbackUrl")
                         .HasColumnType("text");
 
@@ -147,6 +153,9 @@ namespace OCPG.Migrations
                     b.Property<string>("processor")
                         .HasColumnType("text");
 
+                    b.Property<string>("processor_message")
+                        .HasColumnType("text");
+
                     b.Property<string>("requestPayload")
                         .HasColumnType("text");
 
@@ -158,7 +167,121 @@ namespace OCPG.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("payment");
+                    b.ToTable("Payment");
+                });
+
+            modelBuilder.Entity("OCPG.Core.Models.Entities.Cards", b =>
+                {
+                    b.Property<string>("adviceReference")
+                        .HasColumnType("text");
+
+                    b.Property<string>("token")
+                        .HasColumnType("text");
+
+                    b.HasKey("adviceReference");
+
+                    b.ToTable("Cards");
+                });
+
+            modelBuilder.Entity("OCPG.Core.Models.Entities.WalletTransactionHistory", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<double>("amount")
+                        .HasColumnType("double precision");
+
+                    b.Property<DateTime>("created_at")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("destination_accountName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("destination_accountNumber")
+                        .HasColumnType("text");
+
+                    b.Property<string>("direction")
+                        .HasColumnType("text");
+
+                    b.Property<string>("narration")
+                        .HasColumnType("text");
+
+                    b.Property<string>("originator_accountName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("originator_accountNumber")
+                        .HasColumnType("text");
+
+                    b.Property<string>("processor_reference")
+                        .HasColumnType("text");
+
+                    b.Property<int>("provider")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("status")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("transaction_date")
+                        .HasColumnType("text");
+
+                    b.Property<string>("transaction_reference")
+                        .HasColumnType("text");
+
+                    b.Property<string>("transaction_type")
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("walletTransactionHistory");
+                });
+
+            modelBuilder.Entity("OCPG.Core.Models.Entities.Wallets", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<string>("acccount_trackerId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("acccount_trackerRef")
+                        .HasColumnType("text");
+
+                    b.Property<double>("account_balance")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("account_mandate")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("account_name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("account_number")
+                        .HasColumnType("text");
+
+                    b.Property<string>("account_type")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("created_at")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("email")
+                        .HasColumnType("text");
+
+                    b.Property<string>("phone_number")
+                        .HasColumnType("text");
+
+                    b.Property<string>("wallet_provider")
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Wallets");
                 });
 #pragma warning restore 612, 618
         }

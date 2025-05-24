@@ -17,9 +17,10 @@ namespace CentralPG.Data
 
         public DbSet<AuthTokens> Auths { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<PaymentTransactions> payment { get; set; }
-
-        public DbSet<Cards> cards { get; set; }
+        public DbSet<PaymentTransactions> Payment { get; set; }
+        public DbSet<Cards> Cards { get; set; }
+        public DbSet<Wallets> Wallets { get; set; }
+        public DbSet<WalletTransactionHistory> walletTransactionHistory { get; set; }
        
 
 

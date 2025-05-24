@@ -6,6 +6,7 @@ using CentralPG.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OCPG.Core.Enums;
+using OCPG.Core.Models;
 using OCPG.Infrastructure.Interfaces.IManagers;
 
 namespace OCPG.Controllers
@@ -34,11 +35,7 @@ namespace OCPG.Controllers
         {
             return Ok(await paymentManager.NameEnquiry(accountNumber, channelCode));
         }
-        [HttpPost("/trasnaction-status/{channelCode}")]
-        public async Task<IActionResult> ConfirmClientTransferStatus(string clientTransactionReference, ChannelCode channelCode )
-        {
-            return Ok(await paymentManager.ConfirmClientTransferStatus(clientTransactionReference, channelCode));
-        }
+
         [HttpPost("/wallet-details/{channelCode}")]
         public async Task<IActionResult> GetAccountDetails(string accountNumber, ChannelCode channelCode )
         {
@@ -54,12 +51,12 @@ namespace OCPG.Controllers
         {
             return Ok(await paymentManager.GetAllBanks(channelCode));
         }
-        [HttpGet("/get-charges/{channelCode}")]
+        [HttpGet("/get-charges/{pc}")]
         public async Task<IActionResult> GetNipCharges(ChannelCode channelCode)
         {
             return Ok(await paymentManager.GetNipCharges(channelCode));
         }
-        [HttpPost("/debit-wallet/{channelCode}")]
+        [HttpPost("/fund-transfer/{channelCode}")]
         public async Task<IActionResult> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode )
         {
             return Ok(await paymentManager.ProcessClientTransfer(model,channelCode));
