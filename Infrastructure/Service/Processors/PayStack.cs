@@ -222,6 +222,10 @@ namespace OCPG.Infrastructure.Service.Processors
             throw new NotImplementedException();
         }
 
+ public async Task<string> ProcessInternalTransferFromWalletProviderToBankAccount(WithdrawFromWallet payload)
+        {
+        return "";
+        }
         public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model)
         {
             throw new NotImplementedException();

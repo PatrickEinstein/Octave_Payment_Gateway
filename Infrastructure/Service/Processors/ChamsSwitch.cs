@@ -406,7 +406,11 @@ public class ChamsSwitch : IPaymentProcessor
         return resApi;
     }
 
-   public async Task<string> WebHookNotification(string stream)
+  public async Task<string> ProcessInternalTransferFromWalletProviderToBankAccount(WithdrawFromWallet payload)
+        {
+        return "";
+        }
+    public async Task<string> WebHookNotification(string stream)
     {
         serviceResponse<WebHookRequestModel> response = new serviceResponse<WebHookRequestModel>();
         return JsonSerializer.Serialize(response);

@@ -19,10 +19,10 @@ namespace OCPG.Core.Models.Entities
         public string account_type { get; set; }
         public string acccount_trackerRef { get; set; }
          public string acccount_trackerId { get; set; }
-        public string wallet_provider { get; set; }
+        public ChannelCode wallet_provider { get; set; }
         public string phone_number { get; set; }
         public string email { get; set; }
-        public DateTime created_at { get; set; } = DateTime.Now;   
+        public DateTimeOffset created_at { get; set; } 
     }
 
 

@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace OCPG.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20250524162711_mig1")]
-    partial class mig1
+    [Migration("20250527081622_added withdrawals")]
+    partial class addedwithdrawals
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -238,7 +238,7 @@ namespace OCPG.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("walletTransactionHistory");
+                    b.ToTable("WalletTransactionHistory");
                 });
 
             modelBuilder.Entity("OCPG.Core.Models.Entities.Wallets", b =>
@@ -270,7 +270,7 @@ namespace OCPG.Migrations
                     b.Property<string>("account_type")
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("created_at")
+                    b.Property<DateTimeOffset>("created_at")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("email")
@@ -279,12 +279,58 @@ namespace OCPG.Migrations
                     b.Property<string>("phone_number")
                         .HasColumnType("text");
 
-                    b.Property<string>("wallet_provider")
-                        .HasColumnType("text");
+                    b.Property<int>("wallet_provider")
+                        .HasColumnType("integer");
 
                     b.HasKey("id");
 
                     b.ToTable("Wallets");
+                });
+
+            modelBuilder.Entity("OCPG.Core.Models.Entities.Withdrawals", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<double>("amount")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("bank_accountNumber")
+                        .HasColumnType("text");
+
+                    b.Property<int>("channelCode")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTimeOffset>("createdAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("currency")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("narration")
+                        .HasColumnType("text");
+
+                    b.Property<string>("processorMsg")
+                        .HasColumnType("text");
+
+                    b.Property<string>("processorRef")
+                        .HasColumnType("text");
+
+                    b.Property<int>("status")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("transactionReference")
+                        .HasColumnType("text");
+
+                    b.Property<string>("wallet_accountNumber")
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Withdrawals");
                 });
 #pragma warning restore 612, 618
         }

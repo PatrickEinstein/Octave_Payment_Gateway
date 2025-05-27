@@ -32,6 +32,7 @@ namespace CentralPG.Interfaces.IProcessors
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
        
         Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload);
+        Task<string> ProcessInternalTransferFromWalletProviderToBankAccount(WithdrawFromWallet payload);
         
         Task<WemaWalletBankListRresponse> GetAllBanks();
         Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency);

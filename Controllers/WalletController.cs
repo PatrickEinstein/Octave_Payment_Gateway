@@ -25,57 +25,88 @@ namespace OCPG.Controllers
         }
 
         [HttpPost("/create-wallet/{channelCode}")]
-        public async Task<IActionResult> GenerateWallet(WemaWalletGenerateAccountRequest model, ChannelCode channelCode )
+        public async Task<IActionResult> GenerateWallet(WemaWalletGenerateAccountRequest model, ChannelCode channelCode)
         {
             return Ok(await paymentManager.GenerateWalletAccount(model, channelCode));
         }
 
-        [HttpGet("/name-enquiry/{channelCode}")]
-        public async Task<IActionResult> NameEnquiry(string accountNumber, ChannelCode channelCode )
-        {
-            return Ok(await paymentManager.NameEnquiry(accountNumber, channelCode));
-        }
 
-        [HttpPost("/wallet-details/{channelCode}")]
-        public async Task<IActionResult> GetAccountDetails(string accountNumber, ChannelCode channelCode )
+        [HttpPost("/transaction-history")]
+        public async Task<IActionResult> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model)
         {
-            return Ok(await paymentManager.GetAccountDetails(accountNumber, channelCode));
-        }
-        [HttpPost("/transaction-history/{channelCode}")]
-        public async Task<IActionResult> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model,ChannelCode channelCode )
-        {
-            return Ok(await paymentManager.GetWalletTransactionHistory(model,channelCode));
+            return Ok(await paymentManager.GetWalletTransactionHistory(model));
         }
         [HttpGet("/get-all-banks/{channelCode}")]
         public async Task<IActionResult> GetAllBanks(ChannelCode channelCode)
         {
             return Ok(await paymentManager.GetAllBanks(channelCode));
         }
-       [HttpGet("/get-charges")]
-public async Task<IActionResult> GetNipCharges(
-    [FromQuery] ChannelCode channelCode,
-    [FromQuery] double amount = 0.00,
-    [FromQuery] PaymentType payment_type = PaymentType.bank_transfer,
-    [FromQuery] Currency currency = Currency.NGN)
-{
+        [HttpGet("/get-charges")]
+        public async Task<IActionResult> GetNipCharges(
+     [FromQuery] ChannelCode channelCode,
+     [FromQuery] double amount = 0.00,
+     [FromQuery] PaymentType payment_type = PaymentType.bank_transfer,
+     [FromQuery] Currency currency = Currency.NGN)
+        {
 
-           if (channelCode == ChannelCode.flutterWave && amount <= 0 )
-    {
-        return BadRequest("If Flutterwave is the channel, please input valid amount, currency, and payment_type.");
-    }
+            if (channelCode == ChannelCode.flutterWave && amount <= 0)
+            {
+                return BadRequest("If Flutterwave is the channel, please input valid amount, currency, and payment_type.");
+            }
 
-       
+
 
 
             var result = await paymentManager.GetNipCharges(channelCode, amount, payment_type, currency);
-    return Ok(result);
-}
+            return Ok(result);
+        }
 
 
-        [HttpPost("/fund-transfer/{channelCode}")]
-        public async Task<IActionResult> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode )
+        [HttpGet("/name-enquiry")]
+        public async Task<IActionResult> NameEnquiry(string accountNumber)
         {
-            return Ok(await paymentManager.ProcessClientTransfer(model,channelCode));
+            return Ok(await paymentManager.NameEnquiry(accountNumber));
+        }
+
+        [HttpPost("/wallet-details")]
+        public async Task<IActionResult> GetAccountDetails(string accountNumber)
+        {
+            return Ok(await paymentManager.GetAccountDetails(accountNumber));
+        }
+
+        [HttpPost("/fund-transfer")]
+        public async Task<IActionResult> ProcessClientTransfer(ClientTransferRequest model)
+        {
+            return Ok(await paymentManager.ProcessClientTransfer(model));
+        }
+
+        [HttpPut("/add/mandate")]
+        public async Task<IActionResult> Mandate(
+           [FromQuery] string accountNumber,
+           [FromQuery] double amount)
+        {
+            if (string.IsNullOrEmpty(accountNumber) || amount <= 0)
+            {
+                return BadRequest("Invalid account number or amount.");
+            }
+            return Ok(await paymentManager.LayMandateOnAccount(accountNumber, amount));
+        }
+        [HttpPut("/subtract/mandate")]
+        public async Task<IActionResult> SubtractMandate(
+          [FromQuery] string accountNumber,
+          [FromQuery] double amount)
+        {
+            if (string.IsNullOrEmpty(accountNumber) || amount <= 0)
+            {
+                return BadRequest("Invalid account number or amount.");
+            }
+            return Ok(await paymentManager.SubtractMandate(accountNumber, amount));
+        }
+        [HttpPost("/withdraw")]
+        public async Task<IActionResult> InitiateWithdrawals([FromBody] WithdrawFromWallet payload)
+        {
+
+            return Ok(await paymentManager.InitiateWithrawals(payload));
         }
     }
 }

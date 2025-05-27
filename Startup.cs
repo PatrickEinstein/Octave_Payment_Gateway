@@ -30,6 +30,7 @@ using OCPG.Infrastructure.Interfaces.IRepositories;
 using OCPG.Infrastructure.Service.Repositories;
 using OCPG.Infrastructure.Interfaces.ICryptographies;
 using OCPG.Infrastructure;
+using OCPG.Infrastructure.Service.Tasks;
 
 
 namespace CentralPG
@@ -104,6 +105,7 @@ namespace CentralPG
             // Tasks
             services.AddHostedService<TestCronJob>();
             services.AddHostedService<LoginTask>();
+            services.AddHostedService<WalletTransferTask>();
 
             // Managers
             services.AddScoped<IPaymentManager, PaymentManager>();

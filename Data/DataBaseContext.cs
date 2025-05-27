@@ -20,7 +20,8 @@ namespace CentralPG.Data
         public DbSet<PaymentTransactions> Payment { get; set; }
         public DbSet<Cards> Cards { get; set; }
         public DbSet<Wallets> Wallets { get; set; }
-        public DbSet<WalletTransactionHistory> walletTransactionHistory { get; set; }
+        public DbSet<WalletTransactionHistory> WalletTransactionHistory { get; set; }
+        public DbSet<Withdrawals> Withdrawals { get; set; }
        
 
 

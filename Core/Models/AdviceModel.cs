@@ -262,7 +262,7 @@ namespace CentralPG.Models
     }
 
 
-     public class ValidatePayment
+    public class ValidatePayment
     {
         public string otp { get; set; }
         public string paymentReference { get; set; }
@@ -337,7 +337,7 @@ namespace CentralPG.Models
 
         public string message { get; set; }
 
-        public string processor_message {get; set;}
+        public string processor_message { get; set; }
         public FormDataCompletePayment formData { get; set; }
 
 
@@ -610,7 +610,7 @@ namespace CentralPG.Models
 
     {
         public string? accountNumber { get; set; }
-        public string? transaction_reference { get; set; } // All, Debit, Credit
+        public string? transaction_reference { get; set; }
         public string? from { get; set; }
         public string? to { get; set; }
         public string? keyWord { get; set; }
@@ -705,7 +705,7 @@ namespace CentralPG.Models
         public string destinationAccountName { get; set; }
         public string destinationBankCode { get; set; }
         public string sourceAccountNumber { get; set; }
-  
+
     }
 
 
@@ -801,10 +801,21 @@ namespace CentralPG.Models
         public double? accountBalance { get; set; }
         public double? accountMandate { get; set; }
         public string? availableBalance { get; set; }
-        public string? walletProvider { get; set; }
+        public ChannelCode? walletProvider { get; set; }
         public string? accountType { get; set; }
         public string? accountTrackerRef { get; set; }
         public string? accountTrackerId { get; set; }
         public string? createdAt { get; set; }
+    }
+
+
+    public class WithdrawFromWallet
+    {
+        public string wallet_accountNumber { get; set; }
+        public string bank_accountNumber { get; set; }
+        public double amount { get; set; }
+        public string narration { get; set; }
+        public string transactionReference { get; set; }
+        public string currency { get; set; }
     }
 }

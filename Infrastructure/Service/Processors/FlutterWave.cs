@@ -427,13 +427,15 @@ namespace OCPG.Infrastructure.Service.Processors
                 Wallets wallet = new Wallets
                 {
                     account_number = flutterResponse.data.account_number,
+                    email = payload.email,
+                    phone_number = payload.phoneNumber,
                     account_name = $"{payload.first_name} {payload.last_name}",
                     account_balance = 0.00,
                     account_mandate = 0.00,
                     acccount_trackerRef = flutterResponse.data.flw_ref,
                     acccount_trackerId = flutterResponse.data.order_ref,
-                    wallet_provider = ChannelCode.flutterWave.ToString(),
-                    created_at = DateTime.Now
+                    wallet_provider = ChannelCode.flutterWave,
+                    created_at = DateTimeOffset.UtcNow,
                 };
 
                 var isCreatedAccount = await walletRepository.CreateWallet(wallet);
@@ -444,6 +446,7 @@ namespace OCPG.Infrastructure.Service.Processors
             }
             catch (Exception ex)
             {
+                response.data = null;
                 response.status = false;
                 response.message = ex.Message;
 
@@ -533,13 +536,46 @@ namespace OCPG.Infrastructure.Service.Processors
            
         }
 
-        public async void CreditWallet(ConfirmWalletTransferStatus payload)
+
+
+
+        public async Task<string> ProcessInternalTransferFromWalletProviderToBankAccount(WithdrawFromWallet payload)
         {
-            walletRepository.CreditWallet(payload);
+            try
+            {
+
+            var apiUrl = "https://api.flutterwave.com/v3/transfers";
+            var res = await ApiCaller.POST(new StringContent(JsonSerializer.Serialize(new
+            {
+                account_bank = ChannelCode.flutterWave,
+                account_number = payload.bank_accountNumber,
+                amount = payload.amount,
+                currency = "NGN",
+                debit_currency = "NGN"
+            }), Encoding.UTF8, "application/json"), apiUrl, authConfig.clientSecret, headers);
+            var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<FlutterWallet, meta>>(res);
+            var status = flutterResponse.status == "success" ? flutterResponse.data.flw_ref : flutterResponse.message;
+          
+                Withdrawals withdrawal = new Withdrawals
+                {
+                    wallet_accountNumber = payload.wallet_accountNumber,
+                    amount = payload.amount,
+                    transactionReference = payload.transactionReference,
+                    narration = payload.narration,
+                    channelCode = ChannelCode.flutterWave,
+                    status =  flutterResponse.status == "success" ? CentralPG.Enums.OrderStatus.Successful : CentralPG.Enums.OrderStatus.Failed,
+                    processorRef =  flutterResponse.data != null && !string.IsNullOrWhiteSpace(flutterResponse.data.flw_ref) ? flutterResponse.data.flw_ref : "",
+                    processorMsg = !string.IsNullOrWhiteSpace(flutterResponse.message) ? flutterResponse.message : "",
+                };
+                await walletRepository.UpdateWithdrawal(withdrawal);
+            return status;
+            }
+            catch (Exception ex)
+            {
+                return $"{ex.Message}";
+            }
+            
         }
-
-      
-
 
 
 
@@ -576,7 +612,9 @@ namespace OCPG.Infrastructure.Service.Processors
                         email = FlutterWebhook.data.customer.email,
                         provider = ChannelCode.flutterWave.ToString(),
                     };
-                    this.CreditWallet(confirmWalletTransferStatus);
+
+                    walletRepository.CreditWallet(confirmWalletTransferStatus);
+                   
 
                     WalletTransactionHistory walletTransactionHistory = new WalletTransactionHistory
                     {
@@ -592,7 +630,7 @@ namespace OCPG.Infrastructure.Service.Processors
                         transaction_date = FlutterWebhook.data.created_at,
                         provider = ChannelCode.flutterWave,
                     };
-                    walletRepository.CreateWalletTransactionHistory(walletTransactionHistory);
+                    await walletRepository.CreateWalletTransactionHistory(walletTransactionHistory);
                 }
                 if (FlutterWebhook.data.payment_type == "card")
                 {

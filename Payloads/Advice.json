@@ -24,6 +24,45 @@
 }
 
 
+// CREATE WALLET
+{
+  "phoneNumber": "08138329684",
+  "email": "mohammedola1234@gmail.com",
+  "nin": "12345678900",
+  "bvn": "12345678900",
+  "preferred_bank": "wemi",
+  "first_name": "Olalekan",
+  "middle_name": "Patrick",
+  "last_name": "Mohammed"
+}
+
+
+// WALLET TO WALLET TRANSFER
+{
+  "securityInfo": "string",
+  "destinationAccountNumber": "0067100155",
+  "amount": 0,
+  "narration": "Trasfer to Owoseni",
+  "transactionReference": "56565655555555",
+  "useCustomNarration": true,
+  "destinationBankName": "Flutter",
+  "destinationAccountName": "Owoseni Opeoluwa",
+  "destinationBankCode": "099",
+  "sourceAccountNumber": "0067100156"
+}
+
+// INITIATE WITHDRAWAL
+{
+  "wallet_accountNumber": "9967100155",
+  "bank_accountNumber": "99992069",
+  "amount": 200,
+  "narration": "Heyyo testing withrawal",
+  "transactionReference": "56786567878878",
+  "currency": "NGN"
+}
+
+
+// BANK TRANSFER
 {
   "customerAccountNumber": "0234590564",
   "initialPaymentAmount": 10,

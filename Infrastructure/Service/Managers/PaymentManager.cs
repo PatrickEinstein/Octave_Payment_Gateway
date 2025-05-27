@@ -303,7 +303,7 @@ namespace OCPG.Infrastructure.Service.Managers
         //////////// CREATE WALLET MODULE //////////////////
 
 
-        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber, ChannelCode channelCode)
+        public async Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber)
         {
             WalletAccountNameInquiryResponse response = new WalletAccountNameInquiryResponse();
             var wallet = await walletRepository.GetWalletByAccountNumber(accountNumber);
@@ -320,7 +320,7 @@ namespace OCPG.Infrastructure.Service.Managers
 
         }
 
-        public async Task<GetAccountDetails> GetAccountDetails(string accountNumber, ChannelCode channelCode)
+        public async Task<GetAccountDetails> GetAccountDetails(string accountNumber)
         {
             var response = new GetAccountDetails();
             var wallet = await walletRepository.GetWalletByAccountNumber(accountNumber);
@@ -344,9 +344,44 @@ namespace OCPG.Infrastructure.Service.Managers
         }
 
  
-        public async Task<List<WalletTransactionHistory>> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode)
+        public async Task<serviceResponse<List<WalletTransactionHistory>>> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model)
         {
             return await walletRepository.GetWalletTransactionHistory(model);
+        }
+
+        public async Task<serviceResponse<string>> LayMandateOnAccount(string accountNumber, double mandateAmount)
+        {
+            var res = new serviceResponse<string>();
+            try
+            {
+                var response = await walletRepository.LayMandateOnWallet(accountNumber, mandateAmount);
+                res.Message = response.Message;
+            }
+            catch (Exception e)
+            {
+                res.Message = $"An error occurred while laying mandate on account: {e.Message}";
+            }
+            return res;
+        }
+
+         public async Task<serviceResponse<string>> SubtractMandate(string accountNumber, double mandateAmount)
+        {
+            var res = new serviceResponse<string>();
+            try
+            {
+                var response = await walletRepository.SubtractMandate(accountNumber, mandateAmount);
+                res.Message = response.Message;
+            }
+            catch (Exception e)
+            {
+                res.Message = $"An error occurred while laying mandate on account: {e.Message}";
+            }
+            return res;
+        }
+
+        public async Task<serviceResponse<string>> InitiateWithrawals(WithdrawFromWallet payload)
+        {
+            return await walletRepository.InitiateWithrawals(payload);
         }
 
 
@@ -370,9 +405,20 @@ namespace OCPG.Infrastructure.Service.Managers
             var updatedTransaction = await processor.GetNipCharges(channelCode, amount,payment_type, currency);
             return updatedTransaction;
         }
-        public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode)
+        public async Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model)
         {
             return await walletRepository.ProcessWalletToWalletTransfer(model);
+        }
+
+        public async Task<string> ProcessInternalTransferFromWalletProviderToBankAccount(WithdrawFromWallet payload, ChannelCode channelCode)
+        {
+         var processor = cardSwitcher.SwitchCardProcessor(channelCode);
+            if (processor == null)
+            {
+                throw new BadHttpRequestException("There is no such operation for the selected channel");
+            }
+            var updatedTransaction = await processor.ProcessInternalTransferFromWalletProviderToBankAccount(payload);
+            return updatedTransaction;
         }
 
 

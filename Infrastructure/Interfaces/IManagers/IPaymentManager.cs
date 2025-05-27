@@ -24,15 +24,21 @@ namespace OCPG.Infrastructure.Interfaces.IManagers
         Task<BankTransferResponseModel> GenerateBankAccount(GenerateBankAccount model, ChannelCode channelCode);
 
         ///////////////WALLET MODULE ///////////////////WALLET MODULE ///////////
-        Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber, ChannelCode channelCode);
-        
-        Task<GetAccountDetails> GetAccountDetails(string accountNumber, ChannelCode channelCode);
-       Task<List<WalletTransactionHistory>> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model, ChannelCode channelCode);
+        Task<serviceResponse<List<WalletTransactionHistory>>> GetWalletTransactionHistory(WemaAccountTransactionHistoryRequest model);
         Task<WemaWalletGenerateAccountResponse> GenerateWalletAccount(WemaWalletGenerateAccountRequest payload, ChannelCode channelCode);
         // Task<WemaWalletValidateOTPResponse> ValidateAccountwithOtp(WemaWalletValidateOTPRequest payload);
+
+        Task<serviceResponse<string>> LayMandateOnAccount(string accountNumber, double mandateAmount);
+          Task<serviceResponse<string>> SubtractMandate(string accountNumber, double mandateAmount);
+        Task<serviceResponse<string>> InitiateWithrawals(WithdrawFromWallet payload);
         Task<WemaWalletBankListRresponse> GetAllBanks(ChannelCode channelCode);
         Task<NipCharges> GetNipCharges(ChannelCode channelCode, double amount,PaymentType payment_type, Currency currency);
-        Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model, ChannelCode channelCode);
+        Task<WalletAccountNameInquiryResponse> NameEnquiry(string accountNumber);
+        
+        Task<GetAccountDetails> GetAccountDetails(string accountNumber);
+        Task<CreditWalletRequestResponse> ProcessClientTransfer(ClientTransferRequest model);
+Task<string> ProcessInternalTransferFromWalletProviderToBankAccount(WithdrawFromWallet payload, ChannelCode channelCode);
         Task<string> WebHookNotification(string stream, ChannelCode channelCode);
+
     }
 }
