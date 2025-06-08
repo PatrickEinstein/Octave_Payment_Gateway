@@ -113,7 +113,7 @@ namespace OCPG.Infrastructure.Service.Repositories
             var response = new serviceResponse<List<WalletTransactionHistory>>();
             try
             {
-                var query = "SELECT * FROM \"walletTransactionHistory\" WHERE 1=1";
+                var query = "SELECT * FROM \"WalletTransactionHistory\" WHERE 1=1";
 
                 if (!string.IsNullOrEmpty(payload.accountNumber))
                 {
@@ -337,6 +337,13 @@ namespace OCPG.Infrastructure.Service.Repositories
             var response = new serviceResponse<string>();
             try
             {
+                var isExist = await dataBaseContext.Withdrawals.FirstOrDefaultAsync(c => c.transactionReference == payload.transactionReference);
+                if (isExist != null)
+                {
+                    response.Data = null;
+                    response.Message = "transaction ref already exists";
+                    return response;
+                }
                 var wallet = await dataBaseContext.Wallets.FirstOrDefaultAsync(c => c.account_number == payload.wallet_accountNumber);
                 if (wallet == null)
                 {
@@ -377,7 +384,7 @@ namespace OCPG.Infrastructure.Service.Repositories
                 response.Message = "Error initiating withdrawal: " + e.Message;
             }
 
-            return response;
+            return response; 
 
         }
 
@@ -396,6 +403,8 @@ namespace OCPG.Infrastructure.Service.Repositories
                 throw new Exception("Withdrawal not found");
             }
             withdrawalToUpdate.status = withdrawal.status;
+            withdrawalToUpdate.processorMsg = withdrawal.processorMsg;
+            withdrawalToUpdate.processorRef = withdrawal.processorRef;
             dataBaseContext.Withdrawals.Update(withdrawalToUpdate);
 
             // if the withrawal status is failed, we need to credit the wallet back

@@ -8,6 +8,7 @@ using CentralPG.Infrasturcture.Interfaces.Utilities;
 using CentralPG.Interfaces.IProcessors;
 using CentralPG.Models;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Logging;
 using OCPG.Core.Enums;
 using OCPG.Core.Models;
 using OCPG.Infrastructure.Interfaces.ICryptographies;
@@ -32,6 +33,7 @@ namespace accessFT.Infrastructures.Services.Switches
         private readonly IFlutterCryptography flutterCryptography;
         private readonly ICardRepository cardRepository;
         private readonly IWalletRepository walletRepository;
+        private readonly ILogger<FlutterWave> loggerflutter;
         private readonly AuthConfig authConfig;
         private readonly IPaymentRepository paymentRepository;
 
@@ -46,7 +48,8 @@ namespace accessFT.Infrastructures.Services.Switches
         FlutterWaveAppUrls flutterWaveAppUrls,
         IFlutterCryptography flutterCryptography,
         ICardRepository cardRepository,
-        IWalletRepository walletRepository
+        IWalletRepository walletRepository,
+        ILogger<FlutterWave> loggerflutter
         )
         {
             this.ApiCaller = apiCaller;
@@ -60,6 +63,7 @@ namespace accessFT.Infrastructures.Services.Switches
             this.flutterCryptography = flutterCryptography;
             this.cardRepository = cardRepository;
             this.walletRepository = walletRepository;
+            this.loggerflutter = loggerflutter;
             this.appUrl = appUrl;
         }
 
@@ -75,7 +79,7 @@ namespace accessFT.Infrastructures.Services.Switches
             {
                 "chamsSwitch" => new ChamsSwitch(appUrl, ApiCaller, authConfig, paymentRepository, dataBaseContext),
                 "paystack" => new PayStack(payStackAppUrls, ApiCaller, paystackAuthConfig, paymentRepository, dataBaseContext),
-                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository,dataBaseContext, flutterCryptography, cardRepository, walletRepository),
+                "flutterWave" => new FlutterWave(flutterWaveAppUrls, ApiCaller, flutterAuthConfig, paymentRepository,dataBaseContext, flutterCryptography, cardRepository, walletRepository,loggerflutter),
                 _ => null,
             };
 

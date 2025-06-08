@@ -64,7 +64,7 @@ namespace CentralPG
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Octave PaymentGateway", Version = "v2" });
+                c.SwaggerDoc("v2", new OpenApiInfo { Title = "Octave PaymentGateway", Version = "v2"});
 
             });
 

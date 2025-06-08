@@ -11,6 +11,7 @@ using CentralPG.Infrasturcture.Interfaces.Utilities;
 using CentralPG.Interfaces.IProcessors;
 using CentralPG.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 using OCPG.Core.Enums;
 using OCPG.Core.Models;
 using OCPG.Core.Models.Entities;
@@ -37,6 +38,7 @@ namespace OCPG.Infrastructure.Service.Processors
         private readonly IFlutterCryptography flutterCryptography;
         private readonly ICardRepository cardRepository;
         private readonly IWalletRepository walletRepository;
+        private readonly ILogger<FlutterWave> logger;
 
         public FlutterWave(FlutterWaveAppUrls appUrl,
         IApiCaller apiCaller,
@@ -45,7 +47,9 @@ namespace OCPG.Infrastructure.Service.Processors
         DataBaseContext dataBaseContext,
         IFlutterCryptography flutterCryptography,
         ICardRepository cardRepository,
-        IWalletRepository walletRepository
+        IWalletRepository walletRepository,
+        ILogger<FlutterWave> logger
+       
         )
         {
             this.ApiCaller = apiCaller;
@@ -55,6 +59,7 @@ namespace OCPG.Infrastructure.Service.Processors
             this.flutterCryptography = flutterCryptography;
             this.cardRepository = cardRepository;
             this.walletRepository = walletRepository;
+            this.logger = logger;
             this.appUrl = appUrl;
         }
 
@@ -547,14 +552,23 @@ namespace OCPG.Infrastructure.Service.Processors
             var apiUrl = "https://api.flutterwave.com/v3/transfers";
             var res = await ApiCaller.POST(new StringContent(JsonSerializer.Serialize(new
             {
-                account_bank = ChannelCode.flutterWave,
-                account_number = payload.bank_accountNumber,
-                amount = payload.amount,
-                currency = "NGN",
-                debit_currency = "NGN"
+                    account_bank = "044",
+                    account_number = payload.bank_accountNumber,
+                    amount = payload.amount,
+                    currency = "NGN",
+                    callback_url = "https://webhook.site/5f9a659a-11a2-4925-89cf-8a59ea6a019a",
+                    narration = payload.narration,
+                    reference = payload.transactionReference,
+                    debit_currency = "USD",
+                    // debit_subaccount = "PSA******07974",
+                    // beneficiary = 3768,
+                    // beneficiary_name = "Yemi Desola",
+                    // destination_branch_code = "GH280103",
+               
             }), Encoding.UTF8, "application/json"), apiUrl, authConfig.clientSecret, headers);
-            var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<FlutterWallet, meta>>(res);
-            var status = flutterResponse.status == "success" ? flutterResponse.data.flw_ref : flutterResponse.message;
+            var flutterResponse = JsonSerializer.Deserialize<FlutterBaseModel<WalletWithdrawTransferResponse, meta>>(res);
+                logger.LogInformation($"Flutterwave--withdraw-response==> {res}");
+            var status = flutterResponse.status == "success" ? flutterResponse.data.reference : flutterResponse.message;
           
                 Withdrawals withdrawal = new Withdrawals
                 {
@@ -564,7 +578,7 @@ namespace OCPG.Infrastructure.Service.Processors
                     narration = payload.narration,
                     channelCode = ChannelCode.flutterWave,
                     status =  flutterResponse.status == "success" ? CentralPG.Enums.OrderStatus.Successful : CentralPG.Enums.OrderStatus.Failed,
-                    processorRef =  flutterResponse.data != null && !string.IsNullOrWhiteSpace(flutterResponse.data.flw_ref) ? flutterResponse.data.flw_ref : "",
+                    processorRef =  flutterResponse.data != null && !string.IsNullOrWhiteSpace(flutterResponse.data.reference) ? flutterResponse.data.reference : "",
                     processorMsg = !string.IsNullOrWhiteSpace(flutterResponse.message) ? flutterResponse.message : "",
                 };
                 await walletRepository.UpdateWithdrawal(withdrawal);
